@@ -1,0 +1,8 @@
+String
+======
+
+Methods
+-------
+
+Format
+------
