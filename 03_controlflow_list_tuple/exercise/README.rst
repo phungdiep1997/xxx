@@ -32,7 +32,7 @@ Ví dụ::
   input = 9 (1001)
   output = 1
 
-Hàm có sẵn: bin(10) == 1010
+Hàm có sẵn: bin(10) == '0b1010'
 
 Bài 3.2
 -------
