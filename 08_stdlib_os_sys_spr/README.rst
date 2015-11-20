@@ -45,6 +45,8 @@ copy
 - Shallow vs deep copy, how does they implemented?
 - What are copy methods for list and dict, shallow or deep?
 - https://docs.python.org/2/library/copy.html
+- E.g: when to not use deep copy
+  https://github.com/saltstack/salt/commit/63aa8c686bcb0ebc47eb3fc80ac45001e92320ff
 
 os
 --
