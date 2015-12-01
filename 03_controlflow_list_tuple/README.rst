@@ -25,3 +25,27 @@ Assign either value to a variable base on condition::
 
 List
 ----
+
+- Create empty list
+- Assign element
+- Compare
+- Plus (+)
+- Check membership (``x in list``)::
+
+    if x in range(100000): # algorithm complexity O(N)
+
+- Check membership of ``dict`` is ``O(1) - constant``
+- 9 methods, built-in function ``reversed``, ``sorted``
+- Reverse with ``li[::-1]``
+- list comprehension (map/filter), only when need a list
+
+Built-in Functions
+------------------
+
+- len
+- id
+- dir
+- sum
+- str
+- int
+- bool
