@@ -1,8 +1,0 @@
-String
-======
-
-Methods
--------
-
-Format
-------
