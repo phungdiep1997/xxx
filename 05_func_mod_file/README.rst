@@ -1,3 +1,20 @@
+Read & write file
+-----------------
+
+Introduce using file.
+open(), modes, close(), with, iter over lines.
+
+Module
+------
+
+- import modulename
+- from module import name, namespace pollution
+- __init__.py
+
+pep8
+----
+
+
 Function
 --------
 
@@ -23,19 +40,3 @@ Global variable
 - Create, access, modify, import
 - Compare to local variable
 - Global is evil
-
-Module
-------
-
-- import modulename
-- from module import name, namespace pollution
-- __init__.py
-
-pep8
-----
-
-Read & write file
------------------
-
-Introduce using file.
-open(), modes, close(), with, iter over lines.
