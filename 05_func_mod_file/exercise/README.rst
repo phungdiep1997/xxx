@@ -24,3 +24,13 @@ Write a function that prints the numbers from 1 to 100. But for multiples of
 three print “Fizz” instead of the number and for the multiples of five print 
 “Buzz”. For numbers which are multiples of both three and five print
 “FizzBuzz”.
+
+Ex4
+---
+
+Viết function tạo ra 1 file chứa 1 TỶ dòng, các dòng lẽ chứa số 1, 
+các dòng chẵn chứa giá trị 2 * số dòng hiện tại.
+
+Viết function in ra 10 dòng cuối cùng của file nói trên.
+
+(Nâng cao) Viết function in ra kích thước của file nói trên tính theo byte. 
