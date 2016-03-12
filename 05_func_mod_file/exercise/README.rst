@@ -28,7 +28,7 @@ three print “Fizz” instead of the number and for the multiples of five print
 Ex4
 ---
 
-Viết function tạo ra 1 file chứa 1 TỶ dòng, các dòng lẽ chứa số 1, 
+Viết function tạo ra 1 file chứa 30 triệu dòng, các dòng lẻ chứa 30 số 1, 
 các dòng chẵn chứa giá trị 2 * số dòng hiện tại.
 
 Viết function in ra 10 dòng cuối cùng của file nói trên.
