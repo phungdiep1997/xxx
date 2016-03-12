@@ -69,3 +69,10 @@ By considering the terms in the Fibonacci sequence whose values do not exceed
 four million, find the sum of the even-valued terms.
 
 https://projecteuler.net/problem=2
+
+6.6
+---
+
+Viết function nhận đầu vào là 1 float, trả về 1 string biểu diễn số đó ở dạng:
+
+1.123.456,789 khi nhận đầu vào là 1123456.789
