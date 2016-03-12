@@ -1,3 +1,8 @@
+Create and del object
+---------------------
+
+del xyz
+
 Read & write file
 -----------------
 
