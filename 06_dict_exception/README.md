@@ -1,3 +1,9 @@
+Reading code 
+------------
+
+- Important than write
+- Let's practice
+
 Git
 ---
 
@@ -49,12 +55,6 @@ Module
 - import modulename
 - from module import name, namespace pollution
 - __init__.py
-
-Read & write file
------------------
-
-Introduce using file.
-open(), modes, close(), with, iter over lines.
 
 Misc
 ----
