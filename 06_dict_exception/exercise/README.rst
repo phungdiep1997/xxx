@@ -76,3 +76,12 @@ https://projecteuler.net/problem=2
 Viết function nhận đầu vào là 1 float, trả về 1 string biểu diễn số đó ở dạng:
 
 1.123.456,789 khi nhận đầu vào là 1123456.789
+
+6.7
+---
+
+Viết function tính tổng của tất cả các argument được gọi. Chạy function này với
+các argument dưới::
+
+  sumall(1,2,3,4,5,6,7)
+  sumall(1,2,3,4,5,6,7,8,9)
