@@ -30,7 +30,7 @@ Use class to represent that.
 
 Simulate Pig game https://en.wikipedia.org/wiki/Pig_%28dice_game%29
 
-- With 1 player, he will play 100 games, calculate winning rate.
+- With 1 player, he will play 100 games, each game he rolls 20 times, calculate winning rate.
 
 - With 2 players, they will play 100 games, calculate winning rate of each.
 
