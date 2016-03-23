@@ -77,3 +77,8 @@ Merge request (MR)
 - create MR
 - review on MR
 - pull request on Github (https://github.com/saltstack/salt/pulls)
+
+Cheat sheet
+-----------
+
+https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
