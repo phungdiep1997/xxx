@@ -46,6 +46,15 @@ logging
 - debug/info/warning/error/critical
 - do not format log, let logger does that.
 
+collections
+-----------
+
+- namedtuple
+- Counter
+- defaultdict
+- deque
+- OrderedDict
+
 generator
 ---------
 
