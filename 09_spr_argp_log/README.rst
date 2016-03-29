@@ -1,6 +1,16 @@
 Lecture 09
 ==========
 
+Reading code is more important that write
+-----------------------------------------
+
+https://github.com/saltstack/salt/blob/develop/salt/utils/__init__.py
+
+Function aliasing
+-----------------
+
+https://github.com/saltstack/salt/blob/develop/salt/states/virtualenv_mod.py#L274
+
 random
 ------
 
