@@ -1,3 +1,6 @@
+locals vs kwargs
+----------------
+
 Pdb
 ---
 
