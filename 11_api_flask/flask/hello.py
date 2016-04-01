@@ -1,9 +1,12 @@
 import subprocess
+
+import requests
 from flask import Flask
 from flask import render_template
 
 
 app = Flask(__name__)
+url = 'https://api.github.com/repos/awesome-jobs/jobs/issues'
 app.debug = True
 
 
@@ -28,6 +31,17 @@ def get_processes():
 def processes():
     ps = get_processes()
     return render_template('ps.html', processes=ps)
+
+
+@app.route('/jobs')
+def jobs():
+    jobs = []
+    res = requests.get(url)
+    for j in res.json():
+        jobs.append(j['title'])
+    return ("<ul>" +
+            ''.join(['<li>' + j['title'] + '</li>' for j in res.json()]) +
+            "</ul>")
 
 
 if __name__ == "__main__":
