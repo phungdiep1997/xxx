@@ -45,12 +45,15 @@ squares
 
 ![](http://python-3-patterns-idioms-test.readthedocs.org/en/latest/_images/listComprehensions.gif)
 
-# inside the brackets `[ ]` is called a generator expression
+# inside the brackets `[ ]` is called a *generator expression*
 
-According to the python documentation, **a list comprehension consists of square brackets containing an expression followed by a for clause and zero or more for or if clauses as shown below:**
+## iterable - iterator - generator:
+![](http://nvie.com/img/relationships.png)
+
+According to the [python documentation](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions), **a list comprehension consists of square brackets containing an expression followed by a for clause and zero or more for or if clauses as shown below:**
 
 ```python
-[expression for item1 in iterable1 if condition1
+[expression for item1 in iterable1 if condition1 
             for item2 in iterable2 if condition2
             ...
             for itemN in iterableN if conditionN ]
@@ -62,7 +65,7 @@ According to the python documentation, **a list comprehension consists of square
 
 
 ```python
-MORSE_CODE = {'A': '.-',     'B': '-...',   'C': '-.-.',
+MORSE_CODE = {'A': '.-',     'B': '-...',   'C': '-.-.', 
             'D': '-..',    'E': '.',      'F': '..-.',
             'G': '--.',    'H': '....',   'I': '..',
             'J': '.---',   'K': '-.-',    'L': '.-..',
@@ -74,7 +77,7 @@ MORSE_CODE = {'A': '.-',     'B': '-...',   'C': '-.-.',
             '0': '-----',  '1': '.----',  '2': '..---',
             '3': '...--',  '4': '....-',  '5': '.....',
             '6': '-....',  '7': '--...',  '8': '---..',
-            '9': '----.'
+            '9': '----.' 
         }
 
 # copy from here: http://bit.ly/pyfml_morse
@@ -105,13 +108,13 @@ print(s1, '    '.join([MORSE_CODE[c.upper()] for c in s1]))
           1 # translate your name to morse code
           2 s1 = 'hoang thanh long'
     ----> 3 print(s1, '    '.join([MORSE_CODE[c.upper()] for c in s1]))
-
+    
 
     <ipython-input-7-7ba35da7836f> in <listcomp>(.0)
           1 # translate your name to morse code
           2 s1 = 'hoang thanh long'
     ----> 3 print(s1, '    '.join([MORSE_CODE[c.upper()] for c in s1]))
-
+    
 
     KeyError: ' '
 
@@ -126,6 +129,18 @@ print(s1, '    '.join([MORSE_CODE[c.upper()] for c in s1 if c.upper() in MORSE_C
 
     hoang thanh long ....    ---    .-    -.    --.    -    ....    .-    -.    ....    .-..    ---    -.    --.
 
+
+## *Want to convert from morse code to alphabet?*
+>There's a silence lasting exactly as long as a dot, between letters. And, between words, a pause that lasts exactly as long as seven dots.
+
+> Obviously that's when the transmission obeys the standard rules. Otherwise, each transmissionist (is that even a word these days?) can wait however long he likes.
+
+https://www.quora.com/How-do-you-separate-letters-in-Morse-code-How-do-you-separate-words
+
+# Homework:
+1. write a function that translate alphabet to morse code (translate space to a custom separator)
+2. write a function that translate morse code to alphabet with a parameter as separator for spaces
+before translating, remove all special characters, except a-z, 0-9 and spaces.
 
 ---
 ## VN geography
