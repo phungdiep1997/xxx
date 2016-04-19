@@ -56,14 +56,8 @@ https://projecteuler.net/problem=22
 Ex6
 ---
 
-You’ve just arrived in sunny St. Augustine, and find yourself amazed by the visionary civic planning that would result in the area in which you now stand: a street grid exactly 10 blocks square.
- 
-You’re in the northwest corner of this 10 by 10 block area, and would like to take a scenic walk to the southeast corner, while only ever moving south or east.
- 
-As you begin walking, you wonder to yourself, “how many different paths could I take from this northwest corner to the southeast corner?”
- 
-You quickly note that if the downtown area were only a 2 block by 2 block grid, there would be 6 distinct paths from one corner to the other (see the diagram at the top of this post).
- 
-So, how many distinct paths are there through the 10 by 10 downtown area?
+Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
+
+How many such routes are there through a 10×10 grid?
 
 Similar to https://projecteuler.net/problem=15 but with 10x10 grid
