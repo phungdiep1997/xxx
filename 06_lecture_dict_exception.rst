@@ -4,6 +4,33 @@ Reading code
 - Important than write
 - Let's practice
 
+
+linting
+=======
+
+What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    tool that flags suspicious usage in software written in any computer
+    language
+
+pylint:
+-------
+
+Install pylint: https://www.pylint.org/#install
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``sudo apt-get install pylint``
+
+or ``pip install pylint``
+
+usage: `read the docs <https://docs.pylint.org/>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+basic usage: ``pylint /path/to/mymodule.py``
+
+
+
 Git
 ---
 

@@ -51,3 +51,11 @@ So, COLIN would obtain a score of 938 × 53 = 49714.
 What is the total of all the name scores in the file?
 
 https://projecteuler.net/problem=22
+
+
+Ex6
+---
+
+Write python code for this solution, using brute force:
+
+http://rayhightower.com/blog/2016/04/11/comparing-ruby-c-and-go/
