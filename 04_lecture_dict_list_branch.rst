@@ -1,3 +1,15 @@
+Git basic
+---------
+
+SSH key
+~~~~~~~
+
+Implement and implementation
+----------------------------
+
+Writing python to file
+----------------------
+
 Why command line
 ----------------
 
@@ -26,3 +38,4 @@ Import
 
 - import antigravity
 - xkcd.com, news.ycombinator.com
+- random
