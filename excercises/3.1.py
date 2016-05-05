@@ -1,2 +1,1 @@
 print('hehe')
-print('haha')
