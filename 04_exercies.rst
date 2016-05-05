@@ -46,3 +46,16 @@ có giá trị giống nhau), dạng biểu thức:
     a + 13 * b / c + d + 12 * e – f – 11 + g * h / i – 10 = 66
 
 Bài toán có tất cả bao nhiêu nghiệm?
+
+Bài 4.5
+
+Given an integer list from -10 to 10 except 0, write a function:
+- calculate its sum without using function ``sum``.
+- calculate its product
+
+Return a tuple (sum, product).
+
+Input::
+
+  li = range(-10, 11)
+  li.remove(0)
