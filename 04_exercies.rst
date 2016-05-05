@@ -59,3 +59,7 @@ Input::
 
   li = range(-10, 11)
   li.remove(0)
+
+Compare output with this::
+
+  assert sum_and_product(li) == (sum(li), reduce(lambda x,y: x*y, li))
