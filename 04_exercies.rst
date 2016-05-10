@@ -48,6 +48,7 @@ có giá trị giống nhau), dạng biểu thức:
 Bài toán có tất cả bao nhiêu nghiệm?
 
 Bài 4.5
+-------
 
 Given an integer list from -10 to 10 except 0, write a function:
 - calculate its sum without using function ``sum``.
