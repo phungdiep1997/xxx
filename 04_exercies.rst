@@ -59,6 +59,7 @@ Return a tuple (sum, product).
 Input::
 
   li = range(-10, 11)
+  li = list(li)
   li.remove(0)
 
 Compare output with this::
