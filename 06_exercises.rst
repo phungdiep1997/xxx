@@ -85,3 +85,10 @@ các argument dưới::
 
   sumall(1,2,3,4,5,6,7)
   sumall(1,2,3,4,5,6,7,8,9)
+  
+6.8
+---
+
+Viết 1 script sinh password random, bắt buộc phải chứa ít nhất 1 chữ thường,
+1 chữ hoa, 1 số, 1 ký tự punctuation. Trong code chứa hàm test một vòng
+loop 10 lần, sinh 10 password và đảm bảo không cái nào giống nhau
