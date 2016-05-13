@@ -92,3 +92,12 @@ các argument dưới::
 Viết 1 script sinh password random, bắt buộc phải chứa ít nhất 1 chữ thường,
 1 chữ hoa, 1 số, 1 ký tự punctuation. Trong code chứa hàm test một vòng
 loop 10 lần, sinh 10 password và đảm bảo không cái nào giống nhau
+
+6.9
+---
+
+Biết dir(5) trả về list các attribute của object 5 (gồm cả method).
+
+- Tìm các method mà cả list và int object đều có
+- Tìm các method chỉ list object có
+- Tìm các method chỉ int object có
