@@ -7,6 +7,14 @@ SSH key
 Implement and implementation
 ----------------------------
 
+User-defined function
+----------------------------
+
+double = lambda x: x * 2
+print(double(2))
+
+sum2 = lambda x, y: x + y
+
 Writing python to file
 ----------------------
 
