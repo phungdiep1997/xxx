@@ -15,6 +15,8 @@ Module
   mutils.func_name(xyz)
   import this #  why import twice but print once?
 
+- how import works? - how it choose what to import?
+
 Class
 -----
 
