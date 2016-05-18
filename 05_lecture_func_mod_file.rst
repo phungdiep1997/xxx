@@ -39,6 +39,7 @@ Function
 - When to write a function (need to repeat more than twice)
 - Mandatory arguments, optional arguments
 - Positional arguments, keyword arguments
+- Side effect
 - Function in function
 - Meaning of function which has name starts with ``_``
 - ``*args, **kwargs`` # after dict only
