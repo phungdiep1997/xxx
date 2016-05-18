@@ -48,13 +48,11 @@ Tips:
 Sử dụng ``requests`` viết một script lấy toàn bộ thông tin các Page của
 các quán cafe, trà ở trung tâm Hà Nội bằng **Facebook Graph API**.  
 
-Các từ khóa: ``"coffee", "tea", "cafe", "caphe"``.  
+Các từ khóa: ``"coffee", "tea", "cafe", "caphe", "tra da"``.  
 
-Tọa độ: ``21.027875, 105.853654`` với bán kính là ``2km``.  
+Tọa độ: ``21.027875, 105.853654`` với bán kính là ``1km``.  
 
 Trả về kết quả bao gồm ``name, id, location, website`` của mỗi Page.  
-
-- Sử dụng module quét tọa độ trong file ``./Resource/coorcal.py``  
 
 - Hướng dẫn dùng Facebook API:  
 
