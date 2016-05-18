@@ -5,8 +5,8 @@ Reading code
 - Let's practice
 
 
-linting
-=======
+Linting
+-------
 
 What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -14,7 +14,7 @@ What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
     tool that flags suspicious usage in software written in any computer
     language
 
-pylint:
+PyLint:
 -------
 
 Install pylint: https://www.pylint.org/#install
