@@ -1,4 +1,4 @@
-Lecture 08
+Exercises 8.x
 ==========
 
 Python script = python module + if __name__ == '__main__' + set header + chmod

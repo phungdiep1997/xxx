@@ -1,3 +1,5 @@
+Lecture 06
+=========
 Reading code 
 ------------
 
