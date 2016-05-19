@@ -83,3 +83,12 @@ sẽ xảy ra.
 
 **Nếu cảm thấy khó, hãy tạo issue hoặc hỏi trực tiếp trên Skype, Slack.**
 
+
+10.4
+----
+
+- Viết script lấy top **x** câu hỏi được vote cao nhất của tag **y** trên stackoverflow.com
+
+- In ra màn hình: Title câu hỏi, link đến câu trả lời được vote cao nhất
+
+Link API: https://api.stackexchange.com/docs
