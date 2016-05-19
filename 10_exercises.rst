@@ -45,6 +45,16 @@ Tips:
 10.3
 ----
 
+- Viết script lấy top **x** câu hỏi được vote cao nhất của tag **y** trên stackoverflow.com
+
+- In ra màn hình: Title câu hỏi, link đến câu trả lời được vote cao nhất
+
+Link API: https://api.stackexchange.com/docs
+
+10.4
+----
+
+
 Sử dụng ``requests`` viết một script lấy toàn bộ thông tin các Page của
 các quán cafe, trà ở trung tâm Hà Nội bằng **Facebook Graph API**.  
 
@@ -82,13 +92,3 @@ sẽ xảy ra.
 - Hãy sử dụng option ``indent`` cho function ``json.dump()``  
 
 **Nếu cảm thấy khó, hãy tạo issue hoặc hỏi trực tiếp trên Skype, Slack.**
-
-
-10.4
-----
-
-- Viết script lấy top **x** câu hỏi được vote cao nhất của tag **y** trên stackoverflow.com
-
-- In ra màn hình: Title câu hỏi, link đến câu trả lời được vote cao nhất
-
-Link API: https://api.stackexchange.com/docs
