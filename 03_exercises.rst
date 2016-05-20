@@ -141,7 +141,7 @@ In ra 10 số nguyên tố đầu tiên trên cùng một dòng.
 
 
 External excercise
-==================
+-------------------
 
 Bài 1:
 ------

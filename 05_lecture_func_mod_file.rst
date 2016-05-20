@@ -1,3 +1,5 @@
+Lecture 05
+=========
 Create and del object
 ---------------------
 
@@ -67,7 +69,7 @@ Global variable
     [1, 3, 5, 7, 9]
 
 list comprehension
-==================
+------------
 
 ::
 
@@ -94,7 +96,7 @@ list comprehension
    :alt: 
 
 inside the brackets ``[ ]`` is called a *generator expression*
-==============================================================
+----------------------
 
 iterable - iterator - generator:
 --------------------------------
@@ -203,7 +205,7 @@ as shown below:**
 https://www.quora.com/How-do-you-separate-letters-in-Morse-code-How-do-you-separate-words
 
 Homework:
-=========
+-----------
 
 1. write a function that translate alphabet to morse code (translate
    space to a custom separator)

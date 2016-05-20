@@ -1,3 +1,5 @@
+Lecture 07
+=========
 Pep0008
 -------
 
@@ -5,7 +7,7 @@ Pep0008
 - pep8 command line
 
 Module
-======
+-------------
 
 - Example: each create a package, and a module, and import function from it::
 

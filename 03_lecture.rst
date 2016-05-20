@@ -1,3 +1,5 @@
+Lecture 03
+==========
 Control flow
 ------------
 
@@ -52,7 +54,7 @@ Built-in Functions
 
 
 String
-======
+--------
 
 - immutable
 - iterable

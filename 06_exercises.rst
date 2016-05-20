@@ -1,4 +1,4 @@
-Exercises 6
+Exercises 6.x
 ===========
 
 6.1
