@@ -68,7 +68,7 @@ collections
 generator
 ---------
 
-- https://docs.python.org/2/glossary.html#term-generator
+- https://docs.python.org/3/glossary.html#term-generator
 - Return generator expression::
 
     return (s for s in students)
@@ -76,7 +76,7 @@ generator
 iterator
 --------
 
-- how ``for`` works: https://docs.python.org/2/tutorial/classes.html#iterators
+- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
 - what is iterate?
 - Convert to a list?
 - list??
@@ -96,4 +96,4 @@ functools
 PYMOTW
 ------
 
-https://pymotw.com/2/
+https://pymotw.com/3/py-modindex.html
