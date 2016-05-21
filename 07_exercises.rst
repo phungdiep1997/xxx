@@ -67,3 +67,4 @@ chữ cái liên tiếp sẽ in ra 2 lần + số lần lặp lại liên tiếp
 Sử dụng OOP:
 Viết 1 script giả lập trận đấu giữa 2 nhân vật. Mỗi nhân vật có tên, máu, vũ khí.
 Vũ khí chọn random khi tạo nhân vật.
+Cho 2 nhân vật lần lượt đánh nhau, print kết quả mỗi lượt đánh, print người thắng.
