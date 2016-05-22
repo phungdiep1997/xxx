@@ -44,29 +44,7 @@ Implement function that returns Nth Fibonacci number in recursive way.
 
 Implement Tower of Hanoi https://en.wikipedia.org/wiki/Tower_of_Hanoi
 
-
-
 7.5
----
-
-Download file names.txt_ - một file text 46K chứa danh sách hơn 5000 username.
-Hãy viết chương trình sắp xếp những username này theo thứ tự bảng chữ cái. Sau
-đó, tính điểm cho mỗi username. Điểm số của mỗi chữ cái tương đương với thứ tự
-của nó trong bảng chữ cái.
-
-Điểm được tính như sau:
-Ví dụ, sau khi danh sách các username được sắp xếp theo thứ tự bảng chữ cái,
-"COLIN" sẽ xếp thứ 938 trong danh sách đó, vì vậy nó sẽ có giá trị:
-
-  (3 + 15 + 12 + 9 + 14) * 938 = 49714
-
-Tính tổng điểm số của tất cả các username trong file đã cho.
-
-Link:  https://projecteuler.net/problem=22
-
-name.txt_: https://projecteuler.net/project/resources/p022_names.txt
-
-7.6
 ---
 
 Viết chương trình thực hiện sự chuyển đổi sau:
@@ -82,3 +60,11 @@ Viết chương trình thực hiện sự chuyển đổi sau:
 
 Giải thích: Những chữ cái không lặp lại thì oputut giữ nguyên chữ cái đó. Những
 chữ cái liên tiếp sẽ in ra 2 lần + số lần lặp lại liên tiếp.
+
+7.6
+---
+
+Sử dụng OOP:
+Viết 1 script giả lập trận đấu giữa 2 nhân vật. Mỗi nhân vật có tên, máu, vũ khí.
+Vũ khí chọn random khi tạo nhân vật.
+Cho 2 nhân vật lần lượt đánh nhau, print kết quả mỗi lượt đánh, print người thắng.
