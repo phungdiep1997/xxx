@@ -95,7 +95,8 @@ Run a server::
 json
 ----
 
-Dump json::
+- often used for API
+- Dump json::
 
   $ echo '{"message": "Validation Failed", "errors": [{"field": "title", "code": "missing_field", "resource": "Issue"}]}' | python -m json.tool
   {
@@ -108,6 +109,14 @@ Dump json::
       ],
       "message": "Validation Failed"
   }
+  
+  
+yaml
+----
+
+- http://www.familug.org/2013/06/yaml-la-gi.html
+- often used for config files
+- pip install pyyaml, import yaml, yaml.dump, yaml.load
 
 algorithm time complexity
 -------------------------
