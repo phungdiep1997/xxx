@@ -6,7 +6,7 @@ Stdlib
 GitLab issues
 -------------
 
-https://gitlab.com/hvn_familug/pyfml1508/issues
+https://gitlab.com/hvn_familug/pyfml1604/issues
 
 exception
 ----------
@@ -23,13 +23,13 @@ script
     chmod a+x scriptname.py
     ls -l scriptname.py
 
-- #!/usr/bin/env python2
-- https://docs.python.org/2/faq/library.html#how-do-i-make-a-python-script-executable-on-unix
+- #!/usr/bin/env python3
+- https://docs.python.org/3/faq/library.html#how-do-i-make-a-python-script-executable-on-unix
 
 lambda
 ------
 
-- https://docs.python.org/2/glossary.html#term-lambda
+- https://docs.python.org/3/glossary.html#term-lambda
 - map, filter
 
 decorator
@@ -46,7 +46,7 @@ copy
 - Interface of a module is function signatures, exceptions (all thing exposed).
 - Shallow vs deep copy, how does they implemented?
 - What are copy methods for list and dict, shallow or deep?
-- https://docs.python.org/2/library/copy.html
+- https://docs.python.org/3/library/copy.html
 - E.g: when to not use deep copy
   https://github.com/saltstack/salt/commit/63aa8c686bcb0ebc47eb3fc80ac45001e92320ff
 
@@ -69,6 +69,13 @@ sys
 - sys.exit
 - sys.argv
 
+pdb
+---
+
+The python debugger https://docs.python.org/3/library/pdb.html ::
+
+  python3 -m pdb myscript.py
+
 timeit
 ------
 
@@ -78,12 +85,12 @@ Use with ipython %timeit::
   The slowest run took 381.51 times longer than the fastest. This could mean that an intermediate result is being cached
   100000000 loops, best of 3: 13.1 ns per loop
 
-SimpleHTTPServer
+http server - python 3 version
 ----------------
 
 Run a server::
 
-  python -m SimpleHTTPServer
+  python -m http.server
 
 json
 ----
