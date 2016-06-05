@@ -1,8 +1,6 @@
 Lecture 01
 ==========
 
-<<<<<<< HEAD
-=======
 Introducing
 -----------
 
@@ -35,7 +33,6 @@ Python
 Number
 ------
 
->>>>>>> upstream/master
 - int, float
 - operator: ``+ - * / ** // %``
 - boolean operations, boolean type
