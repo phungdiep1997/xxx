@@ -16,6 +16,31 @@ name --binding--> object
 - two names bind to same object with have id(x) == id(y)
 - #TODO add objgraph for above example here.
 
+Deleting name
+-------------
+
+Before:
+
+```
+~Namespace~~~~\  
+|name          \ --binding--> object
+|---------------
+```
+
+After
+
+```
+~Namespace~~~~\
+|              \         object
+|---------------
+```
+
+And Garbage collector will collect object, remove it from memory.
+
+Deletion of a name removes the binding of that name from the local or global 
+namespace, depending on whether the name occurs in a global statement in the 
+same code block. If the name is unbound, a NameError exception will be raised.
+
 Hashing
 -------
 
