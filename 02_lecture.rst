@@ -25,6 +25,8 @@ Hashing
 Builtin functions
 -----------------
 
+https://docs.python.org/3/library/functions.html
+
 - all
 - any
 - chr
