@@ -12,6 +12,9 @@ Object
 
 name --binding--> object
 
+http://bit.ly/21hi3Q2
+
+
 - use id() to get "identify" of an object.
 - two names bind to same object with have id(x) == id(y)
 - #TODO add objgraph for above example here.
