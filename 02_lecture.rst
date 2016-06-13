@@ -12,7 +12,7 @@ Object
 
 name --binding--> object
 
-http://bit.ly/21hi3Q2
+![](/Resource/var_binding.jpg)
 
 
 - use id() to get "identify" of an object.
