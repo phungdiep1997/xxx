@@ -1,5 +1,17 @@
 Lecture 03
 ==========
+
+Membership test
+---------------
+
+``in``
+
+Identity test
+-------------
+
+``is``
+
+
 Control flow
 ------------
 
