@@ -1,6 +1,6 @@
 Lecture 06
 =========
-Reading code 
+Reading code
 ------------
 
 - Important than write
@@ -31,8 +31,6 @@ usage: `read the docs <https://docs.pylint.org/>`_
 
 basic usage: ``pylint /path/to/mymodule.py``
 
-
-
 Git
 ---
 
@@ -57,6 +55,9 @@ Function kwargs
 ---------------
 
 - ``*args, **kwargs``
+
+Pickle
+------
 
 JSON
 ----
