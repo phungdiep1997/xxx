@@ -1,3 +1,10 @@
+Git
+===
+
+- Create gitlab.com account
+- Add ssh key
+- Clone
+
 Lecture 03
 ==========
 
