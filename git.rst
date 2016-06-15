@@ -1,5 +1,13 @@
 Git commands
-=======
+============
+
+Install
+-------
+
+Ubuntu
+~~~~~~
+
+  sudo apt-get install -y git tig
 
 Git clone
 ---------
