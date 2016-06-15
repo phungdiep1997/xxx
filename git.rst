@@ -16,15 +16,16 @@ Git clone
 
 Command::
 
-  git clone https://gitlab.com/hvn_familug/pyfml1508.git
+  git clone https://gitlab.com/pyfml/pyfml1606.git pyfml # replace with real link of this repo
 
 Or use ssh::
 
-  git clone git@gitlab.com:hvn_familug/pyfml1508.git
+  git clone git@gitlab.com:pyfml/pyfml1606.git pyfml # replace with real link of this repo
+
 
 Change directory to cloned directory::
 
-  cd pyfml1508
+  cd pyfml
 
 Git branch
 ----------
