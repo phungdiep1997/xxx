@@ -67,4 +67,5 @@ Input::
 
 Compare output with this::
 
+  from functools import reduce
   assert sum_and_product(li) == (sum(li), reduce(lambda x,y: x*y, li))
