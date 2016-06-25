@@ -1,3 +1,19 @@
+String
+------
+
+- Create string
+- Single quote, double quote
+- Triple quote
+- Multi lines
+- Escaping ``\n \t \\ \' \"``
+- Automatically concat
+- Indexing
+- Slicing
+- Reverse
+- len()
+- ASCII, Unicode, bits and byte.
+- Immutable
+
 Variable
 --------
 
@@ -25,7 +41,7 @@ Deleting name
 Before:
 
 ```
-~Namespace~~~~\  
+~Namespace~~~~\
 |name          \ --binding--> object
 |---------------
 ```
@@ -40,8 +56,8 @@ After
 
 And Garbage collector will collect object, remove it from memory.
 
-Deletion of a name removes the binding of that name from the local or global 
-namespace, depending on whether the name occurs in a global statement in the 
+Deletion of a name removes the binding of that name from the local or global
+namespace, depending on whether the name occurs in a global statement in the
 same code block. If the name is unbound, a NameError exception will be raised.
 
 Hashing

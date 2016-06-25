@@ -71,13 +71,6 @@ Built-in Functions
 - int
 - bool
 
-
-String
---------
-
-- immutable
-- iterable
-
 Methods
 -------
 
