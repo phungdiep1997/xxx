@@ -174,7 +174,7 @@ Bài 2:
   
   - output: 
     
-    - các phần tử cùng xuất hiện trong 2 list
+    - các phần tử đồng thời xuất hiện trong 2 list
     
     - các phần tử chỉ có trong list A
     
