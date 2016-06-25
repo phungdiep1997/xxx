@@ -20,6 +20,9 @@ Variable
 Name
 ----
 
+It's the hardest problem
+http://www.slideshare.net/pirhilton/how-to-name-things-the-hardest-problem-in-programming
+
 Binding
 ~~~~~~~
 
