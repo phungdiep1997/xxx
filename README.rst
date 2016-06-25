@@ -37,3 +37,13 @@ Side topics
 - Database: SQL, NoSQL
 - Unittest, TDD
 - Health (back, pain, eye)
+
+Teaching guide
+--------------
+
+- teaching when standing is more energetic.
+- given problem, then introduce new concept to solve it.
+- for each concept, function, give example, real world information
+  e.g: list is the one of the most (2) common used data structure in python ....
+  not: list is a compound data structure, here is how to create a list...
+- no reading/writing teaching
