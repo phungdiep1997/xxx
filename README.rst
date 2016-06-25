@@ -42,6 +42,7 @@ Teaching guide
 --------------
 
 - teaching when standing is more energetic.
+- using hands movements, body language when teaching, look into EACH student's eyes.
 - given problem, then introduce new concept to solve it.
 - for each concept, function, give example, real world information
   e.g: list is the one of the most (2) common used data structure in python ....
