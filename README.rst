@@ -3,6 +3,15 @@ PyFML
 
 Long live the http://www.familug.org !
 
+Principal principles
+--------------------
+
+- Đổi mới liên tục, đổi mới hoặc là giải tán, đổi mới có thể tiến lên hoặc
+  thụt lùi còn hơn là giữ sức ý khi không đổi mới.
+- Sử dụng các công nghệ hiện đại NHẤT.
+- Hệ thống bài tập phong phú, lấy từ kinh nghiệm thực tế.
+- Đi vào bản chất vấn đề, no magic!
+
 Mentor
 ------
 
