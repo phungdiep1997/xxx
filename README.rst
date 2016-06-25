@@ -1,8 +1,5 @@
-PyFML1508
-=========
-
-Started at 2015 Aug 11.
-So-called PyFML2 - the 2nd generation of PyFML.
+PyFML
+=====
 
 Long live the http://www.familug.org !
 
@@ -23,26 +20,20 @@ Viet Hung Nguyen
 - Homepage: http://www.familug.org
 - Github: http://github.com/hvnsweeting
 
-Teaching assistants
--------------------
+Hoang Thanh Long
+----------------
 
-Tran Tuan Anh
-~~~~~~~~~~~~~
+# TBD
 
-- Nick(Skype, FB, blabla...): trananhkma
-- DOB: 1991 Nov 11 :scorpius:
-- From: Ha Long city, Quang Ninh, Viet Nam
-- Email: trananhkma@gmail.com
-- Github: http://github.com/trananhkma
+Side topics
+-----------
 
-Nguyen Thanh Tung
-~~~~~~~~~~~~~~~~~
-
-- Nick: kinhvan017
-- DOB: 1991 Dec 20
-- From: Nghe An, Viet Nam
-- Email: nthanhtung91@gmail.com
-- Gitlab: kinhvan017
-- Skype: kinhvan017
-- Github: http://github.com/kinhvan017
-
+- pycharm & IDEs & Vim
+- git & github
+- linux & CLI usefulness
+- Recursive
+- Data Exchange format: JSON, YAML, XML
+- regex
+- Database: SQL, NoSQL
+- Unittest, TDD
+- Health (back, pain, eye)
