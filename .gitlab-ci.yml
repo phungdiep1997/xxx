@@ -6,4 +6,4 @@ before_script:
 
 flake8:
   script:
-    - flake8 --exclude=conf.py
+    - flake8 --exclude=conf.py /builds/pyfml/pyfml1606
