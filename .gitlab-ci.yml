@@ -1,7 +1,5 @@
+# Use image hvnsweeting/pip2
 before_script:
-  - apt-get update -qq && apt-get install -y -qq python-pip
-  - python -v
-  - pip install --upgrade pip
   - pip install flake8
 
 flake8:
