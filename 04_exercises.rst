@@ -69,3 +69,14 @@ Compare output with this::
 
   from functools import reduce
   assert sum_and_product(li) == (sum(li), reduce(lambda x,y: x*y, li))
+
+Bài 4.6
+-------
+
+s = '12 drummers drumming, 11 pipers 23piping, 10 lords a-leaping'
+
+Print out list of all numbers in this string.
+
+Output::
+
+  [12, 11, 23, 10]
