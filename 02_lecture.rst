@@ -31,7 +31,7 @@ Object
 
 name --binding--> object
 
-![](/Resource/var_binding.jpg)
+![](https://gitlab.com/pyfml/pyfml1606/raw/master/Resource/var_binding.jpg)
 
 
 - use id() to get "identify" of an object.
