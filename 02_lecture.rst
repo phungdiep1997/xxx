@@ -31,7 +31,7 @@ Object
 
 name --binding--> object
 
-![](/Resource/var_binding.jpg)
+.. image:: Resource/var_binding.jpg
 
 
 - use id() to get "identify" of an object.
