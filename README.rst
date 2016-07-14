@@ -57,3 +57,10 @@ Teaching guide
   e.g: list is the one of the most (2) common used data structure in python ....
   not: list is a compound data structure, here is how to create a list...
 - no reading/writing teaching
+
+Doc build
+~~~~~~~~~
+
+- Create virtualenv
+- Install requirements-doc.txt
+- Run ``make html``

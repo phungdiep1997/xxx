@@ -15,4 +15,4 @@ Học các command cơ bản trên Linux ở đâu?
 Dùng git thế nào?
 -----------------
 
-#TODO
+:doc:`git`
