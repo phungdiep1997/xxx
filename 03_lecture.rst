@@ -1,12 +1,12 @@
+Lecture 03
+==========
+
 Git
-===
+---
 
 - Create gitlab.com account
 - Add ssh key
 - Clone
-
-Lecture 03
-==========
 
 Membership test
 ---------------
