@@ -49,7 +49,8 @@ of ten last digits of `2**1000`.
 21.7
 ----
 
-Create a list contains all integers which are multiple of 3 or 5.
+Create a list contains all integers less than 1001,
+which are multiple of 3 or 5.
 
 21.8
 ----
