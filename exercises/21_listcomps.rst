@@ -4,12 +4,12 @@ List comprehendsion
 21.1
 ----
 
-Create a list which contain 10 elements ``2``.
+Create a list which contains 10 elements ``2``.
 
 21.2
 ----
 
-Create a list which contains 10 random integer, which are >= 0, <= 9.
+Create a list which contains 10 random integers, which are >= 0, <= 9.
 
 To generate 1 random integer, use::
 
@@ -43,7 +43,7 @@ Create a list like this by listcomps::
 21.6
 ----
 
-Create a list contains all integer (not string) digit
+Create a list contains all integer (not string) digits
 of ten last digits of `2**1000`.
 
 21.7
@@ -55,7 +55,7 @@ which are multiple of 3 or 5.
 21.8
 ----
 
-Create a list which contain n list, each list contains number from 1->10::
+Create a list which contains 10 lists, each list contains numbers from 1->10::
 
   [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
