@@ -102,7 +102,7 @@ Stop using::
 
 Install package inside virtualenv::
 
-  pip install ipython requests mpho six
+  pip install ipython requests pep8 ipdb six
 
 Be social
 ---------
@@ -125,10 +125,11 @@ BeautifulSoup4
 - parsing HTML
 - http://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
-Pho
+Phg
 ---
 
-- https://github.com/hvnsweeting/pho
+- https://github.com/hvnsweeting/phg
+- https://pypi.python.org/pypi/phg
 
 Distributing module
 -------------------
