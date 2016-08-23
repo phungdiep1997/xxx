@@ -34,13 +34,13 @@ Number
 ------
 
 - int, float
-- operator: ``+ - * / ** // %``
-- boolean operations, boolean type
-- assign variable
-- type() function
+- operator: ``+ - * / ** // %`` - scale the problem up
+- boolean
+- object and object type (type() function)
+- assign variable / binding name
 - print
-- if statement
-- string with single quote and double quote
-- error understanding, define
+- exception understanding
 - indentation
 - float precision
+- modulo application: convert to binary, find even/odd, cryptography, 
+  minimize size of problem
