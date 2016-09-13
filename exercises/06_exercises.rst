@@ -101,3 +101,12 @@ Biết dir(5) trả về list các attribute của object 5 (gồm cả method).
 - Tìm các method mà cả list và int object đều có
 - Tìm các method chỉ list object có
 - Tìm các method chỉ int object có
+
+6.10
+----
+
+Tính thuế thu nhập cá nhân cho 1 người có thu nhập bất kỳ. 
+Tham khảo hướng dẫn tính thuế TNCN tại 
+http://dichvuketoanhn.net/huong-dan-tinh-thue-thu-nhap-ca-nhan-tncn-2015-2016. 
+Yêu cầu tính cả trường hợp giảm trừ gia cảnh và các khoản khác được giảm trừ 
+khi tính thuế.
