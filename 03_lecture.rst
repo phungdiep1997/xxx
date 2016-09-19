@@ -1,23 +1,22 @@
 Lecture 03
 ==========
 
-Git
----
+Introduce to git
+----------------
 
 - Create gitlab.com account
-- Add ssh key
-- Clone
+- TODO at home: install git
 
 Membership test
 ---------------
 
 ``in``
 
-Identity test
--------------
+Boolean
+-------
 
-``is``
-
+- and/or/not
+- short-circuit (``True and False and 1/0``)
 
 Control flow
 ------------
