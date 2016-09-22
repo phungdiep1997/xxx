@@ -71,3 +71,12 @@ In ra mà hình các biễu diễn tương ứng ở hệ cơ số nhị phân (
 (octal), thập lục phân (heximal) của các số từ 1 đến 20.
 
 Gợi ý: sử dụng bin(), oct(), hex().
+
+Ex8
+---
+
+- In ra màn hình biểu diễn của 20 mã ASCII đầu tiên.
+- In ra màn hình Unicode codepoint của các số từ 0->9, a-zA-Z.
+- Các ký tự "\t" "\n", " " có codepoint là bao nhiêu?
+
+Gợi ý: dùng ``chr()``, ``ord()``.
