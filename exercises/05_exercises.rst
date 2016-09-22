@@ -67,11 +67,16 @@ Similar to https://projecteuler.net/problem=15
 Ex7
 ---
 
-In ra mà hình các biễu diễn tương ứng ở hệ cơ số nhị phân (binary), bát phân
+In ra mà hình các biễu diễn tương ứng ở hệ thập phân (decimal), hệ cơ số nhị phân (binary), bát phân
 (octal), thập lục phân (heximal) của các số từ 1 đến 20.
 
 Gợi ý: sử dụng bin(), oct(), hex().
-
+Mỗi dòng 1 số, với độ dài các cột bằng chiều dài của bin
+Output :
+    decimal     octal           hex         bin
+        1           1           1           1
+        2           2           2           10
+        3           3           3           11
 Ex8
 ---
 
