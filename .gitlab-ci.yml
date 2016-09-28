@@ -1,4 +1,4 @@
-image: hvnsweeting/pip3
+image: hvnsweeting/docker_pip3
 
 before_script:
   - pip3 install flake8
