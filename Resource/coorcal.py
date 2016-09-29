@@ -1,13 +1,13 @@
-LAT_PER_100M = 0.001622/1.8
-LONG_PER_100M = 0.005083/5.5
+LAT_PER_100M = 0.001622 / 1.8
+LONG_PER_100M = 0.005083 / 5.5
 
 
 def lat_from_met(met):
-    return LAT_PER_100M * met/100.0
+    return LAT_PER_100M * met / 100.0
 
 
 def long_from_met(met):
-    return LONG_PER_100M * met/100
+    return LONG_PER_100M * met / 100
 
 
 def generate_coordinate(center_point_lat, center_point_lng, radius=10000,
