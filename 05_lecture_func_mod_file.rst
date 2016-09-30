@@ -16,6 +16,13 @@ Read & write file
 Introduce using file.
 open(), modes, close(), with, iter over lines.
 
+Iterate over lines::
+
+  with open('/etc/hosts') as f:
+      for line in f:
+          print(line, end='')
+  print("Has file f closed? {0}".format(f.closed))
+
 Module
 ------
 
@@ -25,7 +32,6 @@ Module
 
 pep8
 ----
-
 
 Function
 --------
@@ -93,7 +99,7 @@ list comprehension
 
 .. figure:: http://python-3-patterns-idioms-test.readthedocs.org/en/latest/_images/listComprehensions.gif
    :align: center
-   :alt: 
+   :alt:
 
 inside the brackets ``[ ]`` is called a *generator expression*
 ----------------------
@@ -103,7 +109,7 @@ iterable - iterator - generator:
 
 .. figure:: http://nvie.com/img/relationships.png
    :align: center
-   :alt: 
+   :alt:
 
 According to the `python
 documentation <https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions>`_,
@@ -113,22 +119,22 @@ as shown below:**
 
 ::
 
-    [expression for item1 in iterable1 if condition1 
+    [expression for item1 in iterable1 if condition1
                 for item2 in iterable2 if condition2
                 ...
                 for itemN in iterableN if conditionN ]
 
 .. figure:: http://thelivingpearl.com/files/2013/01/wpid-450px-International_Morse_Code.svg-2013-01-8-08-28.png
    :align: center
-   :alt: 
+   :alt:
 
 .. figure:: http://thelivingpearl.com/files/2013/01/wpid-SOS_morse_code-2013-01-8-08-28.png
    :align: center
-   :alt: 
+   :alt:
 
 ::
 
-    MORSE_CODE = {'A': '.-',     'B': '-...',   'C': '-.-.', 
+    MORSE_CODE = {'A': '.-',     'B': '-...',   'C': '-.-.',
                 'D': '-..',    'E': '.',      'F': '..-.',
                 'G': '--.',    'H': '....',   'I': '..',
                 'J': '.---',   'K': '-.-',    'L': '.-..',
@@ -140,7 +146,7 @@ as shown below:**
                 '0': '-----',  '1': '.----',  '2': '..---',
                 '3': '...--',  '4': '....-',  '5': '.....',
                 '6': '-....',  '7': '--...',  '8': '---..',
-                '9': '----.' 
+                '9': '----.'
             }
 
     # copy from here: http://bit.ly/pyfml_morse
