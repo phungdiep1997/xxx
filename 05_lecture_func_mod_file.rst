@@ -50,7 +50,7 @@ Function
 - Side effect
 - Function in function
 - Meaning of function which has name starts with ``_``
-- ``*args, **kwargs`` # after dict only
+- ``*args, **kwargs, print(*args)``  # after dict only
 - Recursive function
 
 Global variable
