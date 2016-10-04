@@ -15,7 +15,7 @@ How to write a software
 What now?
 ---------
 
-https://docs.python.org/2/tutorial/whatnow.html
+https://docs.python.org/3/tutorial/whatnow.html
 
 Web developer
 ~~~~~~~~~~~~~
