@@ -7,7 +7,7 @@ String
 - Create string
 - Single quote, double quote
 - Triple quote
-- Multi lines
+- Multi lines: ``triple quote, \\, ( ) ``
 - Escaping ``\n \t \\ \' \"``
 - Automatically concat
 - Indexing
