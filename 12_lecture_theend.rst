@@ -97,3 +97,8 @@ become hacker
 -------------
 
 http://www.catb.org/esr/faqs/hacker-howto.html
+
+write review on facebook
+------------------------
+
+https://www.facebook.com/pyfml/reviews
