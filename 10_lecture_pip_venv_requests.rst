@@ -41,7 +41,7 @@ Install
 
 On Ubuntu::
 
-  sudo apt-get install -y python-pip
+  sudo apt-get install -y python3-pip
 
 Command
 ~~~~~~~
