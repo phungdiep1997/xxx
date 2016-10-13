@@ -23,7 +23,7 @@ Variable
 Name
 ----
 
-It's the hardest problem
+It's the hardest problem: http://pymi.vn/tutorial/naming/, 
 http://www.slideshare.net/pirhilton/how-to-name-things-the-hardest-problem-in-programming
 
 Binding
@@ -39,7 +39,7 @@ name --binding--> object
 
 - use id() to get "identify" of an object.
 - two names bind to same object with have id(x) == id(y)
-- #TODO add objgraph for above example here.
+
 
 Deleting name
 -------------
