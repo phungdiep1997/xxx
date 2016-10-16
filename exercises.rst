@@ -7,3 +7,5 @@ Exercises
    :glob:
 
    exercises/*
+
+Additional exercises: https://www.hackerrank.com/domains/python/py-introduction
