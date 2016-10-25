@@ -4,7 +4,7 @@ Exercises 3.x
 Chú ý: do chưa học function nên mỗi bài
 có đầu vào thì học viên có thể đặt biến::
 
-  input = dauvao
+  input_data = dauvao
 
 Nếu đầu vào nằm trong 1 khoảng thì học viên
 chọn bất kỳ 1 số trong khoảng đó.
@@ -23,13 +23,13 @@ phải - của dạng binary của số đầu vào.
 
 Ví dụ::
 
-  input = 5 # (0b101)
+  input_data = 5 # (0b101)
   output = 1
 
-  input = 24 (11000)
+  input_data = 24 (11000)
   output = 1000
 
-  input = 9 (1001)
+  input_data = 9 (1001)
   output = 1
 
 Hàm có sẵn: bin(10) == '0b1010'
@@ -37,7 +37,7 @@ Hàm có sẵn: bin(10) == '0b1010'
 Bài 3.2
 -------
 
-- input: một số nguyên
+- input_data: một số nguyên
 
 - output: in ra màn hình:
 
@@ -53,16 +53,16 @@ Bài 3.3
 Viết chương trình loại bỏ phần mở rộng của một tên file bất kỳ.
 Ví dụ::
 
-  input = '....slsslslsls...sls'
+  input_data = '....slsslslsls...sls'
   output = '....slsslslsls..'
 
-  input = 'maria.ozawa.mp9'
+  input_data = 'maria.ozawa.mp9'
   output = 'maria.ozawa'
 
 Bài 3.4
 -------
 
-- input = range(5, 16)
+- input_data = range(5, 16)
 
 - output: in ra thành cặp
 
@@ -85,7 +85,7 @@ Tháng 2 tính 28 ngày.
 
 Ví dụ:
 
-- input: 2
+- input_data: 2
 
 - output: February 28
 
