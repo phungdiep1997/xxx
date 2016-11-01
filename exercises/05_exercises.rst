@@ -75,6 +75,7 @@ Mỗi dòng 1 số, với độ dài các cột bằng chiều dài của bin
 Output :
 
 .. code-block::
+
     decimal     octal           hex         bin
         1           1           1           1
         2           2           2           10
