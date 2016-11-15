@@ -89,3 +89,21 @@ Ex8
 - Các ký tự "\t" "\n", " " có codepoint là bao nhiêu?
 
 Gợi ý: dùng ``chr()``, ``ord()``.
+
+Ex9
+---
+
+- Write a function that translate alphabet to morse code (translate
+space to a custom separator)
+- Write a function that translate morse code to alphabet with a
+parameter as separator for spaces before translating, remove all
+special characters, except a-z, 0-9 and spaces.
+
+Ex10
+----
+
+Cho dữ liệu đầu vào như sau: http://bit.ly/pyfml_vn_provinces
+
+Dùng list comprehensions để:
+- Tạo 1 list chứa tên, dân số của các thành phố có tên bắt đầu bằng chữ H.
+- Tạo 1 list chứa tên, dân số của các thành phố có dân số trên 1 triệu.
