@@ -174,5 +174,7 @@ Cho dữ liệu đầu vào như sau:
 
 
 Dùng list comprehensions để:
+
 - Tạo 1 list chứa tên, dân số của các thành phố có tên bắt đầu bằng chữ H.
+
 - Tạo 1 list chứa tên, dân số của các thành phố có dân số trên 1 triệu.
