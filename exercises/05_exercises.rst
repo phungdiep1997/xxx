@@ -95,6 +95,7 @@ Ex9
 
 - Write a function that translates alphabet to morse code (translates
 space to a custom separator)
+
 - Write a function that translates morse code to alphabet with a
 parameter as separator for spaces before translating, remove all
 special characters, except a-z, 0-9 and spaces.
