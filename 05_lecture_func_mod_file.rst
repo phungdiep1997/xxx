@@ -53,6 +53,11 @@ Function
 - ``*args, **kwargs, print(*args)``  # after dict only
 - Recursive function
 
+::
+    def calculate_average_age(first_age, second_age):
+        total_of_all_ages = first_age + second_age
+        return total_of_all_ages / 2
+
 Global variable
 ---------------
 
