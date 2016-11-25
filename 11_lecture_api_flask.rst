@@ -1,40 +1,41 @@
 Lecture 11
 ==========
-locals vs kwargs
-----------------
 
-Pdb
----
+What is API?
+------------
 
-- When script *doesn't run*, what to do?
-- ``python -m pdb /path/script.py -t option``
+- Application programming interface.
+- Endpoints
+- Slug
+- URL
+- URI
 
-TDD
----
+Flask
+-----
 
-- unittest
-- BDD
-- http://flask.pocoo.org/docs/0.10/testing/
-- https://docs.djangoproject.com/en/1.8/topics/testing/
+Components
+~~~~~~~~~~
 
-concurrency
------------
+- Routing
+- Templating
 
-- threading
-- multiprocess
-- sync - async:
-  https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/
-- gevent
+Exercise: write an endpoint that return list of running process
+(ps xau) in JSON format::
+
+  [
+    {
+      'PID': NUMBER,
+      'CPU': PERCENT_CPU,
+      'MEM': PERCENT_MEM,
+      'CMD': COMMAND,
+    },
+    {...}
+  ]
 
 StackOverFlow
 -------------
 
 http://stackoverflow.com/questions/tagged/python
-
-LBYL
-----
-
-https://docs.python.org/2/glossary.html#term-lbyl
 
 Terms
 -----

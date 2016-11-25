@@ -1,5 +1,17 @@
 Lecture 08
 ==========
+
+decorator
+---------
+
+- functions are object.
+- function is callable.
+- function which returns other function
+- use @ notation
+- just syntactic sugar
+- check all syntactic sugars: ``+``, ``-``, ``__getitem__``,
+  ``__str__``.
+
 Stdlib
 ---------
 
@@ -7,11 +19,6 @@ GitLab issues
 -------------
 
 https://gitlab.com/hvn_familug/pyfml1604/issues
-
-exception
-----------
-
-- also a control flow
 
 script
 ------
@@ -31,12 +38,6 @@ lambda
 
 - https://docs.python.org/3/glossary.html#term-lambda
 - map, filter
-
-decorator
----------
-
-- function which returns a function
-- use @ notation
 
 copy
 ----
@@ -109,8 +110,15 @@ json
       ],
       "message": "Validation Failed"
   }
-  
-  
+
+TDD
+---
+
+- unittest
+- BDD
+- http://flask.pocoo.org/docs/0.10/testing/
+- https://docs.djangoproject.com/en/1.8/topics/testing/
+
 yaml
 ----
 

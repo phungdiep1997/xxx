@@ -119,6 +119,15 @@ Requests
 - HTTP client, FireFox web console: https://developer.mozilla.org/en/docs/Tools/Web_Console
 - HTTP methods: http://flask.pocoo.org/docs/0.10/quickstart/#http-methods
 
+Concurrency
+-----------
+
+- threading
+- multiprocess
+- sync - async:
+  https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/
+- gevent
+
 BeautifulSoup4
 --------------
 

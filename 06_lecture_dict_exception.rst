@@ -1,11 +1,30 @@
 Lecture 06
 =========
+
+Iterable
+--------
+
+Iterator
+--------
+
+- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
+- what is iterate?
+- Convert to a list?
+- list??
+
+Generator
+---------
+
+- https://docs.python.org/3/glossary.html#term-generator
+- Return generator expression::
+
+    return (s for s in students)
+
 Reading code
 ------------
 
 - Important than write
 - Let's practice
-
 
 Linting
 -------

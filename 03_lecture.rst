@@ -33,6 +33,12 @@ Exception
 - except vs except Exception
 - multiple except clauses vs using tuple
 - why they know what to except
+- also a control flow
+
+LBYL
+----
+
+https://docs.python.org/2/glossary.html#term-lbyl
 
 Ternary
 -------

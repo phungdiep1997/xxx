@@ -56,6 +56,12 @@ logging
 - debug/info/warning/error/critical
 - do not format log, let logger does that.
 
+Pdb
+---
+
+- When script *doesn't run*, what to do?
+- ``python -m pdb /path/script.py -t option``
+
 collections
 -----------
 
@@ -64,28 +70,6 @@ collections
 - defaultdict
 - deque
 - OrderedDict
-
-generator
----------
-
-- https://docs.python.org/3/glossary.html#term-generator
-- Return generator expression::
-
-    return (s for s in students)
-
-iterator
---------
-
-- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
-- what is iterate?
-- Convert to a list?
-- list??
-
-special methods
----------------
-
-- callable object: __call__
-- accessing value by using index: __getitem__
 
 itertools
 ---------
