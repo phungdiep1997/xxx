@@ -37,7 +37,15 @@ Function
 --------
 
 - Built-in functions
-- User-defined function
+- User-defined function::
+
+    def func_name(arg1, args):  # function signature
+        '''Docstring
+        end of docstring'''
+
+        body_of_function
+        return something
+
 - Function name, indent
 - Return None, return value
 - Keyword argument, position argument
