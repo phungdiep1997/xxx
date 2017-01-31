@@ -20,7 +20,7 @@ thì từ ``attitude`` có giá trị bằng 100
 
 Tính giá trị của các từ:
 
-Input: ["masturbation", pussy", "discipline", "beer", "familug"]
+Input: ["masterchef", pussy", "discipline", "beer", "familug", "pymi"]
 
 Output: list chứa "điểm" tương ứng của các từ.
 
@@ -80,3 +80,24 @@ Print out list of all numbers in this string.
 Output::
 
   [12, 11, 23, 10]
+
+Bài 4.7
+-------
+
+Có 10 thiên can::
+
+  ['giáp', 'ất', 'bính', 'đinh', 'mậu', 'kỷ', 'canh', 'tân', 'nhâm', 'quý']
+
+Và 12 địa chi::
+
+  ['tý', 'sửu', 'dần', 'mão', 'thìn', 'tị', 'ngọ', 'mui', 'thân', 'dậu',
+   'tuất', 'hợi']
+
+Biết năm 2017 là năm "đinh dậu", in ra màn hình "can chi" tương ứng
+của các năm từ 1990 đến 2020.
+
+Output::
+
+  1990, Canh Ngọ
+  1991, Tân Mùi
+  ...
