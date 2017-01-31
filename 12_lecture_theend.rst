@@ -102,3 +102,9 @@ write review on facebook
 ------------------------
 
 https://www.facebook.com/pyfml/reviews
+
+Interview questions
+-------------------
+
+- https://www.toptal.com/python#hiring-guide
+- https://docs.python.org/3/faq/programming.html
