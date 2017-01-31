@@ -56,8 +56,8 @@ Ví dụ::
   input_data = '....slsslslsls...sls'
   output = '....slsslslsls..'
 
-  input_data = 'maria.ozawa.mp9'
-  output = 'maria.ozawa'
+  input_data = 'maria.data.mp9'
+  output = 'maria.data'
 
 Bài 3.4
 -------
