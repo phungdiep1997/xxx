@@ -42,5 +42,5 @@ Number
 - exception understanding
 - indentation
 - float precision
-- modulo application: convert to binary, find even/odd, cryptography, 
-  minimize size of problem
+- modulo application: convert to binary, find even/odd, cryptography,
+  minify size of problems
