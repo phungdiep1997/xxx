@@ -9,13 +9,23 @@ String
 - Triple quote
 - Multi lines: ``triple quote, \\, ( ) ``
 - Escaping ``\n \t \\ \' \"``
-- Automatically concat
-- Indexing
-- Slicing
-- Reverse
-- len()
+- What happen when we write s = "Python"   " Glory" ?
+- We have s = "Python is great", I want to get only "Pet" from s,
+  how to do that?
+- We have s = "Python is great", I want to get only "Python", and only "great",
+  how to do that?
+- I have "Apple", I want "elppA", how to do it?
+- How many characters are there in this string?
+  s = "lỡ buông lời yêu em, sợ em xa lánh \
+       biết sao giờ vì chỉ thấy nắng trong tim mình"
+  How to not count them manually but use Python?
+  ``len`` stands for ``length``
+- What happen when I want to have "Jython" from s = "Python" if I try:
+  s[0] = "J"
+  What's wrong, why?
+- Formatting
+
 - ASCII, Unicode, bits and byte.
-- Immutable
 
 Variable
 --------
@@ -23,7 +33,7 @@ Variable
 Name
 ----
 
-It's the hardest problem: http://pymi.vn/tutorial/naming/, 
+It's the hardest problem: http://pymi.vn/tutorial/naming/,
 http://www.slideshare.net/pirhilton/how-to-name-things-the-hardest-problem-in-programming
 
 Binding
@@ -77,8 +87,10 @@ Builtin functions
 
 https://docs.python.org/3/library/functions.html
 
+- help
 - all
 - any
+- hex, int, str, octal type
 - chr
 - dir
 - globals()
