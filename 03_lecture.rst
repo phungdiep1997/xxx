@@ -7,16 +7,26 @@ Introduce to git
 - Create gitlab.com account
 - TODO at home: install git
 
-Membership test
----------------
+List
+----
 
-``in``
+- How to create an empty list?
+- How to create a list with strings?
+- How to create a list with numbers?
+- Given::
 
-Boolean
--------
+    numbers = [1,2,3]
 
-- and/or/not
-- short-circuit (``True and False and 1/0``)
+  How to have first item set to 5?
+- How to check is ``7`` in above list (test membership)?
+- How to check if 2 list are equals?
+- What happen when plus (+) two lists?
+- How to add an element to a list?
+- We can indexing and slice list like with string, how
+  to reverse a list? It returns WHAT?
+- 9 methods, built-in function ``reversed``, ``sorted``
+  Each method RETURN what?
+- list comprehension (map/filter), use only when need a list
 
 Control flow
 ------------
@@ -48,22 +58,6 @@ Assign either value to a variable base on condition::
   x = 5
   is_even = True if x %2 == 0 else False
   print is_even
-
-List
-----
-
-- Create empty list
-- Assign element
-- Compare
-- Plus (+)
-- Check membership (``x in list``)::
-
-    if x in range(100000): # algorithm complexity O(N)
-
-- Check membership of ``dict`` is ``O(1) - constant``
-- 9 methods, built-in function ``reversed``, ``sorted``
-- Reverse with ``li[::-1]``
-- list comprehension (map/filter), only when need a list
 
 Built-in Functions
 ------------------
