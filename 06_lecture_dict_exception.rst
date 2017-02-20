@@ -69,6 +69,10 @@ Dictionary
 - Example with nested dict
 - Dict keys has no order
 - Introduction to JSON, serialization.
+- Check membership (``x in list``)::
+
+    if x in range(100000): # algorithm complexity O(N)
+- Check membership of ``dict`` is ``O(1) - constant``
 
 Function kwargs
 ---------------
