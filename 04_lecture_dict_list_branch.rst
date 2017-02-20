@@ -13,27 +13,6 @@ SSH key
 - Create ssh
 - Add ssh key
 
-List
-----
-
-- How to create an empty list?
-- How to create a list with strings?
-- How to create a list with numbers?
-- Given::
-
-    numbers = [1,2,3]
-
-  How to have first item set to 5?
-- How to check is ``7`` in above list?
-- How to check if 2 list are equals?
-- What happen when plus (+) two lists?
-- How to add an element to a list?
-- We can indexing and slice list like with string, how
-  to reverse a list? It returns WHAT?
-- 9 methods, built-in function ``reversed``, ``sorted``
-  Each method RETURN what?
-- list comprehension (map/filter), use only when need a list
-
 Identity test
 -------------
 
