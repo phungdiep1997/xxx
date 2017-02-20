@@ -24,8 +24,9 @@ String
   s[0] = "J"
   What's wrong, why?
 - Formatting
-
 - ASCII, Unicode, bits and byte.
+- HOMEWORK: write code that prints output when you copy and paste it on
+  interpreter, it prints "Hello PyFML".
 
 Variable
 --------
