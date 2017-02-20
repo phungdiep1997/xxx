@@ -44,3 +44,9 @@ Number
 - float precision
 - modulo application: convert to binary, find even/odd, cryptography,
   minify size of problems
+
+Boolean
+-------
+
+- and/or/not
+- short-circuit (``True and False and 1/0``)
