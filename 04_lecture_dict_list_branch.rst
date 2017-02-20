@@ -4,45 +4,73 @@ Lecture 04
 Git basic
 ---------
 
+See :doc:`/git`
+
 SSH key
 ~~~~~~~
 
+(Optional - only if user use Linux/OSX)
+- Create ssh
 - Add ssh key
-- Clone
+
+List
+----
+
+- How to create an empty list?
+- How to create a list with strings?
+- How to create a list with numbers?
+- Given::
+
+    numbers = [1,2,3]
+
+  How to have first item set to 5?
+- How to check is ``7`` in above list?
+- How to check if 2 list are equals?
+- What happen when plus (+) two lists?
+- How to add an element to a list?
+- We can indexing and slice list like with string, how
+  to reverse a list? It returns WHAT?
+- 9 methods, built-in function ``reversed``, ``sorted``
+  Each method RETURN what?
+- list comprehension (map/filter), use only when need a list
 
 Identity test
 -------------
 
-``is``
+- Given code::
 
-Implement and implementation
-----------------------------
+    x = [1,2,3]
+    y = x
+    x[0] = 4
 
-User-defined function
-----------------------------
+  What is y now?
 
-double = lambda x: x * 2
-print(double(2))
-
-sum2 = lambda x, y: x + y
-
-Writing python to file
-----------------------
-
-Why command line
-----------------
-
-- Powerful
-- Easy to copy/paste, no screenshot
-- Easy to guide other
-- Understand command line will allow using GUI app
-- basic CLI: http://www.familug.org/2012/03/ccgu-cat-cut-grep-uniq.html
+- Use ``id`` to check ID
+- Use ``is`` to know if same ID
 
 Tuple
 -----
 
 - Immutable
 - When list, when tuple
+
+What is implement?
+------------------
+
+User-defined function
+---------------------
+
+double = lambda x: x * 2
+print(double(2))
+
+sum2 = lambda x, y: x + y
+
+Python module
+-------------
+
+- What is a Python module?
+- How to write a python module?
+- How to run a Python module?
 
 Comparision
 -----------
@@ -55,6 +83,7 @@ Comparision
 Import
 ------
 
+- math
 - import antigravity
 - xkcd.com, news.ycombinator.com
 - random
