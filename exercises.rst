@@ -23,7 +23,7 @@ in ra từ 1 đến 4, học viên viết vào file vừa tạo với nội dung
 
 Và chạy file này với lệnh::
 
-  python2 3_1.py
+  python 3_1.py
 
 Copy và paste kết quả vào cuối file ``3_1.py``::
 
