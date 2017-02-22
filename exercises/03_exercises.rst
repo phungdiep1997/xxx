@@ -62,15 +62,15 @@ Ví dụ::
 Bài 3.4
 -------
 
-- input_data = range(5, 16)
+- input_data = ["I", "Love", "You", "Chiu", "Chiu"]
 
 - output: in ra thành cặp
 
 Ví dụ::
 
-  1 5
-  2 6
-  3 7
+  1 I
+  2 Love
+  3 You
   ... cho đến hết
 
 Gợi ý: có thể dùng enumerate()
