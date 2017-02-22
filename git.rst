@@ -99,6 +99,10 @@ Our workflow
 
     git push origin MYNAME_master # origin is remote name (default), MYNAME_master is branch name
 
+  .. note::
+
+    You can only push to BRANCHX when you checked out branch BRANCHX
+
 - Now you have your base branch. Every time you do homework, checkout
   ``MYNAME_master`` an create new branch. E.g: MYNAME_ex3
   And commit, push, create MR against ``MYNAME_master``
