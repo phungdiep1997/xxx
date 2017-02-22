@@ -4,6 +4,9 @@ Exercises
 Hướng dẫn làm bài tập
 ---------------------
 
+Tất cả bài tập phải làm vào trong thư mục ``exercises``, có thể tạo thư
+mục con tuỳ ý, miễn là nằm trong ``exercises`` để được kiểm tra tự động.
+
 Với mỗi bài tập, tạo một file với tên::
 
   tenhocvien_X.Y.py
