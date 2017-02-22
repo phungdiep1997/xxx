@@ -15,13 +15,9 @@ Contents:
    lectures.rst
    exercises.rst
    FAQ.rst
-   exercise_guide.rst
-
-
 
 .. Indices and tables
     ==================
     * :ref:`genindex`
     * :ref:`modindex`
     * :ref:`search`
-
