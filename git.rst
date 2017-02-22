@@ -86,6 +86,23 @@ Merge request (MR)
 - review on MR
 - pull request on Github (https://github.com/saltstack/salt/pulls)
 
+Our workflow
+------------
+
+- Clone repo
+- Checkout ``master`` branch; run ``git pull`` to get latest version.
+- Create new branch start with your name::
+
+    git checkout -b MYNAME_master
+
+- Push to server::
+
+    git push origin MYNAME_master # origin is remote name (default), MYNAME_master is branch name
+
+- Now you have your base branch. Every time you do homework, checkout
+  ``MYNAME_master`` an create new branch. E.g: MYNAME_ex3
+  And commit, push, create MR against ``MYNAME_master``
+
 Cheat sheet
 -----------
 
