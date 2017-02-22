@@ -12,28 +12,6 @@ Principal principles
 - Hệ thống bài tập phong phú, lấy từ kinh nghiệm thực tế.
 - Đi vào bản chất vấn đề, no magic!
 
-Mentor
-------
-
-Viet Hung Nguyen
-~~~~~~~~~~~~~~~~
-
-- Nick: HVN, hvnsweeting
-- DOB: 1990 Feb 09 :aquarius:
-- From: Dien Bien Phu city, Dien Bien, Viet Nam
-- Email: hvn@familug.org OR hvnsweeting@gmail.com
-- Gitlab: hvn_familug
-- Skype: hvnsweeting
-- Facebook: hvnsweeting
-- Anything else: hvnsweeting
-- Homepage: http://www.familug.org
-- Github: http://github.com/hvnsweeting
-
-Hoang Thanh Long
-----------------
-
-# TBD
-
 Side topics
 -----------
 
@@ -58,9 +36,36 @@ Teaching guide
   not: list is a compound data structure, here is how to create a list...
 - no reading/writing teaching
 
-Doc build
+Test code
+~~~~~~~~~
+
+- Run ``make``
+
+Build doc
 ~~~~~~~~~
 
 - Create virtualenv
-- Install requirements-doc.txt
-- Run ``make html``
+- Run ``pip install -r requirements-doc.txt``
+- Run ``make html`` # make sure you have ``make`` command
+
+Authors
+-------
+
+Viet Hung Nguyen
+~~~~~~~~~~~~~~~~
+
+- Nick: HVN, hvnsweeting
+- DOB: 1990 Feb 09 :aquarius:
+- From: Dien Bien Phu city, Dien Bien, Viet Nam
+- Email: hvn@familug.org OR hvnsweeting@gmail.com
+- Gitlab: hvn_familug
+- Skype: hvnsweeting
+- Facebook: hvnsweeting
+- Anything else: hvnsweeting
+- Homepage: http://www.familug.org
+- Github: http://github.com/hvnsweeting
+
+Hoang Thanh Long
+----------------
+
+# TBD
