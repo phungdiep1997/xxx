@@ -1,6 +1,7 @@
 image: python:3-slim
 
 before_script:
+  - apt-get update && apt-get install -y make
   - pip install flake8 pytest
 
 test:
