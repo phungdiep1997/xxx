@@ -12,4 +12,4 @@ def test_code_comply_to_pep8_flake8():
     if out:
         assert False, ("Code does not comply to "
                        "PEP8 https://www.python.org/dev/peps/pep-0008 \n"
-                       + "\n".join(out.splitlines()))
+                       + out.decode())
