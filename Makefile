@@ -20,7 +20,7 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
 all:
-	cd exercises; pytest -vvv; cd -
+	cd exercises; pytest -vvv
 
 .PHONY: help
 help:
