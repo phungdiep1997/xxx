@@ -107,6 +107,26 @@ Our workflow
   ``HN1702_MYNAME_master`` an create new branch. E.g: HN1702_MYNAME_ex3
   And commit, push, create MR against ``HN1702_MYNAME_master``
 
+Dùng script nopbai.py
+~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+    Chú ý, bài tập phải là file có đuôi .py, đặt trong thư mục exercises
+
+Nếu gặp khó khăn khi dùng Git, chạy script nopbai.py với tên branch
+cần tạo để nộp bài. Ví dụ::
+
+  [hvn:~/me/pyfml] $ python nopbai.py hcm1702_hvnex4
+  Đang lấy thông tin mới từ GitLab
+  Your branch is up-to-date with 'origin/master'.
+  HEAD is now at b36db6b Add prefix to branch name
+  [hcm1702_hvnex4 0d74273] hcm1702_hvnex4 add exs
+   1 file changed, 0 insertions(+), 0 deletions(-)
+    create mode 100644 exercises/ex45.py
+    Nộp bài thành công
+    Vào https://gitlab.com/pyfml/pyfml/merge_requests để tạo Merge Request.
+
 Cheat sheet
 -----------
 
