@@ -1,62 +1,35 @@
-Lecture 06
-=========
+6. Import, Set, Dict
+====================
 
-Iterable
---------
+Import
+------
 
-Iterator
---------
+- math
+- import antigravity
+- import this
+- xkcd.com, news.ycombinator.com
+- random
 
-- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
-- what is iterate?
-- Convert to a list?
-- list??
+Python module
+-------------
 
-Generator
----------
+- What is a Python module?
+- How to write a python module?
+- How to run a Python module?
 
-- https://docs.python.org/3/glossary.html#term-generator
-- Return generator expression::
-
-    return (s for s in students)
-
-Reading code
-------------
-
-- Important than write
-- Let's practice
-
-Linting
--------
-
-What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    tool that flags suspicious usage in software written in any computer
-    language
-
-PyLint:
--------
-
-Install pylint: https://www.pylint.org/#install
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-``sudo apt-get install pylint``
-
-or ``pip install pylint``
-
-usage: `read the docs <https://docs.pylint.org/>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-basic usage: ``pylint /path/to/mymodule.py``
-
-Git
+Set
 ---
 
-- git diff
-- git show
-- git log --graph
-- workflow: checkout develop -> pull -> new_branch -> merge -> develop
+- Like list, but uniq items.
+- Unordered, so there is no indexing
+- Use set to ``-``
+- Convert a list to a set
+- dict.keys() are a set
+
+Compare with is and ==
+----------------------
+
+- Use ``is`` only for boolean, ``None``, empty tuple.
 
 Dictionary
 ----------
@@ -74,43 +47,13 @@ Dictionary
     if x in range(100000): # algorithm complexity O(N)
 - Check membership of ``dict`` is ``O(1) - constant``
 
-Function kwargs
----------------
+Iterable
+--------
 
-- ``*args, **kwargs``
+List, tuple, dict, set, string.
 
-Pickle
-------
+Reading code
+------------
 
-JSON
-----
-
-YAML
-----
-
-Set
----
-
-- Like list, but uniq items.
-- Unordered, so there is no indexing
-- Use set to ``-``
-- Convert a list to a set
-- dict.keys() are a set
-
-Compare with is and ==
-----------------------
-
-- Use ``is`` only for boolean, ``None``, empty tuple.
-
-Module
-------
-
-- import modulename
-- from module import name, namespace pollution
-- __init__.py
-
-Misc
-----
-
-- continue, break in loop
-- any, all
+- Important than write
+- Let's practice https://github.com/saltstack/salt/blob/develop/salt/state.py

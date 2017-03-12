@@ -1,5 +1,10 @@
-Lecture 02
-==========
+2. List, string, name
+=====================
+
+List
+----
+
+- Create list, append, pop
 
 String
 ------
@@ -76,12 +81,6 @@ And Garbage collector will collect object, remove it from memory.
 Deletion of a name removes the binding of that name from the local or global
 namespace, depending on whether the name occurs in a global statement in the
 same code block. If the name is unbound, a NameError exception will be raised.
-
-Hashing
--------
-
-- hash function
-- hash()
 
 Builtin functions
 -----------------

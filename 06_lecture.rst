@@ -1,9 +1,5 @@
-Lecture 05
-=========
-Create and del object
----------------------
-
-del xyz
+6. File, JSON, Function, Module, Lint
+=====================================
 
 IO
 --
@@ -23,15 +19,22 @@ Iterate over lines::
           print(line, end='')
   print("Has file f closed? {0}".format(f.closed))
 
-Module
+JSON
+----
+
+CSV
+---
+
+Pickle
 ------
 
-- import modulename
-- from module import name, namespace pollution
-- __init__.py
+User-defined function
+---------------------
 
-pep8
-----
+double = lambda x: x * 2
+print(double(2))
+
+sum2 = lambda x, y: x + y
 
 Function
 --------
@@ -66,6 +69,13 @@ Function
         total_of_all_ages = first_age + second_age
         return total_of_all_ages / 2
 
+Module
+------
+
+- import modulename
+- from module import name, namespace pollution
+- __init__.py
+
 Global variable
 ---------------
 
@@ -73,66 +83,42 @@ Global variable
 - Compare to local variable
 - Global is evil
 
+Generator
+---------
 
-::
+- https://docs.python.org/3/glossary.html#term-generator
+- Return generator expression::
 
-    v = range(1, 10, 2)
-    # python 3 range returns <range>(generator) instead of list, similar to xrange in python 2
+    return (s for s in students)
 
-::
+Iterator
+--------
 
-    print(list(v))
+- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
+- what is iterate?
+- Convert to a list?
+- list??
 
-::
+Linting
+-------
 
-    [1, 3, 5, 7, 9]
+What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-list comprehension
-------------
+    tool that flags suspicious usage in software written in any computer
+    language
 
-::
+PyLint:
+-------
 
-    # let's do list comprehension
+Install pylint: https://www.pylint.org/#install
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    squares = [x**2 for x in v]
-    squares
+``sudo apt-get install pylint``
 
-::
+or ``pip install pylint``
 
-    [1, 9, 25, 49, 81]
+usage: `read the docs <https://docs.pylint.org/>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-::
-
-    # list comprehension with condition (optional)
-    [x**2 for x in v if x%3 == 0]
-
-::
-
-    [9, 81]
-
-.. figure:: http://python-3-patterns-idioms-test.readthedocs.org/en/latest/_images/listComprehensions.gif
-   :align: center
-   :alt:
-
-inside the brackets ``[ ]`` is called a *generator expression*
-----------------------
-
-iterable - iterator - generator:
---------------------------------
-
-.. figure:: http://nvie.com/img/relationships.png
-   :align: center
-   :alt:
-
-According to the `python
-documentation <https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions>`_,
-**a list comprehension consists of square brackets containing an
-expression followed by a for clause and zero or more for or if clauses
-as shown below:**
-
-::
-
-    [expression for item1 in iterable1 if condition1
-                for item2 in iterable2 if condition2
-                ...
-                for itemN in iterableN if conditionN ]
+basic usage: ``pylint /path/to/mymodule.py``

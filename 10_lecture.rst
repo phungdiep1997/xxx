@@ -1,9 +1,11 @@
 Lecture 10
 =========
-Preparing
----------
 
-- install pip and virtualenv (see tutorial below)
+Hashing
+-------
+
+- hash function
+- hash()
 
 with statement
 --------------

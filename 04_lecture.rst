@@ -1,17 +1,10 @@
-Lecture 04
-=========
+4. Git, Tuple, PEP8, ListComps
+==============================
 
 Git basic
 ---------
 
 See :doc:`/git`
-
-SSH key
-~~~~~~~
-
-(Optional - only if user use Linux/OSX)
-- Create ssh
-- Add ssh key
 
 Identity test
 -------------
@@ -27,42 +20,60 @@ Identity test
 - Use ``id`` to check ID
 - Use ``is`` to know if same ID
 
+- ``is`` True/False/None
+- ``==`` for everything else
+- ``x = range(4); y = x; x is y``
+- ``id()``
+
 Tuple
 -----
 
 - Immutable
 - When list, when tuple
 
+List comprehension
+------------------
+
+::
+
+    # let's do list comprehension
+
+    squares = [x**2 for x in v]
+    squares
+
+::
+
+    [1, 9, 25, 49, 81]
+
+::
+
+    # list comprehension with condition (optional)
+    [x**2 for x in v if x%3 == 0]
+
+::
+
+    [9, 81]
+
+.. figure:: http://python-3-patterns-idioms-test.readthedocs.org/en/latest/_images/listComprehensions.gif
+   :align: center
+   :alt:
+
+According to the `python
+documentation <https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions>`_,
+**a list comprehension consists of square brackets containing an
+expression followed by a for clause and zero or more for or if clauses
+as shown below:**
+
+::
+
+    [expression for item1 in iterable1 if condition1
+                for item2 in iterable2 if condition2
+                ...
+                for itemN in iterableN if conditionN ]
+
+
 What is implement?
 ------------------
 
-User-defined function
----------------------
-
-double = lambda x: x * 2
-print(double(2))
-
-sum2 = lambda x, y: x + y
-
-Python module
--------------
-
-- What is a Python module?
-- How to write a python module?
-- How to run a Python module?
-
-Comparision
------------
-
-- ``is`` True/False/None
-- ``==`` for everything else
-- ``x = range(4); y = x; x is y``
-- ``id()``
-
-Import
-------
-
-- math
-- import antigravity
-- xkcd.com, news.ycombinator.com
-- random
+pep8
+----
