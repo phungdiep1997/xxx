@@ -1,106 +1,27 @@
-Lecture 06
+Lecture 05
 =========
+Create and del object
+---------------------
 
-Iterable
---------
+del xyz
 
-Iterator
---------
+IO
+--
 
-- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
-- what is iterate?
-- Convert to a list?
-- list??
+Handling Input and Output.
 
-Generator
----------
+Read & write file
+-----------------
 
-- https://docs.python.org/3/glossary.html#term-generator
-- Return generator expression::
+Introduce using file.
+open(), modes, close(), with, iter over lines.
 
-    return (s for s in students)
+Iterate over lines::
 
-Reading code
-------------
-
-- Important than write
-- Let's practice
-
-Linting
--------
-
-What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    tool that flags suspicious usage in software written in any computer
-    language
-
-PyLint:
--------
-
-Install pylint: https://www.pylint.org/#install
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-``sudo apt-get install pylint``
-
-or ``pip install pylint``
-
-usage: `read the docs <https://docs.pylint.org/>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-basic usage: ``pylint /path/to/mymodule.py``
-
-Git
----
-
-- git diff
-- git show
-- git log --graph
-- workflow: checkout develop -> pull -> new_branch -> merge -> develop
-
-Dictionary
-----------
-
-- Ways to create dict: literal, dict comprehension, dict(list of tuples)
-- Only hashable objects can be used as key
-- Present several real-world dicts
-- Iterate over dict (k,v, items(), keys(), values())
-- Iterate over key only
-- Example with nested dict
-- Dict keys has no order
-- Introduction to JSON, serialization.
-- Check membership (``x in list``)::
-
-    if x in range(100000): # algorithm complexity O(N)
-- Check membership of ``dict`` is ``O(1) - constant``
-
-Function kwargs
----------------
-
-- ``*args, **kwargs``
-
-Pickle
-------
-
-JSON
-----
-
-YAML
-----
-
-Set
----
-
-- Like list, but uniq items.
-- Unordered, so there is no indexing
-- Use set to ``-``
-- Convert a list to a set
-- dict.keys() are a set
-
-Compare with is and ==
-----------------------
-
-- Use ``is`` only for boolean, ``None``, empty tuple.
+  with open('/etc/hosts') as f:
+      for line in f:
+          print(line, end='')
+  print("Has file f closed? {0}".format(f.closed))
 
 Module
 ------
@@ -109,8 +30,109 @@ Module
 - from module import name, namespace pollution
 - __init__.py
 
-Misc
+pep8
 ----
 
-- continue, break in loop
-- any, all
+Function
+--------
+
+- Built-in functions
+- User-defined function::
+
+    def func_name(arg1, args):  # function signature
+        '''Docstring
+        end of docstring'''
+
+        body_of_function
+        return something
+
+- Function name, indent
+- Return None, return value
+- Keyword argument, position argument
+- Default argument, position, default value types
+- Local variable scope
+- Return best practice (one type only)
+- When to write a function (need to repeat more than twice)
+- Mandatory arguments, optional arguments
+- Positional arguments, keyword arguments
+- Side effect
+- Function in function
+- Meaning of function which has name starts with ``_``
+- ``*args, **kwargs, print(*args)``  # after dict only
+- Recursive function
+
+::
+    def calculate_average_age(first_age, second_age):
+        total_of_all_ages = first_age + second_age
+        return total_of_all_ages / 2
+
+Global variable
+---------------
+
+- Create, access, modify, import
+- Compare to local variable
+- Global is evil
+
+
+::
+
+    v = range(1, 10, 2)
+    # python 3 range returns <range>(generator) instead of list, similar to xrange in python 2
+
+::
+
+    print(list(v))
+
+::
+
+    [1, 3, 5, 7, 9]
+
+list comprehension
+------------
+
+::
+
+    # let's do list comprehension
+
+    squares = [x**2 for x in v]
+    squares
+
+::
+
+    [1, 9, 25, 49, 81]
+
+::
+
+    # list comprehension with condition (optional)
+    [x**2 for x in v if x%3 == 0]
+
+::
+
+    [9, 81]
+
+.. figure:: http://python-3-patterns-idioms-test.readthedocs.org/en/latest/_images/listComprehensions.gif
+   :align: center
+   :alt:
+
+inside the brackets ``[ ]`` is called a *generator expression*
+----------------------
+
+iterable - iterator - generator:
+--------------------------------
+
+.. figure:: http://nvie.com/img/relationships.png
+   :align: center
+   :alt:
+
+According to the `python
+documentation <https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions>`_,
+**a list comprehension consists of square brackets containing an
+expression followed by a for clause and zero or more for or if clauses
+as shown below:**
+
+::
+
+    [expression for item1 in iterable1 if condition1
+                for item2 in iterable2 if condition2
+                ...
+                for itemN in iterableN if conditionN ]
