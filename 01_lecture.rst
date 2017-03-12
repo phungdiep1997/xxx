@@ -1,5 +1,5 @@
-1. Intro, interpreter, int, boolean
-===================================
+1. Intro, interpreter, number, boolean
+======================================
 
 Introducing
 -----------
