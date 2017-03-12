@@ -1,5 +1,10 @@
-11. API, Flask
-==============
+11. API, Flask, Sphinx
+======================
+
+Sphinx
+------
+
+Make doc from .rst files in this directory.
 
 What is API?
 ------------
