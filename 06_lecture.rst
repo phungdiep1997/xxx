@@ -1,6 +1,19 @@
 6. File, JSON, Function, Module, Lint
 =====================================
 
+try/except basic
+----------------
+
+::
+
+  d = {'lactroi': 10041243}
+  try:
+      views = d['lactroi']
+  except KeyError as e:
+      print(e)
+  else:
+      print("Đứng đầu bảng xếp hạng là Lạc trôi với %d views" % views)
+
 IO
 --
 
