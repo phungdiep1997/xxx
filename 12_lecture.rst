@@ -1,5 +1,5 @@
-What now?
-=========
+What now? FAQ
+=============
 
 Concurrency
 -----------
