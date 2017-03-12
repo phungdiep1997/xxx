@@ -1,5 +1,15 @@
-Lecture 12
+What now?
 =========
+
+Concurrency
+-----------
+
+- threading
+- multiprocess
+- sync - async:
+  https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/
+- gevent
+
 Big project structure
 ---------------------
 

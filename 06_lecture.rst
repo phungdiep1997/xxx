@@ -19,8 +19,31 @@ Iterate over lines::
           print(line, end='')
   print("Has file f closed? {0}".format(f.closed))
 
+with statement
+--------------
+
+- auto close resources.
+- context manager protocol.
+  https://docs.python.org/2/whatsnew/2.6.html?highlight=contextmanager#pep-343-the-with-statement
+
 JSON
 ----
+
+- often used for API
+- Dump json::
+
+  $ echo '{"message": "Validation Failed", "errors": [{"field": "title", "code": "missing_field", "resource": "Issue"}]}' | python -m json.tool
+  {
+      "errors": [
+          {
+              "code": "missing_field",
+              "field": "title",
+              "resource": "Issue"
+          }
+      ],
+      "message": "Validation Failed"
+  }
+
 
 CSV
 ---

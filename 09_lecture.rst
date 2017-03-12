@@ -1,5 +1,25 @@
-Lecture 09
-==========
+9. Stdlib: collections, pdb, time, datetime, logging,...
+========================================================
+
+collections
+-----------
+
+- namedtuple
+- Counter
+- defaultdict
+- deque
+- OrderedDict
+
+Pdb
+---
+
+The python debugger https://docs.python.org/3/library/pdb.html ::
+
+  python3 -m pdb myscript.py
+
+
+- When script *doesn't run*, what to do?
+- ``python -m pdb /path/script.py -t option``
 
 Reading code is more important that write
 -----------------------------------------
@@ -56,20 +76,6 @@ logging
 - debug/info/warning/error/critical
 - do not format log, let logger does that.
 
-Pdb
----
-
-- When script *doesn't run*, what to do?
-- ``python -m pdb /path/script.py -t option``
-
-collections
------------
-
-- namedtuple
-- Counter
-- defaultdict
-- deque
-- OrderedDict
 
 itertools
 ---------

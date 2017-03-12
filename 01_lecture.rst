@@ -1,5 +1,5 @@
-Lecture 01
-==========
+1. Intro, interpreter, int, boolean
+===================================
 
 Introducing
 -----------

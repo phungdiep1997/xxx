@@ -1,18 +1,11 @@
-Lecture 10
-=========
+10. HTTP, requests
+==================
 
 Hashing
 -------
 
 - hash function
 - hash()
-
-with statement
---------------
-
-- auto close resources.
-- context manager protocol.
-  https://docs.python.org/2/whatsnew/2.6.html?highlight=contextmanager#pep-343-the-with-statement
 
 introspection
 -------------
@@ -32,85 +25,15 @@ introspection
     else:
         print 'tra dep bo ve'
 
-Pip
----
+HTTP
+----
 
-- https://pip.pypa.io/en/stable/
-- http://pypi.python.org/
+Python HTTP server
+~~~~~~~~~~~~~~~~~~
 
-Install
-~~~~~~~
+Run a server::
 
-On Ubuntu::
-
-  sudo apt-get install -y python3-pip
-
-Command
-~~~~~~~
-
-- Install a package::
-
-  $ pip install package_name
-
-- Uninstall a package::
-
-  $ pip uninstall package_name
-
-- List all installed packages::
-
-  $ pip freeze
-  $ pip freeze > requirements.txt
-
-- Install all requirements from requirements.txt::
-
-  $ pip install -r requirements.txt
-
-- Search package::
-
-  $ pip search pkg_name
-
-- Options:
-
-  ``-v`` ``-d``
-
-- Pip install packages from github:
-
-  $ pip install git+git://github.com/myuser/foo.git@v123
-
-Virtualenv
-----------
-
-Install
-~~~~~~~
-
-On ubuntu 12.04::
-
-  sudo apt-get install -y python-virtualenv
-
-Using
-~~~~~
-
-Create new virtualenv::
-
-  virtualenv venv_name
-
-Use environment ``venv_name``::
-
-  source venv_name/bin/activate
-
-Stop using::
-
-  deactivate
-
-Install package inside virtualenv::
-
-  pip install ipython requests pep8 ipdb six
-
-Be social
----------
-
-- Register an account on `LinkedIn <https://www.linkedin.com/>`_
-- Register an account on `GitHub <https://github.com/>`_ and create 1 repo.
+  python -m http.server
 
 Requests
 --------
@@ -121,20 +44,14 @@ Requests
 - HTTP client, FireFox web console: https://developer.mozilla.org/en/docs/Tools/Web_Console
 - HTTP methods: http://flask.pocoo.org/docs/0.10/quickstart/#http-methods
 
-Concurrency
------------
-
-- threading
-- multiprocess
-- sync - async:
-  https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/
-- gevent
-
 BeautifulSoup4
 --------------
 
 - parsing HTML
 - http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+Scrapy
+------
 
 Phg
 ---

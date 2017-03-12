@@ -1,5 +1,83 @@
-Lecture 08
-==========
+8. virtualenv, pip, stdlib, decorator
+=====================================
+
+Virtualenv
+----------
+
+https://docs.python.org/3/tutorial/venv.html
+
+Install
+~~~~~~~
+
+For python2 only.  On ubuntu 12.04::
+
+  sudo apt-get install -y python-virtualenv
+
+Python3 built-in already, no need to install.
+
+Using
+~~~~~
+
+Create new virtualenv::
+
+  python3 -m env
+
+Use environment ``env``::
+
+  source env/bin/activate
+
+Stop using::
+
+  deactivate
+
+Install package inside virtualenv::
+
+  pip install ipython requests pep8 ipdb six
+
+Pip
+---
+
+- https://pip.pypa.io/en/stable/
+- http://pypi.python.org/
+
+Install
+~~~~~~~
+
+On Ubuntu::
+
+  sudo apt-get install -y python3-pip
+
+Command
+~~~~~~~
+
+- Install a package::
+
+  $ pip install package_name
+
+- Uninstall a package::
+
+  $ pip uninstall package_name
+
+- List all installed packages::
+
+  $ pip freeze
+  $ pip freeze > requirements.txt
+
+- Install all requirements from requirements.txt::
+
+  $ pip install -r requirements.txt
+
+- Search package::
+
+  $ pip search pkg_name
+
+- Options:
+
+  ``-v`` ``-d``
+
+- Pip install packages from github:
+
+  $ pip install git+git://github.com/myuser/foo.git@v123
 
 decorator
 ---------
@@ -15,11 +93,6 @@ decorator
 Stdlib
 ---------
 
-GitLab issues
--------------
-
-https://gitlab.com/hvn_familug/pyfml1604/issues
-
 script
 ------
 
@@ -32,12 +105,6 @@ script
 
 - #!/usr/bin/env python3
 - https://docs.python.org/3/faq/library.html#how-do-i-make-a-python-script-executable-on-unix
-
-lambda
-------
-
-- https://docs.python.org/3/glossary.html#term-lambda
-- map, filter
 
 copy
 ----
@@ -70,13 +137,6 @@ sys
 - sys.exit
 - sys.argv
 
-pdb
----
-
-The python debugger https://docs.python.org/3/library/pdb.html ::
-
-  python3 -m pdb myscript.py
-
 timeit
 ------
 
@@ -93,23 +153,12 @@ Run a server::
 
   python -m http.server
 
-json
+yaml
 ----
 
-- often used for API
-- Dump json::
-
-  $ echo '{"message": "Validation Failed", "errors": [{"field": "title", "code": "missing_field", "resource": "Issue"}]}' | python -m json.tool
-  {
-      "errors": [
-          {
-              "code": "missing_field",
-              "field": "title",
-              "resource": "Issue"
-          }
-      ],
-      "message": "Validation Failed"
-  }
+- http://www.familug.org/2013/06/yaml-la-gi.html
+- often used for config files
+- pip install pyyaml, import yaml, yaml.dump, yaml.load
 
 TDD
 ---
@@ -119,12 +168,6 @@ TDD
 - http://flask.pocoo.org/docs/0.10/testing/
 - https://docs.djangoproject.com/en/1.8/topics/testing/
 
-yaml
-----
-
-- http://www.familug.org/2013/06/yaml-la-gi.html
-- often used for config files
-- pip install pyyaml, import yaml, yaml.dump, yaml.load
 
 algorithm time complexity
 -------------------------
