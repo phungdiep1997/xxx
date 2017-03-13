@@ -1,70 +1,110 @@
 Exercises 7.x
 =========
 
-Notice:
+Yêu cầu:
 
-- All exercise must done in separate module, which must use check
-``if __name__ == ...`` in the end of file.
+- Tất cả các bài tập phải viết vào một module riêng, trong mỗi file phải có dòng
 
-- All of files must be executable.
+``if __name__ == ...`` cuối mỗi file. (https://docs.python.org/3/tutorial/modules.html#executing-modules-as-scripts)
+
+- Tất cả các module đều phải là script (không yêu cầu với Windows) https://docs.python.org/3/tutorial/appendix.html#executable-python-scripts
 
 7.1
 ---
 
-Simulate a person go to market to build food. There are:
+Viết 1 một trò chơi đánh đối kháng giữa 2 nhân vật. Mỗi nhân vật có tên, máu, vũ khí.
+Vũ khí chọn random khi tạo nhân vật.
 
-- Buyer (money, bag)
-- Seller (money, goods)
-- Goods (name, size, price)
-- Bag of buyer. (size)
+Viết 2 class để biểu diễn nhân vật và vũ khí:
 
-Seller has two apples(10k/each), three bottle of milks
-(40k/bottle), 3 Kg of beef (100k/kg).
+    class Fighter(object):
+        codehere
 
-Let buyer buys each at least one.
+    class Weapon(object):
+        codehere
 
-Use class to represent that.
+
+Cho 2 nhân vật lần lượt đánh nhau, print kết quả mỗi lượt đánh, print người thắng.
 
 7.2
 ---
 
-Simulate Pig game https://en.wikipedia.org/wiki/Pig_%28dice_game%29
+Giả lập việc một người tiến lên hoặc lùi lại, biết xác suất người này tiến hay lùi đều là 50 %.
+Với 100 trường hợp, tính tỷ lệ người này tiến lên phía trước với mỗi trường hợp.
 
-- With 1 player, he will play 100 games, each game he rolls 20 times, calculate winning rate.
+Trường hợp 1: chỉ bước 1 bước
+Trường hợp 2: bước 2 bước
+...
+Trường hợp 100: bước 100 bước
 
-- With 2 players, they will play 100 games, calculate winning rate of each.
+Output có dạng: [0.5, 0.51, ...]
+
+Đối với học viên học data science, yêu cầu sử dụng thư viện numpy để làm.
 
 7.3
 ---
 
-Implement function that returns Nth Fibonacci number in recursive way.
+Viết function giải bài toán tháp Hà Nội lừng danh (https://en.wikipedia.org/wiki/Tower_of_Hanoi
+hoặc https://vi.wikipedia.org/wiki/Th%C3%A1p_H%C3%A0_N%E1%BB%99i).
 
-7.4
----
+::
 
-Implement Tower of Hanoi https://en.wikipedia.org/wiki/Tower_of_Hanoi
+	def hanoi_tower(n):
+	    code_here
+
+In ra từng bước chuyển đĩa.
 
 7.5
 ---
 
 Viết chương trình thực hiện sự chuyển đổi sau:
 
-  input: a
-  output: a
+  input: [a, abbbccccdddd, xxyyyxyyx]
+  output: [a, abb3cc4dd4, xx2yy3xyy2x]
 
-  input: abbbccccdddd
-  output: abb3cc4dd4
-
-  input: xxyyyxyyx
-  output: xx2yy3xyy2x
-
-Giải thích: Những chữ cái không lặp lại thì oputut giữ nguyên chữ cái đó. Những
+Giải thích: Những chữ cái không lặp lại thì output giữ nguyên chữ cái đó. Những
 chữ cái liên tiếp sẽ in ra 2 lần + số lần lặp lại liên tiếp.
+
+Đây là một biến thể của một thuật toán nén dữ liệu có tên Run-length encoding (RLE).
 
 7.6
 ---
 
-Sử dụng OOP:
-Viết 1 script giả lập trận đấu giữa 2 nhân vật. Mỗi nhân vật có tên, máu, vũ khí.
-Vũ khí chọn random khi tạo nhân vật.
-Cho 2 nhân vật lần lượt đánh nhau, print kết quả mỗi lượt đánh, print người thắng.
+Biết dir(object) sẽ trả về tất cả thuộc tính (attribute) của object đó.
+Module cũng là object.
+
+In [11]: import os
+
+In [12]: len(dir(os))
+Out[12]: 284
+
+Tìm:
+- os nằm ở file nào?
+- os và sys có chung các attribute nào?
+- code file ứng với thư viện os có bao nhiêu dòng?
+
+7.7
+---
+
+Khi một chương trình đang chạy, nếu bấm Ctrl-C sẽ tạo ra 1 exception KeyboardInterrupt::
+
+	while True:
+	    print(1)
+	# bấm Ctrl C
+	1
+	...
+	1
+	^C1
+	1
+...
+	---------------------------------------------------------------------------
+	KeyboardInterrupt                         Traceback (most recent call last)
+	<ipython-input-21-becd8c056cb9> in <module>()
+	      1 while True:
+	----> 2     print(1)
+	      3
+
+
+Viết script với try và except để xử lý khi người dùng bấm Ctrl C, chương trình vẫn
+chạy bình thường.
+Để đóng chương trình, dùng task manager và chọn python process đang dùng nhiều CPU nhất.
