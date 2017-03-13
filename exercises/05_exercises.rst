@@ -1,17 +1,29 @@
 Exercises 5.x
-======
+=============
 
 Ex1
 ---
 
-Viết lại tất cả các bài trong 3.X, 5.1 có sử dụng try/except để xử lý các lỗicó
-thể xảy ra (Tất cả các funtion viết trong 1 file).
+Biết mã hex của các màu trong Google logo là:
 
+Xanh lá: #3cba54
+Vàng: #f4c20d
+Đỏ: #db3236
+Xanh da trời: #4885ed
+
+Biết cách để tạo chữ G màu xanh da trời dùng code HTML sau::
+
+  <span style="color:#4885ed">G</span>
+
+Viết code python in ra màn hình (hoặc ghi ra file index.html)
+code HTML để tạo ra logo của Google với màu sắc chính xác.
+
+Mở file này bằng trình duyệt web để xem kết quả.
 
 Ex2
 ---
 
-Kiểm tra OS của máy đang dùng  xem có là Linux based OS không?
+Kiểm tra OS của máy đang dùng xem có là Linux based OS không?
 
 Hướng dẫn: sử dụng sys module.
 
@@ -20,49 +32,48 @@ https://docs.python.org/2/library/sys.html
 Ex3
 ---
 
-Write a function that prints the numbers from 1 to 100. But for multiples of
-three print “Fizz” instead of the number and for the multiples of five print
-“Buzz”. For numbers which are multiples of both three and five print
-“FizzBuzz”.
+In màn hình các số nguyên từ 1 đến 100, nhưng với bội của 3, in ra chữ "Fizz" 
+thay vì số đo. Với bội của 5, in ra chữ "Buzz" thay vì số đó. Với các số
+là bội của cả 3 và 5 thì in ra chữ "FizzBuzz" thay vì số đó.
 
 Ex4
 ---
 
-Viết function tạo ra 1 file chứa 30 triệu dòng, các dòng lẻ chứa 30 số 1,
+Viết code tạo ra 1 file chứa 30 triệu dòng, các dòng lẻ chứa 30 số 1,
 các dòng chẵn chứa giá trị 2 * số dòng hiện tại.
 
-Viết function in ra 10 dòng cuối cùng của file nói trên.
+Sau khi tạo xong file, đọc file và in ra 10 dòng cuối cùng của file nói trên.
 
-(Nâng cao) Viết function in ra kích thước của file nói trên tính theo byte.
+(Nâng cao) Viết code in ra kích thước của file nói trên tính theo byte.
 
 Ex5
 ---
 
-Using names.txt https://projecteuler.net/project/resources/p022_names.txt
-(right click and 'Save Link/Target As...'),
-a 46K text file containing over five-thousand first names, begin by sorting it
-into alphabetical order. Then working out the alphabetical value for each name,
-multiply this value by its alphabetical position in the list to obtain a name
-score.
+Sử dụng file names.txt https://projecteuler.net/project/resources/p022_names.txt
+(chuột phải và chọn 'Save Link/Target As...'), đó là file text nặng 46K, 
+chứa hơn 5000 từ. Đầu tiên hãy sắp xếp các từ này theo thứ tự bảng chữ cái 
+(alphabetical). Sau đó tính giá trị cho mỗi từ, nhân giá trị này với thứ tự của nó 
+trong list đã sắp xếp để thu được điểm của từ này.
 
-For example, when the list is sorted into alphabetical order, COLIN,
-which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list.
-So, COLIN would obtain a score of 938 × 53 = 49714.
+Ví dụ, khi list đã được sắp xếp theo thứ tự bảng chữ cái, COLIN, có giá trị là
+ 3 + 15 + 12 + 9 + 14 = 53, và đó là từ thứ 938 trong list.
+ 
+Vì vậy, COLIN có điểm là 938 × 53 = 49714.
 
-What is the total of all the name scores in the file?
+Tổng điểm của tất cả các từ trong file là bao nhiêu?
 
-https://projecteuler.net/problem=22
+Kiểm tra kết quả bằng https://projecteuler.net/problem=22
 
 
 Ex6
 ---
 
-Starting in the top left corner of a 2×2 grid, and only being able to move to
-the right and down, there are exactly 6 routes to the bottom right corner.
+Bắt đầu từ góc trên bên trái của ô có kích thước 2x2, và chỉ cho phép di chuyển 
+sang phải hoặc xuống dưới, có chính xác 6 đường để đi đến góc dưới bên phải.
 
-How many such routes are there through a 10×10 grid?
+Có bao nhiêu đường như vậy trong ô 10x10? 
 
-Similar to https://projecteuler.net/problem=15
+Kiểm tra kết quả bằng https://projecteuler.net/problem=15
 
 Ex7
 ---
@@ -71,7 +82,7 @@ In ra mà hình các biễu diễn tương ứng ở hệ thập phân (decimal)
 (octal), thập lục phân (heximal) của các số từ 1 đến 20.
 
 Gợi ý: sử dụng bin(), oct(), hex().
-Mỗi dòng 1 số, với độ dài các cột bằng chiều dài của bin
+Mỗi dòng 1 số, với độ rộng các cột bằng số ký tự trong biểu diễn nhị phân.
 Output :
 
 .. code-block::
@@ -90,18 +101,8 @@ Ex8
 
 Gợi ý: dùng ``chr()``, ``ord()``.
 
-Ex9
+Ex9 
 ---
-
-- Write a function that translates alphabet to morse code (translates
-space to a custom separator)
-
-- Write a function that translates morse code to alphabet with a
-parameter as separator for spaces before translating, remove all
-special characters, except a-z, 0-9 and spaces.
-
-Ex10
-----
 
 Cho dữ liệu đầu vào như sau:
 
@@ -179,3 +180,8 @@ Dùng list comprehensions để:
 - Tạo 1 list chứa tên, dân số của các thành phố có tên bắt đầu bằng chữ H.
 
 - Tạo 1 list chứa tên, dân số của các thành phố có dân số trên 1 triệu.
+
+Ex10
+----
+
+Viết một function nhận đầu vào là một chữ cái hoặc số, trả về "morse code" (https://en.wikipedia.org/wiki/Morse_code) tương ứng.

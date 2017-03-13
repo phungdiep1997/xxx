@@ -112,20 +112,18 @@ Xét các số nguyên dương < 100, in ra các số chia hết cho 5 theo dạ
 Bài 3.8
 -------
 
-In ra list chứa các số nguyên dương nhỏ hơn 1000 chia hết cho cả 3 và 5
+Tạo 1 list chứa các số nguyên dương nhỏ hơn 1000 là bội của 3 hoặc 5.
 
 Tính tổng của các số đó.
 
 Gợi ý: dùng hàm sum()
 
-https://docs.python.org/2/library/functions.html#sum
+https://docs.python.org/3/library/functions.html#sum
 
 Bài 3.9
 -------
 
-a, b, c là các số nguyên dương nhỏ hơn 10 và:
-
-a + b/c = 10
+a, b, c là các số nguyên dương nhỏ hơn 10, biết a + b/c = 10
 
 In ra list chứa các bộ số thỏa mãn điều kiện trên (a, b, c có thể trùng nhau).
 
@@ -140,12 +138,14 @@ In ra 10 số nguyên tố đầu tiên trên cùng một dòng.
 
 - Output: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29
 
+Gợi ý: dùng print(2, end=', ')
 
-External excercise
--------------------
 
-Bài 1:
-------
+Bài tập nâng cao
+----------------
+
+Bài 3.11
+--------
 
 
   a) Viết 1 chương trình tìm kí tự xuất hiện nhiều nhất trong 1 chuỗi
@@ -160,8 +160,8 @@ Bài 1:
       'toi la aia' -->> t: 1, o: 1, i: 2, l: 1, a: 3
 
 
-Bài 2:
-------
+Bài 3.12
+--------
 
 
   a) Viết 1 chương trình đổi 1 số từ cơ số 10 sang cơ số 16
@@ -175,7 +175,7 @@ Bài 2:
 
   - output:
 
-    - các phần tử đồng thời xuất hiện trong 2 list
+    - các phần tử cùng lúc xuất hiện trong 2 list
 
     - các phần tử chỉ có trong list A
 
@@ -183,5 +183,4 @@ Bài 2:
 
     - tất cả các phần tử trong list A và B
 
-    - các phần tử chỉ có trong 1 trong 2 list
-
+    - các phần tử chỉ có trong 1 list (A hoặc B)
