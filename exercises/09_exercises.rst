@@ -1,7 +1,7 @@
-Exercises 10.x
-========
+9. Crawling
+===========
 
-10.1
+9.1
 ----
 
 Write a script to list all Github repositories of an user.
@@ -15,9 +15,8 @@ Form::
 
 Libs:
 
-- argparse
-- logging
 - requests
+- sys or argparse
 
 10.2
 ----
@@ -56,39 +55,39 @@ Link API: https://api.stackexchange.com/docs
 
 
 Sử dụng ``requests`` viết một script lấy toàn bộ thông tin các Page của
-các quán cafe, trà ở trung tâm Hà Nội bằng **Facebook Graph API**.  
+các quán cafe, trà ở trung tâm Hà Nội bằng **Facebook Graph API**.
 
-Các từ khóa: ``"coffee", "tea", "cafe", "caphe", "tra da"``.  
+Các từ khóa: ``"coffee", "tea", "cafe", "caphe", "tra da"``.
 
-Tọa độ: ``21.027875, 105.853654`` với bán kính là ``1km``.  
+Tọa độ: ``21.027875, 105.853654`` với bán kính là ``1km``.
 
-Trả về kết quả bao gồm ``name, id, location, website`` của mỗi Page.  
+Trả về kết quả bao gồm ``name, id, location, website`` của mỗi Page.
 
-- Hướng dẫn dùng Facebook API:  
+- Hướng dẫn dùng Facebook API:
 
-https://developers.facebook.com/docs/graph-api/using-graph-api#search  
+https://developers.facebook.com/docs/graph-api/using-graph-api#search
 
-- Sử dụng Grapth API Explorer để thử:  
+- Sử dụng Grapth API Explorer để thử:
 
-https://developers.facebook.com/tools-and-support/  
+https://developers.facebook.com/tools-and-support/
 
-- Sử dụng App ID và App Secret sau để lấy token:  
+- Sử dụng App ID và App Secret sau để lấy token:
 
-``App ID: 1537101179929447``  
+``App ID: 1537101179929447``
 
-``App Secret: 4da789d9de5f279a58051e629a4c6ef3``  
+``App Secret: 4da789d9de5f279a58051e629a4c6ef3``
 
-- Hướng dẫn tạo Token: 
+- Hướng dẫn tạo Token:
 
-https://developers.facebook.com/docs/facebook-login/access-tokens/#apptokens  
+https://developers.facebook.com/docs/facebook-login/access-tokens/#apptokens
 
-**Chú ý**:  
+**Chú ý**:
 
 - Để ý đến phần paging của mỗi response trả về. Hãy bấm vào đó để xem chuyện gì
-sẽ xảy ra.  
+sẽ xảy ra.
 
-- Kết quả trả về xuất ra một file ``hanoi_coffee.txt``.  
+- Kết quả trả về xuất ra một file ``hanoi_coffee.txt``.
 
-- Hãy sử dụng option ``indent`` cho function ``json.dump()``  
+- Hãy sử dụng option ``indent`` cho function ``json.dump()``
 
 **Nếu cảm thấy khó, hãy tạo issue hoặc hỏi trực tiếp trên Skype, Slack.**
