@@ -1,5 +1,5 @@
-6. File, JSON, Function, Module, Lint
-=====================================
+6. File, JSON, Function, Exception
+==================================
 
 try/except basic
 ----------------
@@ -94,6 +94,7 @@ Function
 - When to write a function (need to repeat more than twice)
 - Mandatory arguments, optional arguments
 - Positional arguments, keyword arguments
+- Function aliasing: https://github.com/saltstack/salt/blob/develop/salt/states/virtualenv_mod.py#L274
 - Side effect
 - Function in function
 - Meaning of function which has name starts with ``_``
@@ -104,57 +105,3 @@ Function
     def calculate_average_age(first_age, second_age):
         total_of_all_ages = first_age + second_age
         return total_of_all_ages / 2
-
-Module
-------
-
-- import modulename
-- from module import name, namespace pollution
-- __init__.py
-
-Global variable
----------------
-
-- Create, access, modify, import
-- Compare to local variable
-- Global is evil
-
-Generator
----------
-
-- https://docs.python.org/3/glossary.html#term-generator
-- Return generator expression::
-
-    return (s for s in students)
-
-Iterator
---------
-
-- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
-- what is iterate?
-- Convert to a list?
-- list??
-
-Linting
--------
-
-What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    tool that flags suspicious usage in software written in any computer
-    language
-
-PyLint:
--------
-
-Install pylint: https://www.pylint.org/#install
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-``sudo apt-get install pylint``
-
-or ``pip install pylint``
-
-usage: `read the docs <https://docs.pylint.org/>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-basic usage: ``pylint /path/to/mymodule.py``
