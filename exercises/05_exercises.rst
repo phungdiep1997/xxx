@@ -32,7 +32,7 @@ https://docs.python.org/2/library/sys.html
 Ex3
 ---
 
-In màn hình các số nguyên từ 1 đến 100, nhưng với bội của 3, in ra chữ "Fizz" 
+In màn hình các số nguyên từ 1 đến 100, nhưng với bội của 3, in ra chữ "Fizz"
 thay vì số đo. Với bội của 5, in ra chữ "Buzz" thay vì số đó. Với các số
 là bội của cả 3 và 5 thì in ra chữ "FizzBuzz" thay vì số đó.
 
@@ -50,14 +50,14 @@ Ex5
 ---
 
 Sử dụng file names.txt https://projecteuler.net/project/resources/p022_names.txt
-(chuột phải và chọn 'Save Link/Target As...'), đó là file text nặng 46K, 
-chứa hơn 5000 từ. Đầu tiên hãy sắp xếp các từ này theo thứ tự bảng chữ cái 
-(alphabetical). Sau đó tính giá trị cho mỗi từ, nhân giá trị này với thứ tự của nó 
+(chuột phải và chọn 'Save Link/Target As...'), đó là file text nặng 46K,
+chứa hơn 5000 từ. Đầu tiên hãy sắp xếp các từ này theo thứ tự bảng chữ cái
+(alphabetical). Sau đó tính giá trị cho mỗi từ, nhân giá trị này với thứ tự của nó
 trong list đã sắp xếp để thu được điểm của từ này.
 
 Ví dụ, khi list đã được sắp xếp theo thứ tự bảng chữ cái, COLIN, có giá trị là
  3 + 15 + 12 + 9 + 14 = 53, và đó là từ thứ 938 trong list.
- 
+
 Vì vậy, COLIN có điểm là 938 × 53 = 49714.
 
 Tổng điểm của tất cả các từ trong file là bao nhiêu?
@@ -68,10 +68,10 @@ Kiểm tra kết quả bằng https://projecteuler.net/problem=22
 Ex6
 ---
 
-Bắt đầu từ góc trên bên trái của ô có kích thước 2x2, và chỉ cho phép di chuyển 
+Bắt đầu từ góc trên bên trái của ô có kích thước 2x2, và chỉ cho phép di chuyển
 sang phải hoặc xuống dưới, có chính xác 6 đường để đi đến góc dưới bên phải.
 
-Có bao nhiêu đường như vậy trong ô 10x10? 
+Có bao nhiêu đường như vậy trong ô 10x10?
 
 Kiểm tra kết quả bằng https://projecteuler.net/problem=15
 
@@ -101,7 +101,7 @@ Ex8
 
 Gợi ý: dùng ``chr()``, ``ord()``.
 
-Ex9 
+Ex9
 ---
 
 Cho dữ liệu đầu vào như sau:
