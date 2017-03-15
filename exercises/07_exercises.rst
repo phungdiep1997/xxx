@@ -1,5 +1,5 @@
 Exercises 7.x
-=========
+=============
 
 Yêu cầu:
 
@@ -10,6 +10,23 @@ Yêu cầu:
 - Tất cả các module đều phải là script (không yêu cầu với Windows) https://docs.python.org/3/tutorial/appendix.html#executable-python-scripts
 
 7.1
+---
+
+https://docs.python.org/3/library/fractions.html
+
+Thư viện fractions cung cấp class Fraction để tạo ra kiểu phân số trên Python.
+
+Sử dụng Fraction để viết function sau::
+
+  def sum_fraction(string1, string2):
+      code_here
+      return FLOAT_TYPE
+
+  print(sum_fraction('1/3', '6/9'))
+
+Tham khảo: http://www.familug.org/2017/03/python-fractions-tinh-toan-phan-so-tren.html
+
+7.2
 ---
 
 Viết 1 một trò chơi đánh đối kháng giữa 2 nhân vật. Mỗi nhân vật có tên, máu, vũ khí.
@@ -23,10 +40,9 @@ Viết 2 class để biểu diễn nhân vật và vũ khí:
     class Weapon(object):
         codehere
 
-
 Cho 2 nhân vật lần lượt đánh nhau, print kết quả mỗi lượt đánh, print người thắng.
 
-7.2
+7.3
 ---
 
 Giả lập việc một người tiến lên hoặc lùi lại, biết xác suất người này tiến hay lùi đều là 50 %.
@@ -40,19 +56,6 @@ Trường hợp 100: bước 100 bước
 Output có dạng: [0.5, 0.51, ...]
 
 Đối với học viên học data science, yêu cầu sử dụng thư viện numpy để làm.
-
-7.3
----
-
-Viết function giải bài toán tháp Hà Nội lừng danh (https://en.wikipedia.org/wiki/Tower_of_Hanoi
-hoặc https://vi.wikipedia.org/wiki/Th%C3%A1p_H%C3%A0_N%E1%BB%99i).
-
-::
-
-	def hanoi_tower(n):
-	    code_here
-
-In ra từng bước chuyển đĩa.
 
 7.5
 ---
