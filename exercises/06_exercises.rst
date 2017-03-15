@@ -123,3 +123,17 @@ Truy cập đường dẫn https://api.github.com/repos/saltstack/salt/contribut
 Lưu lại thành file salt.txt. Sử dụng JSON để chuyển dữ liệu thành dữ liệu trong
 Python.
 Với mỗi phần tử trong list, in ra login, url và contributions.
+
+6.11
+----
+
+Viết hàm đệ quy (recursive function) giải bài toán tháp Hà Nội lừng danh
+(https://en.wikipedia.org/wiki/Tower_of_Hanoi
+hoặc https://vi.wikipedia.org/wiki/Th%C3%A1p_H%C3%A0_N%E1%BB%99i).
+
+::
+
+	def hanoi_tower(n):
+	    code_here
+
+In ra từng bước chuyển đĩa.
