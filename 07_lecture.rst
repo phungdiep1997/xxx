@@ -1,5 +1,5 @@
-7. Exception, Package, class
-============================
+7. Exception, Package, Virtualenv, Pip, Class
+=============================================
 
 Exception
 ---------
@@ -10,34 +10,11 @@ Exception
 - why they know what to except
 - also a control flow
 
-LBYL
-----
+LBYL vs EAFP
+------------
 
-https://docs.python.org/2/glossary.html#term-lbyl
-
-Namespace & global variable
----------------------------
-
-- Each module is a namespace
-- Create, access, modify, import
-- Compare to local variable
-- Global is evil
-
-Generator
----------
-
-- https://docs.python.org/3/glossary.html#term-generator
-- Return generator expression::
-
-    return (s for s in students)
-
-Iterator
---------
-
-- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
-- what is iterate?
-- Convert to a list?
-- list??
+https://docs.python.org/3/glossary.html#term-lbyl
+https://docs.python.org/3/glossary.html#term-eafp
 
 Module
 ------
@@ -55,42 +32,125 @@ Module
 
 - how import works? - how it choose what to import?
 
+Namespace & global variable
+---------------------------
+
+- Each module is a namespace
+- Create, access, modify, import
+- Compare to local variable
+- Global is evil
+
+Virtualenv
+----------
+
+https://docs.python.org/3/tutorial/venv.html
+
+Install
+~~~~~~~
+
+For python2 only.  On ubuntu 12.04::
+
+  sudo apt-get install -y python-virtualenv
+
+Python3 built-in already, no need to install.
+
+Using
+~~~~~
+
+Create new virtualenv::
+
+  python3 -m env
+
+Use environment ``env``::
+
+  source env/bin/activate
+
+Stop using::
+
+  deactivate
+
+Install package inside virtualenv::
+
+  pip install ipython requests pep8 ipdb six
+
+Pip
+---
+
+- https://pip.pypa.io/en/stable/
+- http://pypi.python.org/
+
+Install
+~~~~~~~
+
+On Ubuntu::
+
+  sudo apt-get install -y python3-pip
+
+Command
+~~~~~~~
+
+- Install a package::
+
+  $ pip install package_name
+
+- Uninstall a package::
+
+  $ pip uninstall package_name
+
+- List all installed packages::
+
+  $ pip freeze
+  $ pip freeze > requirements.txt
+
+- Install all requirements from requirements.txt::
+
+  $ pip install -r requirements.txt
+
+- Search package::
+
+  $ pip search pkg_name
+
+- Options:
+
+  ``-v`` ``-d``
+
+- Pip install packages from github:
+
+  $ pip install git+git://github.com/myuser/foo.git@v123
+
+Iterator
+--------
+
+- how ``for`` works: https://docs.python.org/3/tutorial/classes.html#iterators
+- what is iterate?
+- Convert to a list?
+- list??
+
 Class
 -----
 
-- Class is a way to represent data (compare to python builtin-data type).
+- We already used class::
+
+  In [4]: import inspect
+
+  In [5]: [inspect.isclass(i) for i in (int, float, str, list, dict, set, bool)]
+  Out[5]: [True, True, True, True, True, True, True]
+
+- Create new integer object by int(6)
+- Create new dict object by dict::
+
+  In [9]: dict(name='Python', birth=1991)
+  Out[9]: {'birth': 1991, 'name': 'Python'}
+
+- Define MyDict that mimic above dict.
+- Class is a way to represent data.
 - Class is a way to organize code (compare to module).
-- Singleton design pattern.
-- Inheritance and example with a software which needs multiple output
-  (HTML, PDF, Text).
+- __init__, __str__
+- Single inheritance.
 
-Linting
--------
+Exception hierarchy
+-------------------
 
-What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exceptions are classes.
 
-    tool that flags suspicious usage in software written in any computer
-    language
-
-PyLint:
--------
-
-Install pylint: https://www.pylint.org/#install
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-``sudo apt-get install pylint``
-
-or ``pip install pylint``
-
-usage: `read the docs <https://docs.pylint.org/>`_
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-basic usage: ``pylint /path/to/mymodule.py``
-
-
-Duck typing
-~~~~~~~~~~~
-
-Monkey Patch
-------------
+https://docs.python.org/3/library/exceptions.html#exception-hierarchy
