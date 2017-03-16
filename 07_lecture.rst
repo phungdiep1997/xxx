@@ -40,26 +40,19 @@ Namespace & global variable
 - Compare to local variable
 - Global is evil
 
-Virtualenv
-----------
-
-https://docs.python.org/3/tutorial/venv.html
-
 Install
 ~~~~~~~
 
-For python2 only.  On ubuntu 12.04::
 
-  sudo apt-get install -y python-virtualenv
+  sudo pip install virtualenv # sudo on OSX, Linux
 
-Python3 built-in already, no need to install.
 
 Using
 ~~~~~
 
 Create new virtualenv::
 
-  python3 -m env
+  virtualenv -p python3 env
 
 Use environment ``env``::
 
@@ -78,13 +71,6 @@ Pip
 
 - https://pip.pypa.io/en/stable/
 - http://pypi.python.org/
-
-Install
-~~~~~~~
-
-On Ubuntu::
-
-  sudo apt-get install -y python3-pip
 
 Command
 ~~~~~~~
