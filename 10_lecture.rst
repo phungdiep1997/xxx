@@ -4,7 +4,7 @@
 random
 ------
 
-https://docs.python.org/2/faq/library.html#mathematics-and-numerics
+https://docs.python.org/3/faq/library.html#mathematics-and-numerics
 
 Hashing
 -------
@@ -12,32 +12,47 @@ Hashing
 - hash function
 - hash()
 
-introspection
--------------
+numpy
+-----
 
-- https://en.wikipedia.org/wiki/Type_introspection
-- ``dir``
-- import inspect
-- how IDE of static typing language know wrong type function call without
-  running the code, but Python cannot?::
+http://www.scipy-lectures.org/intro/numpy/array_object.html
 
-    def love_me(yes):
-        return yes
+- import numpy as np
+- Array type: numpy.ndarray?
+- Create an array by np.array, np.ones, np.zeros, np.eyes
+- Create 1D array by: np.arange, np.linspace
+- + - * / matrix with matrix (element wise)
+- Selecting column, rows
+- Broadcasting
 
-    yes = argv[1]
-    if love_me(yes):
-        print 'xong leeeeeeeen'
-    else:
-        print 'tra dep bo ve'
+pandas
+------
 
-Phg
----
+http://pandas.pydata.org/pandas-docs/stable/10min.html
 
-- https://github.com/hvnsweeting/phg
-- https://pypi.python.org/pypi/phg
+- import pandas as pd
+- pd.Series
+- pd.DataFrame
+- Creating new DataFrame by pd.DataFrame.
+- Selecting columns, rows
+- Load from xls, csv, database
+
+matplotlib
+----------
+
+http://www.scipy-lectures.org/intro/matplotlib/index.html#introduction
+- Plot a sin chart.
+- Plot distribution of a normal population.
+- Plot histogram.
+
+scipy
+-----
+
+http://www.scipy-lectures.org/intro/scipy.html
+- Load image
+- Resize image
 
 Distributing module
 -------------------
 
-- https://docs.python.org/2/distutils/introduction.html
-- https://docs.python.org/2/install/index.html
+https://docs.python.org/3/distributing/index.html
