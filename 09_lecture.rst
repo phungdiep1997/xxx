@@ -1,89 +1,40 @@
-9. Stdlib: collections, pdb, time, datetime, logging,...
-========================================================
+9. Crawling/Scraping
+====================
 
-collections
------------
-
-- namedtuple
-- Counter
-- defaultdict
-- deque
-- OrderedDict
-
-Pdb
----
-
-The python debugger https://docs.python.org/3/library/pdb.html ::
-
-  python3 -m pdb myscript.py
-
-
-- When script *doesn't run*, what to do?
-- ``python -m pdb /path/script.py -t option``
-
-Reading code is more important that write
------------------------------------------
-
-https://github.com/saltstack/salt/blob/develop/salt/utils/__init__.py
-
-Function aliasing
------------------
-
-https://github.com/saltstack/salt/blob/develop/salt/states/virtualenv_mod.py#L274
-
-random
-------
-
-https://docs.python.org/2/faq/library.html#mathematics-and-numerics
-
-time
+HTTP
 ----
 
-- sleep()
-- time()
-- while True / time.sleep best practice
+http server - python 3 version
+-------------------------------
 
-datetime
+Run a server::
+
+  python -m http.server
+
+Requests
 --------
 
-- calculate timedelta
-- format and parse time object
+- import requests; request??
+- http://docs.python-requests.org/en/latest/user/quickstart/
+- HTTP, client-server
+- HTTP client, FireFox web console: https://developer.mozilla.org/en/docs/Tools/Web_Console
+- HTTP methods: http://flask.pocoo.org/docs/0.10/quickstart/#http-methods
 
-subprocess
-----------
+BeautifulSoup4
+--------------
 
-- The only/up-to-date way to run external commands (vs command/os.system)
-- But using lib is better.
-- import shlex
+- parsing HTML
+- http://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
-argparse
---------
-
-- much better than sys.argv
-- add_argument()
-- parse_args()
-- nargs
-- optional vs position args
-- store_true
-- help
-- default
-
-logging
--------
-
-- basicConfig
-- getLogger(__name__)
-- debug/info/warning/error/critical
-- do not format log, let logger does that.
-
-
-itertools
----------
-
-functools
----------
-
-PYMOTW
+Scrapy
 ------
 
-https://pymotw.com/3/py-modindex.html
+Output
+------
+
+- JSON
+- CSV
+- DB: SQLite
+  - Create
+  - Select
+  - Insert

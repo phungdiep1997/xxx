@@ -1,83 +1,21 @@
-8. virtualenv, pip, stdlib, decorator
-=====================================
+8. stdlib, decorator, generator, debugging
+==========================================
 
-Virtualenv
-----------
+StackOverFlow
+-------------
 
-https://docs.python.org/3/tutorial/venv.html
+http://stackoverflow.com/questions/tagged/python
 
-Install
-~~~~~~~
+Glossary
+--------
 
-For python2 only.  On ubuntu 12.04::
+Generator
+---------
 
-  sudo apt-get install -y python-virtualenv
+- https://docs.python.org/3/glossary.html#term-generator
+- Return generator expression::
 
-Python3 built-in already, no need to install.
-
-Using
-~~~~~
-
-Create new virtualenv::
-
-  python3 -m env
-
-Use environment ``env``::
-
-  source env/bin/activate
-
-Stop using::
-
-  deactivate
-
-Install package inside virtualenv::
-
-  pip install ipython requests pep8 ipdb six
-
-Pip
----
-
-- https://pip.pypa.io/en/stable/
-- http://pypi.python.org/
-
-Install
-~~~~~~~
-
-On Ubuntu::
-
-  sudo apt-get install -y python3-pip
-
-Command
-~~~~~~~
-
-- Install a package::
-
-  $ pip install package_name
-
-- Uninstall a package::
-
-  $ pip uninstall package_name
-
-- List all installed packages::
-
-  $ pip freeze
-  $ pip freeze > requirements.txt
-
-- Install all requirements from requirements.txt::
-
-  $ pip install -r requirements.txt
-
-- Search package::
-
-  $ pip search pkg_name
-
-- Options:
-
-  ``-v`` ``-d``
-
-- Pip install packages from github:
-
-  $ pip install git+git://github.com/myuser/foo.git@v123
+    return (s for s in students)
 
 decorator
 ---------
@@ -89,9 +27,6 @@ decorator
 - just syntactic sugar
 - check all syntactic sugars: ``+``, ``-``, ``__getitem__``,
   ``__str__``.
-
-Stdlib
----------
 
 script
 ------
@@ -105,6 +40,72 @@ script
 
 - #!/usr/bin/env python3
 - https://docs.python.org/3/faq/library.html#how-do-i-make-a-python-script-executable-on-unix
+
+Stdlib
+------
+
+PYMOTW
+------
+
+https://docs.python.org/3/library/
+https://docs.python.org/3/howto/
+https://pymotw.com/3/py-modindex.html
+
+time
+----
+
+- sleep()
+- time()
+- while True / time.sleep best practice
+
+pdb
+---
+
+The python debugger https://docs.python.org/3/library/pdb.html ::
+
+  python3 -m pdb myscript.py
+
+
+- When script *doesn't run*, what to do?
+- ``python -m pdb /path/script.py -t option``
+
+
+random
+------
+
+https://docs.python.org/2/faq/library.html#mathematics-and-numerics
+
+datetime
+--------
+
+- calculate timedelta
+- format and parse time object
+
+timeit
+------
+
+Use with ipython %timeit::
+
+  In [2]: %timeit 'x = range(1000,1); sorted(x)'
+  The slowest run took 381.51 times longer than the fastest. This could mean that an intermediate result is being cached
+  100000000 loops, best of 3: 13.1 ns per loop
+
+collections
+-----------
+
+- namedtuple
+- Counter
+- defaultdict
+- deque
+- OrderedDict
+
+logging
+-------
+
+- basicConfig
+- getLogger(__name__)
+- debug/info/warning/error/critical
+- do not format log, let logger does that.
 
 copy
 ----
@@ -134,24 +135,9 @@ os
 sys
 ---
 
+- sys.path
 - sys.exit
 - sys.argv
-
-timeit
-------
-
-Use with ipython %timeit::
-
-  In [2]: %timeit 'x = range(1000,1); sorted(x)'
-  The slowest run took 381.51 times longer than the fastest. This could mean that an intermediate result is being cached
-  100000000 loops, best of 3: 13.1 ns per loop
-
-http server - python 3 version
-----------------
-
-Run a server::
-
-  python -m http.server
 
 yaml
 ----
@@ -160,16 +146,37 @@ yaml
 - often used for config files
 - pip install pyyaml, import yaml, yaml.dump, yaml.load
 
-TDD
----
+Duck typing
+~~~~~~~~~~~
 
-- unittest
-- BDD
-- http://flask.pocoo.org/docs/0.10/testing/
-- https://docs.djangoproject.com/en/1.8/topics/testing/
-
+Monkey Patch
+------------
 
 algorithm time complexity
 -------------------------
 
 - Comparing O(N), O(N^2), O(lg(N)), O(N!)
+
+Linting
+-------
+
+What does ``lint`` mean? -> https://en.wikipedia.org/wiki/Lint\_(software)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    tool that flags suspicious usage in software written in any computer
+    language
+
+PyLint:
+-------
+
+Install pylint: https://www.pylint.org/#install
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``sudo apt-get install pylint``
+
+or ``pip install pylint``
+
+usage: `read the docs <https://docs.pylint.org/>`_
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+basic usage: ``pylint /path/to/mymodule.py``

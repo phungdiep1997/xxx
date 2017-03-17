@@ -1,5 +1,10 @@
-10. HTTP, requests
-==================
+10. Data science
+================
+
+random
+------
+
+https://docs.python.org/2/faq/library.html#mathematics-and-numerics
 
 Hashing
 -------
@@ -24,34 +29,6 @@ introspection
         print 'xong leeeeeeeen'
     else:
         print 'tra dep bo ve'
-
-HTTP
-----
-
-Python HTTP server
-~~~~~~~~~~~~~~~~~~
-
-Run a server::
-
-  python -m http.server
-
-Requests
---------
-
-- import requests; request??
-- http://docs.python-requests.org/en/latest/user/quickstart/
-- HTTP, client-server
-- HTTP client, FireFox web console: https://developer.mozilla.org/en/docs/Tools/Web_Console
-- HTTP methods: http://flask.pocoo.org/docs/0.10/quickstart/#http-methods
-
-BeautifulSoup4
---------------
-
-- parsing HTML
-- http://www.crummy.com/software/BeautifulSoup/bs4/doc/
-
-Scrapy
-------
 
 Phg
 ---

@@ -1,5 +1,5 @@
-11. API, Flask, Sphinx
-======================
+11. API, Flask, Jinja2, DB, ORM, Sphinx
+=======================================
 
 Sphinx
 ------
@@ -37,13 +37,21 @@ Exercise: write an endpoint that return list of running process
     {...}
   ]
 
-StackOverFlow
--------------
 
-http://stackoverflow.com/questions/tagged/python
+Jinja2
+------
 
-Terms
------
+ORM
+---
+
+TDD
+---
+
+- unittest
+- BDD
+- http://flask.pocoo.org/docs/0.10/testing/
+- https://docs.djangoproject.com/en/1.8/topics/testing/
+
 
 Top packages
 ------------
