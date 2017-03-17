@@ -40,9 +40,19 @@ Namespace & global variable
 - Compare to local variable
 - Global is evil
 
+Virtualenv
+----------
+
+https://docs.python.org/3/tutorial/venv.html
+
+For modifying sys.path of program run inside virtualenv.
+Each virtualenv is just a directory, when using pip, you install
+packages to that directory.
+
 Install
 ~~~~~~~
 
+::
 
   sudo pip install virtualenv # sudo on OSX, Linux
 
