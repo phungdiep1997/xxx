@@ -66,6 +66,37 @@ Viết decorator in ra thời gian chạy của 1 function::
 8.5
 ---
 
+Viết chương trình cứ 60 giây in ra màn hình thời gian hiện tại.
+
+Hướng dẫn: time.sleep, datetime.datetime.now
+
+8.6
+---
+
+Kiểu dữ liệu collections.Counter giúp cho việc đếm trờ nên rất dễ dàng.
+
+https://docs.python.org/3/library/collections.html#collections.Counter
+
+Cho đoạn văn bản sau::
+  
+  s = 'A Counter is a dict subclass for counting hashable objects. It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values. Counts are allowed to be any integer value including zero or negative counts. The Counter class is similar to bags or multisets in other languages.'
+
+Tìm tần suất xuất hiện của mỗi từ. In ra màn hình 3 từ xuất hiện nhiều nhất, cùng số lần xuất hiện.
+
+8.7
+---
+
+Viết một chương trình log ra màn hình:
+- "started" - ở level INFO, khi chương trình đã chạy
+- Thực hiện ghi ra đường dẫn /var/lib/pyfml/data.txt, bắt exception xảy ra và 
+  log ở level ERROR nội dung của exception.
+- "running" - ở level DEBUG, sau mỗi 5 s
+
+- Sau 1 phút, log ra màn hình dòng "exiting..." rồi kết thúc chương trình.
+
+8.8
+---
+
 Tìm và in ra số dòng trong tất cả các file trong thư mục hiện tại (bao gồm cả thư mục con).
 In ra tổng số dòng của mỗi loại file (dựa vào phần mở rộng abc.py và xyz.py là cùng loại).
 Nếu file đã đọc là python module, in ra màn hình tên của các function trong đó.
