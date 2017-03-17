@@ -19,6 +19,17 @@ Requests
 - HTTP, client-server
 - HTTP client, FireFox web console: https://developer.mozilla.org/en/docs/Tools/Web_Console
 - HTTP methods: http://flask.pocoo.org/docs/0.10/quickstart/#http-methods
+- HTTP response codes https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+Output
+------
+
+- JSON
+- CSV
+- DB: SQLite https://docs.python.org/3/library/sqlite3.html
+  - Create
+  - Select
+  - Insert
 
 BeautifulSoup4
 --------------
@@ -29,12 +40,4 @@ BeautifulSoup4
 Scrapy
 ------
 
-Output
-------
-
-- JSON
-- CSV
-- DB: SQLite
-  - Create
-  - Select
-  - Insert
+Best framework for crawling: https://scrapy.org/

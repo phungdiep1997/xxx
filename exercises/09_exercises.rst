@@ -4,16 +4,18 @@
 9.1
 ----
 
-Write a script to list all Github repositories of an user.
+Viết 1 script để liệt kê tất cả các GitHub repository của 1 user:
 
-For example, user ``hvnsweeting``, use:
+Ví dụ với user ``hvnsweeting``, sử dụng dữ liệu ở JSON format tại 
 https://api.github.com/users/hvnsweeting/repos
 
-Form::
+Câu lệnh của chương trình có dạng::
 
   githubrepos.py username
 
-Libs:
+Gợi ý:
+
+Sử dụng các thư viện: 
 
 - requests
 - sys or argparse
@@ -27,33 +29,48 @@ ra tất cả các giải từ đặc biệt -> giải 7.
 
 Lấy kết quả từ ``ketqua.net``.
 
-Form::
+Dạng của câu lệnh::
 
-  ketqua.py [NUMBER1] [NUMBER2]
+  ketqua.py [NUMBER1] [NUMBER2] [...]
 
-Libs:
+Các thư viện:
 
-- beautifulsoup4
 - requests
-- logging
+- beautifulsoup4 [tuỳ chọn]
+- argparse hay sys.argv
 
-Tips:
+Gợi ý:
 
 - ``nargs`` https://docs.python.org/2/library/argparse.html
 
 10.3
 ----
 
-- Viết script lấy top **x** câu hỏi được vote cao nhất của tag **y** trên stackoverflow.com
-
-- In ra màn hình: Title câu hỏi, link đến câu trả lời được vote cao nhất
+Viết script lấy top **N** câu hỏi được vote cao nhất của tag **LABEL** trên stackoverflow.com.
+In ra màn hình: Title câu hỏi, link đến câu trả lời được vote cao nhất
 
 Link API: https://api.stackexchange.com/docs
+
+Dạng của câu lệnh:
+
+  so.py N LABEL
 
 10.4
 ----
 
+Viết script lấy về 50 kết quả đầu tiên tìm được với từ khoá "coffee" 
+quanh toạ độ 10.779614, 106.699256 (nhà thờ Đức Bà - HCM) với bán kính 5KM.
+Ghi kết quả theo định dạng JSON vào file hcm_coffee.json. (hoặc lưu vào 1 SQLite DB)
 
+Sử dụng Google Map API
+https://developers.google.com/places/web-service/
+
+Chú ý: phải tạo "token" để có thể truy cập API.
+
+10.5
+----
+
+[Nâng cao]
 Sử dụng ``requests`` viết một script lấy toàn bộ thông tin các Page của
 các quán cafe, trà ở trung tâm Hà Nội bằng **Facebook Graph API**.
 
@@ -86,8 +103,6 @@ https://developers.facebook.com/docs/facebook-login/access-tokens/#apptokens
 - Để ý đến phần paging của mỗi response trả về. Hãy bấm vào đó để xem chuyện gì
 sẽ xảy ra.
 
-- Kết quả trả về xuất ra một file ``hanoi_coffee.txt``.
+- Kết quả trả về xuất ra một file ``hanoi_coffee.json``.
 
 - Hãy sử dụng option ``indent`` cho function ``json.dump()``
-
-**Nếu cảm thấy khó, hãy tạo issue hoặc hỏi trực tiếp trên Skype, Slack.**
