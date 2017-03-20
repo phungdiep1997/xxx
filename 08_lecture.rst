@@ -78,8 +78,12 @@ https://docs.python.org/2/faq/library.html#mathematics-and-numerics
 datetime
 --------
 
-- calculate timedelta
-- format and parse time object
+- calculate timedelta.
+  How many days are there from 2016/Feb/09 to 2017/Mar/18?
+  How many seconds?  http://www.familug.org/2014/08/python-time-delta-in-seconds.html
+- format and parse time object.
+  Given string d = '02/18/17', get the 69th days after. What is that day?
+  datetime.datetime.strptime and datetime.datetime.strftime
 
 timeit
 ------

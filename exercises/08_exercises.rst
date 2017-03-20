@@ -47,7 +47,7 @@ Gợi ý:
 - iterator, while, try/except
 
 8.4
---- 
+---
 
 Viết decorator in ra thời gian chạy của 1 function::
 
@@ -78,7 +78,7 @@ Kiểu dữ liệu collections.Counter giúp cho việc đếm trờ nên rất 
 https://docs.python.org/3/library/collections.html#collections.Counter
 
 Cho đoạn văn bản sau::
-  
+
   s = 'A Counter is a dict subclass for counting hashable objects. It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values. Counts are allowed to be any integer value including zero or negative counts. The Counter class is similar to bags or multisets in other languages.'
 
 Tìm tần suất xuất hiện của mỗi từ. In ra màn hình 3 từ xuất hiện nhiều nhất, cùng số lần xuất hiện.
@@ -88,13 +88,28 @@ Tìm tần suất xuất hiện của mỗi từ. In ra màn hình 3 từ xuất
 
 Viết một chương trình log ra màn hình:
 - "started" - ở level INFO, khi chương trình đã chạy
-- Thực hiện ghi ra đường dẫn /var/lib/pyfml/data.txt, bắt exception xảy ra và 
+- Thực hiện ghi ra đường dẫn /var/lib/pyfml/data.txt, bắt exception xảy ra và
   log ở level ERROR nội dung của exception.
 - "running" - ở level DEBUG, sau mỗi 5 s
 
 - Sau 1 phút, log ra màn hình dòng "exiting..." rồi kết thúc chương trình.
 
 8.8
+---
+
+Viết script get_version nhận vào ngày ở format <month>/<day>/year. VD: 3/28/16
+làm parameter và in ra một version được tính theo
+
+quy luật sau:
+- Version ở dạng format: <MAJOR>.<MINOR>.<PATCH>, vd: "6.9.2"
+- Từ ngày 09 tháng 02 năm 2016, phiên bản bắt đầu là "1.0.0"
+- Mỗi 28 ngày, MAJOR lại tăng thêm 1, MINOR và PATCH set về 0
+- Mỗi tuần, MINOR tăng thêm 1 và PATCH sẽ set về 0
+- Cứ mỗi ngày, PATCH lại tăng thêm 1.
+
+Kiểm tra version thu được với lần lượt các input là "02/03/16", "09/06/16"
+
+8.9
 ---
 
 Tìm và in ra số dòng trong tất cả các file trong thư mục hiện tại (bao gồm cả thư mục con).
