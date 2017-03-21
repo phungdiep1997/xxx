@@ -74,13 +74,13 @@ Bài 4.6
 
 Cho string s::
 
-  s = '12 drummers drumming, 11 pipers 23piping, 10 lords a-leaping'
+  s = 'Em ơi có bao nhiêu, 60năm cuộc đời, 20 năm đầu, sung sướng0bao lâu'
 
 Tạo ra list numbers chứa tất cả các số trong string này theo thứ tự chúng xuất hiện trong ``s``.
 
 Output::
 
-  assert numbers == [12, 11, 23, 10]
+  assert numbers == [60, 20, 0]
 
 Bài 4.7
 -------

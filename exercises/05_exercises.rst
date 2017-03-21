@@ -46,6 +46,9 @@ Sau khi tạo xong file, đọc file và in ra 10 dòng cuối cùng của file 
 
 (Nâng cao) Viết code in ra kích thước của file nói trên tính theo byte.
 
+Chú ý: để bài hoàn toàn chính xác. Nếu làm đúng cách, code sẽ chạy < 2 phút và
+sử dụng không đáng kể bộ nhớ (RAM).
+
 Ex5
 ---
 
@@ -97,7 +100,7 @@ Ex8
 
 - In ra màn hình biểu diễn của 20 mã ASCII đầu tiên.
 - In ra màn hình Unicode codepoint của các số từ 0->9, a-zA-Z.
-- Các ký tự "\t" "\n", " " có codepoint là bao nhiêu?
+- Các ký tự ``\t`` ``\n``, `` `` có codepoint là bao nhiêu?
 
 Gợi ý: dùng ``chr()``, ``ord()``.
 
