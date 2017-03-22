@@ -12,6 +12,29 @@ Glossary
 Generator
 ---------
 
+- A function which returns a generator iterator::
+
+  def gen():
+      yield 1
+      yield 2
+      yield 3
+  it = gen()
+  next(it)
+  next(it)
+  next(it)
+  next(it)
+
+- range is NOT a generator::
+
+  r = range(3) # if range is generator, r is iterator now
+  next(r) --> ?
+  it = iter(r) # so r is just like list, we need to convert it to iterator.
+  next(it)
+  next(it)
+  next(it)
+  next(it)
+
+- Generators are a simple and powerful tool for creating iterators. They are written like regular functions but use the yield statement whenever they want to return data. Each time next() is called on it, the generator resumes where it left off (it remembers all the data values and which statement was last executed).
 - https://docs.python.org/3/glossary.html#term-generator
 - Return generator expression::
 
