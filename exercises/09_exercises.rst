@@ -1,8 +1,8 @@
 9. Crawling
 ===========
 
-9.1
-----
+1
+-
 
 Viết 1 script để liệt kê tất cả các GitHub repository của 1 user:
 
@@ -20,8 +20,8 @@ Sử dụng các thư viện:
 - requests
 - sys or argparse
 
-10.2
-----
+2
+-
 
 Viết một script kiểm tra xem các số argument đầu vào có trúng lô không
 (2 số cuối trùng với một giải nào đó). Nếu không có argument nào thì print
@@ -43,8 +43,8 @@ Gợi ý:
 
 - ``nargs`` https://docs.python.org/2/library/argparse.html
 
-10.3
-----
+3
+-
 
 Viết script lấy top **N** câu hỏi được vote cao nhất của tag **LABEL** trên stackoverflow.com.
 In ra màn hình: Title câu hỏi, link đến câu trả lời được vote cao nhất
@@ -55,8 +55,8 @@ Dạng của câu lệnh:
 
   so.py N LABEL
 
-10.4
-----
+4
+-
 
 Viết script lấy về 50 kết quả đầu tiên tìm được với từ khoá "coffee" 
 quanh toạ độ 10.779614, 106.699256 (nhà thờ Đức Bà - HCM) với bán kính 5KM.
@@ -67,8 +67,8 @@ https://developers.google.com/places/web-service/
 
 Chú ý: phải tạo "token" để có thể truy cập API.
 
-10.5
-----
+5
+-
 
 [Nâng cao]
 Sử dụng ``requests`` viết một script lấy toàn bộ thông tin các Page của
