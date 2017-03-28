@@ -41,3 +41,8 @@ Scrapy
 ------
 
 Best framework for crawling: https://scrapy.org/
+
+API
+---
+
+https://github.com/toddmotto/public-apis
