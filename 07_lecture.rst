@@ -62,11 +62,11 @@ Using
 
 Create new virtualenv::
 
-  virtualenv -p python3 env
+  virtualenv -p python3 pymi
 
-Use environment ``env``::
+Use environment ``pymi``::
 
-  source env/bin/activate
+  source pymi/bin/activate
 
 Stop using::
 
@@ -74,7 +74,7 @@ Stop using::
 
 Install package inside virtualenv::
 
-  pip install ipython requests pep8 ipdb six
+  pip install -r requirements.txt
 
 Pip
 ---
