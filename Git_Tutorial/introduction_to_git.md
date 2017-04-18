@@ -276,7 +276,7 @@ abc.py  README.md
 __III. Hướng dẫn nộp bài tập qua git cho học viên PyFML__
 ---
 
-- Tạo tài khoản gitlab ( gitlab cũng là 1 dịch vụ quản lí repo như github, nhưng cho phép tạo repo private miễn phí ):
+- Tạo tài khoản gitlab ( gitlab cũng là 1 dịch vụ quản lí repo như github, nhưng cho phép tạo repo private miễn phí, bạn có thể xem thêm phần phụ lục ở cuối bài ):
 - Thêm `SSH-KEY` trên tài khoản gitlab của bạn (tương tự như github ở bên trên).
 - Clone project:
 
@@ -347,5 +347,13 @@ __IV. Phụ lục__:
 
 - Git tutorial: https://git-scm.com/book/en/v2
 - How to add a new SSH key to your GitHub account: https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+- Điểm khác nhau giữa Github và Gitlab:
+
+  - Giống nhau: Cả hai đều là các dịch vụ quản lí repo ( thư mục chứa mã nguồn của bạn ), không giới hạn số lượng repo bạn tạo ra.
+  
+  - Khác nhau: 
+    - Gitlab cho phép bạn có thể tạo repo private mà không phải trả phí, với Github bạn sẽ phải trả phí khi muốn tạo 1 repo private.
+    - Gitlab cung cấp giao diện trực quan hơn, nhiều tùy chọn hơn, thuận tiện hơn trong việc review bài tập của học viên.
 
 ---
