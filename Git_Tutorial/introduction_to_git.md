@@ -353,7 +353,9 @@ __IV. Phụ lục__:
   - Giống nhau: Cả hai đều là các dịch vụ quản lí repo ( thư mục chứa mã nguồn của bạn ), không giới hạn số lượng repo bạn tạo ra.
   
   - Khác nhau: 
+  ```
     - Gitlab cho phép bạn có thể tạo repo private mà không phải trả phí, với Github bạn sẽ phải trả phí khi muốn tạo 1 repo private.
     - Gitlab cung cấp giao diện trực quan hơn, nhiều tùy chọn hơn, thuận tiện hơn trong việc review bài tập của học viên.
+  ```
 
 ---
