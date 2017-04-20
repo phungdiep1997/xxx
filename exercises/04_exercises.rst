@@ -4,11 +4,42 @@ Exercises 4.x
 Bài 4.1
 -------
 
-Cho a, b, c là ba cạnh của tam giác vuông có chu vi 24 cm (perimeter).
-Biết độ dài các cạnh <= 10cm.
-Viết list comprehension để tìm các bộ a,b,c thoả mãn bài toán.
+Biết function `input('Bạn tên gì?')` sẽ in ra màn hình dòng chữ "Bạn tên gì?"
+và chờ bạn nhập câu trả lời. Sau khi bạn gõ câu trả lời rồi enter,
+nội dung bạn vừa gõ sẽ được function trả về::
+
+  In [4]: name = input('Bạn tên gì? ')
+  Bạn tên gì? Hưng
+
+  In [5]: print(name)
+  Hưng
+
+Viết chương trình nhận đầu vào là một địa chỉ IP (VD: 192.168.1.1),
+in ra màn hình dạng binary của từng số tương ứng.
+
+Input::
+
+  192.168.1.1
+
+Output::
+
+  11000000.10101000.1.1
+
+Note::
+
+  Trên Python2, function tương ứng tên là `raw_input`
 
 Bài 4.2
+-------
+
+Biết `0o644` là biểu diễn của giá trị `420` (hệ 10) trên hệ bát phân (8-Octal).
+Phải cộng `0o644` thêm bao nhiêu (ở dạng Octal) để thu được `0o777` ? In ra màn
+hình giá trị đó.
+
+Với người dùng Unix, mode của một file được biểu diễn ở dạng Octal, VD:
+644, 400, 777.
+
+Bài 4.3
 -------
 
 Tính "điểm" cho từ:
@@ -28,15 +59,6 @@ Gợi ý::
 
   import string
   print string.ascii_lowercase
-
-Bài 4.3
--------
-
-Cho một list ``numbers`` chứa các số (kiểu int hoặc float), tìm phần tử lớn nhất trong list.
-So sánh giá trị lớn nhất đó với max(numbers) bằng câu lệnh sau, nếu kết quả sai sẽ có exception
-xảy ra::
-
-  assert mymax == max(numbers), "wrong max"
 
 Bài 4.4
 -------
@@ -104,3 +126,19 @@ assert can_chi == [(2008, 'Mậu Tý'), (2009, 'Kỷ Sửu'), (2010, 'Canh Dần
                    (2014, 'Giáp Ngọ'), (2015, 'Ất Mui'), (2016, 'Bính Thân'),
                    (2017, 'Đinh Dậu'), (2018, 'Mậu Tuất'), (2019, 'Kỷ Hợi'),
                    (2020, 'Canh Tý')]
+
+Bài 4.8
+-------
+
+Cho a, b, c là ba cạnh của tam giác vuông có chu vi 24 cm (perimeter).
+Biết độ dài các cạnh <= 10cm.
+Viết list comprehension để tìm các bộ a,b,c thoả mãn bài toán.
+
+Bài 4.9
+-------
+
+Cho một list ``numbers`` chứa các số (kiểu int hoặc float), tìm phần tử lớn nhất trong list.
+So sánh giá trị lớn nhất đó với max(numbers) bằng câu lệnh sau, nếu kết quả sai sẽ có exception
+xảy ra::
+
+  assert mymax == max(numbers), "wrong max"
