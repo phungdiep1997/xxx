@@ -50,3 +50,13 @@ Boolean
 
 - and/or/not
 - short-circuit (``True and False and 1/0``)
+
+References
+----------
+
+- https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator
+- https://pymi.vn/tutorial/python-la-gi/
+- https://pymi.vn/tutorial/python-integer/
+- https://pymi.vn/tutorial/python-calculation-2/
+- https://pymi.vn/tutorial/boolean/
+- https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation

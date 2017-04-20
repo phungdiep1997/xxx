@@ -60,21 +60,17 @@ name --binding--> object
 Deleting name
 -------------
 
-Before:
+Before::
 
-```
-~Namespace~~~~\
-|name          \ --binding--> object
-|---------------
-```
+  ~Namespace~~~~\
+  |name          \ --binding--> object
+  |---------------
 
-After
+After::
 
-```
-~Namespace~~~~\
-|              \         object
-|---------------
-```
+  ~Namespace~~~~\
+  |              \         object
+  |---------------
 
 And Garbage collector will collect object, remove it from memory.
 
@@ -99,3 +95,11 @@ https://docs.python.org/3/library/functions.html
 - min
 - max
 - ord
+
+References
+----------
+
+- https://docs.python.org/3/tutorial/introduction.html#lists
+- https://docs.python.org/3/tutorial/introduction.html#strings
+- https://pymi.vn/tutorial/string1/
+- https://pymi.vn/tutorial/unicode/
