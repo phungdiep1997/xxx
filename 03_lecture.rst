@@ -1,19 +1,22 @@
 3. GitLab, control flow, list
 =============================
 
-Introduce to git
-----------------
+String methods
+--------------
 
-- Create gitlab.com account
-- TODO at home: install git
+Format
+------
 
-Control flow
-------------
+- %
+- format()
 
-- if/elif/else
-- for ... in
-- while
-- continue, break
+Unicode
+-------
+
+str
+---
+
+and ``__str__``
 
 List
 ----
@@ -34,6 +37,27 @@ List
   to reverse a list? It returns WHAT?
 - 9 methods, built-in function ``reversed``, ``sorted``
   Each method RETURN what?
+
+Control flow
+------------
+
+- if/elif/else
+
+Error handling
+--------------
+
+try/except
+Having a list of 12 months, how to handle if user enter wrong input?
+
+Loops and iteration
+-------------------
+
+- for ... in
+- while
+- continue, break
+
+Introduce to git
+----------------
 
 Ternary
 -------
@@ -62,16 +86,8 @@ Methods
 - check membership
 - len
 
-Format
-------
+References
+----------
 
-- %
-- format()
-
-Unicode
--------
-
-str
----
-
-and ``__str__``
+- https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools
+- https://docs.python.org/3/library/stdtypes.html#str.format
