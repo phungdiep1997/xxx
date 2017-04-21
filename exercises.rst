@@ -7,6 +7,11 @@ Hướng dẫn làm bài tập
 Tất cả bài tập phải làm vào trong thư mục ``exercises``, có thể tạo thư
 mục con tuỳ ý, miễn là nằm trong ``exercises`` để được kiểm tra tự động.
 
+Nếu chưa học git, paste code vào đây (set Public) để nộp bài:
+https://gitlab.com/snippets/new
+
+Hướng dẫn dùng git: :doc:`git`
+
 Với mỗi bài tập, tạo một file với tên::
 
   X_Y.py
@@ -46,4 +51,8 @@ Làm bài xong học viên lưu vào git::
 
    exercises/*
 
-Additional exercises: https://www.hackerrank.com/domains/python/py-introduction
+Bài tập làm thêm
+-----------------
+
+- HackerRank https://www.hackerrank.com/domains/python/py-introduction
+- ProjectEuler https://projecteuler.net/
