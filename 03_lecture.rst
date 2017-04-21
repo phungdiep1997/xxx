@@ -7,8 +7,9 @@ String methods
 Format
 ------
 
-- %
-- format()
+- %s %d
+- Hello {}".format(name)
+
 
 Unicode
 -------
