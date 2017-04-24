@@ -30,7 +30,8 @@ Module
   mutils.func_name(xyz)
   import this #  why import twice but print once?
 
-- how import works? - how it choose what to import?
+- how import works? - how it choose what to import? (import_path)
+- import once: try to `import this` twice to see
 
 Namespace & global variable
 ---------------------------

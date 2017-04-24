@@ -10,7 +10,6 @@ Format
 - %s %d
 - Hello {}".format(name)
 
-
 Unicode
 -------
 
@@ -60,7 +59,8 @@ Loops and iteration
 Bài tập: tưởng tượng bạn đang điều khiển con rắn săn mồi bằng các lệnh.
 Viết code in ra màn hình "UP" (lên) 10 lần, rồi "RIGHT" (rẽ phải) 5 lần.
 
-Bài tập 2: dùng while, in ra màn hình số integer tăng dần từ 1. Dừng lại nếu số nguyên đó chia cho 68 dư 1.
+Bài tập 2: dùng while, in ra màn hình số integer tăng dần từ 1. Dừng lại nếu số
+nguyên đó chia cho 68 dư 1.
 
 Introduce to git
 ----------------
@@ -95,5 +95,5 @@ Methods
 References
 ----------
 
-- https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools
-- https://docs.python.org/3/library/stdtypes.html#str.format
+- If/for https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools
+- String format https://docs.python.org/3/library/stdtypes.html#str.format
