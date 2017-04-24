@@ -187,4 +187,17 @@ Dùng list comprehensions để:
 Ex10
 ----
 
-Viết một function nhận đầu vào là một chữ cái hoặc số, trả về "morse code" (https://en.wikipedia.org/wiki/Morse_code) tương ứng.
+`map` là một built-in function trong Python, nó nhận vào 1 function và 1
+iterable (list, str), rồi trả về một iterable tương ứng, sau khi biến đổi mỗi
+phần tử của iterable đó bằng function được gọi::
+
+  In [1]: map(abs, [-1, -3, 4, 5])  # abs trả về giá trị tuyệt đối của số
+  Out[1]: <map at 0x1121db6d8>
+
+  In [2]: list(map(abs, [-1, -3, 4, 5]))
+  Out[2]: [1, 3, 4, 5]
+
+Viết function `mymap` bắt chước function `map`::
+
+  def mymap(func, iterable):
+      codehere
