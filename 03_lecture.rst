@@ -98,3 +98,4 @@ References
 - If/for https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools
 - String format https://docs.python.org/3/library/stdtypes.html#str.format
 - String methods http://www.familug.org/2015/07/go-strings-package-xu-ly-string.html
+- String methods https://pymi.vn/tutorial/string1/
