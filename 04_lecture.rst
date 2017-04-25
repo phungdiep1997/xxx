@@ -1,6 +1,24 @@
 4. Git, Tuple, PEP8, ListComps
 ==============================
 
+math
+----
+
+- `import math`
+- sqrt, sin, cos, pi, log2
+
+Write code to file
+------------------
+
+- Write code to file filename.py using an editor.
+  Ubuntu: gedit
+  Windows: VSCode / Notepad++
+  OSX: sublime text
+
+- Run::
+
+  python filename.py
+
 Git basic
 ---------
 
