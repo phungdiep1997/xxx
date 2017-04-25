@@ -10,10 +10,11 @@ math
 Write code to file
 ------------------
 
-- Write code to file filename.py using an editor.
-  Ubuntu: gedit
-  Windows: VSCode / Notepad++
-  OSX: sublime text
+- Write code to file filename.py using an editor::
+
+    Ubuntu: gedit
+    Windows: VSCode / Notepad++
+    OSX: sublime text
 
 - Run::
 
@@ -21,6 +22,36 @@ Write code to file
 
 Git basic
 ---------
+
+- Git is an VCS (version control system).
+- There are many VCS (SVN, Mercurial, CVS) but git is the most popular nowaday.
+
+Why use VCS
+-----------
+
+- save history/diary of code changes
+- sharing code with multiple developers
+- everyone changes a code base at the same time
+- reverse back to old day
+- ...
+
+Why Git, not other VCS?
+-----------------------
+
+Who uses git? see bottom of https://git-scm.com/
+
+GitHub vs GitLab
+----------------
+
+- Same same but different
+- GitLab offers free private repos
+
+Git concept
+-----------
+
+- Repository
+- Branch
+- Commit
 
 See :doc:`/git`
 
