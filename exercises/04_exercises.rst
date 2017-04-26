@@ -89,7 +89,7 @@ Input::
 Thêm dòng sau vào cuối bài để kiểm tra kết quả::
 
   from functools import reduce
-  assert (mysum, myproduct) == sum(numbers), reduce(lambda x,y: x*y, numbers)
+  assert (mysum, myproduct) == (sum(numbers), reduce(lambda x,y: x*y, numbers))
 
 Bài 4.6
 -------
