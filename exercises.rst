@@ -18,7 +18,7 @@ Clone (download) repo của lớp học về máy nếu chưa clone::
 
 *MỖI LẦN* làm bài tập, làm như sau:
 
-Vào thư mục `pyfml`, kiểm tra branch::
+Vào thư mục ``pyfml``, kiểm tra branch::
 
   cd pyfml # chuyển đến pyfml
   git branch
@@ -43,7 +43,7 @@ Ví dụ học viên khoá 1704 Hà Nội, tên HungNV, nộp bài 3::
 
   git checkout -b pymi_1704HN_hungnv_bai3
 
-Sau đó làm bài tập và lưu vào git.
+Sau đó làm bài tập và lưu vào git như sau:
 
 Với mỗi bài tập, tạo một file với tên::
 
