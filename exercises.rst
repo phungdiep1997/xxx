@@ -96,36 +96,36 @@ Nếu thấy thông báo như sau là đã thành công::
    * [new branch]      hvn_123 -> hvn_123
 
 Mở đường dẫn ở trên để tạo Merge Request (MR).
-Trong phần `Description`, @nick_người_khác để báo cho họ. Cụ thể, mọi MR phải
+Trong phần ``Description``, @nick_người_khác để báo cho họ. Cụ thể, mọi MR phải
 @hvn_familug và trợ giảng/ giảng viên của khoá.
 
-Bấm vào `Assignee`, chọn người sẽ review code chính cho bạn, VD trợ giảng của
+Bấm vào ``Assignee``, chọn người sẽ review code chính cho bạn, VD trợ giảng của
 khoá hoặc người cùng nhóm (sau khi đã phân nhóm).
 
-Bấm vào `Labels`, chọn khoá mình đang học.
+Bấm vào ``Labels``, chọn khoá mình đang học.
 
 .. image:: mr.png
 
-Bấm `Submit merge request` để tạo MR.
+Bấm ``Submit merge request`` để tạo MR.
 
 Sau khi bấm xong, MR của bạn đã được tạo. Chờ khoảng 5 phút để hệ thống kiểm
 tra tự động (CI) kiểm tra bài tập của bạn. Nếu thấy nút X đỏ, với nội dung:
 
 .. image:: pipeline.png
 
-`Pipeline #ABCDEFGH failed`, tức bài tập của bạn không đạt tiêu chuẩn. Bấm vào
-`#ABCDEFGH` để xem chi tiết lỗi. Sau khi bấm vào đó, sẽ thấy một nút X đỏ cạnh
-chữ `test`, bấm tiếp vào để xem chi tiết lỗi.
+``Pipeline #ABCDEFGH failed``, tức bài tập của bạn không đạt tiêu chuẩn. Bấm vào
+``#ABCDEFGH`` để xem chi tiết lỗi. Sau khi bấm vào đó, sẽ thấy một nút X đỏ cạnh
+chữ ``test``, bấm tiếp vào để xem chi tiết lỗi.
 
 Tại đây, sẽ thấy các lỗi trong code của bạn dưới dạng::
 
    ./4_3.py:7:80: E501 line too long (82 > 79 characters)
 
-Tức trong file `4_3.py`, dòng thứ 7, ký tự 80 gặp lỗi "line too long" - dòng
+Tức trong file ``4_3.py``, dòng thứ 7, ký tự 80 gặp lỗi "line too long" - dòng
 quá dài so với quy định cho phép tối đa là 79 ký tự.
 
-Sửa lại file lỗi, rồi lại `git add`, `git commit`, `git push`, mọi thay đổi
-sẽ được đưa lên GitLab và update Merge Request.
+Sửa lại file lỗi, rồi lại ``git add``, ``git commit``, ``git push``, mọi thay
+đổi sẽ được đưa lên GitLab và update Merge Request.
 
 
 .. toctree::
