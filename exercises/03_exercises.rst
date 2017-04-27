@@ -184,3 +184,16 @@ Bài 3.12
     - tất cả các phần tử trong list A và B
 
     - các phần tử chỉ có trong 1 list (A hoặc B)
+
+Chuẩn bị cho buổi sau
+---------------------
+
+Cài một editor/IDE tuỳ thích.
+
+Best IDE: Pycharm https://www.jetbrains.com/pycharm/ . No 1, không cần cãi 😎
+Nhược điểm: nặng/ ngốn ram.
+
+Best editor: KHÔNG TỒN TẠI. Gợi ý: [Sublime Text 3](http://www.sublimetext.com/)
+hoặc [VS Code](https://code.visualstudio.com/download) (khác với VisualStudio to nặng).
+
+Chưa đủ phê 😗 Vim (http://www.vim.org/download.php) hoặc Emacs (https://www.gnu.org/software/emacs/download.html)

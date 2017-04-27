@@ -137,3 +137,15 @@ hoặc https://vi.wikipedia.org/wiki/Th%C3%A1p_H%C3%A0_N%E1%BB%99i).
 	    code_here
 
 In ra từng bước chuyển đĩa.
+
+Chuẩn bị cho buổi sau
+---------------------
+
+- Chạy python3 -m venv env
+- Xem trong thư mục ``env`` vừa tạo có gì.
+  https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments
+- Dùng pip cài đặt các thư viện phổ biến::
+
+  ```
+  pip install requests six pep8 flake8 ipython ipdb numpy pandas scipy matplotlib jupiter flask
+  ```

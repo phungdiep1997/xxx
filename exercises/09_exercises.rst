@@ -6,7 +6,7 @@
 
 Viết 1 script để liệt kê tất cả các GitHub repository của 1 user:
 
-Ví dụ với user ``hvnsweeting``, sử dụng dữ liệu ở JSON format tại 
+Ví dụ với user ``hvnsweeting``, sử dụng dữ liệu ở JSON format tại
 https://api.github.com/users/hvnsweeting/repos
 
 Câu lệnh của chương trình có dạng::
@@ -15,7 +15,7 @@ Câu lệnh của chương trình có dạng::
 
 Gợi ý:
 
-Sử dụng các thư viện: 
+Sử dụng các thư viện:
 
 - requests
 - sys or argparse
@@ -58,7 +58,7 @@ Dạng của câu lệnh:
 4
 -
 
-Viết script lấy về 50 kết quả đầu tiên tìm được với từ khoá "coffee" 
+Viết script lấy về 50 kết quả đầu tiên tìm được với từ khoá "coffee"
 quanh toạ độ 10.779614, 106.699256 (nhà thờ Đức Bà - HCM) với bán kính 5KM.
 Ghi kết quả theo định dạng JSON vào file hcm_coffee.json. (hoặc lưu vào 1 SQLite DB)
 
@@ -106,3 +106,12 @@ sẽ xảy ra.
 - Kết quả trả về xuất ra một file ``hanoi_coffee.json``.
 
 - Hãy sử dụng option ``indent`` cho function ``json.dump()``
+
+Chuẩn bị cho buổi sau
+---------------------
+
+- Đăng ký GitHub
+- Đăng ký LinkedIn
+- Đăng ký nhận mail tin tức Python http://www.pythonweekly.com/
+- Viết review cho PyFML https://www.facebook.com/pyfml/
+- Theo dõi blog http://www.familug.org/

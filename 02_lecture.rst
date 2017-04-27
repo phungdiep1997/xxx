@@ -96,6 +96,17 @@ https://docs.python.org/3/library/functions.html
 - max
 - ord
 
+Chuẩn bị trước buổi 3
+---------------------
+
+- Cài ipython bằng bất cứ cách nào có thể. Nếu trên máy có cài pip, gõ thử
+  ``pip install ipython``  . Xem thêm tại http://ipython.org/install.html
+- Cài đặt git lên máy (https://git-scm.com/downloads). Git là một công cụ
+  có giao diện dòng lệnh (gõ các lệnh để làm việc). Nếu vì lý do gì mà không muốn
+  gõ lệnh, hãy tự hỏi tại sao muốn gõ code? hoặc tải giao diện đồ hoạ ở đây
+  https://git-scm.com/downloads/guis (SourceTree là ứng cử sáng giá).
+- Học sử dụng git và gitlab: https://github.com/huyhoang17/Guide
+
 References
 ----------
 
