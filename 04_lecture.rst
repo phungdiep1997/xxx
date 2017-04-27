@@ -18,6 +18,10 @@ Write code to file
 
 - Run::
 
+  python3 filename.py
+
+- Windows::
+
   python filename.py
 
 Git basic
