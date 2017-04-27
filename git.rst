@@ -86,27 +86,6 @@ Merge request (MR)
 - review on MR
 - pull request on Github (https://github.com/saltstack/salt/pulls)
 
-Our workflow
-------------
-
-- Clone repo
-- Checkout ``master`` branch; run ``git pull`` to get latest version.
-- Create new branch start with your name (change HN1702 to your class code)::
-
-    git checkout -b HN1702_MYNAME_master
-
-- Push to server::
-
-    git push origin HN1702_MYNAME_master # origin is remote name (default), HN1702_MYNAME_master is branch name
-
-  .. note::
-
-    You can only push to BRANCHX when you checked out branch BRANCHX
-
-- Now you have your base branch. Every time you do homework, checkout
-  ``HN1702_MYNAME_master`` an create new branch. E.g: HN1702_MYNAME_ex3
-  And commit, push, create MR against ``HN1702_MYNAME_master``
-
 Dùng script nopbai.py
 ~~~~~~~~~~~~~~~~~~~~~
 
