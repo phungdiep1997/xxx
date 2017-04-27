@@ -1,5 +1,26 @@
-5. Import, Set, Dict
-====================
+5. Debug, Import, Set, Dict
+===========================
+
+Tuple unpacking
+---------------
+
+- Multi-assignment
+- Unpacking in function call with `*`
+- When list when tuple?
+
+Debug
+-----
+
+- Run module with pdb
+- Basic commands:
+
+ > h: help
+ > l: list
+ > n: next
+ > b: break
+ > c: continue
+ > p: print
+ > s: step into
 
 Import
 ------
@@ -57,3 +78,12 @@ Reading code
 
 - Important than write
 - Let's practice https://github.com/saltstack/salt/blob/develop/salt/state.py
+
+References
+----------
+
+- List vs Tuple
+
+  http://docs.python.org/tutorial/datastructures.html#tuples-and-sequences
+  http://docs.python3.org/faq/design.html#why-are-there-separate-tuple-and-list-data-types
+  http://www.stackoverflow.com/questions/31192923/lists-vs-tuples-what-to-use-and-when
