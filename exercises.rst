@@ -10,8 +10,6 @@ mục con tuỳ ý, miễn là nằm trong ``exercises`` để được kiểm t
 Nếu chưa học git, paste code vào đây (set Public) để nộp bài:
 https://gitlab.com/snippets/new
 
-Hướng dẫn dùng git: :doc:`git`
-
 Clone (download) repo của lớp học về máy nếu chưa clone::
 
   git clone https://gitlab.com/pyfml/pyfml.git pyfml
