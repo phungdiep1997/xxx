@@ -79,20 +79,35 @@ Tuple
 
 - Immutable
 - When list, when tuple
+- Unpacking
+- Unpacking in function call with `*`::
+
+  def add(a, b):
+      return a+ b
+
+  T = (6, 9)
+  print(add(*T))
 
 List comprehension
 ------------------
+
+- Create a list of even numbers < 10::
+
+  evens = []
+  for i in range(10):
+      if i % 2 == 0:
+          evens.append(i)
+
+- Do this shorter::
+
+  evens = [i for i in range(10) if i % 2 == 0]
 
 ::
 
     # let's do list comprehension
 
     squares = [x**2 for x in v]
-    squares
-
-::
-
-    [1, 9, 25, 49, 81]
+    # [1, 9, 25, 49, 81]
 
 ::
 
@@ -120,6 +135,17 @@ as shown below:**
                 ...
                 for itemN in iterableN if conditionN ]
 
+Mapping
+-------
+
+Filtering
+---------
+
+Conclude
+--------
+
+Use listcomp when you want a list.
+Do not abuse.
 
 What is implement?
 ------------------
