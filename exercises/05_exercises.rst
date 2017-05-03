@@ -67,16 +67,10 @@ Tổng điểm của tất cả các từ trong file là bao nhiêu?
 
 Kiểm tra kết quả bằng https://projecteuler.net/problem=22
 
-
 Ex6
 ---
 
-Bắt đầu từ góc trên bên trái của ô có kích thước 2x2, và chỉ cho phép di chuyển
-sang phải hoặc xuống dưới, có chính xác 6 đường để đi đến góc dưới bên phải.
-
-Có bao nhiêu đường như vậy trong ô 10x10?
-
-Kiểm tra kết quả bằng https://projecteuler.net/problem=15
+# TODO
 
 Ex7
 ---
@@ -187,17 +181,11 @@ Dùng list comprehensions để:
 Ex10
 ----
 
-`map` là một built-in function trong Python, nó nhận vào 1 function và 1
-iterable (list, str), rồi trả về một iterable tương ứng, sau khi biến đổi mỗi
-phần tử của iterable đó bằng function được gọi::
+[Không bắt buộc]
 
-  In [1]: map(abs, [-1, -3, 4, 5])  # abs trả về giá trị tuyệt đối của số
-  Out[1]: <map at 0x1121db6d8>
+Bắt đầu từ góc trên bên trái của ô có kích thước 2x2, và chỉ cho phép di chuyển
+sang phải hoặc xuống dưới, có chính xác 6 đường để đi đến góc dưới bên phải.
 
-  In [2]: list(map(abs, [-1, -3, 4, 5]))
-  Out[2]: [1, 3, 4, 5]
+Có bao nhiêu đường như vậy trong ô 10x10?
 
-Viết function `mymap` bắt chước function `map`::
-
-  def mymap(func, iterable):
-      codehere
+Kiểm tra kết quả bằng https://projecteuler.net/problem=15
