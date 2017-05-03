@@ -51,6 +51,14 @@ decorator
 - check all syntactic sugars: ``+``, ``-``, ``__getitem__``,
   ``__str__``.
 
+Syntactic sugar
+---------------
+
+- What is `+`, `-`, `==`?
+- What is compare? How `x` can compare to `y`?
+- Why we can write len(L)? not len(5) ?
+- Why we can write L[3]? not 7[3] ?
+
 script
 ------
 
