@@ -19,6 +19,10 @@ Introspection
     else:
         print 'tra dep bo ve'
 
+os
+--
+
+Use `os.path.join`, do not manually join for portability.
 
 subprocess
 ----------
