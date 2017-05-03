@@ -14,24 +14,6 @@ try/except basic
   else:
       print("Đứng đầu bảng xếp hạng là Lạc trôi với %d views" % views)
 
-IO
---
-
-Handling Input and Output.
-
-Read & write file
------------------
-
-Introduce using file.
-open(), modes, close(), with, iter over lines.
-
-Iterate over lines::
-
-  with open('/etc/hosts') as f:
-      for line in f:
-          print(line, end='')
-  print("Has file f closed? {0}".format(f.closed))
-
 with statement
 --------------
 

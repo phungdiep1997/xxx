@@ -138,6 +138,13 @@ hoặc https://vi.wikipedia.org/wiki/Th%C3%A1p_H%C3%A0_N%E1%BB%99i).
 
 In ra từng bước chuyển đĩa.
 
+6.12
+----
+
+- Tạo một GitLab public repo, chứa file README.rst
+  Trong file này, viết mô tả một sản phẩm CỤ THỂ bạn muốn làm được sau khoá học.
+  Print link đến repo trong file code 6_12.py
+
 Chuẩn bị cho buổi sau
 ---------------------
 

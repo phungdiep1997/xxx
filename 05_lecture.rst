@@ -73,6 +73,24 @@ Iterable
 
 List, tuple, dict, set, string.
 
+IO
+--
+
+Handling Input and Output.
+
+Read & write file
+-----------------
+
+Introduce using file.
+open(), modes, close(), with, iter over lines.
+
+Iterate over lines::
+
+  with open('/etc/hosts') as f:
+      for line in f:
+          print(line, end='')
+  print("Has file f closed? {0}".format(f.closed))
+
 Reading code
 ------------
 

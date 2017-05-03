@@ -37,6 +37,7 @@ List
   to reverse a list? It returns WHAT?
 - 9 methods, built-in function ``reversed``, ``sorted``
   Each method RETURN what?
+- `del list[idx]` to delete an element from list.
 
 Control flow
 ------------
