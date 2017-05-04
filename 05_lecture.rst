@@ -47,7 +47,7 @@ Set
   -> Set is unordered, so there is no indexing.
 - It is unordered, NOT random, random is different order every time on same
   machine
-- Use set to ``-``
+- Operators: ``-``, ``^``, ``&``, ``|``
 - Convert a list to a set
 - dict.keys() are a set
 - Key cannot be mutable, e.g List.
