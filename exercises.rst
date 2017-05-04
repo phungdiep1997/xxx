@@ -51,8 +51,11 @@ Ví dụ bài 3.1 sẽ đặt tên file::
 
   3_1.py
 
-Nội dung của file này chứa lời giải của bài toán. Ví dụ với bài toán yêu cầu
-in ra từ 1 đến 4, học viên viết vào file vừa tạo với nội dung::
+Nội dung của file này chứa đề bài và lời giải của bài toán.
+Ví dụ với bài toán yêu cầu:
+>in ra từ 1 đến 4
+
+học viên viết vào file vừa tạo với nội dung::
 
   for i in range(1,5):
       print i
@@ -68,6 +71,32 @@ Copy và paste kết quả vào cuối file ``3_1.py``::
   # 2
   # 3
   # 4
+
+File ``3_1.py`` sẽ trông như sau::
+
+  #!/usr/bin/env python
+  # -*- coding: utf-8 -*-
+
+  '''
+  in ra từ 1 đến 4
+  '''
+
+  for i in range(1,5):
+      print i
+
+  # Result
+  # 1
+  # 2
+  # 3
+  # 4
+
+Học viên cài và sử dụng
+`flake8 <http://flake8.pycqa.org/en/latest/index.html#quickstart>`_
+để kiểm tra code viết đúng chuẩn chưa::
+
+  flake8 3_1.py
+
+Nếu thấy không in ra gì tức đã đúng chuẩn.
 
 Làm bài xong học viên lưu vào git::
 
