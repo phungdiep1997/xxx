@@ -12,15 +12,15 @@ Debug
 -----
 
 - Run module with pdb
-- Basic commands:
+- Basic commands::
 
- > h: help
- > l: list
- > n: next
- > b: break
- > c: continue
- > p: print
- > s: step into
+  > h: help
+  > l: list
+  > n: next
+  > b: break
+  > c: continue
+  > p: print
+  > s: step into
 
 Import
 ------
@@ -42,10 +42,16 @@ Set
 ---
 
 - Like list, but uniq items.
-- Unordered, so there is no indexing
+
+- Let everyone enter ``{0, 1, 2, 8, 1000}``, is the result same on all machines?
+  -> Set is unordered, so there is no indexing.
+- It is unordered, NOT random, random is different order every time on same
+  machine
 - Use set to ``-``
 - Convert a list to a set
 - dict.keys() are a set
+- Key cannot be mutable, e.g List.
+- `hash(all data type)` to see
 
 Compare with is and ==
 ----------------------
@@ -56,6 +62,8 @@ Dictionary
 ----------
 
 - Ways to create dict: literal, dict comprehension, dict(list of tuples)
+- What is a real dict, says English-Vietnamese dict? what are its properties?
+  So does Python dict
 - Only hashable objects can be used as key
 - Present several real-world dicts
 - Iterate over dict (k,v, items(), keys(), values())
@@ -66,6 +74,7 @@ Dictionary
 - Check membership (``x in list``)::
 
     if x in range(100000): # algorithm complexity O(N)
+
 - Check membership of ``dict`` is ``O(1) - constant``
 
 Iterable
