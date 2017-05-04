@@ -67,6 +67,11 @@ Function
         body_of_function
         return something
 
+::
+    def calculate_average_age(first_age, second_age):
+        total_of_all_ages = first_age + second_age
+        return total_of_all_ages / 2
+
 - Function name, indent
 - Return None, return value
 - Keyword argument, position argument
@@ -83,7 +88,12 @@ Function
 - ``*args, **kwargs, print(*args)``  # after dict only
 - Recursive function
 
-::
-    def calculate_average_age(first_age, second_age):
-        total_of_all_ages = first_age + second_age
-        return total_of_all_ages / 2
+References
+----------
+
+- Exception: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
+- With: https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects
+- JSON: https://docs.python.org/3/tutorial/inputoutput.html#saving-structured-data-with-json
+   http://www.familug.org/2012/09/json-tat-ca-trong-bai-nay.html
+- Pickle: https://docs.python.org/3/library/pickle.html
+- Function: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
