@@ -101,9 +101,7 @@ Gợi ý: dùng ``chr()``, ``ord()``.
 Ex9
 ---
 
-Cho dữ liệu đầu vào như sau:
-
-.. code-block::
+Cho dữ liệu đầu vào như sau::
 
     provinces = [
                 {'name':'An Giang','population':2153700,'area':3536.7,'senator':10},
@@ -170,7 +168,6 @@ Cho dữ liệu đầu vào như sau:
                 {'name':'Vĩnh Phúc','population':1020600,'area':1236.5,'senator':6},
                 {'name':'Yên Bái','population':764400,'area':6886.3,'senator':7}
     ]
-
 
 Dùng list comprehensions để:
 
