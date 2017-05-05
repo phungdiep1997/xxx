@@ -47,9 +47,15 @@ Nếu số = 0: this is zero
 
 Nếu số > 0: this is positive number
 
+3.3
+---
+In màn hình các số nguyên từ 1 đến 100, nhưng với bội của 3, in ra chữ "Fizz"
+thay vì số đo. Với bội của 5, in ra chữ "Buzz" thay vì số đó. Với các số
+là bội của cả 3 và 5 thì in ra chữ "FizzBuzz" thay vì số đó.
 
-Bài 3.3
--------
+
+3.4
+---
 Viết chương trình loại bỏ phần mở rộng của một tên file bất kỳ.
 Ví dụ::
 
@@ -59,8 +65,8 @@ Ví dụ::
   input_data = 'maria.data.mp9'
   output = 'maria.data'
 
-Bài 3.4
--------
+3.5
+---
 
 - input_data = ["I", "Love", "You", "Chiu", "Chiu"]
 
@@ -76,8 +82,8 @@ Ví dụ::
 Gợi ý: có thể dùng enumerate()
 https://docs.python.org/2/library/functions.html#enumerate
 
-Bài 3.5
--------
+3.6
+---
 
 Input: một số nguyên trong range(1,13).
 Output: tên tương ứng của tháng đó bằng tiếng Anh, và số ngày trong tháng đó.
@@ -88,16 +94,6 @@ Ví dụ:
 - input_data: 2
 
 - output: February 28
-
-Bài 3.6
--------
-
-Viết chương trình nhận đầu vào là string "cho meo ga chuot vit ngan" và
-in ra list chứa tất cả các chữ cái chỉ xuất hiện một lần trong string trên.
-
-- input: names = "cho meo ga chuot vit ngan"
-
-- output: ['m', 'e', 'u', 'v', 'i']
 
 Bài 3.7
 -------
@@ -184,6 +180,16 @@ Bài 3.12
     - tất cả các phần tử trong list A và B
 
     - các phần tử chỉ có trong 1 list (A hoặc B)
+
+3.13
+----
+
+Viết chương trình nhận đầu vào là string "cho meo ga chuot vit ngan" và
+in ra list chứa tất cả các chữ cái chỉ xuất hiện một lần trong string trên.
+
+- input: names = "cho meo ga chuot vit ngan"
+
+- output: ['m', 'e', 'u', 'v', 'i']
 
 Chuẩn bị cho buổi sau
 ---------------------

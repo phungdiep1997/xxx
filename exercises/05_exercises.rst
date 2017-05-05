@@ -41,9 +41,14 @@ In ra màn hình tên học viên kèm tên bạn gái (nếu có)::
 Ex3
 ---
 
-In màn hình các số nguyên từ 1 đến 100, nhưng với bội của 3, in ra chữ "Fizz"
-thay vì số đo. Với bội của 5, in ra chữ "Buzz" thay vì số đó. Với các số
-là bội của cả 3 và 5 thì in ra chữ "FizzBuzz" thay vì số đó.
+Cho đoạn văn::
+
+   Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments.
+
+In ra 10 từ xuất hiện nhiều nhất kèm số lần xuất hiện của mỗi từ.
+(Nếu có nhiều từ cùng xuất hiện với số lần như nhau thì in ra từ nào cũng được).
+
+Gợi ý: dùng từ làm key, số lần xuất hiện làm value.
 
 Ex4
 ---
@@ -61,25 +66,34 @@ sử dụng không đáng kể bộ nhớ (RAM).
 Ex5
 ---
 
-Sử dụng file names.txt https://projecteuler.net/project/resources/p022_names.txt
-(chuột phải và chọn 'Save Link/Target As...'), đó là file text nặng 46K,
-chứa hơn 5000 từ. Đầu tiên hãy sắp xếp các từ này theo thứ tự bảng chữ cái
-(alphabetical). Sau đó tính giá trị cho mỗi từ, nhân giá trị này với thứ tự của nó
-trong list đã sắp xếp để thu được điểm của từ này.
+Cho danh sách học viên::
 
-Ví dụ, khi list đã được sắp xếp theo thứ tự bảng chữ cái, COLIN, có giá trị là
- 3 + 15 + 12 + 9 + 14 = 53, và đó là từ thứ 938 trong list.
+  students = ['Dai', 'Duong', 'Dung', 'Hung', 'Huy', 'Hoang',
+              'Trang', 'Trung', 'Tien']
 
-Vì vậy, COLIN có điểm là 938 × 53 = 49714.
+Biết những bạn có tên bắt đầu bằng chữ `D` sẽ ngồi phòng thi số N,
+các bạn có tên bắt đầu chữ `H` ngồi phòng thi số N+1, và các bạn còn lại, nếu có tên kết thúc là `ng` sẽ ngồi cùng phòng các bạn tên `H`, còn lại ngồi cùng phòng `D`.
 
-Tổng điểm của tất cả các từ trong file là bao nhiêu?
+Biết N tính bằng::
 
-Kiểm tra kết quả bằng https://projecteuler.net/problem=22
+  import random
+  N = random.randrange(1,10)
+
+In ra màn hình tên và phòng thi của mỗi học viên.
 
 Ex6
 ---
 
-# TODO
+Một học viên có bảng điểm học kỳ 1::
+
+  term1 = {'math': 3, 'python': 5, 'data': 2}
+
+Học kỳ 2, học thêm/lại có bảng điểm sau::
+
+  term2 = {'math': 7, 'python': 9, 'SQL': 8, 'HTML': 6}
+
+Biết điểm số được chọn là điểm số ở lần học sau cùng.
+In ra màn hình bảng điểm của các môn học.
 
 Ex7
 ---
