@@ -23,11 +23,20 @@ Mở file này bằng trình duyệt web để xem kết quả.
 Ex2
 ---
 
-Kiểm tra OS của máy đang dùng xem có là Linux based OS không?
+Cho list chứa các dictionary chứa thông tin của các học viên::
 
-Hướng dẫn: sử dụng sys module.
+  students = [
+      {"name": "Hoang"},
+      {"name": "Duy", "girl_friend": "Maria"},
+      {"name": "Dai", "girl_friend": "Angela"},
+      {"name": "Tu"},
+  ]
 
-https://docs.python.org/2/library/sys.html
+In ra màn hình tên học viên kèm tên bạn gái (nếu có)::
+
+  Hoang
+  Duy - Maria
+  ...
 
 Ex3
 ---
