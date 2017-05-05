@@ -86,7 +86,19 @@ Function
 - Function in function
 - Meaning of function which has name starts with ``_``
 - ``*args, **kwargs, print(*args)``  # after dict only
-- Recursive function
+
+Recursive function
+^^^^^^^^^^^^^^^^^^
+- Factorial::
+
+	def giai_thua(n):
+		if n == 0:
+			return 1
+		return n*giai_thua(n-1)
+
+- Try giai_thua(2000)
+- RecursionError: maximum recursion depth exceeded
+- Write non-recursive function to calculate factorial.
 
 References
 ----------
