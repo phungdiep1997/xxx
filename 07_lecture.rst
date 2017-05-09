@@ -16,6 +16,21 @@ LBYL vs EAFP
 https://docs.python.org/3/glossary.html#term-lbyl
 https://docs.python.org/3/glossary.html#term-eafp
 
+Try open a file with path input from an user.
+
+LBYL::
+
+  import os
+  path = input()
+  if os.path.exists(path):
+      with open(path) as f:
+          s = f.read()
+
+What happen if some program delete the `path` file AFTER if os.path.exists but
+BEFORE `with open...`?
+
+Try EAFP.
+
 Module
 ------
 
@@ -57,9 +72,10 @@ Install
 
   sudo pip install virtualenv # sudo on OSX, Linux
 
-
 Using
 ~~~~~
+
+Windows: see https://docs.python.org/3/tutorial/venv.html
 
 Create new virtualenv::
 
