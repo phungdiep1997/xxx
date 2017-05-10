@@ -53,7 +53,8 @@ Trường hợp 2: bước 2 bước
 ...
 Trường hợp 100: bước 100 bước
 
-Output có dạng: [0.5, 0.51, ...]
+Output là list tỷ lệ người này tiến lên phía trước trong
+100 trường hợp (ở dạng float, vd 50% là 0.5).
 
 Đối với học viên học data science, yêu cầu sử dụng thư viện numpy để làm.
 
