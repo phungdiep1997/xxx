@@ -1,6 +1,8 @@
 8. stdlib, decorator, generator, debugging
 ==========================================
 
+Start using editor to code. Always open Ipython to test.
+
 StackOverFlow
 -------------
 

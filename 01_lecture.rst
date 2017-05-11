@@ -30,6 +30,13 @@ Python
 - High level
 - General-purpose: science computation, network services, webs, games, system scripting ...
 
+Basic Python in 5 mins
+----------------------
+
+::
+
+  + - * / ** % name > < == != list string
+
 Number
 ------
 
