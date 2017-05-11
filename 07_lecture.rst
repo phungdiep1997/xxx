@@ -104,7 +104,9 @@ Command
 
 - Install a package::
 
-  $ pip install package_name
+  $ pip install <package_name>
+
+  $ pip install flake8
 
 - Uninstall a package::
 
