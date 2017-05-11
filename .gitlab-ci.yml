@@ -6,4 +6,4 @@ before_script:
 
 test:
   script:
-    - cd /builds/pyfml/pyfml && make
+    - cd /builds/pyfml/pyfml && make ci

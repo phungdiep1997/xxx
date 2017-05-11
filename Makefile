@@ -19,8 +19,15 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 
-all:
-	cd exercises; pytest -vvv
+all: lint test
+
+test:
+	pytest --ignore=conf.py -vvv
+
+lint:
+	flake8 --exclude='\.*',conf.py
+
+ci: lint test
 
 .PHONY: help
 help:
