@@ -35,7 +35,7 @@ Basic Python in 5 mins
 
 ::
 
-  + - * / ** % name > < == != list string
+  + - * / ** % name > < == != list str print help
 
 Number
 ------
