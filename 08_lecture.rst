@@ -11,6 +11,16 @@ http://stackoverflow.com/questions/tagged/python
 Glossary
 --------
 
+Iterator
+--------
+
+An object representing a stream of data.
+
+- Given a list `L = [4, 5, 6]`, get iterator from it by `it = iter(L)`
+- Call `next(it)`
+- See what happens
+- Explain how `for i in iterable` works.
+
 Generator
 ---------
 
@@ -37,6 +47,10 @@ Generator
   next(it)
 
 - Generators are a simple and powerful tool for creating iterators. They are written like regular functions but use the yield statement whenever they want to return data. Each time next() is called on it, the generator resumes where it left off (it remembers all the data values and which statement was last executed).
+
+- Write a function that return list of 5 elements and its corresponding
+  generator. What if the list need to return 1 billion elements?
+  What will better if we use generator?
 - https://docs.python.org/3/glossary.html#term-generator
 - Return generator expression::
 
@@ -44,6 +58,8 @@ Generator
 
 decorator
 ---------
+
+A function returning another function.
 
 - functions are object.
 - function is callable.
@@ -58,6 +74,7 @@ Syntactic sugar
 
 - What is `+`, `-`, `==`?
 - What is compare? How `x` can compare to `y`?
+- Function call? callable.
 - Why we can write len(L)? not len(5) ?
 - Why we can write L[3]? not 7[3] ?
 
