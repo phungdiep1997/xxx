@@ -1,6 +1,17 @@
 12. System and Network
 ======================
 
+Duck typing
+~~~~~~~~~~~
+
+Monkey Patch
+------------
+
+algorithm time complexity
+-------------------------
+
+- Comparing O(N), O(N^2), O(lg(N)), O(N!)
+
 Introspection
 -------------
 
@@ -55,4 +66,3 @@ http server - python 3 version
 Run a server::
 
   python -m http.server
-

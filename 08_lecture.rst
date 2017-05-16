@@ -200,17 +200,6 @@ yaml
 - often used for config files
 - pip install pyyaml, import yaml, yaml.dump, yaml.load
 
-Duck typing
-~~~~~~~~~~~
-
-Monkey Patch
-------------
-
-algorithm time complexity
--------------------------
-
-- Comparing O(N), O(N^2), O(lg(N)), O(N!)
-
 Linting
 -------
 
