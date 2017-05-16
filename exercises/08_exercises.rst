@@ -120,3 +120,14 @@ Chạy chương trình bằng lệnh:
 	type_check.py thumuc
 
 Gợi ý: sử dụng os.walk để duyệt vào thư mục con.
+
+8.10
+----
+
+Tạo virtualenv và cài các package từ file `requirements-doc.txt` của repo này.
+Chạy `make html` ở thư mục chứa file `Makefile` để tạo ra tài liệu ở định dạng
+HTML cho nội dung khoá học.
+
+Tham khảo thêm: http://www.sphinx-doc.org/en/stable/
+
+PS: máy bạn nên cài sẵn `make`
