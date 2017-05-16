@@ -159,15 +159,17 @@ Class
   In [9]: dict(name='Python', birth=1991)
   Out[9]: {'birth': 1991, 'name': 'Python'}
 
-- Define MyDict that mimic above dict.
-- Class is a way to represent data.
-- Class is a way to organize code (compare to module).
+- Class is a way to represent data - create new type::
+
+  class Student():
+      pass
+
+- How to represent a bird in flappy bird?
+
+  Flappy bird: https://github.com/TimoWilken/flappy-bird-pygame/blob/master/flappybird.py#L51
+
+  Angry bird: https://github.com/estevaofon/angry-birds-python/blob/master/src/characters.py#L6
+
+- Class is a way to organize code (compare to module). No global variable.
+
 - __init__, __str__
-- Single inheritance.
-
-Exception hierarchy
--------------------
-
-exceptions are classes.
-
-https://docs.python.org/3/library/exceptions.html#exception-hierarchy
