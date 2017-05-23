@@ -1,10 +1,16 @@
 10. Scipy
 =========
 
+.. note::
+
+  Học viên làm bài vào file `.py`, không nộp file Jupyter notebook.
+  File Jupyter notebook có thể paste lên http://gist.github.com/ để nộp kèm
+  link làm kết quả của bài tập.
+
 10.1
 ----
 
-Dùng numpy để tạo các ma trận sau:: 
+Dùng numpy để tạo các ma trận sau::
 
 	array([[ 0,  1,  2,  3,  4,  5],
 	       [10, 11, 12, 13, 14, 15],
@@ -44,7 +50,7 @@ Tính cumsum() và vẽ đồ thị.
 ----
 
 Đọc file CSV dientich.csv (trong thư mục này) bằng pandas: pd.read_csv()
-Tìm ra 10 tỉnh có diện tích lớn nhất Việt Nam năm 2015. 
+Tìm ra 10 tỉnh có diện tích lớn nhất Việt Nam năm 2015.
 Vẽ đồ thị cột (bar) diện tích của 10 tỉnh đó.
 
 (dữ liệu lấy từ tổng cục thống kê Việt Nam: https://www.gso.gov.vn/default.aspx?tabid=714 chọn "Diện tích, dân số và mật độ dân số phân theo địa phương").
