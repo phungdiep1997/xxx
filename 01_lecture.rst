@@ -4,19 +4,17 @@
 Introducing
 -----------
 
-- Ask everyone to introduce themselves (name, age, base, expect, ...)
+- Ask everyone to introduce themselves (name, age, base, expect, and 🍻...)
 - After this course,
 If you want to get a job, you must try very best to be the top of the class
 If you want to do homework, you just need to finish the course as
 requested.
-If you don't do what you needed to be done, leave before you lose money!
 
 How to be a good developer
 --------------------------
 
 - English. (READ)
-- Self-learning.
-(So I'm here to teach you do these)
+- Self-learning the right way
 - No magic mind set.
 
 Python
@@ -48,9 +46,11 @@ Number
 - print
 - exception understanding
 - indentation
-- float precision
+- float precision quirk
 - modulo application: convert to binary, find even/odd, cryptography,
-  minify size of problems
+- minify size of problems::
+
+  This year, 2017, is "Đinh Dậu", what is the name of 1869?
 
 Boolean
 -------
