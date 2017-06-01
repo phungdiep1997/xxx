@@ -1,6 +1,19 @@
 12. System and Network
 ======================
 
+Lessons and conclusions
+-----------------------
+
+- Python builtin types, mutable, immutable
+- List for iterating, tuple for unpacking
+- Iterate over list
+- Iterate over dict
+- Iterate over dict, want value
+- Dict or list? depends on usage
+- Check membership in dict vs in list
+
+- https://wiki.python.org/moin/PythonSpeed
+
 Duck typing
 ~~~~~~~~~~~
 
@@ -11,24 +24,6 @@ algorithm time complexity
 -------------------------
 
 - Comparing O(N), O(N^2), O(lg(N)), O(N!)
-
-Introspection
--------------
-
-- https://en.wikipedia.org/wiki/Type_introspection
-- ``dir``
-- import inspect
-- how IDE of static typing language know wrong type function call without
-  running the code, but Python cannot?::
-
-    def love_me(yes):
-        return yes
-
-    yes = argv[1]
-    if love_me(yes):
-        print 'xong leeeeeeeen'
-    else:
-        print 'tra dep bo ve'
 
 os
 --
@@ -53,6 +48,9 @@ argparse
 - store_true
 - help
 - default
+
+logging
+-------
 
 itertools
 ---------
