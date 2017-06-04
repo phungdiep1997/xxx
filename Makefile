@@ -22,7 +22,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 all: lint test
 
 test:
-	pytest --ignore=conf.py -vvv
+	python -m unittest discover -s tests -vvv
 
 lint:
 	flake8 --exclude='\.*',conf.py
