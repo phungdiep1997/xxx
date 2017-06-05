@@ -11,10 +11,8 @@ def solve_5_4(output_path):
     Chú ý: để bài hoàn toàn chính xác.
     '''
     result = None
-    # Viết code vào đây set result làm kết quả của tính toán
-    #
-    #
-    #
+    # Xoá dòng raise và Viết code vào đây set result làm kết quả
+    raise NotImplementedError("Học viên chưa làm bài này")
 
     return result
 

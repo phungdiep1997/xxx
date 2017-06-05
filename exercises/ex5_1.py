@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 
 
+data = {
+    'xanh lá': '#3cba54',
+    'vàng': '#f4c20d',
+    'đỏ': '#db3236',
+    'xanh da trời': '#4885ed',
+}
+
+
 def solve_5_1(colors):
     '''Ghi ra file index.html code HTML để tạo ra logo của Google với màu sắc
     chính xác.
@@ -17,10 +25,8 @@ def solve_5_1(colors):
     '''
     result = []
 
-    # Viết code vào đây set result làm kết quả của tính toán
-    #
-    #
-    # TODO
+    # Xoá dòng raise và Viết code vào đây set result làm kết quả
+    raise NotImplementedError("Học viên chưa làm bài này")
 
     return result
 
@@ -28,13 +34,7 @@ def solve_5_1(colors):
 def main():
     '''Biết mã hex của các màu trong Google logo là:
     '''
-
-    colors = {
-        'xanh lá': '#3cba54',
-        'vàng': '#f4c20d',
-        'đỏ': '#db3236',
-        'xanh da trời': '#4885ed',
-    }
+    colors = data
     print(solve_5_1(colors))
 
 if __name__ == "__main__":

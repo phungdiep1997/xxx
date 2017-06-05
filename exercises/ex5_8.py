@@ -16,10 +16,8 @@ def solve_5_8():
     twenty_ascii = []
     unicodes = []
 
-    # Viết code vào đây set các giá trị cho phù hợp
-    #
-    #
-    #
+    # Xoá dòng raise và Viết code vào đây set các giá trị phù hợp
+    raise NotImplementedError("Học viên chưa làm bài này")
 
     result = (twenty_ascii, unicodes, tabcodepoint,
               newlinecodepoint,

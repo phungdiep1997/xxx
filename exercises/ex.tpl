@@ -7,10 +7,9 @@
 
 def solve_{ex}(input_data):
     result = None
-    # Viết code vào đây set result làm kết quả của tính toán
-    #
-    #
-    #
+
+    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
+    raise NotImplementedError("Học viên chưa làm bài này")
 
     return result
 

@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 
-'''
-Cho giá tri input_data
-In ra màn hình bình phương của input_data
-'''
-
 
 def squared(input_data):
+    '''Tính bình phương của số đầu vào'''
     result = None
-    # Bài làm mẫu:
-    # Khi bài yêu cầu in ra màn hình, chúng tôi đã thực hiện
-    # việc in ra kết quả, bạn chỉ cần tính ra kết quả đó
+
+    # Xoá dòng raise và Viết code vào đây set các giá trị phù hợp
+    raise NotImplementedError("Học viên chưa làm bài này")
 
     # Uncomment dòng sau để có kết quả đúng
     # result = input_data ** 2
-
     return result
 
 

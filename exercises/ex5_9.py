@@ -11,10 +11,8 @@ def solve_5_9(input_data):
     provinces_startswith_h = []
     provinces_more_than_1m = []
 
-    # Viết code vào đây set các list thành giá trị thích hợp
-    #
-    #
-    #
+    # Xoá dòng raise và Viết code vào đây set các giá trị phù hợp
+    raise NotImplementedError("Học viên chưa làm bài này")
 
     result = (provinces_startswith_h, provinces_more_than_1m)
     return result

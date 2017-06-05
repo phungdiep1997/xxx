@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+data = [
+    {"name": "Hoang"},
+    {"name": "Duy", "girl_friend": "Maria"},
+    {"name": "Dai", "girl_friend": "Angela"},
+    {"name": "Tu"},
+]
+
 
 def solve_5_2(input_data):
     '''Trả về list các tuple chứa cặp tên học viên và bạn gái.
@@ -7,22 +14,15 @@ def solve_5_2(input_data):
     '''
     result = None
 
-    # Viết code vào đây set result làm kết quả
-    #
-    #
-    #
+    # Xoá dòng raise và Viết code vào đây set result làm kết quả
+    raise NotImplementedError("Học viên chưa làm bài này")
 
     return result
 
 
 def main():
     # Cho list chứa các dictionary chứa thông tin của các học viên:
-    students = [
-        {"name": "Hoang"},
-        {"name": "Duy", "girl_friend": "Maria"},
-        {"name": "Dai", "girl_friend": "Angela"},
-        {"name": "Tu"},
-    ]
+    students = data
     result = solve_5_2(students) # NOQA
     # In ra màn hình tên học viên kèm tên bạn gái (nếu có)
 

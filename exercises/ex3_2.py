@@ -15,12 +15,11 @@ Nếu số > 0: this is positive number
 
 def solve_3_2(input_data):
     assert isinstance(input_data, int)
-    # Viết code vào đây set result làm kết quả của tính toán
     result = None
 
+    # Xoá dòng raise và Viết code vào đây set result làm kết quả
+    raise NotImplementedError("Học viên chưa làm bài này")
     #
-    #
-    print(result)
     return result
 
 

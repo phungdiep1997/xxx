@@ -12,10 +12,8 @@ def solve_5_5(students, N=5):
     '''
 
     result = None
-    # Viết code vào đây set result làm kết quả của tính toán
-    #
-    #
-    #
+    # Xoá dòng raise và Viết code vào đây set result làm kết quả
+    raise NotImplementedError("Học viên chưa làm bài này")
 
     return result
 

@@ -7,11 +7,8 @@ def solve_5_6(term1, term2):
     '''
 
     result = None
-    # Viết code vào đây set result làm kết quả của tính toán
-    #
-    #
-    #
-
+    # Xoá dòng raise và Viết code vào đây set result làm kết quả
+    raise NotImplementedError("Học viên chưa làm bài này")
     return result
 
 

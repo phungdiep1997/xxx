@@ -3,18 +3,25 @@ import unittest
 from exercises.ex3_0 import squared
 from exercises.ex3_1 import solve_3_1
 from exercises.ex3_2 import solve_3_2
-MESSAGE_FMT = 'Kết quả đúng là `{0}`, nhận được `{1}`'
+from exercises.ex5_1 import solve_5_1, data as ex5_colors
+import exercises.ex5_2 as ex5_2
 
 
-class TestExercise3(unittest.TestCase):
+class TestExercise(unittest.TestCase):
+    MESSAGE_FMT = 'Kết quả đúng là `{0}`, nhận được `{1}`'
+
     def _test_all(self, func, cases):
         for input, expect in cases:
-            msg = MESSAGE_FMT.format(expect, input)
-            self.assertEqual(func(input), expect, msg)
+            output = func(input)
+            msg = self.MESSAGE_FMT.format(expect, output)
+            self.assertEqual(output, expect, msg)
+
+
+class TestExercise3(TestExercise):
 
     def test_ex3_0(self):
         res = squared(5)
-        self.assertEqual(res, 25, MESSAGE_FMT.format(25, res))
+        self.assertEqual(res, 25, self.MESSAGE_FMT.format(25, res))
 
     def test_ex3_1(self):
         cases = [(1, 1), (5, 1), (9, 1), (24, 1000), (10, 10)]
@@ -52,6 +59,47 @@ class TestExercise3(unittest.TestCase):
         pass
 
     def test_ex3_9(self):
+        # TODO
+        pass
+
+
+class TestExercise5(TestExercise):
+    def test_ex5_1(self):
+        res = solve_5_1(ex5_colors)
+        self.assertEqual(len(res), len('Google'),
+                         'Kết quả không đủ các chữ cái')
+        self.assertEqual(res[0], ('G', '#4885ed'), 'Sai màu')
+
+    def test_ex5_2(self):
+        res = ex5_2.solve_5_2([])
+        self.assertTrue(isinstance(res, list))
+        # TODO
+
+    def test_ex5_3(self):
+        # TODO
+        pass
+
+    def test_ex5_4(self):
+        # TODO
+        pass
+
+    def test_ex5_5(self):
+        # TODO
+        pass
+
+    def test_ex5_6(self):
+        # TODO
+        pass
+
+    def test_ex5_7(self):
+        # TODO
+        pass
+
+    def test_ex5_8(self):
+        # TODO
+        pass
+
+    def test_ex5_9(self):
         # TODO
         pass
 
