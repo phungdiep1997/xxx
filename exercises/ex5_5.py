@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 
+data = ['Trang', 'Trung', 'Tien',
+        'Dai', 'Duong', 'Dung', 'Hung', 'Huy', 'Hoang']
+
+
 def solve(students, N=5):
     '''Biết những bạn có tên bắt đầu bằng chữ `D` sẽ ngồi phòng thi số N,
     các bạn có tên bắt đầu chữ `H` ngồi phòng thi số N+1, và các bạn còn lại,
@@ -18,11 +22,8 @@ def solve(students, N=5):
     return result
 
 
-students = ['Trang', 'Trung', 'Tien',
-            'Dai', 'Duong', 'Dung', 'Hung', 'Huy', 'Hoang']
-
-
 def main():
+    students = data
     # Cho danh sách học viên students
     print(solve(students))
 

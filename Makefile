@@ -28,7 +28,7 @@ test:
 	rm test.err
 
 lint:
-	flake8 --exclude='\.*',conf.py
+	flake8 --exclude='\.*',conf.py,'venv/','env/'
 
 ci: lint test
 

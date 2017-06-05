@@ -3,8 +3,8 @@
 
 def solve():
 
-    '''Trả về biểu diễn của 20 mã ASCII đầu tiên theo format
-    [(1, BIEUDIENCUA1), ...]
+    '''Trả về biểu diễn của 20 mã ASCII từ 33 đến 53 theo format
+    [(33, BIEUDIENCUA33), ...]
     Unicode codepoint của các số từ 0->9, a-z, A-Z.
     Unicode codepoint tương ứng với ký tự ``\t`` ``\n``, `` ``
 
@@ -28,6 +28,9 @@ def solve():
 def main():
     for part in solve():
         print(part)
+        if isinstance(part, list):
+            for elem in part:
+                print(elem)
 
 
 if __name__ == "__main__":

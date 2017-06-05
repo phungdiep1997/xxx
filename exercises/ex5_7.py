@@ -10,18 +10,12 @@ def solve(input_data):
     Mỗi dòng 1 số, với độ rộng là 8, các giá trị thẳng nhau căn lề phải.
     Output :
 
-    .. code-block::
-
-      .
-      .
-      15    1111    0o17     0xf
-      16   10000    0o20    0x10
-      17   10001    0o21    0x11
-      18   10010    0o22    0x12
-      19   10011    0o23    0x13
+       1       1     0o1     0x1
+       2      10     0o2     0x2
+       ...
     '''
-
     result = None
+
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
     raise NotImplementedError("Học viên chưa làm bài này")
 
