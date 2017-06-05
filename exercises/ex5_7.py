@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def solve_5_7(input_data):
+def solve(input_data):
     '''
     Trả về string biễu diễn tương ứng ở hệ thập phân (decimal),
     hệ nhị phân (binary), bát phân (octal), thập lục phân (heximal)
@@ -30,7 +30,7 @@ def solve_5_7(input_data):
 
 def main():
     input_data = range(1, 20)
-    print(solve_5_7(input_data))
+    print(solve(input_data))
 
 
 if __name__ == "__main__":

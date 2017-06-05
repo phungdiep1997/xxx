@@ -8,7 +8,7 @@ data = [
 ]
 
 
-def solve_5_2(input_data):
+def solve(input_data):
     '''Trả về list các tuple chứa cặp tên học viên và bạn gái.
     Nếu không có girl_friend thì đặt giá trị đó bằng string rỗng.
     '''
@@ -23,7 +23,7 @@ def solve_5_2(input_data):
 def main():
     # Cho list chứa các dictionary chứa thông tin của các học viên:
     students = data
-    result = solve_5_2(students) # NOQA
+    result = solve(students) # NOQA
     # In ra màn hình tên học viên kèm tên bạn gái (nếu có)
 
 

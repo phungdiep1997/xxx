@@ -9,7 +9,7 @@ data = {
 }
 
 
-def solve_5_1(colors):
+def solve(colors):
     '''Ghi ra file index.html code HTML để tạo ra logo của Google với màu sắc
     chính xác.
     Biết cách để tạo chữ G màu xanh da trời dùng code HTML sau::
@@ -35,7 +35,7 @@ def main():
     '''Biết mã hex của các màu trong Google logo là:
     '''
     colors = data
-    print(solve_5_1(colors))
+    print(solve(colors))
 
 
 if __name__ == "__main__":

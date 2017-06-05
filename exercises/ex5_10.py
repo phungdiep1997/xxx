@@ -12,7 +12,7 @@ Kiểm tra kết quả bằng https://projecteuler.net/problem=15
 '''
 
 
-def solve_5_10(input_data):
+def solve(input_data):
     result = None
     # Viết code vào đây set result làm kết quả của tính toán
     #
@@ -23,7 +23,7 @@ def solve_5_10(input_data):
 
 
 def main():
-    print(solve_5_10())
+    print(solve())
 
 
 if __name__ == "__main__":

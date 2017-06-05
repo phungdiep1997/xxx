@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def solve_5_9(input_data):
+def solve(input_data):
     '''Dùng list comprehensions để:
 
     - Tạo 1 list chứa tên, dân số của các thành phố có tên bắt đầu bằng chữ H.
@@ -144,7 +144,7 @@ def main():
         {'name': 'Yên Bái', 'population': 764400, 'area': 6886.3, 'senator': 7}
     ]
 
-    for L in solve_5_9(provinces):
+    for L in solve(provinces):
         for province in L:
             print(province)
 

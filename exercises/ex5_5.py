@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def solve_5_5(students, N=5):
+def solve(students, N=5):
     '''Biết những bạn có tên bắt đầu bằng chữ `D` sẽ ngồi phòng thi số N,
     các bạn có tên bắt đầu chữ `H` ngồi phòng thi số N+1, và các bạn còn lại,
     nếu có tên kết thúc là `ng` sẽ ngồi cùng phòng các bạn tên `H`, còn lại
@@ -24,7 +24,7 @@ students = ['Trang', 'Trung', 'Tien',
 
 def main():
     # Cho danh sách học viên students
-    print(solve_5_5(students))
+    print(solve(students))
 
 
 if __name__ == "__main__":

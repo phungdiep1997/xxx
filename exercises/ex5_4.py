@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def solve_5_4(output_path):
+def solve(output_path):
     '''Tạo ra 1 file chứa 30 triệu dòng, các dòng lẻ chứa 30 số 1,
     các dòng chẵn chứa giá trị 2 * số dòng hiện tại.
 
@@ -22,7 +22,7 @@ def main():
     # tên _ hàm ý rằng ta sẽ không dùng giá trị của nó - convention
     _, output_path = tempfile.mkstemp()
     print('File to write: {0}'.format(output_path))
-    for line in solve_5_4(output_path):
+    for line in solve(output_path):
         print(line.rstrip())
 
 

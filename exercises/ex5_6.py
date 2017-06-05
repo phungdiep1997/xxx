@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def solve_5_6(term1, term2):
+def solve(term1, term2):
     '''Trả về result là dict chứa bảng điểm của các môn học sau hai học kỳ.
     Biết điểm số được chọn là điểm số ở lần học sau cùng.
     '''
@@ -18,7 +18,7 @@ def main():
 
     term1 = {'math': 3, 'python': 5, 'data': 2}
     term2 = {'math': 7, 'python': 9, 'SQL': 8, 'HTML': 6}
-    print(solve_5_6(term1, term2))
+    print(solve(term1, term2))
 
 
 if __name__ == "__main__":

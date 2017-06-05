@@ -13,7 +13,7 @@ Nếu số > 0: this is positive number
 '''
 
 
-def solve_3_2(input_data):
+def solve(input_data):
     assert isinstance(input_data, int)
     result = None
 
@@ -24,7 +24,7 @@ def solve_3_2(input_data):
 
 
 def main():
-    print(solve_3_2(5))
+    print(solve(5))
 
 
 if __name__ == "__main__":

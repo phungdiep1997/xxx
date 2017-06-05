@@ -3,7 +3,7 @@
 TEXT = '''Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments.''' # NOQA
 
 
-def solve_5_3(input_data):
+def solve(input_data):
     '''
     Đặt result bằng list chứa 10 tuple ứng với 10 từ xuất hiện nhiều nhất,
     mỗi tuple chứa từ và số lần xuất hiện tương ứng.
@@ -18,7 +18,7 @@ def solve_5_3(input_data):
 
 
 def main():
-    result = solve_5_3(TEXT) # NOQA
+    result = solve(TEXT) # NOQA
     # In ra 10 từ xuất hiện nhiều nhất kèm số lần xuất hiện
     #
     # Viết code in ra màn hình sau dòng này

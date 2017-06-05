@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def solve_5_8():
+def solve():
 
     '''Trả về biểu diễn của 20 mã ASCII đầu tiên theo format
     [(1, BIEUDIENCUA1), ...]
@@ -26,7 +26,7 @@ def solve_5_8():
 
 
 def main():
-    for part in solve_5_8():
+    for part in solve():
         print(part)
 
 

@@ -20,7 +20,7 @@ Hàm có sẵn: bin(10) == '0b1010'
 '''
 
 
-def solve_3_1(input_data):
+def solve(input_data):
     result = None
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
     raise NotImplementedError("Học viên chưa làm bài này")
@@ -30,7 +30,7 @@ def solve_3_1(input_data):
 
 
 def main():
-    print(solve_3_1(1000))
+    print(solve(1000))
 
 
 if __name__ == "__main__":

@@ -65,13 +65,13 @@ class TestExercise3(TestExercise):
 
 class TestExercise5(TestExercise):
     def test_ex5_1(self):
-        res = solve_5_1(ex5_colors)
+        res = solve(ex5_colors)
         self.assertEqual(len(res), len('Google'),
                          'Kết quả không đủ các chữ cái')
         self.assertEqual(res[0], ('G', '#4885ed'), 'Sai màu')
 
     def test_ex5_2(self):
-        res = ex5_2.solve_5_2([])
+        res = ex5_2.solve([])
         self.assertTrue(isinstance(res, list))
         # TODO
 
