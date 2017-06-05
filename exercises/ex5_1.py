@@ -37,5 +37,6 @@ def main():
     colors = data
     print(solve_5_1(colors))
 
+
 if __name__ == "__main__":
     main()
