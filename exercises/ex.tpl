@@ -5,7 +5,7 @@
 '''
 
 
-def solve_{ex}(input_data):
+def solve(input_data):
     result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
@@ -15,7 +15,7 @@ def solve_{ex}(input_data):
 
 
 def main():
-    print(solve_{ex}(DATA))
+    print(solve(DATA))
 
 
 if __name__ == "__main__":
