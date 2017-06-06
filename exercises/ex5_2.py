@@ -23,7 +23,7 @@ def solve(input_data):
 def main():
     # Cho list chứa các dictionary chứa thông tin của các học viên:
     students = data
-    result = solve(students) # NOQA
+    result = solve(students)  # NOQA
     # In ra màn hình tên học viên kèm tên bạn gái (nếu có)
 
 

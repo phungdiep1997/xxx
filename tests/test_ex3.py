@@ -3,6 +3,13 @@ import unittest
 import exercises.ex3_0 as ex3_0
 import exercises.ex3_1 as ex3_1
 import exercises.ex3_2 as ex3_2
+import exercises.ex3_3 as ex3_3
+import exercises.ex3_4 as ex3_4
+import exercises.ex3_5 as ex3_5
+import exercises.ex3_6 as ex3_6
+import exercises.ex3_7 as ex3_7
+import exercises.ex3_8 as ex3_8
+import exercises.ex3_9 as ex3_9
 import exercises.ex5_1 as ex5_1
 import exercises.ex5_2 as ex5_2
 import exercises.ex5_3 as ex5_3
@@ -42,30 +49,79 @@ class TestExercise3(TestExercise):
         self._test_all(ex3_2.solve, cases)
 
     def test_ex3_3(self):
-        # TODO
-        pass
+        res = ex3_3.solve()
+        self.assertTrue(isinstance(res, list))
+        self.assertEqual(
+            len(res),
+            len(range(1, 101)),
+            "Số lượng phần tử không đúng"
+        )
+        cases = [(1, 1), (2, 2), (3, "Fizz"), (5, "Buzz"), (15, "FizzBuzz")]
+        for num, value in cases:
+            msg = self.MESSAGE_FMT.format(value, res[num - 1])
+            self.assertEqual(res[num - 1], value, msg)
+        self._test_all(ex3_3.solve, cases)
 
     def test_ex3_4(self):
-        # TODO
-        pass
+        cases = [("....slsslslsls...sls", "....slsslslsls.."),
+                 ("maria.data.mp9", "maria.data"),
+                 ]
+        self._test_all(ex3_4.solve, cases)
 
     def test_ex3_5(self):
-        # TODO
-        pass
+        len_expected = len(ex3_5.data)
+        res = ex3_5.solve(ex3_5.data)
+        self.assertTrue(isinstance(res, list))
+        self.assertEqual(len(res), len_expected, "Số lượng phần tử không đúng")
+        self.assertEqual(res[0][0], 1, 'Index phần tử đầu tiên không đúng')
+        self.assertEqual(
+            res[-1][0],
+            len_expected,
+            'Index phần tử cuối cùng không đúng'
+        )
 
     def test_ex3_6(self):
-        # TODO
-        pass
+        res = ex3_6.solve(2)
+        self.assertTrue(isinstance(res, tuple))
+        self.assertEqual(len(res), 2, "Số lượng phần tử không đúng")
+        cases = [(1, ("January", 31)),
+                 (2, ("February", 28)),
+                 (3, ("March", 31)),
+                 (4, ("April", 30)),
+                 (7, ("July", 31)),
+                 (8, ("August", 31)),
+                 (9, ("September", 30))
+                 ]
+        for input_data, expect in cases:
+            res = ex3_6.solve(input_data)
+            msg = self.MESSAGE_FMT.format(expect, res)
+            self.assertEqual(res, expect, msg)
 
     def test_ex3_7(self):
-        # TODO
-        pass
+        len_expected = 19
+        res = ex3_7.solve()
+        self.assertEqual(len(res), len_expected, "Số lượng phần tử không đúng")
+        self.assertEqual(res[0], '5 == 1 * 5', "Phần tử đầu tiên chưa đúng")
+        self.assertEqual(res[-1], '95 == 19 * 5', "Phần tử cuối chưa đúng")
 
     def test_ex3_8(self):
-        # TODO
-        pass
+        len_expected = 466
+        sum_expected = 233168
+        res = ex3_8.solve()
+        msg = self.MESSAGE_FMT.format(len(res), len_expected)
+        self.assertEqual(len(res), len_expected, "Chưa đủ phần tử: " + msg)
+        msg = self.MESSAGE_FMT.format(sum(res), sum_expected)
+        self.assertEqual(sum(res), sum_expected, "Tổng số chưa đúng: " + msg)
 
     def test_ex3_9(self):
+        len_expected = 23
+        res = ex3_9.solve()
+        msg = self.MESSAGE_FMT.format(len_expected, len(res))
+        self.assertEqual(len(res), len_expected, "Số bộ không đủ: " + msg)
+        self.assertEqual(res[0], [9, 1, 1], "Bộ số đầu tiên chưa chính xác")
+        self.assertEqual(res[-1], [1, 9, 1], "Bộ số cuối cùng chưa chính xác")
+
+    def test_ex3_10(self):
         # TODO
         pass
 
