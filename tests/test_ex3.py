@@ -20,6 +20,15 @@ import exercises.ex5_7 as ex5_7
 import exercises.ex5_8 as ex5_8
 import exercises.ex5_9 as ex5_9
 
+import exercises.ex35_1 as ex35_1
+import exercises.ex35_2 as ex35_2
+import exercises.ex35_3 as ex35_3
+import exercises.ex35_4 as ex35_4
+import exercises.ex35_5 as ex35_5
+import exercises.ex35_6 as ex35_6
+import exercises.ex35_7 as ex35_7
+import exercises.ex35_8 as ex35_8
+
 
 class TestExercise(unittest.TestCase):
     MESSAGE_FMT = 'Kết quả đúng là `{0}`, nhận được `{1}`'
@@ -199,6 +208,48 @@ class TestExercise5(TestExercise):
         provinces, populations = ex5_9.solve(ex5_9.data)
         self.assertEqual(provinces[-2:], ['Hải Phòng', 'Hậu Giang'],)
         self.assertEqual(populations[:3], [7681700, 6844100, 3426600])
+
+    def test_ex35_1(self):
+        result = ex35_1.solve(10)
+        self.assertEqual(len(result), 10)
+        self.assertEqual(set(result)[0], 2)
+
+    def test_ex35_2(self):
+        result = ex35_2.solve(5)
+        self.assertEqual(len(result), 5)
+        new_result = ex35_2.solve(5)
+        # They are random, should be different
+        self.assertTrue(result != new_result)
+
+    def test_ex35_3(self):
+        result = ex35_3.solve(10)
+        self.assertEqual(result[:2], [2, 4])
+        self.assertEqual(len(result), 10)
+
+    def test_ex35_4(self):
+        result = ex35_4.solve(5)
+        self.assertEqual(len(result), 5)
+        new_result = ex35_4.solve(5)
+        # They are random, should be different
+        self.assertTrue(result != new_result)
+
+    def test_ex35_5(self):
+        result = ex35_5.solve(6)
+        self.assertEqual(result[-1], '111111111111')
+        self.assertEqual(result[0], '111111')
+
+    def test_ex35_6(self):
+        result = ex35_6.solve(6)
+        self.assertEqual(result[-5:], [6, 9, 3, 7, 6])
+
+    def test_ex35_7(self):
+        result = ex35_7.solve(1000)
+        self.assertEqual(result, 233168)
+
+    def test_ex35_8(self):
+        result = ex35_8.solve(10)
+        self.assertEqual(result[:2], '0*')
+        self.assertEqual(result[-2:], '*9')
 
 
 if __name__ == "__main__":
