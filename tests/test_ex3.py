@@ -29,6 +29,12 @@ import exercises.ex35_6 as ex35_6
 import exercises.ex35_7 as ex35_7
 import exercises.ex35_8 as ex35_8
 
+import exercises.ex7_1 as ex7_1
+import exercises.ex7_2 as ex7_2
+import exercises.ex7_3 as ex7_3
+import exercises.ex7_4 as ex7_4
+import exercises.ex7_5 as ex7_5
+
 
 class TestExercise(unittest.TestCase):
     MESSAGE_FMT = 'Kết quả đúng là `{0}`, nhận được `{1}`'
@@ -250,6 +256,33 @@ class TestExercise5(TestExercise):
         result = ex35_8.solve(10)
         self.assertEqual(result[:2], '0*')
         self.assertEqual(result[-2:], '*9')
+
+    def test_ex7_1(self):
+        self.assertEqual(ex7_1.solve('1/3', '6/9'), 1.0)
+        self.assertEqual(ex7_1.solve('1/10', '1/10', '1/10'), 0.3)
+
+    def test_ex7_2(self):
+        name, HP = ex7_2.solve(ex7_2.Fighter('PyMi'), ex7_2.Fighter('Foo'))
+        self.assertTrue(name in ('PyMi', 'Foo'))
+        self.assertTrue(HP > 0)
+
+    def test_ex7_3(self):
+        result = ex7_3.solve(100)
+        self.assertEqual(len(result), 100)
+        self.assertEqual(isinstance(result[-1], float))
+        self.assertEqual(result[-1] >= 0.5)
+
+    def test_ex7_4(self):
+        cases = [('a', 'a'),
+                 ('aa', 'aa2'),
+                 ('abbbccccdddd', 'abb3cc4dd4'),
+                 ('xxyyyxyyx', 'xx2yy3xyy2x')]
+        self._test_all(ex7_4.solve, cases)
+
+    def test_ex7_5(self):
+        import os
+        result = ex7_5.solve()
+        self.assertEqual(os.__file__, result[0])
 
 
 if __name__ == "__main__":
