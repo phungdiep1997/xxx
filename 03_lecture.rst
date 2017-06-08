@@ -4,45 +4,70 @@
 String methods
 --------------
 
+str & unicode
+-------------
+
 Format
 ------
 
 - %s %d
 - Hello {}".format(name)
 
-Unicode
--------
-
-str
----
-
-and ``__str__``
-
-List
+Name
 ----
 
-- How to create an empty list?
-- How to create a list with strings?
-- How to create a list with numbers?
-- Given::
+- Variable
+It's the hardest problem: http://pymi.vn/tutorial/naming/,
+http://www.slideshare.net/pirhilton/how-to-name-things-the-hardest-problem-in-programming
 
-    numbers = [1,2,3]
+Binding
+~~~~~~~
 
-  How to have first item set to 5?
-- How to check is ``7`` in above list (test membership)?
-- How to check if 2 list are equals?
-- What happen when plus (+) two lists?
-- How to add an element to a list?
-- We can indexing and slice list like with string, how
-  to reverse a list? It returns WHAT?
-- 9 methods, built-in function ``reversed``, ``sorted``
-  Each method RETURN what?
-- `del list[idx]` to delete an element from list.
+Object
+~~~~~~
+
+name --binding--> object
+
+.. image:: Resource/var_binding.jpg
+
+
+- use id() to get "identify" of an object.
+- two names bind to same object with have id(x) == id(y)
+
+Deleting name
+-------------
+
+Before::
+
+  ~Namespace~~~~\
+  |name          \ --binding--> object
+  |---------------
+
+After::
+
+  ~Namespace~~~~\
+  |              \         object
+  |---------------
+
+And Garbage collector will collect object, remove it from memory.
+
+Deletion of a name removes the binding of that name from the local or global
+namespace, depending on whether the name occurs in a global statement in the
+same code block. If the name is unbound, a NameError exception will be raised.
 
 Control flow
 ------------
 
 - if/elif/else
+
+Ternary
+-------
+
+Assign either value to a variable base on condition::
+
+  x = 5
+  is_even = True if x %2 == 0 else False
+  print is_even
 
 Error handling
 --------------
@@ -66,32 +91,50 @@ nguyên đó chia cho 68 dư 1.
 Introduce to git
 ----------------
 
-Ternary
--------
+Link to git.rst
 
-Assign either value to a variable base on condition::
+List
+----
 
-  x = 5
-  is_even = True if x %2 == 0 else False
-  print is_even
+- How to create an empty list?
+- How to create a list with strings?
+- How to create a list with numbers?
+- Given::
+
+    numbers = [1,2,3]
+
+  How to have first item set to 5?
+- How to check is ``7`` in above list (test membership)?
+- How to check if 2 list are equals?
+- What happen when plus (+) two lists?
+- How to add an element to a list?
+- We can indexing and slice list like with string, how
+  to reverse a list? It returns WHAT?
+- 9 methods, built-in function ``reversed``, ``sorted``
+  Each method RETURN what?
+- `del list[idx]` to delete an element from list.
 
 Built-in Functions
 ------------------
 
-- len
-- id
-- dir
+https://docs.python.org/3/library/functions.html
+
+- help
 - sum
 - str
 - int
 - bool
-
-Methods
--------
-
 - all
-- check membership
-- len
+- any
+- hex, int, str, octal type
+- chr
+- dir
+- globals()
+- locals
+- input
+- min
+- max
+- ord
 
 References
 ----------
