@@ -142,21 +142,3 @@ So sánh giá trị lớn nhất đó với max(numbers) bằng câu lệnh sau,
 xảy ra::
 
   assert mymax == max(numbers), "wrong max"
-
-4.10
-----
-
-Sử dụng file names.txt https://projecteuler.net/project/resources/p022_names.txt
-(chuột phải và chọn 'Save Link/Target As...'), đó là file text nặng 46K,
-chứa hơn 5000 từ. Đầu tiên hãy sắp xếp các từ này theo thứ tự bảng chữ cái
-(alphabetical). Sau đó tính giá trị cho mỗi từ, nhân giá trị này với thứ tự của nó
-trong list đã sắp xếp để thu được điểm của từ này.
-
-Ví dụ, khi list đã được sắp xếp theo thứ tự bảng chữ cái, COLIN, có giá trị là
- 3 + 15 + 12 + 9 + 14 = 53, và đó là từ thứ 938 trong list.
-
-Vì vậy, COLIN có điểm là 938 × 53 = 49714.
-
-Tổng điểm của tất cả các từ trong file là bao nhiêu?
-
-Kiểm tra kết quả bằng https://projecteuler.net/problem=22
