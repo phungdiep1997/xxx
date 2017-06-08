@@ -4,8 +4,11 @@ Exercises
 Hướng dẫn làm bài tập
 ---------------------
 
-Tất cả bài tập phải làm vào trong thư mục ``exercises``, có thể tạo thư
-mục con tuỳ ý, miễn là nằm trong ``exercises`` để được kiểm tra tự động.
+Tất cả bài tập phải làm vào trong thư mục ``exercises``, sửa nội dung của các file `.py` đã có tương ứng với bài tập cần làm.
+Học xong chương 3 thì làm bài 'ex3_*.py' như ex3_1.py, ex3_2.py ...
+
+Riêng `ex35_*.py` là bài làm thêm cho học viên từ buổi 3 đến
+buổi 5.
 
 Nếu chưa học git, paste code vào đây (set Public) để nộp bài:
 https://gitlab.com/snippets/new
@@ -43,64 +46,31 @@ Ví dụ học viên khoá 1704 Hà Nội, tên HungNV, nộp bài 3::
 
 Sau đó làm bài tập và lưu vào git như sau:
 
-Với mỗi bài tập, tạo một file với tên::
 
-  X_Y.py
+Ví dụ bài 3.1 sẽ sửa file::
 
-Ví dụ bài 3.1 sẽ đặt tên file::
-
-  3_1.py
+  ex3_1.py
 
 Nội dung của file này chứa đề bài và lời giải của bài toán.
-Ví dụ với bài toán yêu cầu:
->in ra từ 1 đến 4
-
-học viên viết vào file vừa tạo với nội dung::
-
-  for i in range(1,5):
-      print i
+Học viên sửa nội dung trong function solve() để trả về kết quả
+phù hợp.
 
 Và chạy file này với lệnh::
 
-  python 3_1.py  # Trên Linux/Mac, gõ python3 để đảm bảo dùng đúng phiên bản.
+  python ex3_1.py  # Trên Linux/Mac, gõ python3 để đảm bảo dùng đúng phiên bản.
 
-Copy và paste kết quả vào cuối file ``3_1.py``::
-
-  # Result
-  # 1
-  # 2
-  # 3
-  # 4
-
-File ``3_1.py`` sẽ trông như sau::
-
-  #!/usr/bin/env python
-  # -*- coding: utf-8 -*-
-
-  '''
-  in ra từ 1 đến 4
-  '''
-
-  for i in range(1,5):
-      print i
-
-  # Result
-  # 1
-  # 2
-  # 3
-  # 4
 
 Học viên cài và sử dụng
 `flake8 <http://flake8.pycqa.org/en/latest/index.html#quickstart>`_
-để kiểm tra code viết đúng chuẩn chưa::
+để kiểm tra code viết đúng chuẩn chưa (chỉ bắt buộc sau buổi 4)::
 
-  flake8 3_1.py
+  flake8 ex3_1.py
 
 Nếu thấy không in ra gì tức đã đúng chuẩn.
 
 Làm bài xong học viên lưu vào git::
 
-  git add 3_1.py
+  git add ex3_1.py
   git commit -m 'add'
 
 Tiếp tục làm cho đủ bài tập rồi đưa bài tập lên trang GitLab::
