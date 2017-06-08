@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 
-'''
-
-
-
-'''
-
 
 def solve():
     '''Tính số nghiệm của bài toán lớp 3

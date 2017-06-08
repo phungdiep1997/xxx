@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
 
-'''
-Biết `0o644` là biểu diễn của giá trị `420` (hệ 10) trên hệ bát phân (8-Octal).
-Phải cộng `0o644` thêm bao nhiêu (ở dạng Octal) để thu được `0o777` ? In ra màn
-hình giá trị đó.
-
-'''
-
 
 def solve(octal):
     '''Trả về giá trị cần cộng thêm với octal để thu được 0o777

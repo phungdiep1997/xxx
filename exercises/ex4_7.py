@@ -2,8 +2,8 @@
 
 
 def solve(year):
-    '''Trả về tuple-2 tuple chứa năm và tên gọi can chi tương ứng. Tên phải
-    viết hoa chữ cái đầu.
+    '''Trả về tuple-2 chứa year và tên gọi can chi tương ứng. Các từ trong tên
+    đề phải viết hoa các chữ cái đầu.
 
     Biết có 10 thiên can::
 
@@ -13,6 +13,7 @@ def solve(year):
 
       ['tý', 'sửu', 'dần', 'mão', 'thìn', 'tị', 'ngọ', 'mui', 'thân', 'dậu',
        'tuất', 'hợi']
+
     Năm 2017 là năm "Đinh Dậu".
     '''
 

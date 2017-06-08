@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-'''
-#TODO add task here
-'''
-
 
 def solve(N):
     '''Creates a list contains all integer (not string) digits

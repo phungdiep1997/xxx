@@ -2,7 +2,7 @@
 
 
 def solve(numbers):
-    '''Tính tổng và tích của dãy số `numbers
+    '''Tính tổng và tích của dãy số `numbers`
 
     Return một tuple (sum, product)
     Không sử dụng hàm `sum`
