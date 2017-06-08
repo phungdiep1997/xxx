@@ -29,6 +29,12 @@ Change directory to cloned directory::
 Git branch
 ----------
 
+.. image:: git-branches.png
+
+https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
+
+.. image:: gittree.png
+
 > git-checkout - Checkout a branch or paths to the working tree
 
 Display current branch::
