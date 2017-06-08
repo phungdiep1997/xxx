@@ -1,30 +1,42 @@
 #!/usr/bin/env python3
+
+data = '''
+Come to the
+River
+Of my
+Soulful
+Sentiments
+Meandering silently
+Yearning for release.
+Hasten
+Earnestly
+As my love flows by
+Rushing through the flood-gates
+To your heart.
 '''
-- input_data: một số nguyên
-
-- output: in ra màn hình:
-
-Nếu số < 0: this is negative number
-
-Nếu số = 0: this is zero
-
-Nếu số > 0: this is positive number
-
-'''
+# https://www.poetrysoup.com/poem/cross_my_heart_609765
 
 
-def solve(input_data):
-    assert isinstance(input_data, int)
+def solve(text):
+    '''Trả về tiêu đề bài thơ ghép từ các chữ cái đầu tiên của mỗi dòng.
+    Chỉ viết hoa chữ cái đầu tiên.
+    '''
     result = None
 
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
     raise NotImplementedError("Học viên chưa làm bài này")
-    #
+
     return result
 
 
 def main():
-    print(solve(5))
+    '''
+    Cross my heart là một bài thơ thuộc thể loại "acrostic".
+    Khi ghép các chữ cái HOẶC các từ đầu tiên lại với nhau thu được một
+    thông điệp
+    '''
+    text = data
+    print(solve(text))
 
 
 if __name__ == "__main__":

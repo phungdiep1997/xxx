@@ -68,11 +68,8 @@ class TestExercise3(TestExercise):
         self._test_all(ex3_1.solve, cases)
 
     def test_ex3_2(self):
-        cases = [(-4, "this is negative number"),
-                 (0, "this is zero"),
-                 (10000, "this is positive number")
-                 ]
-        self._test_all(ex3_2.solve, cases)
+        text = 'P\nY\nM\nI'
+        self.assertEqual(ex3_2.solve(text), 'Pymi')
 
     def test_ex3_3(self):
         res = ex3_3.solve()
@@ -131,13 +128,13 @@ class TestExercise3(TestExercise):
         self.assertEqual(res[-1], '95 == 19 * 5', "Phần tử cuối chưa đúng")
 
     def test_ex3_8(self):
-        len_expected = 466
-        sum_expected = 233168
-        res = ex3_8.solve()
-        msg = self.MESSAGE_FMT.format(len(res), len_expected)
-        self.assertEqual(len(res), len_expected, "Chưa đủ phần tử: " + msg)
-        msg = self.MESSAGE_FMT.format(sum(res), sum_expected)
-        self.assertEqual(sum(res), sum_expected, "Tổng số chưa đúng: " + msg)
+        cases = [('ana', True),
+                 ('Civic', True),
+                 ('Python', False),
+                 ('', False),
+                 ('P', False),
+                 ('Able was I ere I saw Elba', True)]
+        self._test_all(ex3_8.solve, cases)
 
     def test_ex3_9(self):
         len_expected = 23

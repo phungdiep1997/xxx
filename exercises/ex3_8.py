@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 
-'''
-Tạo 1 list chứa các số nguyên dương nhỏ hơn 1000 là bội của 3 hoặc 5.
 
-Tính tổng của các số đó.
+def solve(text):
+    '''Kiểm tra text có phải là palindrome không.
 
-Gợi ý: dùng hàm sum()
+    Một string được gọi là `palindrome` nếu viết xuôi hay ngược đều thu được
+    kết quả như nhau (không phân biệt hoa thường, bỏ qua dấu space).
+    String phải dài hơn 1 chữ cái.
+    Ví dụ các palindrome: 'civic', 'Able was I ere I saw Elba', 'Noon'
 
-https://docs.python.org/3/library/functions.html#sum
-'''
-
-
-def solve():
-    '''Trả về 1 `list` các số dưới 1000 là bội của 3 hoặc 5
-
-    :rtype: list
+    :rtype: bool
     '''
     result = None
 
@@ -25,7 +20,7 @@ def solve():
 
 
 def main():
-    print(solve())
+    print(solve('Able was I ere I saw Elba'))
 
 
 if __name__ == "__main__":
