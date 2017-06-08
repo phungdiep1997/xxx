@@ -13,40 +13,6 @@ Chú ý 2: Khi làm các bài tập trong chương
 đề nghị không sử dụng câu lệnh "import" - tức không sử dụng
 bất kỳ thư viện nào.
 
-Bài 3.1
--------
-
-Đầu vào: một số nguyên dương
-
-Đầu ra: phần từ số 1 cuối cùng trở về bên
-phải - của dạng binary của số đầu vào.
-
-Ví dụ::
-
-  input_data = 5 # (0b101)
-  output = 1
-
-  input_data = 24 (11000)
-  output = 1000
-
-  input_data = 9 (1001)
-  output = 1
-
-Hàm có sẵn: bin(10) == '0b1010'
-
-Bài 3.2
--------
-
-- input_data: một số nguyên
-
-- output: in ra màn hình:
-
-Nếu số < 0: this is negative number
-
-Nếu số = 0: this is zero
-
-Nếu số > 0: this is positive number
-
 3.3
 ---
 In màn hình các số nguyên từ 1 đến 100, nhưng với bội của 3, in ra chữ "Fizz"

@@ -22,10 +22,13 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 all: lint test
 
 test:
-	pytest --ignore=conf.py -vvv
+	python -m unittest discover -s tests -vvv 2>test.err || true
+	cat test.err
+	grep -E 'Ran [0-9]+ tests' test.err
+	rm test.err
 
 lint:
-	flake8 --exclude='\.*',conf.py
+	flake8 --exclude='\.*',conf.py,'venv/','env/'
 
 ci: lint test
 
