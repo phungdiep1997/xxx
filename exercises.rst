@@ -46,19 +46,18 @@ Ví dụ học viên khoá 1704 Hà Nội, tên HungNV, nộp bài 3::
 
 Sau đó làm bài tập và lưu vào git như sau:
 
-
 Ví dụ bài 3.1 sẽ sửa file::
 
   ex3_1.py
 
 Nội dung của file này chứa đề bài và lời giải của bài toán.
 Học viên sửa nội dung trong function solve() để trả về kết quả
-phù hợp.
+phù hợp, đặt `result` bằng giá trị cần tìm. Không sửa đề bài, không sửa hàm
+main, không return giá trị khác `result`.
 
 Và chạy file này với lệnh::
 
   python ex3_1.py  # Trên Linux/Mac, gõ python3 để đảm bảo dùng đúng phiên bản.
-
 
 Học viên cài và sử dụng
 `flake8 <http://flake8.pycqa.org/en/latest/index.html#quickstart>`_
@@ -66,7 +65,26 @@ Học viên cài và sử dụng
 
   flake8 ex3_1.py
 
-Nếu thấy không in ra gì tức đã đúng chuẩn.
+Nếu thấy không in ra gì tức code đã đúng chuẩn Python (PEP8) rồi 🏆
+
+Học viên chạy lệnh sau tại thư mục chứa file đang đọc (thư mục gốc)::
+
+  python -m unittest discover -s tests -vvv
+
+Để kiểm tra xem bài làm mình đã đúng chưa. Nếu đúng, output sẽ trông như sau::
+
+  test_ex3_0 (test_ex3.TestExercise3) ... ok
+
+Nếu có exception xảy ra hay chưa làm, kết quả sẽ như sau::
+
+  test_ex3_0 (test_ex3.TestExercise3) ... ERROR
+
+Nếu sai, kết quả sẽ như sau::
+
+  test_ex3_0 (test_ex3.TestExercise3) ... FAIL
+
+Hãy đọc chi tiết của phần output sau khi chạy câu lệnh để xem lỗi/sai gì.
+Không cần quan tâm đến các bài mình chưa học.
 
 Làm bài xong học viên lưu vào git::
 
