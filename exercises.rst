@@ -44,6 +44,9 @@ Ví dụ học viên khoá 1704 Hà Nội, tên HungNV, nộp bài 3::
 
   git checkout -b pymi_1704HN_hungnv_bai3
 
+**Branch này sẽ chứa tất cả bài tập của bài học đó (ở ví dụ này là bài 3),
+chỉ tạo duy nhất 1 branch cho một bài học**.
+
 Sau đó làm bài tập và lưu vào git như sau:
 
 Ví dụ bài 3.1 sẽ sửa file::
