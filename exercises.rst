@@ -113,6 +113,9 @@ Nếu thấy thông báo như sau là đã thành công::
   To git@gitlab.com:pyfml/pyfml.git
    * [new branch]      hvn_123 -> hvn_123
 
+**Chú ý: mọi thay đổi trên code đều thực hiện trên máy rồi push lên GitLab,
+không chỉnh sửa online trên GitLab**
+
 Mở đường dẫn ở trên để tạo Merge Request (MR).
 Trong phần ``Description``, @nick_người_khác để báo cho họ. Cụ thể, mọi MR phải
 @hvn_familug và trợ giảng/ giảng viên của khoá.
