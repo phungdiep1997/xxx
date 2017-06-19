@@ -1,6 +1,13 @@
 6. File, JSON, Function, Exception
 ==================================
 
+Name and Object
+---------------
+
+- naming
+- binding
+- id
+
 try/except basic
 ----------------
 
@@ -45,6 +52,9 @@ CSV
 
 Pickle
 ------
+
+XML
+---
 
 User-defined function
 ---------------------
