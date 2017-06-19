@@ -13,6 +13,10 @@ import exercises.ex6_9 as ex6_9
 
 
 class TestExercise6(TestExercise):
+    @unittest.skip
+    def test_ex6_0(self):
+        pass
+
     def test_ex6_1(self):
         expected = [1230, 35670, 2165110, 90570, 138000]
         len_expected = len(expected)
@@ -87,6 +91,10 @@ class TestExercise6(TestExercise):
         self.assertTrue(isinstance(res, list))
         self.assertTrue(isinstance(res[0], tuple))
         self.assertTrue(('Singapore', 4) in res)
+
+    @unittest.skip
+    def test_ex6_10(self):
+        pass
 
 
 if __name__ == "__main__":
