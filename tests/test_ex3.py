@@ -1,4 +1,5 @@
 import unittest
+from base import TestExercise
 
 import exercises.ex3_0 as ex3_0
 import exercises.ex3_1 as ex3_1
@@ -45,16 +46,6 @@ import exercises.ex7_2 as ex7_2
 import exercises.ex7_3 as ex7_3
 import exercises.ex7_4 as ex7_4
 import exercises.ex7_5 as ex7_5
-
-
-class TestExercise(unittest.TestCase):
-    MESSAGE_FMT = 'Kết quả đúng là `{0}`, nhận được `{1}`'
-
-    def _test_all(self, func, cases):
-        for input, expect in cases:
-            output = func(input)
-            msg = self.MESSAGE_FMT.format(expect, output)
-            self.assertEqual(output, expect, msg)
 
 
 class TestExercise3(TestExercise):
