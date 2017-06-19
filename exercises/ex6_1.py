@@ -1,28 +1,14 @@
 #!/usr/bin/env python3
 
-'''
-Cho tiền điện sinh hoạt được tính theo công thức:
+data = {'first_50': 1230, 'from_51_to_100': 1530, 'above_100': 1786}
 
-- 50 số đầu: 1230 VND/số.
 
-- 50 số tiếp: 1530 VND/số.
-
-- Các số tiếp theo: 1786 VND/số.
-
-Tính tiền điện sinh hoạt với:
-
-- Input: số điện sử dụng
-
-- Ouput: số tiền phải trả
-
-Yêu cầu thêm:
-
-Cho đầu vào là một list chứa số điện tiêu thụ các tháng::
-
-   [1, 29, 1235, 69, 100].
-
-Tạo list chứa số tiền tương ứng phải trả.
-'''
+def calculate_cost(usage, prices):
+    '''Tính tiền điện (integer)
+    với giá tiền cho bởi đề bài, số điện tiêu thụ `usage`
+    '''
+    # Viết code tính toán vào đây
+    pass
 
 
 def solve(input_data):
@@ -31,11 +17,26 @@ def solve(input_data):
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     raise NotImplementedError("Học viên chưa làm bài này")
 
+    # Bài này làm mẫu, gọi function học viên định nghĩa với input để
+    # tính kết quả.
+    # Các bài còn lại học viên tự định nghĩa function và gọi function để
+    # tính toán kết quả `result`
+    result = [calculate_cost(i, input_data['prices'])
+              for i in input_data['usages']]
+
     return result
 
 
 def main():
-    print(solve())
+    '''
+    Cho tiền điện sinh hoạt được tính theo công thức:
+
+    - 50 số đầu: 1230 VND/số.
+    - 50 số tiếp: 1530 VND/số.
+    - Các số tiếp theo: 1786 VND/số.
+    '''
+    idata = {'usages': [1, 29, 1235, 69, 100], 'prices': data}
+    print(solve(idata))
 
 
 if __name__ == "__main__":
