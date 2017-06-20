@@ -272,9 +272,13 @@ class TestExercise5(TestExercise):
         self.assertEqual(newlinecp, ord('\n'))
 
     def test_ex5_9(self):
-        provinces, populations = ex5_9.solve(ex5_9.data)
-        self.assertEqual(provinces[-2:], ['Hải Phòng', 'Hậu Giang'],)
-        self.assertEqual(populations[:3], [7681700, 6844100, 3426600])
+        start_with_h, more_than_1mil = ex5_9.solve(ex5_9.data)
+        self.assertEqual(start_with_h[-2:],
+                         [('Hải Phòng', 1904100), ('Hậu Giang', 769700)])
+        self.assertEqual(
+            more_than_1mil[:2],
+            [('TP. Hồ Chí Minh', 7681700), ('Hà Nội', 6844100)]
+        )
 
     def test_ex35_1(self):
         result = ex35_1.solve(10)
