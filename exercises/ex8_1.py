@@ -12,7 +12,8 @@ dung trong file thành kiểu dữ liệu trên Python.
 dung, ghi ra một file tên là event.json
 
 - Dùng thư viện pickle và pickle.dump nội dung trên ra file event.pkl. Chú
-ý khi mở file, phải mở ở chế độ 'wb' để ghi ở dạng binary.
+ý khi mở file, phải mở ở chế độ ghi ghi ở dạng binary. Đọc thêm tại đây:
+`https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files`
 
 - In ra kích thước của mỗi file đã tạo.
 

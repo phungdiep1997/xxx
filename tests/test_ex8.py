@@ -22,9 +22,10 @@ class TestExercise8(TestExercise):
         len_expected = 4
         self.assertEqual(len(res), len_expected, "Không đủ số phần tử")
         with open('../exercises/ex8_1.py') as f:
+            data = f.read()
             self.assertTrue(
                 all([
-                    (True if f.read().find(i) != -1 else False)
+                    (True if data.find(i) != -1 else False)
                     for i in (
                         "yaml.load(", "json.dump(", "pickle.dump(", "wb"
                     )
