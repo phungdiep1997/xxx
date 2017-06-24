@@ -58,7 +58,7 @@ def solve(input_data):
 
 def main():
     data = words
-    result = solve(data)
+    print(solve(data))
 
     # Viết đoạn code in ra mỗi phần tử trong list `result` ngay bên dưới
     # không dùng for, không dùng list index

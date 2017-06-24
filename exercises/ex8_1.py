@@ -2,7 +2,8 @@
 
 
 __doc__ = '''
-- Lưu file https://raw.githubusercontent.com/hvnsweeting/states/master/salt/event/init.sls về máy với tên event.yaml
+- Lưu file ``https://raw.githubusercontent.com/hvnsweeting/
+states/master/salt/event/init.sls`` về máy với tên event.yaml
 
 - Dùng pip cài thư viện PyYAML, import yaml và dùng `yaml. load` để biến nội
 dung trong file thành kiểu dữ liệu trên Python.
@@ -19,10 +20,10 @@ Gợi ý: sử dụng os.stat(filename).st_size
 '''
 
 
-import os
-import yaml
-import json
-import pickle
+# import os
+# import yaml
+# import json
+# import pickle
 
 
 def your_function():

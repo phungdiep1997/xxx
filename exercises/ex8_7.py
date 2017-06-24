@@ -30,7 +30,7 @@ def your_function():
     :rtype list:
     '''
     # Sửa tên và function cho phù hợp, trả về kết quả yêu cầu.
-    file_name = "data.txt"
+    # file_name = "data.txt"
     result = None
 
     # Thực hiện logging như yêu cầu, viết code bên dưới

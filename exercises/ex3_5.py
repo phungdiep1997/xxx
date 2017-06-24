@@ -37,7 +37,7 @@ def solve(input_data):
 
 def main():
     # xử lí in ra theo yêu cầu đề bài bên dưới
-    result = solve(data)
+    # result = solve(data)
     pass
 
 

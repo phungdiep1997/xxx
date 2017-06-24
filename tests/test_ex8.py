@@ -1,4 +1,3 @@
-import os
 import unittest
 from base import TestExercise
 
@@ -10,7 +9,7 @@ import exercises.ex8_5 as ex8_5
 import exercises.ex8_6 as ex8_6
 import exercises.ex8_7 as ex8_7
 import exercises.ex8_8 as ex8_8
-import exercises.ex8_9 as ex8_9
+# import exercises.ex8_9 as ex8_9
 
 
 class TestExercise8(TestExercise):

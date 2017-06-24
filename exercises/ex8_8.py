@@ -15,7 +15,7 @@ với thởi điểm cuối là "06/23/17"
 Gợi ý: học viên sử dụng `sys.argv` hoặc module `argparse`
 '''
 
-import sys
+# import sys
 
 
 def your_function(input_data):
