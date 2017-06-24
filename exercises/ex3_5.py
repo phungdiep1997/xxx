@@ -21,9 +21,9 @@ data = ["I", "Love", "You", "Chiu", "Chiu"]
 
 
 def solve(input_data):
-    '''Trả về 1 `list` các `list` theo định dạng sau:
+    '''Trả về 1 `list` các `tuple` theo định dạng sau:
 
-        result = [[1, "I"], [2, "Love"], [3, "You"], [4, "Chiu"], [5, "Chiu"]]
+        result = [(1, "I"), (2, "Love"), (3, "You"), (4, "Chiu"), (5, "Chiu")]
 
     :rtype: list
     '''
@@ -36,9 +36,9 @@ def solve(input_data):
 
 
 def main():
-    for word in solve(data):
-        for num, value in word:
-            print(num, value)
+    # xử lí in ra theo yêu cầu đề bài bên dưới
+    result = solve(data)
+    pass
 
 
 if __name__ == "__main__":
