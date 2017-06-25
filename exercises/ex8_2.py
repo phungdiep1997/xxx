@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 
 __doc__ = '''
-Viết script head_tail.py:
+Yêu cầu: Viết script ex8_2.py:
 - khi gọi với -h và tên file sẽ in ra 10 dòng đầu tiên của file,
 - khi gọi với -t và tên file sẽ in ra 10 dòng cuối cùng của file.
 
 Usage::
 
-  head_tail.py -h file_path
+  ex8_2.py -h file_path
 
   -> Print 10 first lines of file_path
 
-  head_tail.py -t file_path
+  ex8_2.py -t file_path
 
   -> Print 10 last lines of file_path
 

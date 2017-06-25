@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
 
-__doc__ = '''Viết chương trình cứ 1 giây in ra màn hình thời gian hiện tại.
-
+__doc__ = '''
+Yêu cầu:
+- Viết chương trình cứ 1 giây in ra màn hình thời gian hiện tại.
 - Sau 60 lần thì chương trình kết thúc
 
-- Hướng dẫn: time.sleep, datetime.datetime.now
+Gợi ý:
+time.sleep, datetime.datetime.now
 '''
 
 import time
@@ -16,10 +18,6 @@ def your_function():
     - List chứa các điểm thời gian sau 60 lần thực hiện
     theo yêu cầu từ ``__doc__``
     - Tổng thời gian chạy của function
-
-    Lưu ý:
-    - Mỗi lần in ra màn hình thời gian hiện tại thì tiến hành thêm
-    thời gian đó vào list
 
     :rtype tuple:
     '''

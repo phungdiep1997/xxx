@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 __doc__ = '''
+Yêu cầu:
 - Cho ``words = ['nhung', 'bong', 'hoa', 'nho']``, in ra mỗi phần tử trong
 list mà không sử dụng for, không dùng list index.
 
@@ -20,14 +21,14 @@ def your_function(input_data):
     Lưu ý:
         - Ghi vào 1 file tên `spam.abc`
 
-        - Với input_data truyền vào, tiến hành ghi từng từ vào trong file,
+        - Với `input_data` truyền vào, tiến hành ghi từng từ vào trong file,
         mỗi từ 1 dòng
 
-        - Sau khi ghi vào file, mở lại file đó, trả về list chứa các dòng
+        - Sau khi ghi vào file, mở lại file đó, trả về `list` chứa các dòng
         sau khi đọc từ file
 
     Chú ý:
-        - Không dùng for, không dùng list index.
+        - Không dùng `for`, không dùng `list index`.
 
     :param input_data: dữ liệu sử dụng (words)
     :rtype list:
@@ -49,7 +50,7 @@ def your_function(input_data):
 
 
 def solve(input_data):
-    # function `solve` dành cho mục đích test, không cần sửa
+    # function `solve` dành cho mục đích `test`, không cần sửa
     # Gía trị trả về của `solve` và `your_function` là như nhau
     result = your_function(input_data)
 
@@ -58,10 +59,10 @@ def solve(input_data):
 
 def main():
     data = words
-    print(solve(data))
+    result = solve(data)  # NOQA
 
     # Viết đoạn code in ra mỗi phần tử trong list `result` ngay bên dưới
-    # không dùng for, không dùng list index
+    # không dùng `for`, không dùng `lít index`
     # Xóa dòng sau và viết code vào đây set các gía trị phù hợp
     raise NotImplementedError("Học viên chưa làm bài này")
 

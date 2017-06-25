@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 
 __doc__ = '''
-Viết một chương trình log ra 1 file tên "data.txt" :
+Viết một chương trình log ra 1 file tên "data.txt":
 - Ở level INFO, với message là "started" khi chương trình đã chạy
-- ở level ERROR, bắt exception xảy ra và log nội dung (message)
+- Ở level ERROR, bắt exception xảy ra và log nội dung (message)
 của exception (Exception tùy ý).
-- ở level DEBUG, với message "running" sau mỗi 5 s
+- Ở level DEBUG, với message "running" sau mỗi 5 s
 
 - Sau 1 phút, log ra `màn hình` dòng "exiting..." rồi kết thúc chương trình.
 
-Lưu ý:
-- Thực hiện ghi vào file theo format (format của logging)
+Yêu cầu:
+- Thực hiện ghi vào file theo format:
     ``(levelname) - (message) - (asctime)``
 - Đọc thêm về `format logging` tại đây hoặc gg:
     https://docs.python.org/3/library/logging.html#logrecord-attributes
@@ -30,7 +30,7 @@ def your_function():
     :rtype list:
     '''
     # Sửa tên và function cho phù hợp, trả về kết quả yêu cầu.
-    # file_name = "data.txt"
+    file_name = "data.txt"  # NOQA
     result = None
 
     # Thực hiện logging như yêu cầu, viết code bên dưới
@@ -51,7 +51,7 @@ def your_function():
 
 
 def solve():
-    '''Học viên không cần viết code trong hàm solve, chỉ thực hiện
+    '''Học viên không cần viết code trong hàm `solve`, chỉ thực hiện
     đổi tên lại tên function của mình cho phù hợp
 
     :rtype list:

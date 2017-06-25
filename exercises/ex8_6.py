@@ -1,6 +1,18 @@
 #!/usr/bin/env python3
 
 
+__doc__ = '''
+Kiểu dữ liệu collections.Counter giúp cho việc đếm trờ nên rất dễ dàng.
+https://docs.python.org/3/library/collections.html#collections.Counter
+
+Cho đoạn văn bản `s` như bên dưới
+
+Yêu cầu:
+- Tìm tần suất xuất hiện của mỗi từ
+- Tìm 3 từ xuất hiện nhiều nhất, cùng số lần xuất hiện.
+'''
+
+
 s = ('A Counter is a dict subclass for counting hashable objects. It is an '
      'unordered collection where elements are stored as dictionary keys and '
      'their counts are stored as dictionary values. Counts are allowed to be '
@@ -9,7 +21,7 @@ s = ('A Counter is a dict subclass for counting hashable objects. It is an '
 
 
 def your_function(input_data):
-    '''Trả về dict chứa tần suất xuất hiện của mỗi từ theo format:
+    '''Trả về `dict` chứa tần suất xuất hiện của mỗi từ theo format:
 
         result = {
             'a': 1,  # 1 lần xuất hiện
@@ -48,7 +60,7 @@ def your_function_2(input_data):
 
 
 def solve(input_data):
-    '''Học viên không cần viết code trong hàm solve, chỉ thực hiện
+    '''Học viên không cần viết code trong hàm `solve`, chỉ thực hiện
     đổi tên lại 2 function của mình cho phù hợp
 
     :rtype tuple:

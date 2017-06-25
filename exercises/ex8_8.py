@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
 __doc__ = '''
-Viết script get_version nhận vào ngày ở format <month>/<day>/year. VD: 03/28/16
-làm parameter và in ra một version được tính theo quy luật sau:
+Viết script get_version nhận vào ngày ở format <month>/<day>/<year>.
+VD: 03/28/16 làm parameter và in ra một version được tính theo quy luật sau:
 - Version ở dạng format: <MAJOR>.<MINOR>.<PATCH>, vd: "6.9.2"
 - Từ ngày 09 tháng 02 năm 2016, phiên bản bắt đầu là "1.0.0"
 - Mỗi 28 ngày, MAJOR lại tăng thêm 1, MINOR và PATCH set về 0
 - Mỗi tuần, MINOR tăng thêm 1 và PATCH sẽ set về 0
 - Cứ mỗi ngày, PATCH lại tăng thêm 1.
 
-Kiểm tra version thu được với lần lượt các input là "02/03/16", "09/06/16"
+Yêu cầu:
+- Kiểm tra version thu được với lần lượt các input là "02/03/16", "09/06/16"
 với thởi điểm cuối là "06/23/17"
 
 Gợi ý: học viên sử dụng `sys.argv` hoặc module `argparse`

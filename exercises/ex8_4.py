@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 
+
+__doc__ = '''
+Yêu cầu:
+- Viết decorator in ra thời gian chạy của 1 function
+'''
+
 import time
 
 
 def your_decorator(solve):
-    '''Sử dụng function của bạn như 1 decorator tính thời gian chạy
+    '''Sử dụng function của bạn như 1 `decorator` tính thời gian chạy
     của function `solve`
     '''
     # Sửa lại tên và function cho phù hợp
