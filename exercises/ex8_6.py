@@ -13,23 +13,18 @@ Yêu cầu:
 '''
 
 
-s = ('A Counter is a dict subclass for counting hashable objects. It is an '
-     'unordered collection where elements are stored as dictionary keys and '
-     'their counts are stored as dictionary values. Counts are allowed to be '
-     'any integer value including zero or negative counts. The Counter class '
-     'is similar to bags or multisets in other languages.')
+data = (
+    'A Counter is a dict subclass for counting hashable objects. It is an '
+    'unordered collection where elements are stored as dictionary keys and '
+    'their counts are stored as dictionary values. Counts are allowed to be '
+    'any integer value including zero or negative counts. The Counter class '
+    'is similar to bags or multisets in other languages.'
+)
 
 
-def your_function(input_data):
-    '''Trả về `dict` chứa tần suất xuất hiện của mỗi từ theo format:
-
-        result = {
-            'a': 1,  # 1 lần xuất hiện
-            'count': 3,  # 3 lần xuất hiện
-            ...
-        }
-
-    :rtype dict:
+def your_function(text):
+    '''Trả về Counter object chứa tần xuất xuất hiện của các từ trong `text`
+    :rtype Counter
     '''
     # Sửa tên và function cho phù hợp, trả về kết quả yêu cầu.
     result = None
@@ -42,8 +37,8 @@ def your_function(input_data):
     return result
 
 
-def your_function_2(input_data):
-    '''Trả về list chứa các tuple của 3 từ xuất hiện nhiều nhất kèm
+def your_function_2(top_n, counter):
+    '''Trả về list chứa các tuple của top_n từ xuất hiện nhiều nhất kèm
     số lần xuất hiện của từ đó
 
     :rtype list:
@@ -61,18 +56,18 @@ def your_function_2(input_data):
 
 def solve(input_data):
     '''Học viên không cần viết code trong hàm `solve`, chỉ thực hiện
-    đổi tên lại 2 function của mình cho phù hợp
+    đổi tên lại function của mình cho phù hợp
 
-    :rtype tuple:
+    :rtype list:
     '''
-    result = (your_function(input_data), your_function_2(input_data))
+    result = your_function_2(3, your_function(input_data))
 
     return result
 
 
 def main():
-    data = s
-    print(solve(data))
+    text = data
+    print(solve(text))
 
 
 if __name__ == "__main__":

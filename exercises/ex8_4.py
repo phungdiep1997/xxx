@@ -9,33 +9,35 @@ Yêu cầu:
 import time
 
 
-def your_decorator(solve):
-    '''Sử dụng function của bạn như 1 `decorator` tính thời gian chạy
-    của function `solve`
+def your_decorator(function):
+    '''Tính thời gian chạy của `function` (float)
     '''
     # Sửa lại tên và function cho phù hợp
-
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa làm bài này")
+    return
 
 
 # Sửa tên decorator cho phù hợp
 @your_decorator
+def worker():
+    for i in range(10000):
+        pass
+    time.sleep(1)
+
+
 def solve():
     '''Thực hiện 1 tính toán bất kì trong function `solve`
 
     Trả về kết quả tùy ý, gán lại vào `result`
     '''
-    result = None
-
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
+    result = worker()
+    # Xoá dòng sau sau khi đã thay đổi your_decorator phù hợp
     raise NotImplementedError("Học viên chưa thực hiện tính toán")
-    time.sleep(10)
     return result
 
 
 def main():
-    print(solve())
+    print("Function worker chạy mất: {0} giây".format(solve()))
 
 
 if __name__ == "__main__":

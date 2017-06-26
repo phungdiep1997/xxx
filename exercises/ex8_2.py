@@ -2,8 +2,8 @@
 
 __doc__ = '''
 Yêu cầu: Viết script ex8_2.py:
-- khi gọi với -h và tên file sẽ in ra 10 dòng đầu tiên của file,
-- khi gọi với -t và tên file sẽ in ra 10 dòng cuối cùng của file.
+- khi gọi với -h tên_file sẽ in ra 10 dòng đầu tiên của file,
+- khi gọi với -t tên_file sẽ in ra 10 dòng cuối cùng của file.
 
 Usage::
 
@@ -16,8 +16,6 @@ Usage::
   -> Print 10 last lines of file_path
 
 Use ``sys.argv``
-
-Lưu ý, chọn file có trên 10 dòng
 '''
 
 
@@ -60,9 +58,12 @@ def main():
     # file_path: đường dẫn tới file
     # Gợi ý: sử dụng sys.argv
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    raise NotImplementedError("Học viên chưa xử lí `argument` truyền vào hàm")
+    raise NotImplementedError("Học viên chưa xử lí `argument`")
 
-    solve(option, file_path)
+    lines = solve(option, file_path)
+    for line in lines:
+        line = line.rstrip()
+        print(line)
 
 
 if __name__ == "__main__":
