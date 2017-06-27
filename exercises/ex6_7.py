@@ -17,18 +17,19 @@ def diff_attributes(object1, object2):
 
 
 def solve(input_data):
+    result = diff_attributes(*input_data)
+    return result
+
+
+def main():
+    input_data = ([], '')
     print(
         "Các attribute mà chỉ {0} có còn {1} thì không:".format(
             type(input_data[0]),
             type(input_data[1])
         )
     )
-    result = diff_attributes(*input_data)
-    return result
-
-
-def main():
-    print(solve(([], '')))
+    print(solve(input_data))
 
 
 if __name__ == "__main__":
