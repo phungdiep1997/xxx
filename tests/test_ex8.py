@@ -74,7 +74,8 @@ class TestExercise8(TestExercise):
     def test_ex8_6(self):
         most_common = ex8_6.solve(ex8_6.data)
         self.assertEqual(len(most_common), 3, "Tổng số từ chưa đúng")
-        self.assertTrue(('are', 3) in most_common)
+        self.assertTrue([i in most_common for i in
+                         [('are', 3), ('counts', 3), ('is', 3)]])
 
     def test_ex8_7(self):
         res = ex8_7.solve()
