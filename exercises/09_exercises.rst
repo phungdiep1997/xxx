@@ -1,6 +1,14 @@
 9. Crawling
 ===========
 
+Từ chương này, bài làm sau khi chỉnh sửa sạch sẽ, có thể đưa lên GitHub
+để tạo profile đẹp cho học viên, tiện cho xin việc sau này.
+
+- Đăng ký GitHub rồi tạo repo và push code lên, xem thêm hướng dẫn tại
+  https://pymivn.github.io/vinagit/ và https://help.github.com/
+- Dùng GitHub là gợi ý cho các học viên muốn trở thành lập trình viên
+  và xin việc lập trình sau khi làm, không bắt buộc.
+
 1
 -
 
@@ -110,8 +118,6 @@ sẽ xảy ra.
 Chuẩn bị cho buổi sau
 ---------------------
 
-- Đăng ký GitHub
 - Đăng ký LinkedIn
 - Đăng ký nhận mail tin tức Python http://www.pythonweekly.com/
-- Viết review cho PyFML https://www.facebook.com/pyfml/
-- Theo dõi blog http://www.familug.org/
+- Xem các bài viết tag Python trên http://www.familug.org/

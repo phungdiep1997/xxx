@@ -59,3 +59,8 @@ Gợi ý:
 để đồ thị có thể ghi tiếng Việt, sử dụng font Unicode như "Arial"::
 
 	matplotlib.rc('font', family='Arial')
+
+10.6
+----
+
+- Viết review cho PyFML https://www.facebook.com/pyfml/
