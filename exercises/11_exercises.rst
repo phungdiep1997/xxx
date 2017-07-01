@@ -1,44 +1,66 @@
-11. Web
-=======
+11. Scipy
+=========
+
+.. note::
+
+  Học viên làm bài vào file `.py`, không nộp file Jupyter notebook.
+  File Jupyter notebook có thể paste lên http://gist.github.com/ để nộp kèm
+  link làm kết quả của bài tập.
 
 1
 -
-Làm một website tuyển dụng.
 
-Lấy dữ liệu các job từ: https://github.com/awesome-jobs/vietnam/issues
+Dùng numpy để tạo các ma trận sau::
 
-Lưu dữ liệu vào một bảng ``jobs`` trong SQLite. Xem ví dụ: https://docs.python.org/3/library/sqlite3.html
+	array([[ 0,  1,  2,  3,  4,  5],
+	       [10, 11, 12, 13, 14, 15],
+	       [20, 21, 22, 23, 24, 25],
+	       [30, 31, 32, 33, 34, 35],
+	       [40, 41, 42, 43, 44, 45],
+	       [50, 51, 52, 53, 54, 55]])
 
-Dùng Flask tạo website hiển thị danh sách các jobs khi vào đường dẫn ``/``.
-Khi bấm vào mỗi job (1 link), sẽ mở ra trang chi tiết về jobs (giống như trên
-các trang web tìm viêc).
+
+	array(  [[0., 0., 0., 0., 0.],
+			 [2., 0., 0., 0., 0.],
+			 [0., 3., 0., 0., 0.],
+			 [0., 0., 4., 0., 0.],
+			 [0., 0., 0., 5., 0.],
+			 [0., 0., 0., 0., 6.]])
 
 2
 -
 
-Crawl tất cả các bài viết có label
-Python(http://www.familug.org/search/label/Python), Command, sysadmin và 10 bài
-viết mới nhất ở homepage của http://www.familug.org/
+Vẽ đồ thị hàm sin,cos,tan trong khoảng -2𝜋 -> 2𝜋
 
-Tạo file `index.html`, chứa 4 cột tương ứng cho:
-
-```
-Python | Command | Sysadmin | Latest
-```
-
-Mỗi cột chứa các link bài viết, khi bấm vào sẽ mở ra bài gốc tại FAMILUG.org
-
-Tham khảo giao diện tại:
-- https://themes.getbootstrap.com/
-- http://getskeleton.com/#examples
-
-Push code lên GitLab repo, tạo 1 GitLab Page để view kết quả.
-https://pages.gitlab.io/
-
-Nâng cao: push code lên GitHub và tạo 1 GitHub Page: https://pages.github.com/
 
 3
 -
 
-Làm theo ví dụ tại http://flask.pocoo.org/docs/0.12/tutorial/
-Push code cuối cùng lên GitHub.com<div></div>
+Vẽ đồ thị hàm x = y**2 và x = y trên cùng 1 trục toạ độ.
+
+4
+-
+
+Tạo 1000 dữ liệu kiểu int ngẫu nhiêu gắn với 1000 ngày từ 09/02/2010.
+Dùng kiểu pd.Series.
+
+Tính cumsum() và vẽ đồ thị.
+
+5
+-
+
+Đọc file CSV dientich.csv (trong thư mục này) bằng pandas: pd.read_csv()
+Tìm ra 10 tỉnh có diện tích lớn nhất Việt Nam năm 2015.
+Vẽ đồ thị cột (bar) diện tích của 10 tỉnh đó.
+
+(dữ liệu lấy từ tổng cục thống kê Việt Nam: https://www.gso.gov.vn/default.aspx?tabid=714 chọn "Diện tích, dân số và mật độ dân số phân theo địa phương").
+
+Gợi ý:
+để đồ thị có thể ghi tiếng Việt, sử dụng font Unicode như "Arial"::
+
+	matplotlib.rc('font', family='Arial')
+
+6
+-
+
+- Viết review cho PyFML https://www.facebook.com/pyfml/

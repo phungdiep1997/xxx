@@ -1,97 +1,58 @@
-11. API, Flask, Jinja2, DB, ORM, Sphinx
-=======================================
+11. Data science
+================
 
-Sphinx
+random
 ------
 
-Make doc from .rst files in this directory.
+https://docs.python.org/3/faq/library.html#mathematics-and-numerics
 
-Static web and dynamic web
---------------------------
+Hashing
+-------
 
-Flask
+- hash function
+- hash()
+
+numpy
 -----
 
-Components
-~~~~~~~~~~
+http://www.scipy-lectures.org/intro/numpy/array_object.html
 
-- Routing
-- Templating
+- import numpy as np
+- Array type: numpy.ndarray?
+- Create an array by np.array, np.ones, np.zeros, np.eyes
+- Create 1D array by: np.arange, np.linspace
+- + - * / matrix with matrix (element wise)
+- Selecting column, rows
+- Broadcasting
 
-Exercise: write an endpoint that return list of running process
-(ps xau) in JSON format::
-
-  [
-    {
-      'PID': NUMBER,
-      'CPU': PERCENT_CPU,
-      'MEM': PERCENT_MEM,
-      'CMD': COMMAND,
-    },
-    {...}
-  ]
-
-- Website is HTML page that endpoints return. We will need to return HTML code,
-  so write them in .py file? No, we are not PHP, we have a better way.
-
-Jinja2
+pandas
 ------
 
-CGI and WSGI
-------------
+http://pandas.pydata.org/pandas-docs/stable/10min.html
 
-CGI
-~~~
+- import pandas as pd
+- pd.Series
+- pd.DataFrame
+- Creating new DataFrame by pd.DataFrame.
+- Selecting columns, rows
+- Load from xls, csv, database
 
-A CGI script is invoked by an HTTP server, usually to process user input
-submitted through an HTML <FORM> or <ISINDEX> element.
+matplotlib
+----------
 
-Most often, CGI scripts live in the server’s special cgi-bin directory. The
-HTTP server places all sorts of information about the request (such as the
-client’s hostname, the requested URL, the query string, and lots of other
-goodies) in the script’s shell environment, executes the script, and sends the
-script’s output back to the client.
+http://www.scipy-lectures.org/intro/matplotlib/index.html#introduction
+- Plot a sin chart.
+- Plot distribution of a normal population.
+- Plot histogram.
 
-https://docs.python.org/3/library/cgi.html#introduction
+scipy
+-----
 
-WSGI
-~~~~
+http://www.scipy-lectures.org/intro/scipy.html
+- Load image
+- Resize image
 
-The Web Server Gateway Interface (WSGI) is a standard interface between web
-server software and web applications written in Python. Having a standard
-interface makes it easy to use an application that supports WSGI with a number
-of different web servers.
+Distributing module
+-------------------
 
-Only authors of web servers and programming frameworks need to know every
-detail and corner case of the WSGI design. You don’t need to understand every
-detail of WSGI just to install a WSGI application or to write a web application
-using an existing framework.
-
-https://docs.python.org/3/library/wsgiref.html
-
-ORM
----
-
-What is API?
-------------
-
-- Application programming interface.
-- Endpoints
-- Slug
-- URL
-- URI
-
-TDD
----
-
-- unittest
-- BDD
-- http://flask.pocoo.org/docs/0.10/testing/
-- https://docs.djangoproject.com/en/1.8/topics/testing/
-
-
-Top packages
-------------
-
-- http://pythonwheels.com/
-- https://github.com/hvnsweeting/pypitop
+https://docs.python.org/3/distributing/index.html
