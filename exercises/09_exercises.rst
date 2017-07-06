@@ -8,6 +8,18 @@ Từ chương này, bài làm sau khi chỉnh sửa sạch sẽ, có thể đưa
   https://pymivn.github.io/vinagit/ và https://help.github.com/
 - Dùng GitHub là gợi ý cho các học viên muốn trở thành lập trình viên
   và xin việc lập trình sau khi làm, không bắt buộc.
+- Các API có thể yêu cầu người dùng tạo tài khỏan và sử dụng "token". Token
+  là một string dài, cấp cho người dùng để họ dùng với code, chứng minh mình là
+  một user hợp lệ (thay vì dùng username/password truyền thống).
+  Với các public API không bắt buộc dùng token, khi sử dụng token, user sẽ
+  thường có quyền truy cập API nhiều request/ngày hơn so với không dùng.
+- Token hay user/password là những thông tin cần được bảo mật, không viết vào
+  code rồi push lên mạng - sử dụng file text để chứa thông tin (JSON/text/YAML
+  ...) hay https://docs.python.org/3/library/configparser.html
+  và không push file này lên. Hoặc cách khác là sử dụng biến environment (truy
+  cập qua os.environ) https://docs.python.org/3/library/os.html#os.environ,
+  set biến environment:
+  http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html
 
 1
 -

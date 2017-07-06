@@ -1,6 +1,15 @@
 10. Web
 =======
 
+- Code sau khi hoàn thành, có thể cho "chạy thật", việc "chạy thật" này gọi là
+  "deployment" - triển khai cài đặt. Tài liệu Flask có hướng dẫn các option để
+  deploy Flask app: http://flask.pocoo.org/docs/0.12/deploying/
+- Viết các câu lệnh SQL về lâu dài sẽ trở thành 1 công việc nhàm chán (tạo/sửa
+  /xóa) hàng trăm object ... Khi làm việc với những ứng dụng như vậy, người
+  ta thường sử dụng một "thư viện" để chuyển đổi qua lại giữa SQL và Python
+  object và gọi là ORM (object relation map), Django có sẵn Django ORM, Flask
+  thường dùng SQLAlchemy.
+
 1
 -
 Làm một website tuyển dụng.
