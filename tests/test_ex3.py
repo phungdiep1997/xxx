@@ -11,6 +11,7 @@ import exercises.ex3_6 as ex3_6
 import exercises.ex3_7 as ex3_7
 import exercises.ex3_8 as ex3_8
 import exercises.ex3_9 as ex3_9
+import exercises.ex3_10 as ex3_10
 
 import exercises.ex4_1 as ex4_1
 import exercises.ex4_2 as ex4_2
@@ -136,7 +137,9 @@ class TestExercise3(TestExercise):
         self.assertEqual(res[-1], [1, 9, 1], "Bộ số cuối cùng chưa chính xác")
 
     def test_ex3_10(self):
-        pass
+        res = ex3_10.solve(*ex3_10.data)
+        res.sort()
+        self.assertEqual(res, [4, 5])
 
 
 class TestExercise4(TestExercise):
