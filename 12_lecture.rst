@@ -49,6 +49,11 @@ argparse
 - help
 - default
 
+sysadmin automation
+-------------------
+
+https://github.com/NARKOZ/hacker-scripts
+
 logging
 -------
 
