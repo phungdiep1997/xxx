@@ -10,7 +10,13 @@ Học xong chương 3 thì làm bài 'ex3_*.py' như ex3_1.py, ex3_2.py ...
 Riêng `ex35_*.py` là bài làm thêm cho học viên từ buổi 3 đến
 buổi 5.
 
+Editor
+^^^^^^
+
 Cài đặt editor để mở code, xem tại `đây <https://gitlab.com/pyfml/prepare#c%C3%A0i-%C4%91%E1%BA%B7t-editor-sau-bu%E1%BB%95i-2->`_
+
+Cách xử lý "lỗi
+^^^^^^^^^^^^^^^
 
 Khi chạy lệnh không thành công, vui lòng cung cấp đầy đủ câu lệnh và output,
 không chỉ nói "lỗi". Trên Slack, viết code vào trong dấu ``` như sau::
@@ -22,13 +28,19 @@ không chỉ nói "lỗi". Trên Slack, viết code vào trong dấu ``` như sa
 Nếu chưa học git, paste code vào đây (set Public) để nộp bài:
 https://gitlab.com/snippets/new
 
+Lấy code về máy
+^^^^^^^^^^^^^^^^
+
 Cài đặt git để quản lý các file code. Xem chi tiết tại https://gitlab.com/pyfml/prepare#chu%E1%BA%A9n-b%E1%BB%8B-tr%C6%B0%E1%BB%9Bc-bu%E1%BB%95i-3
 
 Clone (download) repo của lớp học về máy nếu chưa clone::
 
   git clone https://gitlab.com/pyfml/pyfml.git pyfml
 
-*MỖI LẦN* làm bài tập, làm như sau:
+Các bước nộp bài
+^^^^^^^^^^^^^^^^
+
+**MỖI LẦN** làm bài tập, làm như sau:
 
 Vào thư mục ``pyfml``, kiểm tra branch::
 
@@ -172,5 +184,5 @@ Sửa lại file lỗi, rồi lại ``git add``, ``git commit``, ``git push``, m
 Bài tập làm thêm
 -----------------
 
-- HackerRank https://www.hackerrank.com/domains/python/py-introduction
 - ProjectEuler https://projecteuler.net/
+- HackerRank https://www.hackerrank.com/domains/python/py-introduction
