@@ -10,7 +10,7 @@ Học xong chương 3 thì làm bài 'ex3_*.py' như ex3_1.py, ex3_2.py ...
 Riêng `ex35_*.py` là bài làm thêm cho học viên từ buổi 3 đến
 buổi 5.
 
-Cài đặt editor để mở code, xem tại đây https://gitlab.com/pyfml/prepare#c%C3%A0i-%C4%91%E1%BA%B7t-editor-sau-bu%E1%BB%95i-2-
+Cài đặt editor để mở code, xem tại `đây <https://gitlab.com/pyfml/prepare#c%C3%A0i-%C4%91%E1%BA%B7t-editor-sau-bu%E1%BB%95i-2->`_
 
 Khi chạy lệnh không thành công, vui lòng cung cấp đầy đủ câu lệnh và output,
 không chỉ nói "lỗi". Trên Slack, viết code vào trong dấu ``` như sau::
