@@ -1,8 +1,8 @@
 Exercises
 =========
 
-**Lớp học Python3, nếu máy bạn có cả 2 phiên bản, khi chạy lệnh `python ...`
-dùng `python3` thay vì `python` để tránh dùng nhầm Python2**
+**Lớp học Python3, nếu máy bạn có cả 2 phiên bản, khi chạy lệnh ``python ...``
+dùng ``python3`` thay vì ``python`` để tránh dùng nhầm Python2**
 
 Hướng dẫn làm bài tập
 ---------------------
