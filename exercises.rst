@@ -10,8 +10,12 @@ Học xong chương 3 thì làm bài 'ex3_*.py' như ex3_1.py, ex3_2.py ...
 Riêng `ex35_*.py` là bài làm thêm cho học viên từ buổi 3 đến
 buổi 5.
 
+Cài đặt editor để mở code, xem tại đây https://gitlab.com/pyfml/prepare#c%C3%A0i-%C4%91%E1%BA%B7t-editor-sau-bu%E1%BB%95i-2-
+
 Nếu chưa học git, paste code vào đây (set Public) để nộp bài:
 https://gitlab.com/snippets/new
+
+Cài đặt git để quản lý các file code. Xem chi tiết tại https://gitlab.com/pyfml/prepare#chu%E1%BA%A9n-b%E1%BB%8B-tr%C6%B0%E1%BB%9Bc-bu%E1%BB%95i-3
 
 Clone (download) repo của lớp học về máy nếu chưa clone::
 
@@ -52,6 +56,8 @@ Sau đó làm bài tập và lưu vào git như sau:
 Ví dụ bài 3.1 sẽ sửa file::
 
   ex3_1.py
+
+bằng editor đã cài.
 
 Nội dung của file này chứa đề bài và lời giải của bài toán.
 Học viên sửa nội dung trong function solve() để trả về kết quả
