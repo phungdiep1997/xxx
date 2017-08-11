@@ -15,8 +15,8 @@ Editor
 
 Cài đặt editor để mở code, xem tại `đây <https://gitlab.com/pyfml/prepare#c%C3%A0i-%C4%91%E1%BA%B7t-editor-sau-bu%E1%BB%95i-2->`_
 
-Cách xử lý "lỗi
-^^^^^^^^^^^^^^^
+Cách xử lý "lỗi"
+^^^^^^^^^^^^^^^^
 
 Khi chạy lệnh không thành công, vui lòng cung cấp đầy đủ câu lệnh và output,
 không chỉ nói "lỗi". Trên Slack, viết code vào trong dấu ``` như sau::
