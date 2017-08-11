@@ -62,6 +62,7 @@ class TestExercise3(TestExercise):
     def test_ex3_2(self):
         text = 'P\nY\nM\nI'
         self.assertEqual(ex3_2.solve(text), 'Pymi')
+        self.assertEqual(ex3_2.solve(ex3_2.data), 'Crossmyheart')
 
     def test_ex3_3(self):
         res = ex3_3.solve()
