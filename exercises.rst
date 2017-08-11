@@ -12,6 +12,13 @@ buổi 5.
 
 Cài đặt editor để mở code, xem tại đây https://gitlab.com/pyfml/prepare#c%C3%A0i-%C4%91%E1%BA%B7t-editor-sau-bu%E1%BB%95i-2-
 
+Khi chạy lệnh không thành công, vui lòng cung cấp đầy đủ câu lệnh và output,
+không chỉ nói "lỗi". Trên Slack, viết code vào trong dấu ``` như sau::
+
+  ```
+  codehere
+  ```
+
 Nếu chưa học git, paste code vào đây (set Public) để nộp bài:
 https://gitlab.com/snippets/new
 
@@ -76,7 +83,7 @@ Học viên cài và sử dụng
 
 Nếu thấy không in ra gì tức code đã đúng chuẩn Python (PEP8) rồi 🏆
 
-Học viên chạy lệnh sau tại thư mục chứa file đang đọc (thư mục gốc)::
+Học viên chạy lệnh sau tại thư mục chứa file đang đọc (thư mục gốc: `pyfml`)::
 
   python -m unittest discover -s tests -vvv
 
