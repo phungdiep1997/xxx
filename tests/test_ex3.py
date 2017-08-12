@@ -76,7 +76,6 @@ class TestExercise3(TestExercise):
         for num, value in cases:
             msg = self.MESSAGE_FMT.format(value, res[num - 1])
             self.assertEqual(res[num - 1], value, msg)
-        self._test_all(ex3_3.solve, cases)
 
     def test_ex3_4(self):
         cases = [("....slsslslsls...sls", "....slsslslsls.."),
