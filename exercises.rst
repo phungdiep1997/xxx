@@ -146,7 +146,7 @@ Tiếp tục làm các bài tập khác, rồi add, commit, push.
 **Chú ý: mọi thay đổi trên code đều thực hiện trên máy rồi push lên GitLab,
 không chỉnh sửa online trên GitLab**
 
-Mở đường dẫn ở trên để tạo Merge Request (MR).
+Mở đường dẫn ở trên để tạo Merge Request (MR) (hoặc làm theo hướng dẫn ở `đây <https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html>`_).
 Trong phần ``Description``, @nick_người_khác để báo cho họ. Cụ thể, mọi MR phải
 @hvn_familug và trợ giảng/ giảng viên của khoá.
 
