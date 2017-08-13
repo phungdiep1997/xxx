@@ -122,7 +122,7 @@ Làm bài xong học viên lưu vào git::
   git add ex3_1.py
   git commit -m 'add'
 
-Tiếp tục làm cho đủ bài tập rồi đưa bài tập lên trang GitLab::
+Push (đẩy) bài tập lên trang GitLab::
 
   git push origin YOUR_BRANCH  # CHÚ Ý, phải dùng đúng tên branch của bạn
 
@@ -140,6 +140,8 @@ Nếu thấy thông báo như sau là đã thành công::
   remote:
   To git@gitlab.com:pyfml/pyfml.git
    * [new branch]      hvn_123 -> hvn_123
+
+Tiếp tục làm các bài tập khác, rồi add, commit, push.
 
 **Chú ý: mọi thay đổi trên code đều thực hiện trên máy rồi push lên GitLab,
 không chỉnh sửa online trên GitLab**
