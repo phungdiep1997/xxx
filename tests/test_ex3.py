@@ -286,7 +286,7 @@ class TestExercise5(TestExercise):
     def test_ex35_1(self):
         result = ex35_1.solve(10)
         self.assertEqual(len(result), 10)
-        self.assertEqual(set(result)[0], 2)
+        self.assertEqual(list(set(result))[0], 2)
 
     def test_ex35_2(self):
         result = ex35_2.solve(5)
