@@ -22,7 +22,8 @@ Cách xử lý "lỗi"
 ^^^^^^^^^^^^^^^^
 
 Khi chạy lệnh không thành công, vui lòng cung cấp đầy đủ câu lệnh và output,
-không chỉ nói "lỗi". Trên Slack, viết code vào trong dấu ``` như sau::
+không chỉ nói "lỗi". Trên Slack, viết code vào trong dấu ``` (dấu cạnh số 1
+trên bàn phím) như sau::
 
   ```
   codehere
@@ -98,11 +99,12 @@ Học viên cài và sử dụng
 
 Nếu thấy không in ra gì tức code đã đúng chuẩn Python (PEP8) rồi 🏆
 
-Học viên chạy lệnh sau tại thư mục chứa file đang đọc (thư mục gốc: `pyfml`)::
+Học viên chạy lệnh sau tại thư mục `pyfml` để kiểm tra xem bài làm mình đã đúng
+chưa::
 
   python -m unittest discover -s tests -vvv
 
-Để kiểm tra xem bài làm mình đã đúng chưa. Nếu đúng, output sẽ trông như sau::
+Nếu đúng, output sẽ trông như sau::
 
   test_ex3_0 (test_ex3.TestExercise3) ... ok
 
