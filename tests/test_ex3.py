@@ -294,6 +294,13 @@ class TestExercise5(TestExercise):
         new_result = ex35_2.solve(5)
         # They are random, should be different
         self.assertTrue(result != new_result)
+        self.assertTrue(0 <= result[0] <= 9)
+
+        # do the same with 10
+        result = ex35_2.solve(10)
+        self.assertEqual(len(result), 10)
+        new_result = ex35_2.solve(10)
+        self.assertTrue(result != new_result)
 
     def test_ex35_3(self):
         result = ex35_3.solve(10)
