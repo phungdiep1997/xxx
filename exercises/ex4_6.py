@@ -2,8 +2,9 @@
 
 
 def solve(text):
-    '''Bóc tách từ `text` ra một list các số
-    theo thứ tự chúng xuất hiện trong `text`.
+    '''Bóc tách từ `text` ra một list các số theo thứ tự chúng xuất hiện.
+
+    VD: 'Bé lên 3 bé đi lớp 4' -> [3, 4]
     '''
 
     result = None
