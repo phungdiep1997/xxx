@@ -66,7 +66,9 @@ class TestExercise3(TestExercise):
 
     def test_ex3_3(self):
         res = ex3_3.solve()
-        self.assertTrue(isinstance(res, list))
+        self.assertTrue(
+            isinstance(res, list), "Expect list, got: {0}".format(type(res))
+        )
         self.assertEqual(
             len(res),
             len(range(1, 101)),
