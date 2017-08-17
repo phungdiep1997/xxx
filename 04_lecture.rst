@@ -57,8 +57,6 @@ Git concept
 - Branch
 - Commit
 
-See :doc:`/git`
-
 Identity test
 -------------
 
