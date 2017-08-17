@@ -181,6 +181,29 @@ Sửa lại file lỗi, rồi lại ``git add``, ``git commit``, ``git push``, m
 đổi sẽ được đưa lên GitLab và update Merge Request.
 
 
+Test riêng một bài
+-------------------
+
+Từ thư mục ``pyfml``, chạy::
+
+  $ python -m unittest tests.test_ex3.TestExercise4.test_ex4_9
+  E
+  ======================================================================
+  ERROR: test_ex4_9 (tests.test_ex3.TestExercise4)
+  ----------------------------------------------------------------------
+  Traceback (most recent call last):
+    File "/home/hvn/me/pyfml/tests/test_ex3.py", line 207, in test_ex4_9
+      self._test_all(ex4_9.solve, cases)
+    File "/home/hvn/me/pyfml/tests/base.py", line 9, in _test_all
+      output = func(input)
+    File "/home/hvn/me/pyfml/exercises/ex4_9.py", line 12, in solve
+      raise NotImplementedError("Học viên chưa làm bài này")
+  NotImplementedError: Học viên chưa làm bài này
+
+  ----------------------------------------------------------------------
+  Ran 1 test in 0.000s
+
+
 .. toctree::
    :caption: All Exercises Content
    :maxdepth: 2
