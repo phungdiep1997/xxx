@@ -1,5 +1,5 @@
 import unittest
-from .base import TestExercise
+from tests.base import TestExercise
 
 import exercises.ex8_1 as ex8_1
 import exercises.ex8_2 as ex8_2
