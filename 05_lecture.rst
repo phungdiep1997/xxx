@@ -1,5 +1,23 @@
-5. Debug, Import, Set, Dict
-===========================
+5. IO, Debug, Import, Set, Dict
+===============================
+
+IO
+--
+
+Handling Input and Output.
+
+Read & write file
+-----------------
+
+Introduce using file.
+open(), modes, close(), with, iter over lines.
+
+Iterate over lines::
+
+  with open('/etc/hosts') as f:
+      for line in f:
+          print(line, end='')
+  print("Has file f closed? {0}".format(f.closed))
 
 Tuple unpacking
 ---------------
@@ -38,6 +56,25 @@ Python module
 - How to write a python module?
 - How to run a Python module?
 
+Dictionary
+----------
+
+- Ways to create dict: literal, dict comprehension, dict(list of tuples)
+- What is a real dict, says English-Vietnamese dict? what are its properties?
+  So does Python dict
+- Only hashable objects can be used as key
+- Present several real-world dicts
+- Iterate over dict (k,v, items(), keys(), values())
+- Iterate over key only
+- Example with nested dict
+- Dict keys has no order
+- Introduction to JSON, serialization.
+- Check membership (``x in list``)::
+
+    if x in range(100000): # algorithm complexity O(N)
+
+- Check membership of ``dict`` is ``O(1) - constant``
+
 Set
 ---
 
@@ -58,47 +95,10 @@ Compare with is and ==
 
 - Use ``is`` only for boolean, ``None``, empty tuple.
 
-Dictionary
-----------
-
-- Ways to create dict: literal, dict comprehension, dict(list of tuples)
-- What is a real dict, says English-Vietnamese dict? what are its properties?
-  So does Python dict
-- Only hashable objects can be used as key
-- Present several real-world dicts
-- Iterate over dict (k,v, items(), keys(), values())
-- Iterate over key only
-- Example with nested dict
-- Dict keys has no order
-- Introduction to JSON, serialization.
-- Check membership (``x in list``)::
-
-    if x in range(100000): # algorithm complexity O(N)
-
-- Check membership of ``dict`` is ``O(1) - constant``
-
 Iterable
 --------
 
 List, tuple, dict, set, string.
-
-IO
---
-
-Handling Input and Output.
-
-Read & write file
------------------
-
-Introduce using file.
-open(), modes, close(), with, iter over lines.
-
-Iterate over lines::
-
-  with open('/etc/hosts') as f:
-      for line in f:
-          print(line, end='')
-  print("Has file f closed? {0}".format(f.closed))
 
 Reading code
 ------------
