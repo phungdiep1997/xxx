@@ -322,7 +322,7 @@ class TestExercise5(TestExercise):
         self.assertEqual(result[0], '111111')
 
     def test_ex35_6(self):
-        result = ex35_6.solve(6)
+        result = ex35_6.solve(1000)
         self.assertEqual(result[-5:], [6, 9, 3, 7, 6])
 
     def test_ex35_7(self):
