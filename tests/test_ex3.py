@@ -313,11 +313,10 @@ class TestExercise5(TestExercise):
         result = ex35_4.solve(5)
         self.assertEqual(len(result), 5)
         new_result = ex35_4.solve(5)
-        # They are random, should be different
-        self.assertTrue(result != new_result)
+        self.assertTrue(result != new_result, 'Output should be random')
 
     def test_ex35_5(self):
-        result = ex35_5.solve(6)
+        result = ex35_5.solve(12)
         self.assertEqual(result[-1], '111111111111')
         self.assertEqual(result[0], '111111')
 
