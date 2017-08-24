@@ -4,7 +4,8 @@
 def solve(N):
     '''Creates a list like this by listcomps::
 
-      ['111111', '333333', ..., '999999', '111111111111',...]
+      ['111111', '333333', ..., '999999', '111111111111',..., NNNNNN]
+
     '''
 
     result = None
@@ -16,7 +17,7 @@ def solve(N):
 
 
 def main():
-    print(solve(6))
+    print(solve(20))
 
 
 if __name__ == "__main__":
