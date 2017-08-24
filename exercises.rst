@@ -211,6 +211,11 @@ Từ thư mục ``pyfml``, chạy::
 
    exercises/*
 
+Tham khảo các lỗi hay gặp
+-------------------------
+
+:doc:`best_practices`
+
 Bài tập làm thêm
 -----------------
 
