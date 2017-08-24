@@ -325,6 +325,8 @@ class TestExercise5(TestExercise):
         self.assertEqual(result[-5:], [6, 9, 3, 7, 6])
 
     def test_ex35_7(self):
+        result = ex35_7.solve(10)
+        self.assertEqual(result, 23)
         result = ex35_7.solve(1000)
         self.assertEqual(result, 233168)
 
@@ -332,6 +334,18 @@ class TestExercise5(TestExercise):
         result = ex35_8.solve(10)
         self.assertEqual(result[:2], '0*')
         self.assertEqual(result[-2:], '*9')
+
+        N = 10
+        matrix = [list(range(N)) for i in range(N)]
+        for rowidx, row in enumerate(matrix):
+            for idx, col in enumerate(row):
+                if idx == rowidx or idx == N-rowidx-1:
+                    row[idx] = str(rowidx)
+                else:
+                    row[idx] = '*'
+        matrix = '\n'.join([''.join(line) for line in matrix])
+
+        self.assertEqual(result, matrix)
 
     def test_ex7_1(self):
         self.assertEqual(ex7_1.solve('1/3', '6/9'), 1.0)
