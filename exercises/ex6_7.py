@@ -10,7 +10,7 @@ def diff_attributes(object1, object2):
     "Magic" attribute được Python dùng với ý nghĩa đặc biệt, người dùng không
     nên tự đặt tên theo kiểu magic này.
 
-    Tìm list các "magic" attribute mà cả object1 và object2 đều có
+    Tìm list các "magic" attribute mà chỉ object1 có, object2 không có
     '''
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     raise NotImplementedError("Học viên chưa làm bài này")
