@@ -359,8 +359,8 @@ class TestExercise5(TestExercise):
     def test_ex7_3(self):
         result = ex7_3.solve(100)
         self.assertEqual(len(result), 100)
-        self.assertEqual(isinstance(result[-1], float))
-        self.assertEqual(result[-1] >= 0.5)
+        self.assertTrue(isinstance(result[-1], float))
+        self.assertTrue(result[-1] >= 0.5)
 
     def test_ex7_4(self):
         cases = [('a', 'a'),
