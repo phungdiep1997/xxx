@@ -56,6 +56,35 @@ Generator
 
     return (s for s in students)
 
+
+Start a new project
+-------------------
+
+Start small
+^^^^^^^^^^^
+
+- Create dir
+- New virtualenv
+- Install dependencies, create requirements.txt
+- Write main.py
+
+**script**
+
+- a text file (python module) that can run
+- chmod::
+
+    ls -l scriptname.py
+    chmod a+x scriptname.py
+    ls -l scriptname.py
+
+- #!/usr/bin/env python3
+- https://docs.python.org/3/faq/library.html#how-do-i-make-a-python-script-executable-on-unix
+
+- Split code out to other modules/package.
+- Lint with flake8
+- Push to GitHub
+- Bonus: setup CI (circle CI)
+
 decorator
 ---------
 
@@ -77,19 +106,6 @@ Syntactic sugar
 - Function call? callable.
 - Why we can write len(L)? not len(5) ?
 - Why we can write L[3]? not 7[3] ?
-
-script
-------
-
-- a text file (python module) that can run
-- chmod::
-
-    ls -l scriptname.py
-    chmod a+x scriptname.py
-    ls -l scriptname.py
-
-- #!/usr/bin/env python3
-- https://docs.python.org/3/faq/library.html#how-do-i-make-a-python-script-executable-on-unix
 
 Stdlib
 ------
