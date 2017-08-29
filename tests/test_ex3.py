@@ -352,7 +352,8 @@ class TestExercise5(TestExercise):
         self.assertEqual(ex7_1.solve('1/10', '1/10', '1/10'), 0.3)
 
     def test_ex7_2(self):
-        name, HP = ex7_2.solve(ex7_2.Fighter('PyMi', 100), ex7_2.Fighter('Foo', 100))
+        name, HP = ex7_2.solve(ex7_2.Fighter('PyMi', 100),
+                               ex7_2.Fighter('Foo', 100))
         self.assertTrue(name in ('PyMi', 'Foo'))
         self.assertTrue(HP > 0)
 
