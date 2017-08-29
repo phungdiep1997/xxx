@@ -27,7 +27,7 @@ class Weapon():
 
 
 def solve(player1, player2):
-    '''Trả về tuple tên người thắng cuộc và lượng máu còn lại'''
+    '''Trả về tuple tên người thắng cuộc và lượng máu còn lại (int)'''
     result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
