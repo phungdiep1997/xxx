@@ -18,6 +18,9 @@ def mymap(func, iterable):
 
 
 def solve(input_data):
+    '''Viết function mymap, có tác dụng như ``map`` - không sử dụng
+    function ``map`` có sẵn.
+    '''
     result = None
 
     result = mymap(input_data['func'], input_data['data'])
