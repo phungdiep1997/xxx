@@ -352,7 +352,7 @@ class TestExercise5(TestExercise):
         self.assertEqual(ex7_1.solve('1/10', '1/10', '1/10'), 0.3)
 
     def test_ex7_2(self):
-        name, HP = ex7_2.solve(ex7_2.Fighter('PyMi'), ex7_2.Fighter('Foo'))
+        name, HP = ex7_2.solve(ex7_2.Fighter('PyMi', 100), ex7_2.Fighter('Foo', 100))
         self.assertTrue(name in ('PyMi', 'Foo'))
         self.assertTrue(HP > 0)
 
@@ -360,7 +360,7 @@ class TestExercise5(TestExercise):
         result = ex7_3.solve(100)
         self.assertEqual(len(result), 100)
         self.assertTrue(isinstance(result[-1], float))
-        self.assertTrue(result[-1] >= 0.5)
+        self.assertTrue(0 <= result[-1] <= 1)
 
     def test_ex7_4(self):
         cases = [('a', 'a'),
