@@ -3,23 +3,23 @@
 
 __doc__ = '''
 Yêu cầu:
-- Lưu file ``https://raw.githubusercontent.com/hvnsweeting/
-states/master/salt/event/init.sls`` về máy với tên event.yaml
+- Lưu file ``https://raw.githubusercontent.com/hvnsweeting/states/master/salt/event/init.sls`` về máy với tên event.yaml
 
 - Dùng pip cài thư viện PyYAML, import yaml và dùng `yaml.load` để biến nội
 dung trong file thành kiểu dữ liệu trên Python.
 
 - In ra số phần tử của kiểu dữ liệu vừa tạo. Dùng thư viện json để
- `pickle.dump` nội dung, ghi ra một file tên là event.json
+ `json.dump` nội dung, ghi ra một file tên là event.json trong thư mục hiện tại.
 
-- Dùng thư viện pickle và pickle.dump nội dung trên ra file event.pkl. Chú
-ý khi mở file, phải mở ở chế độ ghi ở dạng binary. Đọc thêm tại đây:
-https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files`
+- Dùng thư viện pickle để pickle.dump nội dung trên ra file event.pkl trong
+  thư mục hiện tại. Chú ý khi mở file, phải mở ở chế độ ghi ở dạng binary. Đọc
+  thêm tại đây:
+  https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files`
 
 - In ra kích thước của mỗi file đã tạo.
 
 Gợi ý: sử dụng os.stat(filename).st_size
-'''
+'''  # NOQA
 
 
 import json  # NOQA
