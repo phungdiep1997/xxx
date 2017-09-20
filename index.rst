@@ -13,7 +13,7 @@ Contents:
    :maxdepth: 2
 
    lectures.rst
-   exercises.rst
+   guide.rst
    whatnext.rst
    FAQ.rst
 
