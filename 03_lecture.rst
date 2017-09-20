@@ -33,6 +33,7 @@ name --binding--> object
 
 - use id() to get "identify" of an object.
 - two names bind to same object with have id(x) == id(y)
+- from here, we call object with its type: int obj, str obj...
 
 Deleting name
 -------------
