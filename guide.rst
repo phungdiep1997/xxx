@@ -7,11 +7,11 @@ dùng ``python3`` thay vì ``python`` để tránh dùng nhầm Python2.
 Hướng dẫn làm bài tập
 ---------------------
 
-Tất cả bài tập phải làm vào trong thư mục ``exercises``, sửa nội dung của các file `.py` đã có tương ứng với bài tập cần làm.
+Tất cả bài tập phải làm vào trong thư mục ``exercises``, sửa nội dung của các file ``.py`` đã có tương ứng với bài tập cần làm.
 Học xong chương 3 thì làm bài 'ex3_*.py' như ex3_1.py, ex3_2.py ...
 
-Riêng `ex35_*.py` là bài làm thêm cho học viên từ buổi 3 đến
-buổi 5.
+Riêng ``ex35_*.py`` là bài làm thêm cho học viên từ buổi 3 đến
+buổi 5. Khuyến khích dùng list comprehension.
 
 Editor
 ^^^^^^
