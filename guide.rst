@@ -204,17 +204,64 @@ Từ thư mục ``pyfml``, chạy::
   Ran 1 test in 0.000s
 
 
+Debug 1 chương trình
+--------------------
+
+Thay vì chạy file python bình thường với câu lệnh::
+
+  python filename.py
+
+Chạy bằng câu lệnh sau để vào chế độ "debug"::
+
+  python -m pdb filename.py
+
+Ở đây:
+
+- bấm ``n`` để chạy sang dòng tiếp theo (n = next)
+- bấm ``l`` để hiện xem code đang ở đâu (l = list)
+- gõ ``p NAME`` để in ra nội dung của tên ``NAME`` (p = print).
+- gõ ``exit`` để thoát.
+
+Ví dụ::
+
+  $ python -m pdb foo.py
+  > /home/hvn/foo.py(2)<module>()
+  -> s = {"tao": 20,
+  (Pdb) n
+  > /home/hvn/foo.py(3)<module>()
+  -> "Duy": 30,
+  (Pdb) l
+    1
+    2  	s = {"tao": 20,
+    3  ->	        "Duy": 30,
+    4  	        }
+    5
+    6  	import logging
+    7
+    8  	logging.basicConfig(level=logging.DEBUG, filename='my.log')
+    9  	logger = logging.getLogger('foo')
+   10  	sum_  = 0
+   11  	for i in ["tao", "Duy"]:
+  (Pdb) n
+  > /home/hvn/foo.py(6)<module>()
+  -> import logging
+  (Pdb) p s
+  {'tao': 20, 'Duy': 30}
+  (Pdb) exit
+
+
+Tham khảo các lỗi hay gặp
+-------------------------
+
+:doc:`best_practices`
+
+
 .. toctree::
    :caption: All Exercises Content
    :maxdepth: 2
    :glob:
 
    exercises/*
-
-Tham khảo các lỗi hay gặp
--------------------------
-
-:doc:`best_practices`
 
 Bài tập làm thêm
 -----------------
