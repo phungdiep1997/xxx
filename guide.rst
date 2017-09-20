@@ -29,8 +29,8 @@ trên bàn phím) như sau::
   codehere
   ```
 
-Nếu chưa học git, paste code vào đây (set Public) để nộp bài:
-https://gitlab.com/snippets/new
+Nếu code quá dài, paste code vào đây https://glot.io/
+lấy link để paste vào Slack channel.
 
 Lấy code về máy
 ^^^^^^^^^^^^^^^^
