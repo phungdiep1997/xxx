@@ -1,5 +1,5 @@
-11. Data science
-================
+11. Data analysis
+=================
 
 random
 ------
