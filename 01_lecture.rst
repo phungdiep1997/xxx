@@ -17,6 +17,23 @@ How to be a good developer
 - Self-learning the right way
 - No magic mind set.
 
+What this course not is
+-----------------------
+
+- Python web developer: no, we teach core Python in 7 first lessons, then apply it.
+- Data scientist: no, Python is just a tool for data scientist, know python does not make you a data scientist.
+- Data structure & Algorithm (sorting, searching, graph...): no, this course learn Python to make thing done.
+- Game developer: no, we will create one simple text-base game, but that does not mean you are game developer.
+
+This course is about
+--------------------
+
+- Know and use all python concepts
+- Use that knowledge, apply to ANY thing
+- Using tools, coding like a professional programmer
+- Build your profile, so you can apply for companies after the class.
+- Know how to use ANY library, ready ANY python code.
+
 Python
 ------
 
