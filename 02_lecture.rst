@@ -1,6 +1,14 @@
 2. List, string, name
 =====================
 
+More math
+---------
+
+- import math
+- math.sin(math.pi * 2)
+- from math import cos
+- cos(math.pi * 2)
+
 List
 ----
 
