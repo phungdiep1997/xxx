@@ -45,6 +45,13 @@ Python
 - High level
 - General-purpose: science computation, network services, webs, games, system scripting ...
 
+Interpreter
+-----------
+
+- Prompt
+- interactive mode / IDLE (M$)
+- script mode
+
 Basic Python in 5 mins
 ----------------------
 
@@ -73,6 +80,7 @@ Number
 Boolean
 -------
 
+- Titled case ``True``, not ``true``
 - and/or/not
 - short-circuit (``True and False and 1/0``)
 - any & all
