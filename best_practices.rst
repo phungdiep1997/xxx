@@ -52,3 +52,8 @@ Nếu cần thêm ``\n`` ở cuối?::
   Out[n]: 'Line1\nLine2\nLine3\n'
 
 Tham khảo: https://docs.python.org/3/faq/programming.html#what-is-the-most-efficient-way-to-concatenate-many-strings-together
+
+Tham khảo thêm:
+- http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
+- https://access.redhat.com/blogs/766093/posts/2802001
+- http://pep8.org/
