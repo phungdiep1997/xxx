@@ -9,10 +9,11 @@ More math
 - from math import cos
 - cos(math.pi * 2)
 
-List
-----
+List and Tuple
+--------------
 
 - Create list, append, pop
+- Create tuple
 
 String
 ------
