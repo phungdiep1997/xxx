@@ -2,7 +2,17 @@ image: hvnsweeting/docker_pip3
 
 before_script:
   - pip install -r requirements-test.txt
+stages:
+  - style
+  #- linting
+  - test
 
-test:
+check_pep8:
+  stage: style
   script:
-    - cd /builds/pyfml/pyfml && make ci
+    - cd /builds/pyfml/pyfml && make style
+
+unittest:
+  stage: test
+  script:
+    - cd /builds/pyfml/pyfml && make test
