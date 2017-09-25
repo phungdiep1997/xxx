@@ -1,3 +1,4 @@
 flake8
 # For ex8
 PyYAML>=3.11
+pylint

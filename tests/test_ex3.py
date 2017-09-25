@@ -266,7 +266,7 @@ class TestExercise5(TestExercise):
         self.assertTrue(res.endswith(suffix))
 
     def test_ex5_8(self):
-        ascii_, unicodes, tabcp, newlinecp, spacecp = ex5_8.solve()
+        ascii_, _, tabcp, newlinecp, spacecp = ex5_8.solve()
         self.assertEqual(ascii_[:3], [(33, '!'), (34, '"'), (35, '#')])
         self.assertEqual(
             ascii_[-4:],
@@ -338,7 +338,7 @@ class TestExercise5(TestExercise):
         N = 10
         matrix = [list(range(N)) for i in range(N)]
         for rowidx, row in enumerate(matrix):
-            for idx, col in enumerate(row):
+            for idx, _ in enumerate(row):
                 if idx == rowidx or idx == N-rowidx-1:
                     row[idx] = str(rowidx)
                 else:

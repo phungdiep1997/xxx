@@ -28,7 +28,7 @@ class Weapon():
 
 def solve(player1, player2):
     '''Trả về tuple tên người thắng cuộc và lượng máu còn lại (int)'''
-    result = None
+    result = ('', 0)
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     raise NotImplementedError("Học viên chưa làm bài này")
