@@ -23,7 +23,7 @@ def solve(input_data):
     :rtype: tuple
     '''
     assert (input_data in range(1, 13)), "Tháng không tồn tại"
-    result = None
+    result = ("MONTH", "DATE")
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     raise NotImplementedError("Học viên chưa làm bài này")
