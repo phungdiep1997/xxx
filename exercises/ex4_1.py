@@ -2,9 +2,13 @@
 
 
 def solve(ip):
-    '''Trả về string biểu diễn binary (hệ cơ số 2) của `ip`.
-    IP là một dãy gồm 4 số phân cách nhau bởi dấu `.`, mỗi số trong khoảng
-    0-255.
+    '''IP là địa chỉ của một máy tính trong mạng (như địa chỉ nhà).
+    IPv4 được biểu diễn bằng 4 số từ 0-255, phân cách nhau bởi dấu `.`
+    Mỗi số trong khoảng 0-255 được biểu diễn bằng 8 bits (1 byte),
+    có tài liệu gọi 4 phần trong IPv4 này là 4 octet.
+    VD: IP của Google DNS là 8.8.8.8
+
+    Trả về string biểu diễn binary (hệ cơ số 2) của `ip`.
 
     Input::
 
@@ -14,7 +18,7 @@ def solve(ip):
 
       11000000.10101000.00000001.00000001
 
-    Python có funtion đổi số integer thành dạng binary:
+    Python có funtion đổi số integer thành biểu diễn ở hệ nhị phân (binary):
 
       In [1]: bin(168)
       Out[1]: '0b10101000'
