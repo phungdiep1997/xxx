@@ -127,6 +127,7 @@ class TestExercise3(TestExercise):
                  ('Python', False),
                  ('', False),
                  ('P', False),
+                 (' P  ', False),
                  ('Able was I ere I saw Elba', True)]
         self._test_all(ex3_8.solve, cases)
 
