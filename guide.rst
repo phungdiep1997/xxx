@@ -100,7 +100,8 @@ Học viên cài và sử dụng
 Nếu thấy không in ra gì tức code đã đúng chuẩn Python (PEP8) rồi 🏆
 
 Học viên chạy lệnh sau tại thư mục `pyfml` để kiểm tra xem bài làm mình đã đúng
-chưa::
+chưa (chú ý, thư mục `pyfml`, không phải `exercises`, và chắc chắn là bạn đang
+dùng Python 3, không phải Python 2)::
 
   python -m unittest discover -s tests -vvv
 
