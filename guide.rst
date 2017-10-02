@@ -122,7 +122,7 @@ Không cần quan tâm đến các bài mình chưa học.
 Làm bài xong học viên lưu vào git::
 
   git add ex3_1.py
-  git commit -m 'add'
+  git commit -m 'add - HAY NỘI DUNG TÙY Ý (e.g FIX BUG XYZ)'
 
 Push (đẩy) bài tập lên trang GitLab::
 
