@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+NUMBER_OF_LINES = 30000000
+
 
 def solve(output_path):
     '''Tạo ra 1 file chứa 30 triệu dòng, các dòng lẻ chứa 30 số 1,
