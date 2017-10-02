@@ -8,7 +8,7 @@ def solve(output_path):
     Sau khi tạo xong file, return result là list chứa 10 dòng cuối theo thứ tự
     dòng xuất hiện trước đứng trước.
 
-    Chú ý: để bài hoàn toàn chính xác.
+    Chú ý: 30 triệu dòng.
     '''
     result = None
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
