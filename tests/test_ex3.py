@@ -217,8 +217,20 @@ class TestExercise5(TestExercise):
     def test_ex5_2(self):
         res = ex5_2.solve(ex5_2.data)
         self.assertTrue(isinstance(res, list))
-        self.assertTrue(("Hoang", "") in res)
-        self.assertTrue(("Duy", "Maria") in res)
+        hoang, duy, dai, tu = ex5_2.data
+        self.assertTrue('languages' not in duy)
+
+        newhoang, newduy, newdai, newtu = res
+
+        self.assertTrue(
+            hoang['languages']
+            == newduy['languages']
+            == newdai['languages']
+            == newtu['languages']
+        )
+        self.assertTrue('Elixir' in newhoang['languages'])
+        self.assertEqual(newtu['girl_friend'], 'Do Anh')
+        self.assertTrue('girl_friend' not in newduy)
 
     def test_ex5_3(self):
         res = ex5_3.solve(ex5_3.data)
