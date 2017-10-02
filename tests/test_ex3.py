@@ -263,6 +263,7 @@ class TestExercise5(TestExercise):
     def test_ex5_6(self):
         term1, term2 = ex5_6.data
         res = ex5_6.solve(term1, term2)
+        self.assertTrue(isinstance(res, dict))
         self.assertEqual(res['python'], 9)
         self.assertEqual(res['math'], 7)
         self.assertEqual(res['data'], 2)
@@ -334,7 +335,7 @@ class TestExercise5(TestExercise):
 
     def test_ex35_6(self):
         result = ex35_6.solve(1000)
-        self.assertEqual(result[-5:], [6, 9, 3, 7, 6])
+        self.assertEqual(result, sum(int(i) for i in str(2**1000)))
 
     def test_ex35_7(self):
         result = ex35_7.solve(10)
