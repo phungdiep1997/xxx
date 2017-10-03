@@ -76,7 +76,11 @@ chỉ tạo duy nhất 1 branch cho một bài học**.
 
 Sau đó làm bài tập và lưu vào git như sau:
 
-Ví dụ bài 3.1 sẽ sửa file::
+Di chuyển vào thư mục chứa bài tập::
+
+  cd exercises
+
+Ví dụ làm bài 3.1 sẽ sửa file::
 
   ex3_1.py
 
@@ -120,7 +124,7 @@ Nếu sai, kết quả sẽ như sau::
 Hãy đọc chi tiết của phần output sau khi chạy câu lệnh để xem lỗi/sai gì.
 Không cần quan tâm đến các bài mình chưa học.
 
-Làm bài xong học viên lưu vào git::
+Làm bài xong học viên lưu vào git (nhớ vào thư mục `exercises` trước khi chạy)::
 
   git add ex3_1.py
   git commit -m 'add - HAY NỘI DUNG TÙY Ý (e.g FIX BUG XYZ)'
@@ -179,8 +183,8 @@ Tức trong file ``4_3.py``, dòng thứ 7, ký tự 80 gặp lỗi "line too lo
 quá dài so với quy định cho phép tối đa là 79 ký tự.
 
 Sửa lại file lỗi, rồi lại ``git add``, ``git commit``, ``git push``, mọi thay
-đổi sẽ được đưa lên GitLab và update Merge Request.
-
+đổi sẽ được đưa lên GitLab và tự động update Merge Request, học viên không
+cần phải tạo Merge Request mới (chỉ tạo 1 lần duy nhất cho mỗi buổi làm bài).
 
 Test riêng một bài
 -------------------
