@@ -259,7 +259,12 @@ class TestExercise5(TestExercise):
 
     def test_ex5_5(self):
         res = ex5_5.solve(ex5_5.data)
-        self.assertEqual([('Dai', 5), ('Dung', 5), ('Duong', 5)], res[:3])
+        msv, name, year, room = res[0]
+        self.assertTrue(msv < ex5_5.MAGIC_NUMBER,
+                        "Mã sinh viên phải nhỏ hơn số MAGIC_NUMBER")
+        self.assertEqual(year, 1990, "Các học viên phải có năm sinh là 1990")
+        self.assertEqual([('Dai', 5), ('Dung', 5), ('Duong', 5)],
+                         [(e[1], e[-1]) for e in res[:3]])
 
     def test_ex5_6(self):
         term1, term2 = ex5_6.data
