@@ -131,7 +131,7 @@ Làm bài xong học viên lưu vào git (nhớ vào thư mục `exercises` trư
 
 Push (đẩy) bài tập lên trang GitLab::
 
-  git push origin YOUR_BRANCH  # CHÚ Ý, phải dùng đúng tên branch của bạn
+  git push origin YOUR_BRANCH  # CHÚ Ý, phải dùng đúng tên branch của bạn, như ví dụ này là thay YOUR_BRANCH bằng pymi_1704HN_hungnv_bai3
 
 Nếu thấy thông báo như sau là đã thành công::
 
