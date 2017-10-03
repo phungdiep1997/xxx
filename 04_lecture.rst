@@ -10,6 +10,18 @@ Type contructors
 - list
 - ...
 
+Any, all
+--------
+
+Truthiness
+----------
+
+- Given::
+
+  if X:
+
+- What will be `True`? What will be `False`
+
 Write code to file
 ------------------
 
