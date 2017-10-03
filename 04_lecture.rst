@@ -1,11 +1,14 @@
 4. Git, Tuple, PEP8, ListComps
 ==============================
 
-math
-----
+Type contructors
+----------------
 
-- `import math`
-- sqrt, sin, cos, pi, log2
+- int
+- str
+- float
+- list
+- ...
 
 Write code to file
 ------------------
