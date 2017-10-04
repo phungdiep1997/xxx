@@ -9,7 +9,8 @@ def solve(N):
     result = 0
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
-    # raise NotImplementedError("Học viên chưa làm bài này")
+    raise NotImplementedError("Học viên chưa làm bài này")
+
     return result
 
 
