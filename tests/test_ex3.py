@@ -180,12 +180,16 @@ class TestExercise4(TestExercise):
 
     def test_ex4_6(self):
         ss = ', 60năm cuộc đời, 20 năm đầu, sung sướng0bao lâu'
-        result = ex4_6.solve(ss)
+        ss2 = '6năm0 cuộc đời, 20 năm đầu, sung sướng0bao lâu'
 
         import re
         pattern = re.compile('\d+')
+        ss_result = [int(i) for i in pattern.findall(ss)]
+        ss2_result = [int(i) for i in pattern.findall(ss2)]
 
-        self.assertEqual(result, [int(i) for i in pattern.findall(ss)])
+        cases = [(ss, ss_result), (ss2, ss2_result)]
+
+        self._test_all(ex4_6.solve, cases)
 
     def test_ex4_7(self):
         cases = [(2008, 'Mậu Tý'), (2009, 'Kỷ Sửu'), (2010, 'Canh Dần'),
