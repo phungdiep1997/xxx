@@ -19,6 +19,10 @@ Use ``sys.argv``
 '''
 
 
+import log
+logger = log.get_logger(__name__)
+
+
 def your_function(option, file_path):
     '''Trả về list chứa 10 dòng tùy thuộc vào `option` (-t hoặc -h) sau khi
     đọc dữ liệu từ file
@@ -45,6 +49,7 @@ def solve(option, file_path):
     :rtype list:
     '''
     # Lưu ý: sửa lại tên function của mình cho phù hợp
+    logger.debug("Using %s option with file %s", option, file_path)
     result = your_function(option, file_path)
 
     return result
