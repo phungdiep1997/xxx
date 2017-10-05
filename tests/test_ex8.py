@@ -1,10 +1,10 @@
 import unittest
 from tests.base import TestExercise
 
+import exercises.ex8_1 as ex8_1
 import exercises.ex8_2 as ex8_2
 import exercises.ex8_3 as ex8_3
 import exercises.ex8_4 as ex8_4
-import exercises.ex8_5 as ex8_5
 import exercises.ex8_6 as ex8_6
 import exercises.ex8_7 as ex8_7
 import exercises.ex8_8 as ex8_8
@@ -15,6 +15,13 @@ class TestExercise8(TestExercise):
     @unittest.skip
     def test_ex8_0(self):
         pass
+
+    def test_ex8_1(self):
+        N = 3
+        times, total_time = ex8_1.solve(N)
+        self.assertEqual(len(times), N,
+                         "Chưa thực hiện đủ số lần in ra màn hình")
+        self.assertTrue(N <= total_time)
 
     def test_ex8_2(self):
         res = ex8_2.solve('-h', __file__)
@@ -32,13 +39,6 @@ class TestExercise8(TestExercise):
     def test_ex8_4(self):
         timer_res = ex8_4.solve()
         self.assertTrue(timer_res > 1.0)
-
-    def test_ex8_5(self):
-        N = 3
-        times, total_time = ex8_5.solve(N)
-        self.assertEqual(len(times), N,
-                         "Chưa thực hiện đủ số lần in ra màn hình")
-        self.assertTrue(N <= total_time)
 
     def test_ex8_6(self):
         most_common = ex8_6.solve(ex8_6.data)
