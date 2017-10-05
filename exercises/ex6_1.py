@@ -35,7 +35,7 @@ def main():
     - 50 số tiếp: 1530 VND/số.
     - Các số tiếp theo: 1786 VND/số.
     '''
-    idata = {'usages': [1, 29, 1235, 69, 100], 'prices': data}
+    idata = {'usages': ['1', '29', '1235', '69', '100'], 'prices': data}
     print(solve(idata))
 
 
