@@ -48,6 +48,8 @@ import exercises.ex7_2 as ex7_2
 import exercises.ex7_3 as ex7_3
 import exercises.ex7_4 as ex7_4
 import exercises.ex7_5 as ex7_5
+import exercises.ex7_6 as ex7_6
+import exercises.ex7_7 as ex7_7
 
 
 class TestExercise3(TestExercise):
@@ -407,6 +409,26 @@ class TestExercise5(TestExercise):
         import os
         result = ex7_5.solve()
         self.assertEqual(os.__file__, result[0])
+
+    def test_ex7_6(self):
+        import string
+        res = ex7_6.solve(12)
+        self.assertEqual(len(res), 12)
+        self.assertTrue(
+            all([
+                any(map(lambda s: s.isdigit(), res)),
+                any(map(lambda s: s.islower(), res)),
+                any(map(lambda s: s.isupper(), res)),
+                any(map(lambda s: s in string.punctuation, res)),
+                ])
+            )
+        self.assertFalse(res == ex7_6.solve(12))
+
+    def test_ex7_7(self):
+        res = ex7_7.solve(ex7_7.data)
+        self.assertTrue(isinstance(res, list))
+        self.assertTrue(isinstance(res[0], tuple))
+        self.assertTrue(('Singapore', 4) in res)
 
 
 if __name__ == "__main__":

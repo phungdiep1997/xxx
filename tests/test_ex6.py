@@ -6,8 +6,6 @@ import exercises.ex6_2 as ex6_2
 import exercises.ex6_3 as ex6_3
 import exercises.ex6_4 as ex6_4
 import exercises.ex6_5 as ex6_5
-import exercises.ex6_8 as ex6_8
-import exercises.ex6_9 as ex6_9
 
 
 class TestExercise6(TestExercise):
@@ -65,26 +63,6 @@ class TestExercise6(TestExercise):
         self.assertTrue(
             'https://github.com/hvnsweeting' in [n['html_url'] for n in res]
         )
-
-    def test_ex6_8(self):
-        import string
-        res = ex6_8.solve(12)
-        self.assertEqual(len(res), 12)
-        self.assertTrue(
-            all([
-                any(map(lambda s: s.isdigit(), res)),
-                any(map(lambda s: s.islower(), res)),
-                any(map(lambda s: s.isupper(), res)),
-                any(map(lambda s: s in string.punctuation, res)),
-                ])
-            )
-        self.assertFalse(res == ex6_8.solve(12))
-
-    def test_ex6_9(self):
-        res = ex6_9.solve(ex6_9.data)
-        self.assertTrue(isinstance(res, list))
-        self.assertTrue(isinstance(res[0], tuple))
-        self.assertTrue(('Singapore', 4) in res)
 
     @unittest.skip
     def test_ex6_10(self):
