@@ -5,7 +5,6 @@ import exercises.ex8_1 as ex8_1
 import exercises.ex8_2 as ex8_2
 import exercises.ex8_3 as ex8_3
 import exercises.ex8_4 as ex8_4
-import exercises.ex8_7 as ex8_7
 import exercises.ex8_8 as ex8_8
 import exercises.ex8_9 as ex8_9
 
@@ -38,16 +37,6 @@ class TestExercise8(TestExercise):
     def test_ex8_4(self):
         timer_res = ex8_4.solve()
         self.assertTrue(timer_res > 1.0)
-
-    def test_ex8_7(self):
-        res = ex8_7.solve()
-        self.assertTrue(
-            all([
-                (res[0].startswith('INFO')),
-                (res[1].startswith('ERROR')),
-                (res[2].startswith('DEBUG')),
-            ]),
-        )
 
     def test_ex8_8(self):
         cases = [('02/03/16', '19.0.2'), ('09/06/16', '11.1.3')]
