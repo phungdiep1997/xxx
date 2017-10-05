@@ -59,8 +59,14 @@ class TestExercise6(TestExercise):
     def test_ex6_5(self):
         res = ex6_5.solve(ex6_5.data)
         self.assertTrue(isinstance(res, list), 'Must returns a list')
-        self.assertTrue(isinstance(res[0], dict), 'List member must be dict')
+        self.assertTrue(isinstance(res[0], dict), 'List member must be a dict')
         self.assertTrue('hvnsweeting' in [n['login'] for n in res])
+        self.assertTrue(
+            'https://github.com/thedrow' in [n['html_url'] for n in res]
+        )
+        self.assertTrue(
+            'https://github.com/hvnsweeting' in [n['html_url'] for n in res]
+        )
 
     def test_ex6_6(self):
         cases = [({'func': lambda x: x**2, 'data': [1, 2, 3, 4]},
