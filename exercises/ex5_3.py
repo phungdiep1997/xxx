@@ -20,11 +20,21 @@ def solve(input_data):
 
 
 def main():
+    # Đây là một cách làm khác với kiểu dữ liệu có sẵn
+    # trong thư viện collections của Python
+    from collections import Counter
+    # Regex (re) là một công cụ xử lý string khác so với các method của
+    # `str`, linh hoạt nhưng phức tạp, khó đọc, dễ sai.
+    import re
+    cleaned = re.sub(r'“|”|\.|,', ' ', data)
+    c = Counter(cleaned.split())
+    top = c.most_common(5)
+
     result = solve(data)
+    assert result[:5] == top, (result[:5], top)
+
     # In ra 10 từ xuất hiện nhiều nhất kèm số lần xuất hiện
-    #
     # Viết code in ra màn hình sau dòng này
-    print(result)
 
 
 if __name__ == "__main__":
