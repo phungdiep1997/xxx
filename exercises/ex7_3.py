@@ -1,26 +1,41 @@
 #!/usr/bin/env python3
 
 
-def solve(N):
+__doc__ = '''
+Yêu cầu:
+- Lưu file ``https://raw.githubusercontent.com/hvnsweeting/states/master/salt/event/init.sls`` về máy với tên event.yaml
+
+- Dùng pip cài thư viện PyYAML, import yaml và dùng `yaml.load` để biến nội
+dung trong file thành kiểu dữ liệu trên Python.
+
+- In ra số phần tử của kiểu dữ liệu vừa tạo. Dùng thư viện json để
+ `json.dump` nội dung, ghi ra một file tên là event.json trong thư mục hiện tại.
+
+- Dùng thư viện pickle để pickle.dump nội dung trên ra file event.pkl trong
+  thư mục hiện tại. Chú ý khi mở file, phải mở ở chế độ ghi ở dạng binary. Đọc
+  thêm tại đây:
+  https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files`
+
+- In ra kích thước của mỗi file đã tạo.
+
+Gợi ý: sử dụng os.stat(filename).st_size
+'''  # NOQA
+
+
+import json  # NOQA
+import os  # NOQA
+import pickle  # NOQA
+import yaml  # NOQA
+
+
+def your_function():
+    '''Trả về số phần tử của kiểu dữ liệu sau khi dùng module `yaml` để load
+
+    Thực hiện các yêu cầu tại ``__doc__``
+
+    :rtype int:
     '''
-    Giả lập việc một người tiến lên hoặc lùi lại, biết ta có thể
-    giả lập việc người này tiến hay lùi bằng:
-
-    random.choice(True, False) # nếu quy ước True là tiến, False là lùi.
-
-    Với N trường hợp, tính tỷ lệ người này tiến lên
-    phía trước với mỗi trường hợp.
-
-    Trường hợp 1: chỉ bước 1 bước
-    Trường hợp 2: bước 2 bước
-    ...
-    Trường hợp N: bước N bước
-
-    Output là list tỷ lệ người này tiến lên phía trước trong
-    N trường hợp (ở dạng float, vd 50% là 0.5).
-
-    Đối với học viên học data analysis, yêu cầu sử dụng thư viện numpy để làm.
-    '''
+    # Sửa tên và function cho phù hợp, trả về kết quả yêu cầu.
     result = None
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
@@ -29,8 +44,19 @@ def solve(N):
     return result
 
 
+def solve():
+    '''Học viên không cần viết code trong hàm `solve`, chỉ thực hiện
+    đổi tên lại function của mình cho phù hợp
+
+    :rtype int:
+    '''
+    result = your_function()
+
+    return result
+
+
 def main():
-    print(solve(100))
+    print(solve())
 
 
 if __name__ == "__main__":

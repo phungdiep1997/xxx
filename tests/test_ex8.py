@@ -1,7 +1,6 @@
 import unittest
 from tests.base import TestExercise
 
-import exercises.ex8_1 as ex8_1
 import exercises.ex8_2 as ex8_2
 import exercises.ex8_3 as ex8_3
 import exercises.ex8_4 as ex8_4
@@ -16,36 +15,6 @@ class TestExercise8(TestExercise):
     @unittest.skip
     def test_ex8_0(self):
         pass
-
-    def test_ex8_1(self):
-        res = ex8_1.solve()
-        len_expected = 4
-        self.assertEqual(len(res), len_expected, "Không đủ số phần tử")
-        import os
-        import pickle
-        import yaml
-        fmt_path = '../exercises/{}'
-        cases = ('event.json', 'event.yaml', 'event.pkl')
-        for case in cases:
-            self.assertTrue(
-                os.path.exists(fmt_path.format(case)),
-                "File {} không tồn tại".format(case)
-            )
-
-        with open(fmt_path.format('event.json')) as f:
-            data = f.read()
-        with open(fmt_path.format('event.yaml')) as f:
-            out_yaml = yaml.load(f)
-            self.assertTrue(
-                data == out_yaml,
-                "Ghi dữ liệu vào file event.yaml chưa đúng"
-            )
-        with open(fmt_path.format('event.pkl'), 'rb') as f:
-            out_pkl = pickle.load(f)
-            self.assertTrue(
-                data == out_pkl,
-                "Ghi dữ liệu vào file event.pkl chưa đúng"
-            )
 
     def test_ex8_2(self):
         res = ex8_2.solve('-h', __file__)

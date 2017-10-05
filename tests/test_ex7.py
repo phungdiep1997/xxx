@@ -22,10 +22,34 @@ class TestExercise7(TestExercise):
         self.assertTrue(HP > 0)
 
     def test_ex7_3(self):
-        result = ex7_3.solve(100)
-        self.assertEqual(len(result), 100)
-        self.assertTrue(isinstance(result[-1], float))
-        self.assertTrue(0 <= result[-1] <= 1)
+        res = ex7_3.solve()
+        len_expected = 4
+        self.assertEqual(len(res), len_expected, "Không đủ số phần tử")
+        import os
+        import pickle
+        import yaml
+        fmt_path = '../exercises/{}'
+        cases = ('event.json', 'event.yaml', 'event.pkl')
+        for case in cases:
+            self.assertTrue(
+                os.path.exists(fmt_path.format(case)),
+                "File {} không tồn tại".format(case)
+            )
+
+        with open(fmt_path.format('event.json')) as f:
+            data = f.read()
+        with open(fmt_path.format('event.yaml')) as f:
+            out_yaml = yaml.load(f)
+            self.assertTrue(
+                data == out_yaml,
+                "Ghi dữ liệu vào file event.yaml chưa đúng"
+            )
+        with open(fmt_path.format('event.pkl'), 'rb') as f:
+            out_pkl = pickle.load(f)
+            self.assertTrue(
+                data == out_pkl,
+                "Ghi dữ liệu vào file event.pkl chưa đúng"
+            )
 
     def test_ex7_4(self):
         cases = [('a', 'a'),
