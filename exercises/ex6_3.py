@@ -10,9 +10,10 @@ def find_max_price(datafile):
     dr = csv.DictReader(f, ['time', 'price', 'UNKNOWN']) # NOQA
     # Viết tiếp code vào đây
 
-    # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     try:
+        # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
         raise NotImplementedError("Học viên chưa làm bài này")
+
     finally:
         f.close()
 
