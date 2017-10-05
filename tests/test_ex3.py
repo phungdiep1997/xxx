@@ -41,6 +41,7 @@ import exercises.ex35_5 as ex35_5
 import exercises.ex35_6 as ex35_6
 import exercises.ex35_7 as ex35_7
 import exercises.ex35_8 as ex35_8
+import exercises.ex35_9 as ex35_9
 
 import exercises.ex7_1 as ex7_1
 import exercises.ex7_2 as ex7_2
@@ -372,6 +373,12 @@ class TestExercise5(TestExercise):
         matrix = '\n'.join([''.join(line) for line in matrix])
 
         self.assertEqual(result, matrix)
+
+    def test_ex35_9(self):
+        res = ex35_9.solve(([], ''))
+        self.assertTrue(isinstance(res, list))
+        self.assertTrue('__setitem__' in res)
+        self.assertFalse('extend' in res)
 
     def test_ex7_1(self):
         self.assertEqual(ex7_1.solve('1/3', '6/9'), 1.0)

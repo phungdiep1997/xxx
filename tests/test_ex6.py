@@ -6,8 +6,6 @@ import exercises.ex6_2 as ex6_2
 import exercises.ex6_3 as ex6_3
 import exercises.ex6_4 as ex6_4
 import exercises.ex6_5 as ex6_5
-import exercises.ex6_6 as ex6_6
-import exercises.ex6_7 as ex6_7
 import exercises.ex6_8 as ex6_8
 import exercises.ex6_9 as ex6_9
 
@@ -67,21 +65,6 @@ class TestExercise6(TestExercise):
         self.assertTrue(
             'https://github.com/hvnsweeting' in [n['html_url'] for n in res]
         )
-
-    def test_ex6_6(self):
-        cases = [({'func': lambda x: x**2, 'data': [1, 2, 3, 4]},
-                  [1, 4, 9, 16]),
-                 ({'func': lambda x: x % 2 == 0, 'data': [4, 3, 2, 1]},
-                  [True, False, True, False])
-                 ]
-
-        self._test_all(ex6_6.solve, cases)
-
-    def test_ex6_7(self):
-        res = ex6_7.solve(([], ''))
-        self.assertTrue(isinstance(res, list))
-        self.assertTrue('__setitem__' in res)
-        self.assertFalse('extend' in res)
 
     def test_ex6_8(self):
         import string
