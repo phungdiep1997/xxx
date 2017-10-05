@@ -179,15 +179,17 @@ class TestExercise4(TestExercise):
         self._test_all(ex4_5.solve, cases)
 
     def test_ex4_6(self):
+        ss3 = '10 Bé học lớp 3 lên lớp 4'
         ss = ', 60năm cuộc đời, 20 năm đầu, sung sướng0bao lâu'
         ss2 = '6năm0 cuộc đời, 20 năm đầu, sung sướng0bao lâu'
 
         import re
         pattern = re.compile('\d+')
-        ss_result = [int(i) for i in pattern.findall(ss)]
-        ss2_result = [int(i) for i in pattern.findall(ss2)]
 
-        cases = [(ss, ss_result), (ss2, ss2_result)]
+        def _solve(ss):
+            return [int(i) for i in pattern.findall(ss)]
+
+        cases = [(i, _solve(i)) for i in [ss, ss2, ss3]]
 
         self._test_all(ex4_6.solve, cases)
 
