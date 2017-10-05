@@ -21,7 +21,7 @@ def solve(input_data):
     # tính kết quả.
     # Các bài còn lại học viên tự định nghĩa function và gọi function để
     # tính toán kết quả `result`
-    result = [calculate_cost(i, input_data['prices'])
+    result = [(i[0].title(), calculate_cost(i[1], input_data['prices']))
               for i in input_data['usages']]
 
     return result
@@ -35,7 +35,10 @@ def main():
     - 50 số tiếp: 1530 VND/số.
     - Các số tiếp theo: 1786 VND/số.
     '''
-    idata = {'usages': ['1', '29', '1235', '69', '100'], 'prices': data}
+    idata = {'usages': [('nam', '1'), ('pikalong', '29'),
+                        ('phan quan', '1235'), ('maria', '69'),
+                        ('trump', '100')],
+             'prices': data}
     print(solve(idata))
 
 

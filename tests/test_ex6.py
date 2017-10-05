@@ -18,10 +18,15 @@ class TestExercise6(TestExercise):
         pass
 
     def test_ex6_1(self):
-        expected = [1230, 35670, 2165110, 90570, 138000]
+        expected = [('Nam', 1230), ('Pikalong', 35670),
+                    ('Phan Quan', 2165110), ('Maria', 90570),
+                    ('Trump', 138000)]
         len_expected = len(expected)
         res = ex6_1.solve(
-            {'usages': [1, 29, 1235, 69, 100], 'prices': ex6_1.data}
+            {'usages': [('nam', '1'), ('pikalong', '29'),
+                        ('phan quan', '1235'), ('maria', '69'),
+                        ('trump', '100')],
+             'prices': ex6_1.data}
         )
         self.assertTrue(isinstance(res, list))
         self.assertEqual(
