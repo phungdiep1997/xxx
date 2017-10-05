@@ -49,7 +49,7 @@ class TestExercise6(TestExercise):
 
     def test_ex6_4(self):
         res = ex6_4.solve()
-        self.assertEqual(res, sum(range(1, 7)))
+        self.assertEqual(res, sum(range(1, 7)) + .5)
 
     def test_ex6_5(self):
         res = ex6_5.solve(ex6_5.data)
