@@ -221,7 +221,7 @@ class TestExercise5(TestExercise):
         res = ex5_2.solve(ex5_2.data)
         self.assertTrue(isinstance(res, list))
         hoang, duy, dai, tu = ex5_2.data
-        self.assertTrue('languages' not in duy)
+        self.assertTrue('languages' not in duy, duy)
 
         newhoang, newduy, newdai, newtu = res
 
