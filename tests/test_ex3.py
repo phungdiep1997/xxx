@@ -48,7 +48,7 @@ class TestExercise3(TestExercise):
 
     def test_ex3_0(self):
         res = ex3_0.squared(5)
-        self.assertEqual(res, 25, self.MESSAGE_FMT.format(25, res))
+        self.assertEqual(res, 25, self.MESSAGE_FMT.format(5, 25, res))
 
     def test_ex3_1(self):
         cases = [(1, 1), (5, 1), (9, 1), (24, 1000), (10, 10)]
@@ -71,7 +71,7 @@ class TestExercise3(TestExercise):
         )
         cases = [(1, 1), (2, 2), (3, "Fizz"), (5, "Buzz"), (15, "FizzBuzz")]
         for num, value in cases:
-            msg = self.MESSAGE_FMT.format(value, res[num - 1])
+            msg = self.MESSAGE_FMT.format(num, value, res[num - 1])
             self.assertEqual(res[num - 1], value, msg)
 
     def test_ex3_4(self):
@@ -106,7 +106,7 @@ class TestExercise3(TestExercise):
                  ]
         for input_data, expect in cases:
             res = ex3_6.solve(input_data)
-            msg = self.MESSAGE_FMT.format(expect, res)
+            msg = self.MESSAGE_FMT.format(input_data, expect, res)
             self.assertEqual(res, expect, msg)
 
     def test_ex3_7(self):
@@ -130,7 +130,7 @@ class TestExercise3(TestExercise):
     def test_ex3_9(self):
         len_expected = 23
         res = ex3_9.solve()
-        msg = self.MESSAGE_FMT.format(len_expected, len(res))
+        msg = self.MESSAGE_FMT.format(None, len_expected, len(res))
         self.assertEqual(len(res), len_expected, "Số bộ không đủ: " + msg)
         self.assertEqual(res[0], [9, 1, 1], "Bộ số đầu tiên chưa chính xác")
         self.assertEqual(res[-1], [1, 9, 1], "Bộ số cuối cùng chưa chính xác")
