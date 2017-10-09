@@ -219,9 +219,9 @@ class TestExercise5(TestExercise):
 
     def test_ex5_2(self):
         res = ex5_2.solve(ex5_2.data)
-        self.assertTrue(isinstance(res, list))
+        self.assertIsInstance(res, list)
         hoang, duy, dai, tu = ex5_2.data
-        self.assertTrue('languages' not in duy, duy)
+        self.assertNotIn('languages', duy)
 
         newhoang, newduy, newdai, newtu = res
 
@@ -231,16 +231,16 @@ class TestExercise5(TestExercise):
             == newdai['languages']
             == newtu['languages']
         )
-        self.assertTrue('Elixir' in newhoang['languages'])
+        self.assertIn('Elixir', newhoang['languages'])
         self.assertEqual(newtu['girl_friend'], 'Do Anh')
-        self.assertTrue('girl_friend' not in newduy)
+        self.assertNotIn('girl_friend', newduy)
 
     def test_ex5_3(self):
         res = ex5_3.solve(ex5_3.data)
-        self.assertTrue(("be", 5) in res,
-                        "Không tìm thấy cặp ('be', 5) trong kết quả")
-        self.assertTrue(("can", 4) in res,
-                        "Không tìm thấy cặp ('can', 4) trong kết quả")
+        self.assertIn(("be", 5), res,
+                      "Không tìm thấy cặp ('be', 5) trong kết quả")
+        self.assertIn(("can", 4), res,
+                      "Không tìm thấy cặp ('can', 4) trong kết quả")
 
     def test_ex5_4(self):
         expected = [
@@ -262,7 +262,7 @@ class TestExercise5(TestExercise):
     def test_ex5_5(self):
         res = ex5_5.solve(ex5_5.data)
         msv, name, year, room = res[0]
-        self.assertTrue(msv < ex5_5.MAGIC_NUMBER,
+        self.assertLess(msv < ex5_5.MAGIC_NUMBER,
                         "Mã sinh viên phải nhỏ hơn số MAGIC_NUMBER")
         self.assertEqual(year, 1990, "Các học viên phải có năm sinh là 1990")
         self.assertEqual([('Dai', 5), ('Dung', 5), ('Duong', 5)],
@@ -271,7 +271,7 @@ class TestExercise5(TestExercise):
     def test_ex5_6(self):
         term1, term2 = ex5_6.data
         res = ex5_6.solve(term1, term2)
-        self.assertTrue(isinstance(res, dict))
+        self.assertIsInstance(res, dict)
         self.assertEqual(res['python'], 9)
         self.assertEqual(res['math'], 7)
         self.assertEqual(res['data'], 2)
@@ -283,8 +283,8 @@ class TestExercise5(TestExercise):
                   '      19   10011    0o23    0x13\n')
         res = ex5_7.solve(range(1, 20))
 
-        self.assertTrue(res.startswith(prefix))
-        self.assertTrue(res.endswith(suffix))
+        self.assertEqual(prefix, res[:len(prefix)])
+        self.assertEqual(suffix, res[-len(suffix):])
 
     def test_ex5_8(self):
         ascii_, _, tabcp, newlinecp, spacecp = ex5_8.solve()
