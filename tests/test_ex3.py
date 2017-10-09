@@ -262,7 +262,7 @@ class TestExercise5(TestExercise):
     def test_ex5_5(self):
         res = ex5_5.solve(ex5_5.data)
         msv, name, year, room = res[0]
-        self.assertLess(msv < ex5_5.MAGIC_NUMBER,
+        self.assertLess(msv, ex5_5.MAGIC_NUMBER,
                         "Mã sinh viên phải nhỏ hơn số MAGIC_NUMBER")
         self.assertEqual(year, 1990, "Các học viên phải có năm sinh là 1990")
         self.assertEqual([('Dai', 5), ('Dung', 5), ('Duong', 5)],
