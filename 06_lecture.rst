@@ -120,3 +120,4 @@ References
 - Pickle: https://docs.python.org/3/library/pickle.html
 - Function: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
 - Code: https://github.com/familug/FAMILUG/tree/master/Python
+- Famous lib code: https://github.com/requests/requests/blob/master/requests/utils.py
