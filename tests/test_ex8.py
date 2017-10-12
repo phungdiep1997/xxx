@@ -19,7 +19,7 @@ class TestExercise8(TestExercise):
         times, total_time = ex8_1.solve(N)
         self.assertEqual(len(times), N,
                          "Chưa thực hiện đủ số lần in ra màn hình")
-        self.assertTrue(N <= total_time)
+        self.assertLessEqual(N, total_time)
 
     def test_ex8_2(self):
         res = ex8_2.solve('-h', __file__)
@@ -36,7 +36,7 @@ class TestExercise8(TestExercise):
 
     def test_ex8_4(self):
         timer_res = ex8_4.solve()
-        self.assertTrue(timer_res > 1.0)
+        self.assertGreater(timer_res, 1.0)
 
     def test_ex8_8(self):
         cases = [('02/03/16', '19.0.2'), ('09/06/16', '11.1.3')]
@@ -65,9 +65,9 @@ class TestExercise8(TestExercise):
     def test_ex8_9(self):
         expected = self._total_line_suffix(ex8_9.PATH)
         res = ex8_9.solve(ex8_9.PATH)
-        self.assertTrue(
-            expected == res,
-            self.MESSAGE_FMT.format(expected, res)
+        self.assertEqual(
+            expected, res,
+            self.MESSAGE_FMT.format(ex8_9.PATH, expected, res)
         )
 
     @unittest.skip

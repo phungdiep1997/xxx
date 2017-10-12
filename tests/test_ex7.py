@@ -18,8 +18,8 @@ class TestExercise7(TestExercise):
     def test_ex7_2(self):
         name, HP = ex7_2.solve(ex7_2.Fighter('PyMi', 100),
                                ex7_2.Fighter('Foo', 100))
-        self.assertTrue(name in ('PyMi', 'Foo'))
-        self.assertTrue(HP > 0)
+        self.assertIn(name, ('PyMi', 'Foo'))
+        self.assertGreater(HP, 0)
 
     def test_ex7_3(self):
         res = ex7_3.solve()
@@ -40,14 +40,14 @@ class TestExercise7(TestExercise):
             data = f.read()
         with open(fmt_path.format('event.yaml')) as f:
             out_yaml = yaml.load(f)
-            self.assertTrue(
-                data == out_yaml,
+            self.assertEqual(
+                data, out_yaml,
                 "Ghi dữ liệu vào file event.yaml chưa đúng"
             )
         with open(fmt_path.format('event.pkl'), 'rb') as f:
             out_pkl = pickle.load(f)
-            self.assertTrue(
-                data == out_pkl,
+            self.assertEqual(
+                data, out_pkl,
                 "Ghi dữ liệu vào file event.pkl chưa đúng"
             )
 
@@ -79,9 +79,9 @@ class TestExercise7(TestExercise):
 
     def test_ex7_7(self):
         res = ex7_7.solve(ex7_7.data)
-        self.assertTrue(isinstance(res, list))
-        self.assertTrue(isinstance(res[0], tuple))
-        self.assertTrue(('Singapore', 4) in res)
+        self.assertIsInstance(res, list)
+        self.assertIsInstance(res[0], tuple)
+        self.assertIn(('Singapore', 4), res)
 
 
 if __name__ == "__main__":
