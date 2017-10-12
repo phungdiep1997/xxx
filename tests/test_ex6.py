@@ -24,7 +24,7 @@ class TestExercise6(TestExercise):
                         ('trump', '100')],
              'prices': ex6_1.data}
         )
-        self.assertTrue(isinstance(res, list))
+        self.assertIsInstance(res, list)
         self.assertEqual(
             len(res),
             len_expected,
@@ -37,8 +37,8 @@ class TestExercise6(TestExercise):
         # https://docs.python.org/3/library/functions.html#zip
         expected = list(zip(*[iter(data)]*2))
         res = ex6_2.solve(data, 2)
-        self.assertTrue(isinstance(res, list))
-        self.assertTrue(isinstance(res[0], tuple))
+        self.assertIsInstance(res, list)
+        self.assertIsInstance(res[0], tuple)
         self.assertEqual(res, expected)
 
         self.assertEqual(ex6_2.solve(data, 3), list(zip(*[iter(data)]*3)))
@@ -56,15 +56,15 @@ class TestExercise6(TestExercise):
 
     def test_ex6_5(self):
         res = ex6_5.solve(ex6_5.data)
-        self.assertTrue(isinstance(res, list), 'Must returns a list')
-        self.assertTrue(isinstance(res[0], dict), 'List member must be a dict')
-        self.assertTrue('hvnsweeting' in [n['login'] for n in res])
-        self.assertTrue(
-            'https://github.com/thedrow' in [n['html_url'] for n in res]
-        )
-        self.assertTrue(
-            'https://github.com/hvnsweeting' in [n['html_url'] for n in res]
-        )
+        self.assertIsInstance(res, list)
+        self.assertIsInstance(res[0], dict)
+
+        self.assertIn('hvnsweeting', [n['login'] for n in res])
+
+        self.assertIn('https://github.com/thedrow',
+                      [n['html_url'] for n in res])
+        self.assertIn('https://github.com/hvnsweeting',
+                      [n['html_url'] for n in res])
 
     @unittest.skip
     def test_ex6_10(self):
