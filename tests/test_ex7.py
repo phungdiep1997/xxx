@@ -25,6 +25,7 @@ class TestExercise7(TestExercise):
         res = ex7_3.solve()
         len_expected = 4
         self.assertEqual(len(res), len_expected, "Không đủ số phần tử")
+        import json
         import os
         import pickle
         import yaml
@@ -37,7 +38,7 @@ class TestExercise7(TestExercise):
             )
 
         with open(fmt_path.format('event.json')) as f:
-            data = f.read()
+            data = json.load(f)
         with open(fmt_path.format('event.yaml')) as f:
             out_yaml = yaml.load(f)
             self.assertEqual(
@@ -73,8 +74,8 @@ class TestExercise7(TestExercise):
                 any(map(lambda s: s.islower(), res)),
                 any(map(lambda s: s.isupper(), res)),
                 any(map(lambda s: s in string.punctuation, res)),
-                ])
-            )
+            ])
+        )
         self.assertFalse(res == ex7_6.solve(12))
 
     def test_ex7_7(self):
