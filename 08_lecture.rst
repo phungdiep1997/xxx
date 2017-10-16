@@ -3,6 +3,22 @@
 
 Start using editor to code. Always open Ipython to test.
 
+dir
+---
+
+- attributes of the given object.
+- try with simple class::
+
+  class Foo(): pass
+
+  f = Foo()
+  dir(f)
+
+- try and see dir([1,2,3])
+- try and see import math, dir(math)
+- getattr/hasattr
+- isinstance - do NOT compare type
+
 StackOverFlow
 -------------
 
