@@ -1,6 +1,12 @@
 import unittest
 from tests.base import TestExercise
 
+import os
+import sys
+
+# hack path for importing exercises.log
+sys.path.insert(1, os.path.abspath(os.path.join(sys.path[0], 'exercises')))  # NOQA
+
 import exercises.ex8_1 as ex8_1
 import exercises.ex8_2 as ex8_2
 import exercises.ex8_3 as ex8_3
@@ -39,7 +45,9 @@ class TestExercise8(TestExercise):
         self.assertGreater(timer_res, 1.0)
 
     def test_ex8_8(self):
-        cases = [('02/03/16', '19.0.2'), ('09/06/16', '11.1.3')]
+        cases = [('02/03/16', '0.3.1'), ('09/06/16', '8.2.0'),
+                 ('06/23/17', '18.3.3')]
+
         self._test_all(ex8_8.solve, cases)
 
     def _total_line_suffix(self, path):
@@ -47,7 +55,6 @@ class TestExercise8(TestExercise):
         :param path: path folder
         :rtype dict:
         '''
-        import os
         file_suffix = {}
         for root, _, files in os.walk(path):
             for file in files:

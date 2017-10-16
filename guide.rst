@@ -107,7 +107,7 @@ Học viên chạy lệnh sau tại thư mục `pyfml` để kiểm tra xem bài
 chưa (chú ý, thư mục `pyfml`, không phải `exercises`, và chắc chắn là bạn đang
 dùng Python 3, không phải Python 2)::
 
-  python -m unittest discover -s tests -vvv
+  python -m unittest discover -vvv
 
 Nếu đúng, output sẽ trông như sau::
 

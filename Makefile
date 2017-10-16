@@ -22,7 +22,7 @@ I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 all: ci
 
 test:
-	python -m unittest discover -s tests -vvv 2>test.err || true
+	python -m unittest discover -vvv 2>test.err || true
 	cat test.err
 	grep -E 'Ran [0-9]+ tests' test.err
 	rm test.err

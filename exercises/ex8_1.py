@@ -13,6 +13,9 @@ time.sleep, datetime.datetime.now
 import time
 import datetime # NOQA
 
+import log
+logger = log.get_logger(__name__)
+
 
 def your_function(N):
     '''Trả về tuple chứa 2 phần tử bao gồm:
@@ -24,12 +27,16 @@ def your_function(N):
     '''
     # Sửa tên và function cho phù hợp, trả về kết quả yêu cầu.
     start = time.time()
+    # NOTE: DO NOT FORMAT log by % or .format
+    # http://www.familug.org/2014/09/python-logging-ung-format-log-message.html
+    logger.debug("Start at %f", start)
 
     result = []
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     raise NotImplementedError("Học viên chưa làm bài này")
 
     end = time.time()
+    logger.debug("End at %f", end)
     total_time = end - start
     return (result, total_time)
 
