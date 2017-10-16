@@ -11,6 +11,7 @@ import exercises.ex8_1 as ex8_1
 import exercises.ex8_2 as ex8_2
 import exercises.ex8_3 as ex8_3
 import exercises.ex8_4 as ex8_4
+import exercises.ex8_5 as ex8_5
 import exercises.ex8_8 as ex8_8
 import exercises.ex8_9 as ex8_9
 
@@ -43,6 +44,10 @@ class TestExercise8(TestExercise):
     def test_ex8_4(self):
         timer_res = ex8_4.solve()
         self.assertGreater(timer_res, 1.0)
+
+    def test_ex8_5(self):
+        test_res = ex8_5.solve()
+        self.assertTrue(test_res, "unittest in this exercise has been failed.")
 
     def test_ex8_8(self):
         cases = [('02/03/16', '0.3.1'), ('09/06/16', '8.2.0'),
