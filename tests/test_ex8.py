@@ -45,7 +45,9 @@ class TestExercise8(TestExercise):
         self.assertGreater(timer_res, 1.0)
 
     def test_ex8_8(self):
-        cases = [('02/03/16', '19.0.2'), ('09/06/16', '11.1.3')]
+        cases = [('02/03/16', '0.3.1'), ('09/06/16', '8.2.0'),
+                 ('06/23/17', '18.3.3')]
+
         self._test_all(ex8_8.solve, cases)
 
     def _total_line_suffix(self, path):
