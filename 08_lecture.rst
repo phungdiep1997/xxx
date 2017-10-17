@@ -24,6 +24,119 @@ StackOverFlow
 
 http://stackoverflow.com/questions/tagged/python
 
+Stdlib
+------
+
+PYMOTW
+------
+
+https://docs.python.org/3/library/
+https://docs.python.org/3/howto/
+https://pymotw.com/3/py-modindex.html
+
+time
+----
+
+- sleep()
+- time()
+- while True / time.sleep best practice
+
+pdb
+---
+
+The python debugger https://docs.python.org/3/library/pdb.html ::
+
+  python3 -m pdb myscript.py
+
+
+- When script *doesn't run*, what to do?
+- ``python -m pdb /path/script.py -t option``
+
+random
+------
+
+- random.randrange
+- random.randint
+- randon.choice
+- random.shuffle
+
+https://docs.python.org/2/faq/library.html#mathematics-and-numerics
+
+datetime
+--------
+
+- calculate timedelta.
+  How many days are there from 2016/Feb/09 to 2017/Mar/18?
+  How many seconds?  http://www.familug.org/2014/08/python-time-delta-in-seconds.html
+- format and parse time object.
+  Given string d = '02/18/17', get the 69th days after. What is that day?
+  datetime.datetime.strptime and datetime.datetime.strftime
+
+timeit
+------
+
+Use with ipython %timeit::
+
+  In [2]: %timeit 'x = range(1000,1); sorted(x)'
+  The slowest run took 381.51 times longer than the fastest. This could mean that an intermediate result is being cached
+  100000000 loops, best of 3: 13.1 ns per loop
+
+collections
+-----------
+
+- Counter
+- namedtuple
+- defaultdict # see doc
+- deque # see doc
+- OrderedDict # see doc
+
+logging
+-------
+
+- basicConfig
+- getLogger(__name__)
+- debug/info/warning/error/critical
+- do not format log, let logger does that.
+
+copy
+----
+
+- Assignment statements do not copy objects.
+  They create binding between a target and an object.
+- Interface of a module is function signatures, exceptions (all thing exposed).
+- Shallow vs deep copy, how does they implemented?
+- What are copy methods for list and dict, shallow or deep?
+- https://docs.python.org/3/library/copy.html
+- E.g: when to not use deep copy
+  https://github.com/saltstack/salt/commit/63aa8c686bcb0ebc47eb3fc80ac45001e92320ff
+
+os
+--
+
+- os.listdir
+- os.getuid
+- os.getpid
+- os.walk
+- os.path.join
+- os.path.abspath
+- os.path.isfile
+- os.path.isdir
+- os.path.exists
+
+sys
+---
+
+- sys.path
+- sys.exit
+- sys.argv
+
+yaml
+----
+
+- http://www.familug.org/2013/06/yaml-la-gi.html
+- often used for config files
+- pip install pyyaml, import yaml, yaml.dump, yaml.load
+
 Glossary
 --------
 
@@ -122,115 +235,6 @@ Syntactic sugar
 - Function call? callable.
 - Why we can write len(L)? not len(5) ?
 - Why we can write L[3]? not 7[3] ?
-
-Stdlib
-------
-
-PYMOTW
-------
-
-https://docs.python.org/3/library/
-https://docs.python.org/3/howto/
-https://pymotw.com/3/py-modindex.html
-
-time
-----
-
-- sleep()
-- time()
-- while True / time.sleep best practice
-
-pdb
----
-
-The python debugger https://docs.python.org/3/library/pdb.html ::
-
-  python3 -m pdb myscript.py
-
-
-- When script *doesn't run*, what to do?
-- ``python -m pdb /path/script.py -t option``
-
-
-random
-------
-
-https://docs.python.org/2/faq/library.html#mathematics-and-numerics
-
-datetime
---------
-
-- calculate timedelta.
-  How many days are there from 2016/Feb/09 to 2017/Mar/18?
-  How many seconds?  http://www.familug.org/2014/08/python-time-delta-in-seconds.html
-- format and parse time object.
-  Given string d = '02/18/17', get the 69th days after. What is that day?
-  datetime.datetime.strptime and datetime.datetime.strftime
-
-timeit
-------
-
-Use with ipython %timeit::
-
-  In [2]: %timeit 'x = range(1000,1); sorted(x)'
-  The slowest run took 381.51 times longer than the fastest. This could mean that an intermediate result is being cached
-  100000000 loops, best of 3: 13.1 ns per loop
-
-collections
------------
-
-- namedtuple
-- Counter
-- defaultdict
-- deque
-- OrderedDict
-
-logging
--------
-
-- basicConfig
-- getLogger(__name__)
-- debug/info/warning/error/critical
-- do not format log, let logger does that.
-
-copy
-----
-
-- Assignment statements do not copy objects.
-  They create binding between a target and an object.
-- Interface of a module is function signatures, exceptions (all thing exposed).
-- Shallow vs deep copy, how does they implemented?
-- What are copy methods for list and dict, shallow or deep?
-- https://docs.python.org/3/library/copy.html
-- E.g: when to not use deep copy
-  https://github.com/saltstack/salt/commit/63aa8c686bcb0ebc47eb3fc80ac45001e92320ff
-
-os
---
-
-- os.listdir
-- os.getuid
-- os.getpid
-- os.walk
-- os.path.join
-- os.path.abspath
-- os.path.isfile
-- os.path.isdir
-- os.path.exists
-
-sys
----
-
-- sys.path
-- sys.exit
-- sys.argv
-
-yaml
-----
-
-- http://www.familug.org/2013/06/yaml-la-gi.html
-- often used for config files
-- pip install pyyaml, import yaml, yaml.dump, yaml.load
 
 Linting
 -------
