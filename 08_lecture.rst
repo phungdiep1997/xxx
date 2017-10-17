@@ -19,11 +19,6 @@ dir
 - getattr/hasattr
 - isinstance - do NOT compare type
 
-StackOverFlow
--------------
-
-http://stackoverflow.com/questions/tagged/python
-
 Stdlib
 ------
 
@@ -136,6 +131,11 @@ yaml
 - http://www.familug.org/2013/06/yaml-la-gi.html
 - often used for config files
 - pip install pyyaml, import yaml, yaml.dump, yaml.load
+
+StackOverFlow
+-------------
+
+http://stackoverflow.com/questions/tagged/python
 
 Glossary
 --------
