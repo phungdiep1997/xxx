@@ -8,6 +8,16 @@ Class (2)
 - Using class, presents Undergraduate, and Master students
 - Both have some similar attributes and some different
 
+vars
+----
+
+Built-in function that display given object attributes.
+
+Try::
+
+  r = requests.get('https://pymi.vn')
+  vars(s)
+
 Exception hierarchy
 -------------------
 
