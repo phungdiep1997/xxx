@@ -76,6 +76,21 @@ Use with ipython %timeit::
   The slowest run took 381.51 times longer than the fastest. This could mean that an intermediate result is being cached
   100000000 loops, best of 3: 13.1 ns per loop
 
+
+itertools
+---------
+
+- Over multiple lists::
+
+  for i in itertools.chain(L1, L2):
+       pass
+
+- Over multiple dicts::
+
+  for k in collections.ChainMap({'a': 'hhii'}, {'b':'huhu'}):
+      pass
+
+
 collections
 -----------
 
