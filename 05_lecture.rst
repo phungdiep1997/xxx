@@ -19,6 +19,9 @@ Iterate over lines::
           print(line, end='')
   print("Has file f closed? {0}".format(f.closed))
 
+
+Default encoding depends on OS settings (not always UTF-8).
+
 Tuple unpacking
 ---------------
 
