@@ -22,6 +22,7 @@ http://www.scipy-lectures.org/intro/numpy/array_object.html
 - Create an array by np.array, np.ones, np.zeros, np.eyes
 - Create 1D array by: np.arange, np.linspace
 - + - * / matrix with matrix (element wise)
+- Dot product, `@`
 - Selecting column, rows
 - Broadcasting
 
