@@ -37,7 +37,7 @@ Lấy code về máy
 
 Cài đặt git để quản lý các file code. Xem chi tiết tại https://gitlab.com/pyfml/prepare#chu%E1%BA%A9n-b%E1%BB%8B-tr%C6%B0%E1%BB%9Bc-bu%E1%BB%95i-3
 
-Clone (download) repo của lớp học về máy nếu chưa clone::
+Chạy lệnh sau đây để clone (download) repo (thư mục) của lớp học về máy::
 
   git clone https://gitlab.com/pyfml/pyfml.git pyfml
 
