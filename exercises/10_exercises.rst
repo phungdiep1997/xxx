@@ -51,3 +51,24 @@ Nâng cao: push code lên GitHub và tạo 1 GitHub Page: https://pages.github.c
 
 Làm theo ví dụ tại http://flask.pocoo.org/docs/0.12/tutorial/
 Push code cuối cùng lên GitHub.com<div></div>
+
+4. Gửi các thông số (metric)
+----------------------------
+
+Đăng ký 1 tài khoản DataDog https://www.datadoghq.com sau đó cài đặt datadog
+agent lên máy mình.
+
+Gửi các thông số lên DataDog theo hướng dẫn tại:
+https://docs.datadoghq.com/guides/metrics/
+
+5. Quản lý event/exception tập trung
+------------------------------------
+
+Trong một webapp, luôn có các event xảy ra mà ta muốn theo dõi.
+Ví dụ: một người dùng đăng ký, một exception xảy ra ...
+Sentry là opensource webapp thực hiện quản lý các event này, giúp
+ta quản lý được các sự kiện xảy ra trong hệ thống. Thường dùng để quản lý các
+exception xảy ra trong code Python. Đăng ký tài khoản và thử viết code có
+exception xảy ra để xem chúng được quản lý trên web thế nào.
+
+https://docs.sentry.io/clients/python/
