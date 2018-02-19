@@ -33,7 +33,10 @@ style:
 lint:
 	pylint exercises tests
 
-ci: style lint test
+type:
+	mypy --ignore-missing-imports --package exercises
+
+ci: style lint test type
 
 .PHONY: help
 help:
