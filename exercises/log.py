@@ -16,15 +16,15 @@ def get_logger(name):
 
 
 def test():
-    l = get_logger(__name__)
-    l.debug("debug msg")
-    l.info("info msg")
-    l.warn("warn msg")
+    logger = get_logger(__name__)
+    logger.debug("debug msg")
+    logger.info("info msg")
+    logger.warn("warn msg")
     try:
-        1/0
+        1 / 0
     except Exception as e:
-        l.error(e, exc_info=True)
-    l.info("Exitting...")
+        logger.error(e, exc_info=True)
+    logger.info("Exitting...")
 
 
 if __name__ == "__main__":

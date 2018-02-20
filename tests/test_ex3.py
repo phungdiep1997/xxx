@@ -144,10 +144,10 @@ class TestExercise3(TestExercise):
 class TestExercise4(TestExercise):
     def test_ex4_1(self):
         cases = [
-                ('0.0.0.0', '00000000.00000000.00000000.00000000'),
-                ('192.168.1.1', '11000000.10101000.00000001.00000001'),
-                ('208.67.222.222', '11010000.01000011.11011110.11011110'),
-                ]
+            ('0.0.0.0', '00000000.00000000.00000000.00000000'),
+            ('192.168.1.1', '11000000.10101000.00000001.00000001'),
+            ('208.67.222.222', '11010000.01000011.11011110.11011110'),
+        ]
 
         self._test_all(ex4_1.solve, cases)
 
@@ -226,10 +226,10 @@ class TestExercise5(TestExercise):
         newhoang, newduy, newdai, newtu = res
 
         self.assertTrue(
-            hoang['languages']
-            == newduy['languages']
-            == newdai['languages']
-            == newtu['languages']
+            hoang['languages'] ==
+            newduy['languages'] ==
+            newdai['languages'] ==
+            newtu['languages']
         )
         self.assertIn('Elixir', newhoang['languages'])
         self.assertEqual(newtu['girl_friend'], 'Do Anh')
@@ -360,7 +360,7 @@ class TestExercise5(TestExercise):
         matrix = [list(range(N)) for i in range(N)]
         for rowidx, row in enumerate(matrix):
             for idx, _ in enumerate(row):
-                if idx == rowidx or idx == N-rowidx-1:
+                if idx == rowidx or idx == N - rowidx - 1:
                     row[idx] = str(rowidx)
                 else:
                     row[idx] = '*'
