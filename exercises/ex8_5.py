@@ -16,7 +16,7 @@ Tài liệu: https://docs.python.org/3/library/unittest.html
 def factorial(n):
     if n <= 0:
         return 1
-    return n * factorial(n-1)
+    return n * factorial(n - 1)
 
 
 class TestFactorial(unittest.TestCase):

@@ -35,13 +35,13 @@ class TestExercise6(TestExercise):
     def test_ex6_2(self):
         data = ['meo', 'bo', 'ga', 'cho', 'chim', 'gau', 'voi']
         # https://docs.python.org/3/library/functions.html#zip
-        expected = list(zip(*[iter(data)]*2))
+        expected = list(zip(*[iter(data)] * 2))
         res = ex6_2.solve(data, 2)
         self.assertIsInstance(res, list)
         self.assertIsInstance(res[0], tuple)
         self.assertEqual(res, expected)
 
-        self.assertEqual(ex6_2.solve(data, 3), list(zip(*[iter(data)]*3)))
+        self.assertEqual(ex6_2.solve(data, 3), list(zip(*[iter(data)] * 3)))
 
     def test_ex6_3(self):
         expected = ('2017-05-25', 76454277.83)
