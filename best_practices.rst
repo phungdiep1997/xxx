@@ -1,6 +1,12 @@
 Các lỗi thường gặp
 ==================
 
+Comment code
+------------
+
+Code không dùng thì xoá đi, không comment. Sử dụng git là giải pháp xem lại các phiên bản cũ của
+code (git log) -  vì vậy không có lý do gì để giữ lại code không dùng cả.
+
 Duyệt từng phần tử của tập hợp
 ------------------------------
 
