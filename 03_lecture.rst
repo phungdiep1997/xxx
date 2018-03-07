@@ -97,7 +97,8 @@ Link to git.rst
 List
 ----
 
-- How to create an empty list?
+- How to create an empty list? `L = list()` # teach this so student will not use list as var name
+- List is ordered, first add, lowest index (`0`), then increases.
 - How to create a list with strings?
 - How to create a list with numbers?
 - Given::
