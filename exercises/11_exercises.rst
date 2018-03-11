@@ -63,4 +63,10 @@ Gợi ý:
 6
 -
 
+Dùng Pandas tìm ngày mà giá BTC cao nhất. Giải nén file dữ liệu: localbtcVND.csv.gz
+(tham khảo cách giải nén bầng câu lệnh: http://www.familug.org/2012/09/nen-giai-nen-bang-command-line-trong.html)
+
+7
+-
+
 - Viết review cho PyFML https://www.facebook.com/pyfml/
