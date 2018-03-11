@@ -18,7 +18,7 @@ class TestExercise69(TestExercise):
         self.assertEqual(res, [1, 3, 5, 7, 9])
 
     def test_ex69_3(self):
-        res = ex69_3.solve(range(5))
+        res = ex69_3.solve(range(1, 5))
         self.assertIsInstance(res, int)
         self.assertEqual(res, 120)
 

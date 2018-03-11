@@ -20,7 +20,7 @@ def solve(numbers):
 
 
 def main():
-    print(solve(range(10)))
+    print(solve(range(1, 10)))
 
 
 if __name__ == "__main__":
