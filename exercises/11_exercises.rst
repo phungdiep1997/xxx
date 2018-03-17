@@ -69,4 +69,9 @@ Dùng Pandas tìm ngày mà giá BTC cao nhất. Giải nén file dữ liệu: l
 7
 -
 
+Trả lời 101 câu hỏi về Numpy: https://www.machinelearningplus.com/101-numpy-exercises-python/
+
+N
+-
+
 - Viết review cho PyFML https://www.facebook.com/pyfml/
