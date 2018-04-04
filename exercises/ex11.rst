@@ -3,9 +3,9 @@
 
 .. note::
 
-  Học viên làm bài vào file `.py`, không nộp file Jupyter notebook.
-  File Jupyter notebook có thể paste lên http://gist.github.com/ để nộp kèm
-  link làm kết quả của bài tập.
+  Học viên làm bài trên Jupyter notebook, lưu vào file .ipynb,
+  tạo repo trên GitHub rồi up lên.
+
 
 1
 -
