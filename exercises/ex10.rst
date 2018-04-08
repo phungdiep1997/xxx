@@ -72,3 +72,8 @@ exception xảy ra trong code Python. Đăng ký tài khoản và thử viết c
 exception xảy ra để xem chúng được quản lý trên web thế nào.
 
 https://docs.sentry.io/clients/python/
+
+6. Flask Mega tutorial
+----------------------
+
+Hoàn thành tutorial: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
