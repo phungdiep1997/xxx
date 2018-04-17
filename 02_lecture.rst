@@ -22,7 +22,7 @@ String
 - Single quote, double quote
 - Triple quote
 - Multi lines: ``triple quote, \\, ( ) ``
-- Escaping ``\n \t \\ \' \"``
+- Escaping ``\n \r \t \\ \' \"``
 - What happen when we write s = "Python"   " Glory" ?
 - We have s = "Python is great", I want to get only "Pet" from s,
   how to do that?
