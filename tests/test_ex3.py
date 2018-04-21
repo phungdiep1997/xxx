@@ -61,8 +61,9 @@ class TestExercise3(TestExercise):
 
     def test_ex3_3(self):
         res = ex3_3.solve()
-        self.assertTrue(
-            isinstance(res, list), "Expect list, got: {0}".format(type(res))
+        self.assertIsInstance(
+            res, list,
+            "Expect list, got: {0}".format(type(res))
         )
         self.assertEqual(
             len(res),
@@ -83,7 +84,7 @@ class TestExercise3(TestExercise):
     def test_ex3_5(self):
         len_expected = len(ex3_5.data)
         res = ex3_5.solve(ex3_5.data)
-        self.assertTrue(isinstance(res, list))
+        self.assertIsInstance(res, list)
         self.assertEqual(len(res), len_expected, "Số lượng phần tử không đúng")
         self.assertEqual(res[0][0], 1, 'Index phần tử đầu tiên không đúng')
         self.assertEqual(
@@ -94,7 +95,7 @@ class TestExercise3(TestExercise):
 
     def test_ex3_6(self):
         res = ex3_6.solve(2)
-        self.assertTrue(isinstance(res, tuple))
+        self.assertIsInstance(res, tuple)
         self.assertEqual(len(res), 2, "Số lượng phần tử không đúng")
         cases = [(1, ("January", 31)),
                  (2, ("February", 28)),
@@ -199,7 +200,7 @@ class TestExercise4(TestExercise):
 
     def test_ex4_8(self):
         result = ex4_8.solve()
-        self.assertTrue((6, 8, 10) in result)
+        self.assertIn((6, 8, 10), result)
         self.assertEqual(len(result), 2)
 
     def test_ex4_9(self):
@@ -225,12 +226,9 @@ class TestExercise5(TestExercise):
 
         newhoang, newduy, newdai, newtu = res
 
-        self.assertTrue(
-            hoang['languages'] ==
-            newduy['languages'] ==
-            newdai['languages'] ==
-            newtu['languages']
-        )
+        self.assertEqual(hoang['languages'], newduy['languages'])
+        self.assertEqual(hoang['languages'], newdai['languages'])
+        self.assertEqual(hoang['languages'], newtu['languages'])
         self.assertIn('Elixir', newhoang['languages'])
         self.assertEqual(newtu['girl_friend'], 'Do Anh')
         self.assertNotIn('girl_friend', newduy)
@@ -316,14 +314,14 @@ class TestExercise5(TestExercise):
         self.assertEqual(len(result), 5)
         new_result = ex35_2.solve(5)
         # They are random, should be different
-        self.assertTrue(result != new_result)
-        self.assertTrue(0 <= result[0] <= 9)
+        self.assertNotEqual(result, new_result)
+        self.assertIn(result[0], range(0, 10))
 
         # do the same with 10
         result = ex35_2.solve(10)
         self.assertEqual(len(result), 10)
         new_result = ex35_2.solve(10)
-        self.assertTrue(result != new_result)
+        self.assertNotEqual(result, new_result)
 
     def test_ex35_3(self):
         result = ex35_3.solve(10)
@@ -334,7 +332,7 @@ class TestExercise5(TestExercise):
         result = ex35_4.solve(5)
         self.assertEqual(len(result), 5)
         new_result = ex35_4.solve(5)
-        self.assertTrue(result != new_result, 'Output should be random')
+        self.assertNotEqual(result, new_result, 'Output should be random')
 
     def test_ex35_5(self):
         result = ex35_5.solve(12)
@@ -370,9 +368,9 @@ class TestExercise5(TestExercise):
 
     def test_ex35_9(self):
         res = ex35_9.solve(([], ''))
-        self.assertTrue(isinstance(res, list))
-        self.assertTrue('__setitem__' in res)
-        self.assertFalse('extend' in res)
+        self.assertIsInstance(res, list)
+        self.assertIn('__setitem__' in res)
+        self.assertIn('extend' in res)
 
 
 if __name__ == "__main__":
