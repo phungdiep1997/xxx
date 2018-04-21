@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-
 '''
 Gợi ý: có thể dùng enumerate()
-https://docs.python.org/2/library/functions.html#enumerate
+https://docs.python.org/3/library/functions.html#enumerate
 '''
 
 
