@@ -76,7 +76,7 @@ class TestExercise7(TestExercise):
                 any(map(lambda s: s in string.punctuation, res)),
             ])
         )
-        self.assertFalse(res == ex7_6.solve(12))
+        self.assertNotEqual(res, ex7_6.solve(12))
 
     def test_ex7_7(self):
         res = ex7_7.solve(ex7_7.data)
