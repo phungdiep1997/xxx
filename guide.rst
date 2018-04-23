@@ -50,7 +50,9 @@ Chạy lệnh sau đây để clone (download) repo (thư mục) của lớp h�
 Các bước nộp bài
 ^^^^^^^^^^^^^^^^
 
-**MỖI LẦN** làm bài tập (mỗi buổi), làm như sau:
+**MỖI LẦN** làm bài tập (sau mỗi buổi học), làm như sau - chú ý các câu lệnh
+này đều gõ trên Ubuntu/Mac OSX [Terminal](http://www.familug.org/2012/03/ccgu-cli-can-ban.html#more)
+hoặc Windows cmd hoặc Windows PowerShell, KHÔNG phải bật Python lên rồi gõ.
 
 Vào thư mục ``pyfml``, kiểm tra branch::
 
