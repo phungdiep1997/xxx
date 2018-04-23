@@ -369,8 +369,8 @@ class TestExercise5(TestExercise):
     def test_ex35_9(self):
         res = ex35_9.solve(([], ''))
         self.assertIsInstance(res, list)
-        self.assertIn('__setitem__' in res)
-        self.assertIn('extend' in res)
+        self.assertIn('__setitem__', res)
+        self.assertNotIn('extend', res)
 
 
 if __name__ == "__main__":
