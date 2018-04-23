@@ -2,12 +2,15 @@ Exercises
 =========
 
 Lớp học Python3, nếu máy bạn có cả 2 phiên bản, khi chạy lệnh ``python ...``
-dùng ``python3`` thay vì ``python`` để tránh dùng nhầm Python2.
+dùng ``python3`` thay vì ``python`` để tránh dùng nhầm Python2. (Trên Windows
+thường không cài sẵn python nên có thể gõ python, python3, cái nào được thì dùng,
+chú ý có thể phải setup PATH, xem hướng dẫn ở đây
+https://docs.python.org/3/tutorial/interpreter.html#invoking-the-interpreter)
 
 Hướng dẫn làm bài tập
 ---------------------
 
-Tất cả bài tập phải làm vào trong thư mục ``exercises``, sửa nội dung của các file ``.py`` đã có tương ứng với bài tập cần làm.
+Tất cả bài tập phải làm vào trong thư mục [exercises](https://gitlab.com/pyfml/pyfml/tree/master/exercises), sửa trực tiếp nội dung của các file ``.py`` đã có tương ứng với bài tập cần làm.
 Học xong chương 3 thì làm bài 'ex3_*.py' như ex3_1.py, ex3_2.py ...
 
 Riêng ``ex35_*.py`` là bài làm thêm cho học viên từ buổi 3 đến
@@ -32,6 +35,9 @@ trên bàn phím) như sau::
 Nếu code quá dài, paste code vào đây https://glot.io/
 lấy link để paste vào Slack channel.
 
+Không nên mất quá nhiều thời gian vào một khó khăn gì, nếu tự xử lý mà sau
+TỐI ĐA 2 giờ đồng hồ không xong thì nên lên channel của lớp để hỏi.
+
 Lấy code về máy
 ^^^^^^^^^^^^^^^^
 
@@ -44,7 +50,7 @@ Chạy lệnh sau đây để clone (download) repo (thư mục) của lớp h�
 Các bước nộp bài
 ^^^^^^^^^^^^^^^^
 
-**MỖI LẦN** làm bài tập, làm như sau:
+**MỖI LẦN** làm bài tập (mỗi buổi), làm như sau:
 
 Vào thư mục ``pyfml``, kiểm tra branch::
 
