@@ -19,17 +19,19 @@ buổi 5. Khuyến khích dùng list comprehension.
 Editor
 ^^^^^^
 
-Cài đặt editor để mở code, xem tại `đây <https://gitlab.com/pyfml/prepare#c%C3%A0i-%C4%91%E1%BA%B7t-editor-sau-bu%E1%BB%95i-2->`_
+Cài đặt editor để mở code, sửa code, lưu code, xem tại `đây <https://gitlab.com/pyfml/prepare#c%C3%A0i-%C4%91%E1%BA%B7t-editor-sau-bu%E1%BB%95i-2->`_
+
+Để chạy code, lớp sẽ dùng dòng lệnh (học viên tuỳ ý làm theo cách của mình và tự giải quyết nếu có vấn đề gì xảy ra).
 
 Cách xử lý "lỗi"
 ^^^^^^^^^^^^^^^^
 
 Khi chạy lệnh không thành công, vui lòng cung cấp đầy đủ câu lệnh và output,
-không chỉ nói "lỗi". Trên Slack, viết code vào trong dấu ``` (dấu cạnh số 1
+không chỉ nói "lỗi". Trên Slack, viết code vào trong 3 dấu ` (dấu cạnh số 1
 trên bàn phím) như sau::
 
   ```
-  codehere
+  codehere nhớ là đã xuống dòng sau 3 dấu `
   ```
 
 Nếu code quá dài, paste code vào đây https://glot.io/
@@ -111,7 +113,7 @@ Học viên cài và sử dụng
 
 Nếu thấy không in ra gì tức code đã đúng chuẩn Python (PEP8) rồi 🏆
 
-Học viên chạy lệnh sau tại thư mục `pyfml` để kiểm tra xem bài làm mình đã đúng
+Học viên chạy lệnh sau (gõ y hệt, không cần sửa gì) tại thư mục `pyfml` để kiểm tra xem bài làm mình đã đúng
 chưa (chú ý, thư mục `pyfml`, không phải `exercises`, và chắc chắn là bạn đang
 dùng Python 3, không phải Python 2)::
 
@@ -133,7 +135,7 @@ Nếu sai, kết quả sẽ như sau::
 
   test_ex3_0 (test_ex3.TestExercise3) ... FAIL
 
-Hãy đọc chi tiết của phần output sau khi chạy câu lệnh để xem lỗi/sai gì.
+Hãy đọc chi tiết của phần output sau khi chạy câu lệnh để xem lỗi/sai gì. Kết quả khá dài, vì đây là test của tất cả các bài tập, tìm những gì mình đang làm.
 Không cần quan tâm đến các bài mình chưa học.
 
 Làm bài xong học viên lưu vào git (nhớ vào thư mục `exercises` trước khi chạy)::
