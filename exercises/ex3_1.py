@@ -17,6 +17,7 @@ def solve(input_data):
       output = 1
 
     Hàm có sẵn: bin(10) == '0b1010'
+    Hàm có sẵn tạo ra integer từ string: 69 == int('69')
     '''
 
     result = None
