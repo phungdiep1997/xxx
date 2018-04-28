@@ -22,7 +22,8 @@ Out[20]: [{'languages': ['C', 'Python'], 'name': 'Dung'}]
 data = [
     {"name": "Hoang",
      "phone": "0988888888",
-     "languages": ["Python", "C", "SQL", "HTML", "CSS", "JavaScript", "Golang"],
+     "languages": ["Python", "C", "SQL", "HTML", "CSS", "JavaScript",
+                   "Golang"],
      },
     {"name": "Duy", "girl_friend": "Maria"},
     {"name": "Dai", "girl_friend": "Angela"},
