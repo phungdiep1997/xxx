@@ -117,11 +117,13 @@ Học viên chạy lệnh sau (gõ y hệt, không cần sửa gì) tại thư m
 chưa (chú ý, thư mục `pyfml`, không phải `exercises`, và chắc chắn là bạn đang
 dùng Python 3, không phải Python 2)::
 
-  python3 -m unittest discover -vvv
+  python3 -m unittest tests.test_ex3 -vvv
+
+kiểm tra bài buổi 4 thì thay số 3 bằng số 4, bài 35 thì thay số 3 bằng 35 ...
 
 hoặc lệnh sau nếu bạn thấy kết quả tương tự::
 
-  python3 setup.py test
+  python3 setup.py test --test-suite tests.test_ex3
 
 Nếu đúng, output sẽ trông như sau::
 
@@ -205,13 +207,13 @@ Test riêng một bài
 
 Từ thư mục ``pyfml``, chạy::
 
-  $ python -m unittest tests.test_ex3.TestExercise4.test_ex4_9
+  $ python -m unittest tests.test_ex4.TestExercise4.test_ex4_9
   E
   ======================================================================
-  ERROR: test_ex4_9 (tests.test_ex3.TestExercise4)
+  ERROR: test_ex4_9 (tests.test_ex4.TestExercise4)
   ----------------------------------------------------------------------
   Traceback (most recent call last):
-    File "/home/hvn/me/pyfml/tests/test_ex3.py", line 207, in test_ex4_9
+    File "/home/hvn/me/pyfml/tests/test_ex4.py", line 207, in test_ex4_9
       self._test_all(ex4_9.solve, cases)
     File "/home/hvn/me/pyfml/tests/base.py", line 9, in _test_all
       output = func(input)
