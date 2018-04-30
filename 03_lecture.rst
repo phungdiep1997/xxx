@@ -59,7 +59,14 @@ same code block. If the name is unbound, a NameError exception will be raised.
 Control flow
 ------------
 
-- if/elif/else
+- if/elif/else::
+
+  if len(username) < 8:
+      print("Too short")
+  elif len(username) > 20:
+      print("Too verbose")
+  else:
+      print("Valid!")
 
 Ternary
 -------
@@ -115,6 +122,7 @@ List
 - 9 methods, built-in function ``reversed``, ``sorted``
   Each method RETURN what?
 - `del list[idx]` to delete an element from list.
+- Create copy of a list
 
 Built-in Functions
 ------------------
