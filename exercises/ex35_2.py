@@ -8,6 +8,9 @@ def solve(N):
 
       import random
       random.randrange(0, 10)
+
+    Must: use list comprehension
+    Tips: list comprehension always create new list
     '''
     result = None
 
