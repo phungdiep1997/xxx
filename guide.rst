@@ -289,3 +289,5 @@ Bài tập làm thêm
 
 - ProjectEuler https://projecteuler.net/
 - HackerRank https://www.hackerrank.com/domains/python/py-introduction
+- 99 Problems https://wiki.python.org/moin/ProblemSets/99%20Prolog%20Problems%20Solutions
+- Python koans https://github.com/gregmalcolm/python_koans
