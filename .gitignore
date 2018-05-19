@@ -11,6 +11,8 @@ __pycache__/
 # C extensions
 *.so
 
+tests/*.txt
+exercises/*.txt
 # Distribution / packaging
 .Python
 env/
