@@ -12,6 +12,7 @@ def solve(text):
 
     Đây là một biến thể của một thuật toán nén dữ liệu có tên Run-length
     encoding (RLE).
+    NOTE: không dùng itertools.groupby
     '''
     result = None
 
