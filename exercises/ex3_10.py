@@ -10,7 +10,7 @@ def solve(list1, list2):
     '''Find common elements of two given lists.
 
     Returns a list contains those elements.
-    Require: use only lists, and loop.
+    Require: use only lists, if/else and for loops.
     '''
     result = []
 
