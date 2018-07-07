@@ -145,7 +145,7 @@ yaml
 
 - http://www.familug.org/2013/06/yaml-la-gi.html
 - often used for config files
-- pip install pyyaml, import yaml, yaml.dump, yaml.load
+- pip install pyyaml, import yaml, yaml.dump, yaml.safe_load
 
 StackOverFlow
 -------------
