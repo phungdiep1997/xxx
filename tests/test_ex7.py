@@ -40,7 +40,7 @@ class TestExercise7(TestExercise):
         with open(fmt_path.format('event.json')) as f:
             data = json.load(f)
         with open(fmt_path.format('event.yaml')) as f:
-            out_yaml = yaml.load(f)
+            out_yaml = yaml.safe_load(f)
             self.assertEqual(
                 data, out_yaml,
                 "Ghi dữ liệu vào file event.yaml chưa đúng"

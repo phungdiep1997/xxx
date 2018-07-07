@@ -5,7 +5,7 @@ __doc__ = '''
 Yêu cầu:
 - Lưu file ``https://raw.githubusercontent.com/hvnsweeting/states/master/salt/event/init.sls`` về máy với tên event.yaml
 
-- Dùng pip cài thư viện PyYAML, import yaml và dùng `yaml.load` để biến nội
+- Dùng pip cài thư viện PyYAML, import yaml và dùng `yaml.safe_load` để biến nội
 dung trong file thành kiểu dữ liệu trên Python.
 
 - In ra số phần tử của kiểu dữ liệu vừa tạo. Dùng thư viện json để
