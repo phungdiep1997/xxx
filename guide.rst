@@ -31,7 +31,7 @@ không chỉ nói "lỗi". Trên Slack, viết code vào trong 3 dấu ` (dấu 
 trên bàn phím) như sau::
 
   ```
-  codehere nhớ là đã xuống dòng sau 3 dấu `
+  codehere nhớ là đã xuống dòng sau 3 dấu ` - dấu này là dấu backtick cạnh số 1, không phải single quote
   ```
 
 Nếu code quá dài, paste code vào đây https://glot.io/
@@ -39,6 +39,8 @@ lấy link để paste vào Slack channel.
 
 Không nên mất quá nhiều thời gian vào một khó khăn gì, nếu tự xử lý mà sau
 TỐI ĐA 2 giờ đồng hồ không xong thì nên lên channel của lớp để hỏi.
+
+**Hạn chế tối đa việc chụp ảnh màn hình và up ảnh nếu không thực sự cần thiết**
 
 Lấy code về máy
 ^^^^^^^^^^^^^^^^
@@ -48,6 +50,9 @@ Cài đặt git để quản lý các file code. Xem chi tiết tại https://gi
 Chạy lệnh sau đây để clone (download) repo (thư mục) của lớp học về máy::
 
   git clone https://gitlab.com/pyfml/pyfml.git pyfml
+
+Nhập vào username (phần hiện ra khi bấm vào Profile trên GitLab, không gồm dấu @),
+và [Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) và phần password.
 
 Các bước nộp bài
 ^^^^^^^^^^^^^^^^
