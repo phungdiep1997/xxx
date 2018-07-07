@@ -27,3 +27,8 @@ pylint:
   stage: linting
   script:
     - cd /builds/pyfml/pyfml && make lint
+
+security_check:
+  stage: linting
+  script:
+    - cd /builds/pyfml/pyfml && make sec

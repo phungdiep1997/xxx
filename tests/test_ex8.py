@@ -64,14 +64,18 @@ class TestExercise8(TestExercise):
         for root, _, files in os.walk(path):
             for file in files:
                 path_file = os.path.join(root, file)
+                _suffix = path_file[path_file.rfind('.'):]
+                if not _suffix:
+                    continue
+                if _suffix not in file_suffix:
+                    file_suffix.update({_suffix: 0})
+
                 try:
-                    _suffix = path_file[path_file.rfind('.'):]
-                    if _suffix not in file_suffix:
-                        file_suffix.update({_suffix: 0})
                     with open(file) as f:
                         file_suffix[_suffix] += sum(1 for _ in f)
-                except Exception:
+                except IOError:
                     continue
+
         return file_suffix
 
     def test_ex8_9(self):

@@ -33,6 +33,9 @@ style:
 lint:
 	pylint exercises tests
 
+sec:
+	find . -name '*.py' -exec bandit --skip B101,B301,B104,B404,B403,B603,B405,B314,B322,B310 {} \+
+
 type:
 	mypy --ignore-missing-imports --package exercises
 
