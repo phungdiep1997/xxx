@@ -4,6 +4,8 @@
 Type contructors
 ----------------
 
+(or converter)
+
 - int
 - str
 - float
@@ -167,5 +169,7 @@ Do not abuse.
 What is implement?
 ------------------
 
-pep8
-----
+pep8/flake8
+-----------
+
+https://github.com/pycqa/pycodestyle
