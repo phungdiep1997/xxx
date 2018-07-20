@@ -10,7 +10,8 @@ Chuẩn bị cho buổi sau
 - Activate môi trường vừa tạo, dùng pip cài đặt các thư viện phổ biến::
 
   ```
-  pip install requests six flake8 ipython ipdb numpy pandas scipy scikit-learn matplotlib jupyter flask beautifulsoup4 black
+  pip install requests six flake8 ipython ipdb numpy pandas scipy scikit-learn matplotlib jupyter flask beautifulsoup4 requests-html
+  pip install black # Python 3.6+ only
   ```
 '''  # NOQA
 
