@@ -29,7 +29,12 @@ class TestExercise7(TestExercise):
         import os
         import pickle
         import yaml
-        fmt_path = '../exercises/{}'
+        cwd = os.getcwd()
+        current_dir = cwd[cwd.find('/') + 1:]
+        if current_dir == 'pyfml':
+            fmt_path = 'exercises/{}'
+        elif current_dir == 'test':
+            fmt_path = '../exercises/{}'
         cases = ('event.json', 'event.yaml', 'event.pkl')
         for case in cases:
             self.assertTrue(
