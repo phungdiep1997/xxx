@@ -11,14 +11,13 @@ import requests
 
 
 def main():
-    delete_old_branches()
-
-
-def delete_old_branches(max_months=3):
-    # Get all branches
     # token = os.environ['GITLAB_TOKEN']
     token = open(os.path.expanduser('~/.config/gitlab')).read().strip()
+    delete_old_branches(token)
 
+
+def delete_old_branches(token, max_months=3):
+    # Get all branches
     branches_url = 'https://gitlab.com/api/v4/projects/1591562/repository/branches'  # noqa
     headers = {'Private-Token': token, 'content-type': 'application/json'}
     s = requests.Session()
@@ -62,9 +61,8 @@ def lambda_handler(*args):
         CiphertextBlob=base64.b64decode(encrypted_gitlab_token)
     )['Plaintext'].decode('ascii')
 
-    # class_id = os.environ['class_id']
-    # token = gitlab_token
-    delete_old_branches()
+    token = gitlab_token
+    delete_old_branches(token, max_months=3)
 
 
 if __name__ == "__main__":
