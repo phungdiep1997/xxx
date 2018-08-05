@@ -30,13 +30,14 @@ class TestExercise7(TestExercise):
         import pickle
         import yaml
         cwd = os.getcwd()
-        current_dir = cwd[cwd.find('/') + 1:]
+        current_dir = os.path.basename(cwd)
         if current_dir == 'pyfml':
             fmt_path = 'exercises/{}'
         elif current_dir == 'test':
             fmt_path = '../exercises/{}'
         cases = ('event.json', 'event.yaml', 'event.pkl')
         for case in cases:
+            print(fmt_path)
             self.assertTrue(
                 os.path.exists(fmt_path.format(case)),
                 "File {} không tồn tại".format(case)
