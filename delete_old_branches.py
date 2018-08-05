@@ -21,7 +21,7 @@ def delete_old_branches(max_months=3):
     # token = os.environ['GITLAB_TOKEN']
     token = open(os.path.expanduser('~/.config/gitlab')).read().strip()
 
-    branches_url = 'https://gitlab.com/api/v4/projects/1591562/repository/branches'
+    branches_url = 'https://gitlab.com/api/v4/projects/1591562/repository/branches' #noqa
     headers = {'Private-Token': token, 'content-type': 'application/json'}
     s = requests.Session()
     branches = []
@@ -33,7 +33,7 @@ def delete_old_branches(max_months=3):
         if repos:
             for repo in repos:
                 if repo['name'] != 'master':
-                    branches.append((repo['name'], repo['commit']['created_at']))
+                    branches.append((repo['name'], repo['commit']['created_at'])) #noqa
             page += 1
         else:
             break
@@ -66,7 +66,7 @@ def lambda_handler(*args):
 
     class_id = os.environ['class_id']
     token = gitlab_token
-    create_weekly_mr_stats_issue(class_id, token, ping_class=True)
+    delete_old_branches()
 
 
 if __name__ == "__main__":
