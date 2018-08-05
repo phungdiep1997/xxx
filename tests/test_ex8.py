@@ -3,6 +3,7 @@ from tests.base import TestExercise
 
 import os
 import sys
+import tempfile
 
 # hack path for importing exercises.log
 sys.path.insert(1, os.path.abspath(os.path.join(sys.path[0], 'exercises')))  # NOQA
@@ -34,6 +35,19 @@ class TestExercise8(TestExercise):
         with open(__file__) as f:
             line = f.readline()
         self.assertEqual(line.strip(), res[0].strip())
+
+        _, fn = tempfile.mkstemp()
+        with open(fn, 'w') as f:
+            for i in range(20):
+                f.write(str(i) + '\n')
+        last_ten = []
+        with open(fn) as f:
+            for line in f:
+                last_ten.append(line)
+                if len(last_ten) > 10:
+                    last_ten.pop(0)
+        res = ex8_2.solve('-t', fn)
+        self.assertEquals(last_ten, res)
 
     def test_ex8_3(self):
         res = ex8_3.solve(ex8_3.data)
