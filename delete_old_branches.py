@@ -18,7 +18,7 @@ def main():
 
 def delete_old_branches(max_months=3):
     # Get all branches
-    token = os.environ['GITLAB_TOKEN']
+    # token = os.environ['GITLAB_TOKEN']
     token = open(os.path.expanduser('~/.config/gitlab')).read().strip()
 
     branches_url = 'https://gitlab.com/api/v4/projects/1591562/repository/branches'
