@@ -31,13 +31,12 @@ def delete_old_branches(token, max_months=3):
         params = {'per_page': 100, 'page': page}
         res = s.get(branches_url, headers=headers, params=params)
         repos = res.json()
-        if repos:
-            for repo in repos:
-                if repo['name'] != 'master':
-                    branches.append((repo['name'], repo['commit']['created_at']))  # noqa
-            page += 1
-        else:
+        if not repos:
             break
+        for repo in repos:
+            if repo['name'] != 'master':
+                branches.append((repo['name'], repo['commit']['created_at']))  # noqa
+        page += 1
 
     # Delete old branches
     max_age = datetime.timedelta(days=30*max_months)
