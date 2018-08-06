@@ -11,7 +11,8 @@ import logging
 import requests
 
 
-logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', level=logging.DEBUG)
+logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s',
+                    level=logging.DEBUG)
 
 
 def main():
@@ -48,7 +49,8 @@ def delete_old_branches(token, max_months=3):
         if branch_age > max_age:
             to_delete.append(name)
 
-    logging.info('Found %s branches to delete. Start deleting...', len(to_delete))
+    logging.info('Found %s branches to delete. Start deleting...',
+                 len(to_delete))
 
     for branch_name in to_delete:
         delete_url = '{}/{}'.format(branches_url, branch_name)
