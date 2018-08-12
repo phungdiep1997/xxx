@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+"""
+Bài tập ở PyMi không nhằm để kiểm tra IQ của học sinh, cũng không thi lấy điểm,
+mục tiêu của chúng tôi là học viên với trình độ đầu vào tùy ý, nhưng đến
+lúc ra đều có thể làm được việc. Vì vậy, nếu không tự làm được bài tập,
+học viên được KHUYẾN KHÍCH xem bài các bạn khác để làm mẫu rồi gõ làm theo.
+Tránh tình trạng không làm bài tập với lý do "không làm được".
+Xem tại: https://gitlab.com/pyfml/pyfml/merge_requests
+"""
 
 
 def solve(ip):
@@ -6,7 +14,8 @@ def solve(ip):
     IPv4 được biểu diễn bằng 4 số từ 0-255, phân cách nhau bởi dấu `.`
     Mỗi số trong khoảng 0-255 được biểu diễn bằng 8 bits (1 byte),
     có tài liệu gọi 4 phần trong IPv4 này là 4 octet.
-    VD: IP của Google DNS là 8.8.8.8
+    VD: IP của Google DNS là 8.8.8.8, IP mọi máy tính dùng để chỉ chính nó
+    có địa chỉ 127.0.0.1 hay thường gọi là localhost.
 
     Trả về string biểu diễn binary (hệ cơ số 2) của `ip`.
 
