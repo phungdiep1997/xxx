@@ -21,9 +21,9 @@ Từ chương này, bài làm sau khi chỉnh sửa sạch sẽ, có thể đưa
   set biến environment:
   http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html
 - Kết quả trả về thường được phân thành nhiều trang (thay vì trả về tất cả cùng 1 lúc), khái niệm này gọi là "paginator", lập trình viên cần viết code "sang trang" để lấy tiếp các kết quả khác.
-- Một số trang như Google API trả về token không dùng được ngay, người dùng phải sleep một tới vài giây mới requests tiếp được.
+- Một số trang như Google API trả về token không dùng được ngay, người dùng phải sleep một tới vài giây mới requeststiếp được.
 
-- Khi crawl, nên tạo 1 requests Session để chứa thông tin liên quan giữa các requests thay vì dùng requests.get hay requests.post trực tiếp (thông tin giúp đăng nhập vào website, rồi thực hiện crawl sau khi đăng nhập):
+- Khi crawl, nên tạo 1 requests Session để chứa thông tin liên quan giữa các requests thay vì dùng `requests.get` hay `requests.post` trực tiếp (VD: thông tin giúp đăng nhập vào website, rồi thực hiện crawl sau khi đăng nhập):
 
   ```
   ses = requests.Session()
@@ -96,6 +96,7 @@ Sử dụng Google Map API
 https://developers.google.com/places/web-service/
 
 Chú ý: phải tạo "token" để có thể truy cập API.
+
 Chú ý: giữa mỗi trang kết quả phải đợi để lấy tiếp.
 
 - Kết quả trả về lưu theo format JSON, với mỗi điểm là một GeoJSON point (https://leafletjs.com/examples/geojson/), up file này lên GitHub để xem bản đồ kết quả.
@@ -149,8 +150,8 @@ sẽ xảy ra.
 -
 
 Đọc thêm: với những website sử dụng JavaScript, Python chỉ xem đó là những đoạn
-text bình thường và không "chạy" code JavaScript.  Để chạy code JavaScript,
-Python thường phải gọi là 1 chương trình khác (trình duyệt) để chạy code
+text bình thường và không chạy code JavaScript.  Để chạy code JavaScript,
+Python thường phải gọi 1 chương trình khác (trình duyệt) để chạy code
 JavaScript, sau đó đọc kết quả được trả về xem
 https://github.com/kennethreitz/requests-html#javascript-support
 
