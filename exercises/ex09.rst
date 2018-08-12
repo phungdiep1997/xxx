@@ -32,7 +32,7 @@ https://api.github.com/users/hvnsweeting/repos
 
 Câu lệnh của chương trình có dạng::
 
-  githubrepos.py username
+  python3 githubrepos.py username
 
 Gợi ý:
 
@@ -74,7 +74,7 @@ Link API: https://api.stackexchange.com/docs
 
 Dạng của câu lệnh:
 
-  so.py N LABEL
+  python3 so.py N LABEL
 
 4
 -
@@ -124,7 +124,7 @@ https://developers.facebook.com/docs/facebook-login/access-tokens/#apptokens
 - Để ý đến phần paging của mỗi response trả về. Hãy bấm vào đó để xem chuyện gì
 sẽ xảy ra.
 
-- Kết quả trả về xuất ra một file ``hanoi_coffee.json``.
+- Kết quả trả về lưu theo format JSON, với mỗi điểm là một GeoJSON point, rồi xuất ra một file ``hanoi_coffee.geojson`` up file này lên GitHub để xem bản đồ kết quả.
 
 - Hãy sử dụng option ``indent`` cho function ``json.dump()``
 
