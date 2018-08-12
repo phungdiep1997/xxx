@@ -20,7 +20,16 @@ Từ chương này, bài làm sau khi chỉnh sửa sạch sẽ, có thể đưa
   cập qua os.environ) https://docs.python.org/3/library/os.html#os.environ,
   set biến environment:
   http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html
+- Kết quả trả về thường được phân thành nhiều trang (thay vì trả về tất cả cùng 1 lúc), khái niệm này gọi là "paginator", lập trình viên cần viết code "sang trang" để lấy tiếp các kết quả khác.
 - Một số trang như Google API trả về token không dùng được ngay, người dùng phải sleep một tới vài giây mới requests tiếp được.
+
+- Khi crawl, nên tạo 1 requests Session để chứa thông tin liên quan giữa các requests thay vì dùng requests.get hay requests.post trực tiếp (thông tin giúp đăng nhập vào website, rồi thực hiện crawl sau khi đăng nhập):
+
+  ```
+  ses = requests.Session()
+  resp = ses.get('https://awebsite.com/login')
+  resp = ses.post('https://awebsite.com/login', data={...})
+  ```
 
 1
 -
@@ -57,7 +66,7 @@ Dạng của câu lệnh::
 Các thư viện:
 
 - requests
-- beautifulsoup4 [tuỳ chọn]
+- requests_html hay beautifulsoup4 [tuỳ chọn]
 - argparse hay sys.argv
 
 Gợi ý:
@@ -79,14 +88,18 @@ Dạng của câu lệnh:
 4
 -
 
-Viết script lấy về 50 kết quả đầu tiên tìm được với từ khoá "coffee"
-quanh toạ độ 10.779614, 106.699256 (nhà thờ Đức Bà - HCM) với bán kính 5KM.
-Ghi kết quả theo định dạng JSON vào file hcm_coffee.json. (hoặc lưu vào 1 SQLite DB)
+Viết script tìm 50 quán bia / quán nhậu / quán bar / nhà hàng quanh toạ độ của lớp học (lên google map để lấy) với bán kính 2KM.
+Ghi kết quả theo định dạng JSON vào file pymi_beer.geojson
 
 Sử dụng Google Map API
 https://developers.google.com/places/web-service/
 
 Chú ý: phải tạo "token" để có thể truy cập API.
+Chú ý: giữa mỗi trang kết quả phải đợi để lấy tiếp.
+
+- Kết quả trả về lưu theo format JSON, với mỗi điểm là một GeoJSON point (https://leafletjs.com/examples/geojson/), up file này lên GitHub để xem bản đồ kết quả.
+
+- Xem mẫu GEOJSON https://github.com/tung491/make_boba_map
 
 5
 -
@@ -124,13 +137,12 @@ https://developers.facebook.com/docs/facebook-login/access-tokens/#apptokens
 - Để ý đến phần paging của mỗi response trả về. Hãy bấm vào đó để xem chuyện gì
 sẽ xảy ra.
 
-- Kết quả trả về lưu theo format JSON, với mỗi điểm là một GeoJSON point, rồi xuất ra một file ``hanoi_coffee.geojson`` up file này lên GitHub để xem bản đồ kết quả.
-
+- Kết quả trả về lưu theo format JSON, với mỗi điểm là một GeoJSON point (https://leafletjs.com/examples/geojson/), rồi xuất ra một file ``hanoi_coffee.geojson`` up file này lên GitHub để xem bản đồ kết quả.
 - Hãy sử dụng option ``indent`` cho function ``json.dump()``
 
 Chuẩn bị cho buổi sau
 ---------------------
 
-- Đăng ký LinkedIn
-- Đăng ký nhận mail tin tức Python http://www.pythonweekly.com/
+- Đăng ký LinkedIn, add linkedin giảng viên https://www.linkedin.com/in/hvnsweeting và/hoặc https://vn.linkedin.com/in/hoangthanhlong
+- Đăng ký nhận mail tin tức Python hàng tuần http://www.pythonweekly.com/
 - Xem các bài viết tag Python trên http://www.familug.org/
