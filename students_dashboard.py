@@ -19,7 +19,9 @@ import urllib.parse
 
 def send_get(url, headers, data=None):
     if data:
-        assert isinstance(data, dict), "data must be a dict, got {}".format(type(data))
+        assert isinstance(data, dict), "data must be a dict, got {}".format(
+            type(data)
+        )
         url = "{}?{}".format(url, urllib.parse.urlencode(data))
 
     with urllib.request.urlopen(
@@ -84,7 +86,11 @@ def create_weekly_mr_stats_issue(class_id, token, ping_class=False):
         resp = send_get(
             MR_URL,
             headers=headers,
-            data={"per_page": 100, "page": page, "created_after": start_2018_str},
+            data={
+                "per_page": 100,
+                "page": page,
+                "created_after": start_2018_str,
+            },
         )
         if not resp:
             break
@@ -92,7 +98,9 @@ def create_weekly_mr_stats_issue(class_id, token, ping_class=False):
         page = page + 1
     print(len(merge_requests))
 
-    counter = {s.gitlabid: {"openMR": 0, "closeMR": 0, "totalMR": 0} for s in students}
+    counter = {
+        s.gitlabid: {"openMR": 0, "closeMR": 0, "totalMR": 0} for s in students
+    }
 
     gitlabids = [s.gitlabid for s in students]
 
@@ -105,7 +113,9 @@ def create_weekly_mr_stats_issue(class_id, token, ping_class=False):
             counter[mr_author]["openMR"] += 1
         else:
             counter[mr_author]["closeMR"] += 1
-        print(mr_author, mr["created_at"], "!{}".format(mr["iid"]), mr["state"])
+        print(
+            mr_author, mr["created_at"], "!{}".format(mr["iid"]), mr["state"]
+        )
 
     username_to_names = {s.gitlabid: s.name for s in students}
 
@@ -114,7 +124,8 @@ def create_weekly_mr_stats_issue(class_id, token, ping_class=False):
 
     data = [columns, table_sep]
     for rank, (username, mr_count) in enumerate(
-        sorted(counter.items(), key=lambda x: x[1]["openMR"], reverse=True), start=1
+        sorted(counter.items(), key=lambda x: x[1]["openMR"], reverse=True),
+        start=1,
     ):
 
         user_merge_requests = sorted(

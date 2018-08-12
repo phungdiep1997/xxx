@@ -12,12 +12,16 @@ import urllib.request
 import urllib.parse
 
 
-logging.basicConfig(format="%(asctime)s:%(levelname)s:%(message)s", level=logging.DEBUG)
+logging.basicConfig(
+    format="%(asctime)s:%(levelname)s:%(message)s", level=logging.DEBUG
+)
 
 
 def send_request(url, headers, data=None, method="GET"):
     if data:
-        assert isinstance(data, dict), "data must be a dict, got {}".format(type(data))
+        assert isinstance(data, dict), "data must be a dict, got {}".format(
+            type(data)
+        )
         url = "{}?{}".format(url, urllib.parse.urlencode(data))
 
     with urllib.request.urlopen(
@@ -56,7 +60,9 @@ def delete_old_branches(token, max_months=3):
             break
         for repo in repos:
             if repo["name"] != "master":
-                branches.append((repo["name"], repo["commit"]["created_at"]))  # noqa
+                branches.append(
+                    (repo["name"], repo["commit"]["created_at"])
+                )  # noqa
         page += 1
 
     # Delete old branches
@@ -69,7 +75,9 @@ def delete_old_branches(token, max_months=3):
         if branch_age > max_age:
             to_delete.append(name)
 
-    logging.info("Found %s branches to delete. Start deleting...", len(to_delete))
+    logging.info(
+        "Found %s branches to delete. Start deleting...", len(to_delete)
+    )
 
     for branch_name in to_delete:
         delete_url = "{}/{}".format(
