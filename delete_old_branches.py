@@ -12,6 +12,9 @@ import urllib.request
 import urllib.parse
 
 
+logging.basicConfig(format="%(asctime)s:%(levelname)s:%(message)s", level=logging.DEBUG)
+
+
 def send_request(url, headers, data=None, method="GET"):
     if data:
         assert isinstance(data, dict), "data must be a dict, got {}".format(type(data))
@@ -29,9 +32,6 @@ def send_request(url, headers, data=None, method="GET"):
                 return {}
         else:
             raise Exception("Failed {}: {}".format(response.status, payload))
-
-
-logging.basicConfig(format="%(asctime)s:%(levelname)s:%(message)s", level=logging.DEBUG)
 
 
 def main():
@@ -86,6 +86,14 @@ def delete_old_branches(token, max_months=3):
 
 def lambda_handler(*args):
     # For run on AWS Lambda
+
+    # https://stackoverflow.com/questions/37703609/using-python-logging-with-aws-lambda#41069773
+    root = logging.getLogger()
+    if root.handlers:
+        for handler in root.handlers:
+            root.removeHandler(handler)
+    logging.basicConfig(format="%(asctime)s %(message)s", level=logging.DEBUG)
+
     import base64
     import boto3
 
