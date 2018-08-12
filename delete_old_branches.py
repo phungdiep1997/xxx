@@ -5,10 +5,35 @@
 Delete old branches. Defaults to > 3 months
 """
 import datetime
+import json
 import os
 import logging
+import urllib.request
+import urllib.parse
 
-import requests
+
+def send_request(url, headers, data=None, method='GET'):
+    if data:
+        assert isinstance(data, dict), \
+                'data must be a dict, got {}'.format(type(data))
+        url = '{}?{}'.format(url, urllib.parse.urlencode(data))
+
+    with urllib.request.urlopen(
+            urllib.request.Request(
+                url,
+                headers=headers,
+                method=method,
+            )
+    ) as response:
+        if response.status < 300:
+            payload = response.read().decode('utf-8')
+            if payload:
+                return json.loads(payload)
+            else:
+                # GitLab returns empty
+                return {}
+        else:
+            raise Exception('Failed {}: {}'.format(response.status, payload))
 
 
 logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s',
@@ -18,20 +43,19 @@ logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s',
 def main():
     # token = os.environ['GITLAB_TOKEN']
     token = open(os.path.expanduser('~/.config/gitlab')).read().strip()
-    delete_old_branches(token)
+    delete_old_branches(token, max_months=2)
 
 
 def delete_old_branches(token, max_months=3):
     # Get all branches
     branches_url = 'https://gitlab.com/api/v4/projects/1591562/repository/branches'  # noqa
     headers = {'Private-Token': token, 'content-type': 'application/json'}
-    s = requests.Session()
     branches = []
     page = 1
     while True:
         params = {'per_page': 100, 'page': page}
-        res = s.get(branches_url, headers=headers, params=params)
-        repos = res.json()
+        res = send_request(branches_url, headers=headers, data=params)
+        repos = res
         if not repos:
             break
         for repo in repos:
@@ -53,9 +77,19 @@ def delete_old_branches(token, max_months=3):
                  len(to_delete))
 
     for branch_name in to_delete:
-        delete_url = '{}/{}'.format(branches_url, branch_name)
-        s.delete(delete_url, headers=headers)
-        logging.info('Deleted branch %s', branch_name)
+        delete_url = '{}/{}'.format(branches_url,
+                                    urllib.parse.quote(branch_name, safe=''))
+        logging.info("Sending DELETE to %s", delete_url)
+        try:
+            send_request(
+                delete_url,
+                headers=headers,
+                method='DELETE',
+            )
+
+            logging.info('Deleted branch %s', branch_name)
+        except Exception as e:
+            logging.error('Failed deleted branch %s: %s %s', branch_name, e)
 
 
 def lambda_handler(*args):
