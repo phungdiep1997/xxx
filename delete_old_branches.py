@@ -100,7 +100,8 @@ def lambda_handler(*args):
     if root.handlers:
         for handler in root.handlers:
             root.removeHandler(handler)
-    logging.basicConfig(format="%(asctime)s %(message)s", level=logging.DEBUG)
+    # log info bcz log debug would show token on Lambda
+    logging.basicConfig(format="%(asctime)s %(message)s", level=logging.INFO)
 
     import base64
     import boto3
