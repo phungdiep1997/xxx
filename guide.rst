@@ -7,6 +7,15 @@ thường không cài sẵn python nên có thể gõ python, python3, cái nào
 chú ý có thể phải setup PATH, xem hướng dẫn ở đây
 https://docs.python.org/3/tutorial/interpreter.html#invoking-the-interpreter)
 
+Quy tắc chung trên Slack
+------------------------
+
+- Không chụp ảnh màn hình khi gặp vấn đề nếu có thể copy/paste text.
+- Không xóa post đã được trả lời, để các bạn khác còn xem mà học tập.
+- Không hỏi trực tiếp giảng viên, câu hỏi của bạn cũng có thể có lợi cho người
+  khác - hãy hỏi trên channel của lớp. Nếu không liên quan tới nội dung bài
+  học, hãy hỏi trên channel #python hay #chem-gio.
+
 Hướng dẫn làm bài tập
 ---------------------
 
