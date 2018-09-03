@@ -16,6 +16,15 @@ Quy tắc chung trên Slack
   khác - hãy hỏi trên channel của lớp. Nếu không liên quan tới nội dung bài
   học, hãy hỏi trên channel #python hay #chem-gio.
 
+Hướng dẫn dùng câu lệnh trên *NIX (ubuntu, MacOS, ...)
+------------------------------------------------------
+
+- https://www.familug.org/2010/06/cmdcac-lenh-ve-thu-muc-va-tap-tin.html
+
+- chú ý các câu lệnh trong guide này đều gõ trên Ubuntu/Mac OSX
+[Terminal](http://www.familug.org/2012/03/ccgu-cli-can-ban.html#more) hoặc
+Windows cmd hoặc Windows PowerShell, KHÔNG PHẢI bật Python lên rồi gõ.
+
 Hướng dẫn làm bài tập
 ---------------------
 
@@ -60,15 +69,37 @@ Chạy lệnh sau đây để clone (download) repo (thư mục) của lớp h�
 
   git clone https://gitlab.com/pyfml/pyfml.git pyfml
 
-Nhập vào username (phần hiện ra khi bấm vào Profile trên GitLab, không gồm dấu @),
-và [Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) và phần password.
+Nếu thành công, ta sẽ thấy 1 thư mục tên pyfml tại ngay thư mục ta gõ lệnh::
+
+  $ git clone https://gitlab.com/pyfml/pyfml.git pyfml
+
+  HỎI USERNAME - PASSWORD thì nhập vào
+
+  Cloning into 'pyfml'...
+  remote: Enumerating objects: 7662, done.
+  remote: Counting objects: 100% (7662/7662), done.
+  remote: Compressing objects: 100% (3201/3201), done.
+  ...
+  ...
+  Resolving deltas: 100% (5146/5146), done.
+  Checking connectivity... done.
+  $ ls pyfml/
+  01_lecture.rst          gittree.png
+  02_lecture.rst          guide.rst
+  03_lecture.rst          index.rst
+  ...
+
+Nhập vào username (phần hiện ra khi bấm vào Profile trên GitLab, không gồm dấu @), password. Nếu dùng 2FA thì nhập [Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) và phần password.
+
+Chạy 2 lệnh sau (chỉ cần làm 1 lần duy nhất) để cấu hình git::
+
+  git config user.email hvn@familug.org # thay email của bạn vào
+  git config user.name 'Viet Hung Nguyen' # thay tên của bạn vào
 
 Các bước nộp bài
 ^^^^^^^^^^^^^^^^
 
-**MỖI LẦN** làm bài tập (sau mỗi buổi học), làm như sau - chú ý các câu lệnh
-này đều gõ trên Ubuntu/Mac OSX [Terminal](http://www.familug.org/2012/03/ccgu-cli-can-ban.html#more)
-hoặc Windows cmd hoặc Windows PowerShell, KHÔNG phải bật Python lên rồi gõ.
+**MỖI LẦN** làm bài tập (sau mỗi buổi học), làm như sau:
 
 Vào thư mục ``pyfml``, kiểm tra branch::
 
