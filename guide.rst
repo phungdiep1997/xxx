@@ -25,6 +25,12 @@ Hướng dẫn dùng câu lệnh trên *NIX (ubuntu, MacOS, ...)
 [Terminal](http://www.familug.org/2012/03/ccgu-cli-can-ban.html#more) hoặc
 Windows cmd hoặc Windows PowerShell, KHÔNG PHẢI bật Python lên rồi gõ.
 
+Bài giảng các buổi học
+----------------------
+
+Được pin trong Slack channel của lớp học.
+https://get.slack.help/hc/en-us/articles/205239997-Pin-messages-and-files
+
 Hướng dẫn làm bài tập
 ---------------------
 
