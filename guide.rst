@@ -97,6 +97,9 @@ Nếu thành công, ta sẽ thấy 1 thư mục tên pyfml tại ngay thư mục
 
 Nhập vào username (phần hiện ra khi bấm vào Profile trên GitLab, không gồm dấu @), password. Nếu dùng 2FA thì nhập [Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) vào phần password.
 
+Mọi lệnh bắt đầu bằng chữ `git` (trừ git clone) phải chạy trong thư mục đã
+clone mới có tác dụng.
+
 Chạy 2 lệnh sau (chỉ cần làm 1 lần duy nhất) để cấu hình git::
 
   git config user.email hvn@familug.org # thay email của bạn vào
