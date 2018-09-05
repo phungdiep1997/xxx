@@ -227,7 +227,8 @@ Trong phần ``Description``, @nick_người_khác để báo cho họ. Cụ th�
 Bấm vào ``Assignee``, chọn người sẽ review code chính cho bạn, VD trợ giảng của
 khoá hoặc người cùng nhóm (sau khi đã phân nhóm).
 
-Bấm vào ``Labels``, chọn khoá mình đang học.
+Bấm vào ``Labels``, chọn khoá mình đang học. Nếu muốn được review bằng tiếng
+Anh, chọn thêm label `EnglishReview`.
 
 .. image:: mr.png
 
