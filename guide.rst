@@ -25,6 +25,12 @@ Hướng dẫn dùng câu lệnh trên *NIX (ubuntu, MacOS, ...)
 [Terminal](http://www.familug.org/2012/03/ccgu-cli-can-ban.html#more) hoặc
 Windows cmd hoặc Windows PowerShell, KHÔNG PHẢI bật Python lên rồi gõ.
 
+Bài giảng các buổi học
+----------------------
+
+Được pin trong Slack channel của lớp học.
+https://get.slack.help/hc/en-us/articles/205239997-Pin-messages-and-files
+
 Hướng dẫn làm bài tập
 ---------------------
 
@@ -90,6 +96,9 @@ Nếu thành công, ta sẽ thấy 1 thư mục tên pyfml tại ngay thư mục
   ...
 
 Nhập vào username (phần hiện ra khi bấm vào Profile trên GitLab, không gồm dấu @), password. Nếu dùng 2FA thì nhập [Personal Access Token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) vào phần password.
+
+Mọi lệnh bắt đầu bằng chữ `git` (trừ git clone) phải chạy trong thư mục đã
+clone mới có tác dụng.
 
 Chạy 2 lệnh sau (chỉ cần làm 1 lần duy nhất) để cấu hình git::
 
@@ -221,7 +230,8 @@ Trong phần ``Description``, @nick_người_khác để báo cho họ. Cụ th�
 Bấm vào ``Assignee``, chọn người sẽ review code chính cho bạn, VD trợ giảng của
 khoá hoặc người cùng nhóm (sau khi đã phân nhóm).
 
-Bấm vào ``Labels``, chọn khoá mình đang học.
+Bấm vào ``Labels``, chọn khoá mình đang học. Nếu muốn được review bằng tiếng
+Anh, chọn thêm label `EnglishReview`.
 
 .. image:: mr.png
 
