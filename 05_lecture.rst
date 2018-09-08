@@ -10,7 +10,7 @@ Read & write file
 -----------------
 
 Introduce using file.
-open(), modes, close(), with, iter over lines.
+open(), modes (r/w/a binary/text), close(), with, iter over lines.
 
 Iterate over lines::
 
