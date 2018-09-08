@@ -3,13 +3,12 @@ image: python:3.6
 before_script:
   - pip install -r requirements-test.txt
 stages:
-  - test
-  - style
+  - test_and_style
   - type # this is BETA
   - linting # latest stage because this is BETA, and just a plus for student
 
 check_pep8:
-  stage: style
+  stage: test_and_style
   script:
     - cd /builds/pyfml/pyfml && make style
 
@@ -19,7 +18,7 @@ type:
     - cd /builds/pyfml/pyfml && make type || true
 
 unittest:
-  stage: test
+  stage: test_and_style
   script:
     - cd /builds/pyfml/pyfml && make test
 
