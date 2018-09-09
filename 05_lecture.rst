@@ -112,8 +112,7 @@ Reading code
 References
 ----------
 
-- List vs Tuple
-
-  http://docs.python.org/tutorial/datastructures.html#tuples-and-sequences
-  http://docs.python3.org/faq/design.html#why-are-there-separate-tuple-and-list-data-types
-  http://www.stackoverflow.com/questions/31192923/lists-vs-tuples-what-to-use-and-when
+- List vs Tuple: 
+  - http://docs.python.org/faq/design.html#why-are-there-separate-tuple-and-list-data-types
+  - http://docs.python.org/tutorial/datastructures.html#tuples-and-sequences
+  - http://www.stackoverflow.com/questions/31192923/lists-vs-tuples-what-to-use-and-when
