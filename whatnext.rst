@@ -27,34 +27,6 @@ What now?
 
 https://docs.python.org/3/tutorial/whatnow.html
 
-Web developer
-~~~~~~~~~~~~~
-
-Web developer = HTML + CSS + Javascript + Python framework
-
-Learn HTML (easiest):
-- https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction
-- http://docs.webplatform.org/wiki/guides/the_basics_of_html
-- http://www.w3schools.com/html/default.asp
-
-Learn CSS (still easy):
-- https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started
-- http://docs.webplatform.org/wiki/css/tutorials
-
-Learn Javascript if you want (not required):
-- http://docs.webplatform.org/wiki/concepts/programming/programming_basics
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction
-
-Learn Flask (after you know what is HTML and CSS):
-
-- Install: http://flask.pocoo.org/docs/0.10/installation/#virtualenv
-- Follow tutorial: http://flask.pocoo.org/docs/0.10/tutorial/
-- Read quickstart: http://flask.pocoo.org/docs/0.10/quickstart/
-
-Learn Django (should learn after Flask):
-- https://www.djangoproject.com/start/
-- http://tutorial.djangogirls.org/en/index.html
-
 Sysadmin
 ~~~~~~~~
 

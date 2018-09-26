@@ -16,12 +16,14 @@ def solve(numbers):
 
 
 def main():
-    # Cho list numbers chứa các giá trị từ -10 đến 10, trừ số 0.
-    numbers = range(-10, 11)
+    # Cho list numbers chứa các số chẵn từ -10 đến 10, trừ số 0.
+    numbers = range(-10, 11, 2)  # step=2
     numbers = list(numbers)
     numbers.remove(0)
 
-    print(solve(numbers))
+    result = solve(numbers)
+    print(result)
+    assert result == (0, -14745600)
 
 
 if __name__ == "__main__":
