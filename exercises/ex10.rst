@@ -73,7 +73,50 @@ exception xảy ra để xem chúng được quản lý trên web thế nào.
 
 https://docs.sentry.io/clients/python/
 
+5. JavaScript
+-------------
+
+Dù muốn hay không, 1 lập trình viên web bắt buộc phải biết JavaScript, phần cơ
+bản tương tự như Python, có thể tham khảo tại
+https://www.familug.org/2017/04/hoc-javascript-1.html
+
 6. Flask Mega tutorial
 ----------------------
 
 Hoàn thành tutorial: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+
+Web developer learning path
+---------------------------
+
+Web developer = HTML + CSS + Javascript + Python framework
+
+Learn HTML (easiest):
+
+- https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction
+- http://docs.webplatform.org/wiki/guides/the_basics_of_html
+- http://www.w3schools.com/html/default.asp
+
+Learn CSS (still easy):
+
+- https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started
+- http://docs.webplatform.org/wiki/css/tutorials
+
+Learn Flask (after you know what is HTML and CSS):
+
+- Follow tutorial: http://flask.pocoo.org/docs/tutorial/
+
+Learn SQL
+
+Google: SQL, Flask SQL, Django ORM
+
+Learn Django (should learn after Flask):
+
+- https://www.djangoproject.com/start/
+- http://tutorial.djangogirls.org/en/index.html
+
+Learn Javascript
+
+If you learn this as good as Python, then they call you "full stack engineer"
+
+- http://docs.webplatform.org/wiki/concepts/programming/programming_basics
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction
