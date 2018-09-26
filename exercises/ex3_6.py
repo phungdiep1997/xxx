@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-Input: một số nguyên trong range(1,13).
+Input: một số nguyên trong range(1,13,1). # start=1, stop=13, step=1
 Output: tên tương ứng của tháng đó bằng tiếng Anh, và số ngày trong tháng đó.
 Tháng 2 tính 28 ngày.
 
@@ -22,7 +22,7 @@ def solve(input_data):
     :param input_data: tháng bất kì
     :rtype: tuple
     '''
-    assert (input_data in range(1, 13)), "Tháng không tồn tại"
+    assert (input_data in range(1, 13, 1)), "Tháng không tồn tại"
     result = ("MONTH", "DATE")
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
