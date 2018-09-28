@@ -9,7 +9,7 @@ def files_changed(sha='origin/master', prefix='exercises/'):
     cmd = ['git', 'diff', '--name-only', sha]
     process = spr.run(cmd, stdout=spr.PIPE)
     return [fn for fn in process.stdout.decode('utf-8').splitlines()
-            if fn.startswith(prefix)]
+            if fn.startswith(prefix) and fn.endswith('.py')]
 
 
 def ex_identifier(path):
