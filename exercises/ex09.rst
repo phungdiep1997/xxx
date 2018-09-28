@@ -168,6 +168,19 @@ trên) - cho tới hậu xử lý, lưu trữ dữ liệu. Scrapy phù hợp v�
 nhiều trang, nhiều công đoạn: https://scrapy.org/ Xem code crawl của
 http://jobs.pymi.vn/ tại https://github.com/pymivn/pyjobs_crawlers
 
+8
+-
+
+[Tham khảo] chạy code đồng thời - vd crawl nhiều trang cùng lúc - nên dùng
+sẵn framework đã lo sẵn mọi chuyện như "scrapy", đọc thêm các khái niệm sau
+để mở rộng hiểu biết:
+
+Concurrency: threading, multiprocess, asyncio
+
+- https://pymotw.com/3/concurrency.html
+- sync - async:
+  https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/
+
 Chuẩn bị cho buổi sau
 ---------------------
 

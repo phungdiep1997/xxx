@@ -346,3 +346,52 @@ Bài tập làm thêm
 - HackerRank https://www.hackerrank.com/domains/python/py-introduction
 - 99 Problems https://wiki.python.org/moin/ProblemSets/99%20Prolog%20Problems%20Solutions
 - Python koans https://github.com/gregmalcolm/python_koans
+
+Books, articles
+===============
+
+diveinpython
+------------
+
+http://www.diveintopython3.net/table-of-contents.html
+
+Hitchhiker
+----------
+
+http://docs.python-guide.org/en/latest/
+
+SO path
+-------
+
+http://stackoverflow.com/questions/2573135/python-progression-path-from-apprentice-to-guru?rq=1
+
+antipatterns
+------------
+
+http://docs.quantifiedcode.com/python-code-patterns/
+
+slot
+----
+
+https://github.com/python-diamond/Diamond/pull/256/files
+
+become programmer
+-----------------
+
+http://norvig.com/21-days.html
+
+become hacker
+-------------
+
+http://www.catb.org/esr/faqs/hacker-howto.html
+
+write review on facebook
+------------------------
+
+https://www.facebook.com/pyfml/reviews
+
+Interview questions
+-------------------
+
+- https://www.toptal.com/python#hiring-guide
+- https://docs.python.org/3/faq/programming.html

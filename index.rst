@@ -14,7 +14,6 @@ Contents:
 
    lectures.rst
    guide.rst
-   whatnext.rst
    FAQ.rst
 
 .. Indices and tables
