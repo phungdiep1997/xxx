@@ -18,6 +18,15 @@ in ra màn hình tên của các function trong đó
 Gợi ý: sử dụng 2 module `inspect` và `importlib`
 ``from inspect import isfunction``
 ``from importlib import import_module``
+
+
+Tham khảo thêm cho Sysadmin
+
+- Explore more stdlib for system: os, shutil, subprocess, thread, multiprocess,
+  smtp, imap, pop3
+- Explore 3rd lib: psutils, paramiko, twisted, gevent
+- Use tools written in python: diamond, graphite, saltstack, odoo, sentry,
+  fabric, shinken, django CMS, trac, buildbot
 '''
 
 

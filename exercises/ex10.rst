@@ -52,6 +52,9 @@ Nâng cao: push code lên GitHub và tạo 1 GitHub Page: https://pages.github.c
 Làm theo ví dụ tại http://flask.pocoo.org/docs/0.12/tutorial/
 Push code cuối cùng lên GitHub.com<div></div>
 
+Phần từ đây trở đi để tham khảo cho học viên theo hướng lập trình web
+=====================================================================
+
 4. Gửi các thông số (metric)
 ----------------------------
 
