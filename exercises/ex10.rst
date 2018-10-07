@@ -9,6 +9,8 @@
   ta thường sử dụng một "thư viện" để chuyển đổi qua lại giữa SQL và Python
   object và gọi là ORM (object relation map), Django có sẵn Django ORM, Flask
   thường dùng SQLAlchemy.
+- Các sản phẩm của học viên PyMi tham khảo tại: https://github.com/pymivn/awesome
+- Các project của PyMi xem tại: https://github.com/pymivn/
 
 1
 -
