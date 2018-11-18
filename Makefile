@@ -31,7 +31,7 @@ testall:
 	rm test.err
 
 style:
-	flake8 --exclude='\.*',conf.py,'venv/','env/'
+	flake8 --exclude='\.*, flask_demo/',conf.py,'venv/','env/'
 
 lint:
 	pylint exercises tests
