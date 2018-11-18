@@ -133,6 +133,10 @@ Command
 
   $ pip install git+git://github.com/myuser/foo.git@v123
 
+- PyMi packages: https://github.com/pymivn/awesome/
+
+- Awesome packages: https://github.com/htlcnn/fucking_awesome_python
+
 Iterator
 --------
 
