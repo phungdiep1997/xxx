@@ -90,6 +90,32 @@ https://www.familug.org/2017/04/hoc-javascript-1.html
 
 Hoàn thành tutorial: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
+7. Các thư viện thường dùng với Flask
+-------------------------------------
+
+- http://flask-sqlalchemy.pocoo.org/ - SQLAlchemy cho Flask, thay vì
+  dùng SQLAlchemy trực tiếp. SQLAlchemy là một ORM - giúp biến đổi qua lại
+  giữa Python object và SQL record (row), giúp lập trình viên gọi method/function
+  thay vì viết câu lệnh SQL, giúp che đi đang dùng DB gì - khiến cho việc
+  thay đổi DB sau này, nếu có thực hiện sẽ dễ dàng hơn. Flask-sqlalchemy giúp
+  thực hiện một số công việc sẽ phải đụng tới nếu dùng FLask với SQLAlchemy
+  trực tiếp (app context...).
+- https://flask-migrate.readthedocs.io/en/latest/ - Migrate DB.
+  "Hình dáng" của các bảng dữ liệu SQL sẽ biến đổi theo thời gian, có lúc
+  cần thêm bảng mới, có lúc cần sửa cột, đổi kiểu... Qúa trình biến đổi hình
+  dáng các bảng sql này (thực hiện bằng cách chạy các câu lệnh SQL)
+  được gọi là "migration". SQLAlchemy không hỗ trợ quá trình này mà phải dùng
+  một thư viện khác tên là
+  `alembic <https://flask-migrate.readthedocs.io/en/latest/>`_ (cùng tác giả
+  SQLAlchemy). `flask-migrate`
+  thêm các câu lệnh cho flask giúp việc dùng `alembic` dễ dàng hơn.
+- https://flask-login.readthedocs.io/en/latest/ - User authentication.
+  Giúp quản lý đăng nhập user nếu trang web của bạn có user. (không phải
+  trang web nào cũng cần user - ví dụ trang báo chí).
+- https://github.com/marshmallow-code/marshmallow - giúp biến đổi qua lại
+  giữa Python object (e.g khi dùng ORM) thành các kiểu dữ liệu có sẵn của
+  Python (đặc biệt là dict, JSON khi viết API).
+
 Web developer learning path
 ---------------------------
 
