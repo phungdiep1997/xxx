@@ -108,7 +108,8 @@ Chạy 2 lệnh sau (chỉ cần làm 1 lần duy nhất) để cấu hình git:
 Các bước nộp bài
 ^^^^^^^^^^^^^^^^
 
-**MỖI LẦN** làm bài tập (sau mỗi buổi học), làm như sau:
+**MỖI LẦN** làm bài tập (sau mỗi buổi học)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Vào thư mục ``pyfml``, kiểm tra branch::
 
