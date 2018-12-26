@@ -16,6 +16,7 @@ Usage::
   -> Print 10 last lines of file_path
 
 Use ``sys.argv``
+Đọc thêm: https://pymotw.com/3/sys/runtime.html#command-line-arguments
 '''
 
 

@@ -13,6 +13,7 @@ VD: 03/28/16 làm parameter và in ra một version được tính theo quy lu�
 In ra phiên bản tương ứng.
 
 Gợi ý: học viên sử dụng `sys.argv` hoặc module `argparse`
+https://pymotw.com/3/argparse/index.html
 '''
 
 import log

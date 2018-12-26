@@ -8,6 +8,8 @@ Yêu cầu:
 
 Gợi ý:
 time.sleep, datetime.datetime.now
+
+Đọc thêm logging: https://pymotw.com/3/logging/index.html
 '''
 
 import time
