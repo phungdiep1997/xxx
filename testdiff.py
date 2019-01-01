@@ -6,9 +6,11 @@ import itertools
 
 
 def files_changed(sha='origin/master', prefix='exercises/'):
-    cmd = ['git', 'diff', '--name-only', sha]
+    cmd = ['git', 'diff', '--name-only', '{}...HEAD'.format(sha)]
     process = spr.run(cmd, stdout=spr.PIPE)
-    return [fn for fn in process.stdout.decode('utf-8').splitlines()
+    diff = process.stdout.decode('utf-8').splitlines()
+    print("Files changed: ", " ".join(diff))
+    return [fn for fn in diff
             if fn.startswith(prefix) and fn.endswith('.py')]
 
 
