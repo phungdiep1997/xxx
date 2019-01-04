@@ -145,11 +145,7 @@ Di chuyển vào thư mục chứa bài tập::
 
   cd exercises
 
-Ví dụ làm bài 3.1 sẽ sửa file::
-
-  ex3_1.py
-
-bằng editor đã cài.
+Ví dụ làm bài 3.1 sẽ sửa file `ex3_1.py` bằng editor đã cài.
 
 Nội dung của file này chứa đề bài và lời giải của bài toán.
 Học viên sửa nội dung trong function solve() để trả về kết quả
@@ -162,7 +158,7 @@ Và chạy file này với lệnh::
 
 Học viên cài và sử dụng
 `flake8 <http://flake8.pycqa.org/en/latest/index.html#quickstart>`_
-để kiểm tra code viết đúng chuẩn chưa (chỉ bắt buộc sau buổi 4)::
+để kiểm tra code viết đúng chuẩn chưa (CHỈ BẮT BUỘC SAU BUỔI 4)::
 
   flake8 ex3_1.py
 
