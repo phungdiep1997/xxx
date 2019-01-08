@@ -17,7 +17,7 @@ To your heart.
 # https://www.poetrysoup.com/poem/cross_my_heart_609765
 
 
-def solve(text):
+def solve(input_data):
     '''Trả về tiêu đề bài thơ ghép từ các chữ cái đầu tiên của mỗi dòng.
     Chỉ viết hoa chữ cái đầu tiên.
     '''
@@ -35,8 +35,7 @@ def main():
     Khi ghép các chữ cái HOẶC các từ đầu tiên lại với nhau thu được một
     thông điệp
     '''
-    text = data
-    print(solve(text))
+    print(solve(data))
 
 
 if __name__ == "__main__":

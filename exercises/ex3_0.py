@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+data = 5
 
 
 def squared(input_data):
@@ -19,7 +20,7 @@ def squared(input_data):
 
 
 def main():
-    print(squared(5))
+    print(squared(data))
 
 
 if __name__ == "__main__":

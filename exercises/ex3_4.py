@@ -28,8 +28,8 @@ def solve(input_data):
 
 
 def main():
-    input_data = 'maria.data.mp9'
-    print(solve(input_data))
+    data = 'maria.data.mp9'
+    print(solve(data))
 
 
 if __name__ == "__main__":
