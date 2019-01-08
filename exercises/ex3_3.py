@@ -9,7 +9,8 @@ bình thưòng.
 
 
 def solve():
-    '''Trả về 1 `list` 100 phần tử thỏa mãn yêu cầu đề bài
+    '''Thay vì in ra, hãy trả về 1 `list`
+    100 phần tử thỏa mãn yêu cầu đề bài
 
     :rtype: list
     '''

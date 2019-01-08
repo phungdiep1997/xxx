@@ -14,16 +14,16 @@ Ví dụ:
 
 
 def solve(input_data):
-    '''Trả về 1 `tuple` chứa 2 phần tử, ví dụ:
+    '''Trả về 1 `list` chứa 2 phần tử, ví dụ:
 
         input_data: 2
         output: ("February", 28)
 
     :param input_data: tháng bất kì
-    :rtype: tuple
+    :rtype: list
     '''
     assert (input_data in range(1, 13, 1)), "Tháng không tồn tại"
-    result = ("MONTH", "DATE")
+    result = ["MONTH", "DATE"]
 
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     raise NotImplementedError("Học viên chưa làm bài này")

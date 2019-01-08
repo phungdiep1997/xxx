@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+data = 1000
+
+
 def solve(input_data):
     '''Đầu vào: một số nguyên dương
 
@@ -28,7 +31,7 @@ def solve(input_data):
 
 
 def main():
-    print(solve(1000))
+    print(solve(data))
 
 
 if __name__ == "__main__":

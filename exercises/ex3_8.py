@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 
-def solve(text):
-    '''Kiểm tra text có phải là palindrome không.
+def solve(input_data):
+    '''Kiểm tra input_data có phải là palindrome không.
 
     Một string được gọi là `palindrome` nếu viết xuôi hay ngược đều thu được
     kết quả như nhau (không phân biệt hoa thường, bỏ qua dấu space).
