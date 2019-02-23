@@ -1,5 +1,10 @@
-11. Scipy
-=========
+11. Data analysis
+=================
+
+Tham khảo sách free:
+
+- DataScience https://jakevdp.github.io/PythonDataScienceHandbook/
+- Quantitative Economics https://lectures.quantecon.org/py/
 
 .. note::
 
