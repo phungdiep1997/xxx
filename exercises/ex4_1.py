@@ -6,6 +6,8 @@ lúc ra đều có thể làm được việc. Vì vậy, nếu không tự làm
 học viên được KHUYẾN KHÍCH xem bài các bạn khác để làm mẫu rồi gõ làm theo.
 Tránh tình trạng không làm bài tập với lý do "không làm được".
 Xem tại: https://gitlab.com/pyfml/pyfml/merge_requests
+
+Đọc thêm: https://pymi.vn/blog/sap-xep-tieng-viet/
 """
 
 

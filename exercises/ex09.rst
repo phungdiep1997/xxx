@@ -31,14 +31,18 @@ Từ chương này, bài làm sau khi chỉnh sửa sạch sẽ, có thể đưa
   # do something
   resp = ses.post('https://awebsite.com/login', data={...})
   ```
+- Đọc thêm:
+- https://pymi.vn/blog/blog-markdown-pelican-githubpages/
+- https://pymi.vn/blog/augassign/
+- https://pymi.vn/blog/jupyter-notebook/
 
 1
 -
 
 Viết 1 script để liệt kê tất cả các GitHub repository của 1 user:
 
-Ví dụ với user ``hvnsweeting``, sử dụng dữ liệu ở JSON format tại
-https://api.github.com/users/hvnsweeting/repos
+Ví dụ với user ``pymivn``, sử dụng dữ liệu ở JSON format tại
+https://api.github.com/users/pymivn/repos
 
 Câu lệnh của chương trình có dạng::
 

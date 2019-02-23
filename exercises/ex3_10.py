@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+"""
+Đọc thêm (không liên quan tới bài này): https://pymi.vn/blog/bankers-rounding/
+"""
 data = (
     [1, 5, 2, 3, 4],
     [4, 5, 0, 4]

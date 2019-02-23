@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 
 __doc__ = '''
+
+Đọc thêm:
+
+- https://pymi.vn/blog/badcode/
+- https://pymi.vn/blog/return-string/
+- https://pymi.vn/blog/call-by/
+
 Chuẩn bị cho buổi sau
 ---------------------
 
